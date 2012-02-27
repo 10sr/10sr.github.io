@@ -1,2 +1,2 @@
-book: book.md
-	markdown $< > book.html
+md:
+	markdown book.md > book.html
