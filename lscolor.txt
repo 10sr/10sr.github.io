@@ -1,0 +1,14 @@
+lsの色に関する不完全なメモ。
+
+色の設定は、$LS_COLORSを調べる。
+http://www.itmedia.co.jp/help/tips/linux/l0372.html
+リンクは文字色が36。これがansi colorだとあたりをつける。
+xtermでの色設定は、
+/etc/X11/app-defaults/XTerm-color
+を見ると、color6でcyan3だった。
+これを~/.Xresourcesで変更する。
+http://www.uetyi.mydns.jp/wordpress/linux-desktop/entry-57.html
+~/.xsessiionrcに
+xrdb -merge ~/.Xresources
+を加える。
+http://d.hatena.ne.jp/Okumatsu_Hiroshi/20081218/1229617347
