@@ -1,18 +1,23 @@
 ul.menu {
     position : fixed;
-    top : 10em;
+    top : 7em;
     right : 5%;
 
     width : 10%;
-
-    padding : 5px;
+    padding : 0.5em;
 
     list-style-type : none;
 }
 
-h1.title, h2.subtitle, ul.menu {
-    border-bottom : 3px gray dotted;
-    border-right : 10px gray solid;
+h2.subtitle {
+    font-size : small;
+    margin-bottom : 3em;
+}
+
+h1, h2, h3, h4, h5, h6, ul.menu {
+    border-bottom : 3px dotted;
+    border-right : 10px solid;
+    border-color : #000066;
 }
 
 .content {
