@@ -1,7 +1,10 @@
 ul.menu {
-    background-color : #dddddd;
-    float : right;
-    margin-right : 10px;
+    position : fixed;
+    top : 10%;
+    right : 10%;
+    /* margin-right : 10px; */
+
+    list-style-type : none;
 }
 
 h1.title {
