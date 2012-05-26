@@ -16,7 +16,7 @@
 
 ### 紅茶抽出飽和砂糖水溶液（MAX紅茶）
 
- * <http://nantara.seesaa.net/article/117731852.html>
+<http://nantara.seesaa.net/article/117731852.html>
 
 1. 砂糖をウイスキーのビンか何かに詰める
 2. 濃いめに入れた紅茶を空の瓶として2/3程度入れる
