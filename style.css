@@ -1,0 +1,10 @@
+ul.menu {
+    background-color : #dddddd;
+    float : right;
+    margin-right : 10px;
+}
+
+h1.title {
+    border-bottom : 5px #0000ff solid;
+    color : #000000;
+}
