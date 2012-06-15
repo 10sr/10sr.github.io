@@ -1,0 +1,28 @@
+ul.menu {
+    position : fixed;
+    top : 8em;
+    right : 3%;
+
+    margin : 0;
+
+    width : 12%;
+    padding : 0.5em;
+
+    list-style-type : none;
+}
+
+h2.subtitle {
+    font-size : small;
+    margin-bottom : 3em;
+}
+
+h1, h2, h3, h4, h5, h6, ul.menu {
+    border-bottom : 3px dotted;
+    border-right : 10px solid;
+    border-color : #000066;
+}
+
+div.content {
+    width : 80%;
+    padding : 1%;
+}
