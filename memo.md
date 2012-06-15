@@ -74,3 +74,4 @@
 4. 意味を考えつつ音読する
 5. 訳を見ながら聴く
 6. shadowing or overwrapping
+
