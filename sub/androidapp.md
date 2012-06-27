@@ -1,31 +1,51 @@
 # player
 
-#### mediaplus
+試してないもの
+
+* soundbest music player lite
+* x96 player
+* n7playe
+* iconic
+* mortplayer
+* simply music
+* vanilla
+* music folder player
+* thone
+
+## ez folder player free
+
+## mediaplus
 
 ウィジェットのボタンがわずかに押しにくい
 
-#### zimly
+## zimly
 
 動画を再生する機能が邪魔に感じる
 
-#### hikiplayer
+## hikiplayer
 
-#### folder player
+ループ再生ができない？
+
+## folder player
 
 ださい
 
+### drosic
+
+起動しない
+
 # shoutcast
 
-#### xiialive lite
+## xiialive lite
 
 ダサいけど良い
 
-#### mundu radio
+## mundu radio
 
 音が飛ぶ
 起動しっぱなしになる
 
-#### PLAY (aol)
+## PLAY (aol)
 
 ウィジェットがない
 
@@ -35,162 +55,162 @@
 * 任意のリスト見たいしたい
 * 表示領域は大きく
 
-#### tweetdeck
+## tweetdeck
 
 黒背景好きくない
 フォローしてないリスト追加できる
 自動で上に行かないのがめんどい
 アイコン消す方法ない？
 
-#### twitter for android
+## twitter for android
 
 上のメニューいらない気がする
 文字をもっと小さくしたい
 
-#### twicca
+## twicca
 
-#### trumpet
+## trumpet
 
 リストを全く扱えない
 
-#### hootsuite
+## hootsuite
 
 カラムの移動が引っかかる
 文字でかくね
 
-#### twidroyd
+## twidroyd
 
 上下の邪魔
 
-#### plume (formaly Touiteur?)
+## plume (formaly Touiteur?)
 
 広告がある。あとで消えるけど
 
-#### twigee
+## twigee
 
 かなり良いんだけど、メンションの更新とかエラー出る
 
-#### tweetcaster
+## tweetcaster
 
 なんかださい
 吹き出しいらない
 
-#### モバツイ
+## モバツイ
 
 広告あり
 
-#### soicha
+## soicha
 
 黒い
 広告あり
 
-#### ついっぷる
+## ついっぷる
 
 普通
 返信タブに広告あり
 
-#### twitrocker2
+## twitrocker2
 
 広告あるらしい
 
-#### twitbeam
+## twitbeam
 
 広告あり
 
-#### hamoooooon
+## hamoooooon
 
 tweet につく操作がボタンでなくテキストなせいで見難い印象
 
-#### shooting star
+## shooting star
 
 めんどい
 
-#### andtweet
+## andtweet
 
 アイコンがない
 
-#### twitroom
+## twitroom
 
 すごく普通
 黒い
 起動してすぐtl見せないのは良くない気が
 
-#### twing
+## twing
 
 広告あり
 
-#### ubersocial
+## ubersocial
 
 広告あり
 
-#### twidere
+## twidere
 
 なぜか投稿画面が出せなかった
 
-#### chant
+## chant
 
 スクロールが引っかかる
 
 # tumblr
 
-#### tumblr
+## tumblr
 
 読み込みが嫌がらせみたいに遅い
 一度起動するとなんかよく分かんないサービス立ち上げてる
 
-#### dumblr
+## dumblr
 
 自動読み継ぎがない
 ボタンが少しだけ小さい
 
-#### tumblife
+## tumblife
 
 一枚ずつ見せるタイプ
 
-#### tumblr ole
+## tumblr ole
 
 likeがない
 
-#### dumblr 2
+## dumblr 2
 
 表示小さい
 
-#### atumble
+## atumble
 
 毎回パスワードが必要になってる
 
-#### tttumblr
+## tttumblr
 
 再読み込みとかない
 
 # browser
 
-#### opera mobile
+## opera mobile
 
 外部からページを開くときにスタートページを経由するのが良くない
 
-#### firefox
+## firefox
 
 終了がしにくい
 
-#### dolphin browser
+## dolphin browser
 
 表示領域がちょっと小さい
 
-#### ilunascape
+## ilunascape
 
 タブが少し邪魔
 
 # pixiv
 
-#### pixroid
+## pixroid
 
 次の絵を見るのができない
 
-#### ぴくすぷろーらー
+## ぴくすぷろーらー
 
 終了までがめんどい
 
-#### pixiv
+## pixiv
 
 漫画見にくい
