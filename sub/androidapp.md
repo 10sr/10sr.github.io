@@ -2,17 +2,38 @@
 
 試してないもの
 
-* soundbest music player lite
-* x96 player
-* n7playe
-* iconic
 * mortplayer
 * simply music
-* vanilla
-* music folder player
-* thone
 
 ## ez folder player free
+
+## vanilla
+
+ちょい癖がある
+
+## moty folderplayer
+
+アルバムアートが出ないのは寂しい
+
+## music folder player original
+
+バックグラウンドに移行できない
+
+## xplay
+
+バックグラウンドに移行できない
+
+## playtunes
+
+ウィジェットがない
+
+## soundbest music player lite
+
+多機能すぎる気が
+
+## iconic
+
+ディレクトリでなくタグを見る
 
 ## mediaplus
 
