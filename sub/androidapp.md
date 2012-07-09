@@ -75,8 +75,6 @@ no screen off と併用するとスリープする
 
 ## xiialive lite
 
-ダサいけど良い
-
 ## mundu radio
 
 音が飛ぶ
@@ -251,3 +249,9 @@ likeがない
 ## pixiv
 
 漫画見にくい
+
+# niconico
+
+## nicoviewer
+
+なんか全体的に使いにくい
