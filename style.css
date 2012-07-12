@@ -16,12 +16,24 @@ h2.subtitle {
     margin-bottom : 3em;
 }
 
+div.content {
+    width : 80%;
+    padding : 1%;
+}
+
 h1, h2, h3, h4, h5, h6, ul.menu {
     border-bottom : 3px dotted;
     border-right : 10px solid;
-    border-color : #000066;
 }
 
+hr {
+    border-width : 3px 0 0 0;
+    border-style : dotted;
+}
+
+h1, h2, h3, h4, h5, h6, ul.menu, hr {
+    border-color : #000066;
+}
 h2 {
     width : 95%;
 }
@@ -42,7 +54,7 @@ h6 {
     width : 75%;
 }
 
-div.content {
-    width : 80%;
-    padding : 1%;
+h1, h2, h3, h4, h5, h6, ul.menu {
+    border-bottom : 3px dotted;
+    border-right : 10px solid;
 }
