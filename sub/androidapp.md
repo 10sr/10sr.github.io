@@ -67,7 +67,7 @@ no screen off と併用するとスリープする
 
 ださい
 
-### drosic
+## drosic
 
 起動しない
 
