@@ -1,5 +1,4 @@
 ul.menu {
-/*    position : fixed; */
     top : 8em;
     right : 3%;
 
@@ -8,6 +7,7 @@ ul.menu {
     padding : 0.5em;
 
     list-style-type : none;
+    text-align : right;
 }
 
 ul.menu li {
@@ -19,14 +19,30 @@ h2.subtitle {
     margin-bottom : 3em;
 }
 
-h1, h2, h3, h4, h5, h6, ul.menu {
-    border-bottom : 3px dotted;
-    border-right : 10px solid;
-    border-color : #006666;
+div.content {
+    width : 100%;
+    padding : 1%;
+    margin : 0%;
+    font-size : smaller;
+    background-color : #111111;
+    color : #eeeeee;
 }
 
-div.content {
-    width : 80%;
-    padding : 1%;
-    font-size : smaller;
+body {
+    background-color : #eeeeee;
+    margin : 10%;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    border-bottom : 3px dotted;
+    border-right : 10px solid;
+    border-color : #00fefe;
+    margin-right : 2%;
+}
+
+h1.title {
+    border : none;
+    margin : 1%;
+    text-align : right;
+}
+
