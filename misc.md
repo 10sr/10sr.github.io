@@ -47,3 +47,9 @@
 <http://codepad.org/users/10sr>
 
 <http://10sr.jottit.com>
+
+<http://10sr.fizy.com/>
+
+<https://bitbucket.org/10sr>
+
+<https://plus.google.com/118413039992611300939/posts>
