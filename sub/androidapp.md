@@ -1,3 +1,13 @@
+# home
+
+## zeam launcher
+
+使用中
+
+## launcherpro
+
+## nemus launcher
+
 # lock
 
 * 勝手にスリープして欲しくはない
@@ -21,6 +31,12 @@ no screen off と併用するとスリープする
 * mortplayer
 * simply music
 
+## head speaker
+
+なんかよく分からない
+
+## just player
+
 ## ez folder player free
 
 ## vanilla
@@ -30,6 +46,14 @@ no screen off と併用するとスリープする
 ## moty folderplayer
 
 アルバムアートが出ないのは寂しい
+
+## flip
+
+ウィジェットにアルバムアート出ない
+
+## yebisu
+
+ウィジェットにアルバムアート出ない
 
 ## music folder player original
 
