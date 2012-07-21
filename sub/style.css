@@ -2,7 +2,7 @@ ul.menu {
     top : 8em;
     right : 3%;
 
-    margin : 0;
+    margin-bottom : 1%;
 
     padding : 0.5em;
 
@@ -12,11 +12,6 @@ ul.menu {
 
 ul.menu li {
     display : inline;
-}
-
-h2.subtitle {
-    font-size : small;
-    margin-bottom : 3em;
 }
 
 div.content {
