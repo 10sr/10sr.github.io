@@ -16,7 +16,8 @@ h2.subtitle {
     margin-bottom : 3em;
 }
 
-div.content {
+div.content, div.footer{
+    align : left;
     width : 80%;
     padding : 1%;
 }
@@ -57,4 +58,10 @@ h6 {
 h1, h2, h3, h4, h5, h6, ul.menu {
     border-bottom : 3px dotted;
     border-right : 10px solid;
+}
+
+p.time, p.time a {
+    font-size : small;
+    color : #999999;
+    text-align : right;
 }
