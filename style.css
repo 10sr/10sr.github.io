@@ -35,26 +35,6 @@ hr {
 h1, h2, h3, h4, h5, h6, ul.menu, hr {
     border-color : #000066;
 }
-h2 {
-    width : 95%;
-}
-
-h3 {
-    width : 90%;
-}
-
-h4 {
-    width : 85%;
-}
-
-h5 {
-    width : 80%;
-}
-
-h6 {
-    width : 75%;
-}
-
 h1, h2, h3, h4, h5, h6, ul.menu {
     border-bottom : 3px dotted;
     border-right : 10px solid;
