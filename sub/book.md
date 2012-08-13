@@ -41,6 +41,7 @@
 
 ln
 
+* [ぶく速 異世界の日常を淡々と描いた作品、あるいは日常にファンタジー要素が潜んでいるような作品](http://2chbooknews.blog114.fc2.com/blog-entry-3180.html)
 * 浅井ラボ
 * 瑞智 士記
 * [回帰祭 小林めぐみ](http://d.hatena.ne.jp/sangencyaya/20081113/1226586279)
