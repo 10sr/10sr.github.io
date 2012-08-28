@@ -18,6 +18,7 @@
 * xquartz (latest)
 * kedit
 * [Xee](http://wakaba.c3.cx/s/apps/xee.html) [kwhr0のページ](http://www.geocities.jp/kwhr0/)
+* [Objectpark Software - MenuCalendarClock for iCal](http://www.objectpark.net/mcc.html)
 
 ## prefs
 
