@@ -17,6 +17,7 @@
 * iterm2 command -> option
 * xquartz (latest)
 * kedit
+* [Xee](http://wakaba.c3.cx/s/apps/xee.html) [kwhr0のページ](http://www.geocities.jp/kwhr0/)
 
 ## prefs
 
