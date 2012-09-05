@@ -36,3 +36,9 @@
 * ファイアウォールを有効
 * インターフェイスのサウンドは再生しない
 * ヘッドフォンを挿してない時の音量を消音にする
+
+## tex
+
+* [MacTeX - TeX Users Group](http://www.tug.org/mactex/)
+* basictexをインストール
+* Applications内にあるutilityを使って etoolbox, makecmds を導入
