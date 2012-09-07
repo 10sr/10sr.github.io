@@ -21,6 +21,7 @@
 * [Objectpark Software - MenuCalendarClock for iCal](http://www.objectpark.net/mcc.html)
 * [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html)
 * [atMonitor](http://www.atpurpose.com/atMonitor/) [System monitor for Macintosh](http://www.magicansoft.com/help/magican-monitor.html)
+[Raging Menace - MenuMeters](http://www.ragingmenace.com/software/menumeters/index.html)
 
 ## prefs
 
