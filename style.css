@@ -5,20 +5,17 @@ body {
 h1.title, h2.subtitle {
     margin : 0;
     border : 0;
+    border-bottom : 1px solid;
     padding : 1%;
 }
 
 h1.title {
-    background-color : rgba(0, 0, 50, 0.8);
+    border-color : rgba(0, 0, 200, 0.8);
 }
 
 h2.subtitle {
     font-size : small;
-    background-color : rgba(0, 10, 100, 0.7);
-}
-
-h1.title, h1.title a:link, h1.title a:visited, h2.subtitle {
-    color : #ffffff;
+    border-color : rgba(0, 100, 250, 0.7);
 }
 
 ul.menu {
@@ -28,11 +25,12 @@ ul.menu {
     width : 12%;
 
     margin : 0;
-    border : 0;
     padding : 1.5%;
     padding-top : 8em;
 
-    background-color : rgba(0, 200, 100, 0.1);
+    border-width : 0 1px 1px 1px;
+    border-style : solid;
+    border-color : rgba(0, 200, 100, 0.6);
 
     list-style-type : none;
 }
