@@ -17,11 +17,12 @@
 * iterm2 command -> option
 * xquartz (latest)
 * kedit
-* [Xee](http://wakaba.c3.cx/s/apps/xee.html) [kwhr0のページ](http://www.geocities.jp/kwhr0/)
-* [Objectpark Software - MenuCalendarClock for iCal](http://www.objectpark.net/mcc.html)
+* [Xee](http://wakaba.c3.cx/s/apps/xee.html) [kwhr0](http://www.geocities.jp/kwhr0/)
+* [MenuCalendarClock](http://www.objectpark.net/mcc.html)
 * [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html)
-* [atMonitor](http://www.atpurpose.com/atMonitor/) [System monitor for Macintosh](http://www.magicansoft.com/help/magican-monitor.html)
-[Raging Menace - MenuMeters](http://www.ragingmenace.com/software/menumeters/index.html)
+* [atMonitor](http://www.atpurpose.com/atMonitor/) [magican](http://www.magicansoft.com/help/magican-monitor.html)
+[MenuMeters](http://www.ragingmenace.com/software/menumeters/index.html)
+* [Vox](http://voxapp.didgeroo.com/index.html)
 
 ## prefs
 
