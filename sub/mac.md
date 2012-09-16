@@ -16,7 +16,7 @@
 * xcode
 * iterm2 command -> option
 * xquartz (latest)
-* kedit
+* kedit coteditor
 * [Xee](http://wakaba.c3.cx/s/apps/xee.html) [kwhr0](http://www.geocities.jp/kwhr0/)
 * [MenuCalendarClock](http://www.objectpark.net/mcc.html)
 * [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html)
@@ -38,6 +38,7 @@
 * ファイアウォールを有効
 * インターフェイスのサウンドは再生しない
 * ヘッドフォンを挿してない時の音量を消音にする
+* ln -s CotEditor.app TextEdit.app
 
 ## tex
 
