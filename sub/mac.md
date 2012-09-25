@@ -22,7 +22,7 @@
 * [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html)
 * [atMonitor](http://www.atpurpose.com/atMonitor/) [magican](http://www.magicansoft.com/help/magican-monitor.html)
 [MenuMeters](http://www.ragingmenace.com/software/menumeters/index.html)
-* [Vox](http://voxapp.didgeroo.com/index.html)
+* [Vox](http://voxapp.didgeroo.com/index.html) [Cog](http://cogx.org/)
 
 ## prefs
 
