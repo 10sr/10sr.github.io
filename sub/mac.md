@@ -21,7 +21,7 @@
 * [MenuCalendarClock](http://www.objectpark.net/mcc.html)
 * [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html)
 * [atMonitor](http://www.atpurpose.com/atMonitor/) [magican](http://www.magicansoft.com/help/magican-monitor.html)
-[MenuMeters](http://www.ragingmenace.com/software/menumeters/index.html)
+[MenuMeters](http://www.ragingmenace.com/software/menumeters/index.html) [MiniUsage](http://nsek.net/SYW/software/japanese/miniusage/index.html) [iStat Pro, a Dashboard Widget by iSlayer](http://www.islayer.com/apps/istatpro/)
 * [Vox](http://voxapp.didgeroo.com/index.html) [Cog](http://cogx.org/)
 
 ## prefs
