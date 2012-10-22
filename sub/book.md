@@ -54,6 +54,8 @@ ln
 * [ぶく速 3巻までで完結するおすすめラノベ](http://2chbooknews.blog114.fc2.com/blog-entry-3531.html)
 * [ぶく速 がっつり戦闘・政争ドラマに、恋愛要素が組み込まれたラノベ](http://2chbooknews.blog114.fc2.com/blog-entry-3545.html)
 * [百合なライトノベルってあります？：ひまねっと](http://himarin.net/archives/6683763.html)
+* [ぶく速 女の子主人公とヒーロー（性別はは逆でも可）の恋愛要素があり、地の文があってモノローグが多すぎないファンタジー](http://2chbooknews.blog114.fc2.com/blog-entry-3623.html)
+* [ぶく速 主人公にばれてはいけない秘密(実は女とかなりすましとか)があるヒヤヒヤ系で恋愛要素ありの作品](http://2chbooknews.blog114.fc2.com/blog-entry-3612.html)
 * 浅井ラボ
 * 瑞智 士記
 * [回帰祭 小林めぐみ](http://d.hatena.ne.jp/sangencyaya/20081113/1226586279)
