@@ -1,13 +1,16 @@
 google.load("feeds", "1");
 
 function initialize() {
+    function zeropad(n){
+        return ("0" + n.toString()).slice(-2);
+    }
     function d2str(d){
         return "" + d.getFullYear() + "/" +
-            d.getMonth() + "/" +
-            d.getDate() + " " +
-            d.getHours() + ":" +
-            d.getMinutes() + ":" +
-            d.getSeconds();
+            zeropad(d.getMonth()) + "/" +
+            zeropad(d.getDate()) + " " +
+            zeropad(d.getHours()) + ":" +
+            zeropad(d.getMinutes()) + ":" +
+            zeropad(d.getSeconds());
     }
     var github_feed = new google.feeds.Feed("https://github.com/10sr.atom");
     github_feed.setNumEntries(7);
