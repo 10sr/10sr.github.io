@@ -64,3 +64,7 @@
 * control + P 1 行上に移動
 * control + T カーソルの左側の文字と右側の文字を置換
 * control + V 1 つ下のページに移動する
+
+## memo
+
+* [圧縮解凍ソフトで中身を見ることの出来るフリーウェア -パソコン関連の覚え書き](http://oldmacuser.blog75.fc2.com/blog-entry-68.html)
