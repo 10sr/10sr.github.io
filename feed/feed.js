@@ -20,10 +20,16 @@ function initialize() {
             for (var i = 0; i < result.feed.entries.length; i++) {
                 var entry = result.feed.entries[i];
                 var div = document.createElement("div");
+                var content = document.createElement("span");
                 var date = new Date(entry.publishedDate);
-                div.appendChild(document.createTextNode(d2str(date) +
-                                                        " : " +
-                                                        entry.title));
+                var perma = document.createElement("a");
+                content.appendChild(document.createTextNode(entry.title));
+                perma.setAttribute("href", entry.link);
+                perma.appendChild(document.createTextNode(d2str(date)));
+                // content.appendChild(document.createTextNode(entry.content));
+                div.appendChild(perma);
+                div.appendChild(document.createTextNode(" : "));
+                div.appendChild(content);
                 container.appendChild(div);
             }
         }
@@ -36,11 +42,18 @@ function initialize() {
             for (var i = 0; i < result.feed.entries.length; i++) {
                 var entry = result.feed.entries[i];
                 var div = document.createElement("div");
+                var content = document.createElement("span");
                 var date = new Date(entry.publishedDate);
-                div.innerHTML = entry.content;
-                div.removeChild(div.firstChild); // remove icon
-                div.insertBefore(document.createTextNode(d2str(date) + " : "),
-                                 div.firstChild);
+                var perma = document.createElement("a");
+                content.innerHTML = entry.content;
+                content.removeChild(content.firstChild); // remove icon
+                perma.setAttribute("href", entry.link);
+                perma.appendChild(document.createTextNode(d2str(date)));
+                // div.insertBefore(document.createTextNode(d2str(date) + " : "),
+                //                  div.firstChild);
+                div.appendChild(perma);
+                div.appendChild(document.createTextNode(" : "));
+                div.appendChild(content);
                 container.appendChild(div);
             }
         }
