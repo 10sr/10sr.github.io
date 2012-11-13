@@ -34,11 +34,10 @@ function initialize() {
                 var entry = result.feed.entries[i];
                 var div = document.createElement("div");
                 var date = new Date(entry.publishedDate);
-                var content = document.createElement("div");
-                content.innerHTML = entry.content;
-                content.insertBefore(document.createTextNode(d2str(date) + " : "),
-                                     content.firstChild);
-                div.appendChild(content);
+                div.innerHTML = entry.content;
+                div.removeChild(div.firstChild); // remove icon
+                div.insertBefore(document.createTextNode(d2str(date) + " : "),
+                                 div.firstChild);
                 container.appendChild(div);
             }
         }
