@@ -26,7 +26,6 @@ function initialize() {
                 content.appendChild(document.createTextNode(entry.title));
                 perma.setAttribute("href", entry.link);
                 perma.appendChild(document.createTextNode(d2str(date)));
-                // content.appendChild(document.createTextNode(entry.content));
                 div.appendChild(perma);
                 div.appendChild(document.createTextNode(" : "));
                 div.appendChild(content);
@@ -49,8 +48,6 @@ function initialize() {
                 content.removeChild(content.firstChild); // remove icon
                 perma.setAttribute("href", entry.link);
                 perma.appendChild(document.createTextNode(d2str(date)));
-                // div.insertBefore(document.createTextNode(d2str(date) + " : "),
-                //                  div.firstChild);
                 div.appendChild(perma);
                 div.appendChild(document.createTextNode(" : "));
                 div.appendChild(content);
