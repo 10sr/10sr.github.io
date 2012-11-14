@@ -1,6 +1,9 @@
 google.load("feeds", "1");
 
 function initialize() {
+    var container = document.getElementById("ff_feed");
+    container.appendChild(document.createTextNode("Loading..."));
+
     function zeropad(n){
         return ("0" + n.toString()).slice(-2);
     }
@@ -60,6 +63,7 @@ function initialize() {
     ff_feed.load(function(result) {
         if (!result.error) {
             var container = document.getElementById("ff_feed");
+            container.removeChild(container.firstChild); // remove "Loading..."
             for (var i = 0; i < result.feed.entries.length; i++) {
                 var entry = result.feed.entries[i];
                 var div = document.createElement("div");
