@@ -1,6 +1,7 @@
 買い物リスト。
 
 * [ぶく速 暗めで後ろ向きな青春時代を題材にした作品](http://2chbooknews.blog114.fc2.com/blog-entry-2459.html)
+* [ぶく速 悪役・ダークヒーローが主役の本](http://2chbooknews.blog114.fc2.com/blog-entry-3773.html)
 * 公然の秘密 安部公房
 * …絶句〈下〉 (ハヤカワ文庫JA)新井 素子
 * 大江健三郎
