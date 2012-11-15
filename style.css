@@ -38,8 +38,15 @@ ul.menu {
 div.content, div.footer {
     align : left;
     width : 78%;
-    padding : 1%;
     margin : 1%;
+}
+
+div.content {
+    padding : 2%;
+}
+
+div.footer {
+    padding : 1%;
 }
 
 hr {
