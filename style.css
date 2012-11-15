@@ -37,15 +37,16 @@ ul.menu {
 
 div.content, div.footer {
     align : left;
-    width : 78%;
     margin : 1%;
 }
 
 div.content {
+    width : 76%;
     padding : 2%;
 }
 
 div.footer {
+    width : 78%;
     padding : 1%;
 }
 
