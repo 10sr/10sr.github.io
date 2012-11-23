@@ -1,71 +1,54 @@
 body {
     margin : 0;
+    background-color : #eeeeee;
+    font-size : smaller;
+}
+
+a {
+    color : #0000ff;
 }
 
 h1.title, h2.subtitle {
     margin : 0;
     border : 0;
-    border-bottom : 1px solid;
-    padding : 1%;
+    background : #220088;
+    color : #ffffff;
 }
 
 h1.title {
-    border-color : rgba(0, 0, 200, 0.8);
+    padding : 0.5% 0 0 4%;
 }
 
 h2.subtitle {
-    font-size : small;
-    border-color : rgba(0, 100, 250, 0.7);
+    padding : 0 0 0.5% 4%;
+    font-size : smaller;
 }
 
 ul.menu {
-    position : fixed;
-    top : 0;
-    right : 3%;
-    width : 12%;
+    float : right;
+    width : 15%;
 
-    margin : 0;
-    padding : 1.5%;
-    padding-top : 8em;
-
-    border-width : 0 1px 1px 1px;
-    border-style : solid;
-    border-color : rgba(0, 200, 100, 0.6);
+    padding-top : 1%;
 
     list-style-type : none;
 }
 
-div.content, div.footer {
+div.page {
     align : left;
-    margin : 1%;
+    margin : 1% 1% 1% 4%;
+    width : 80%;
 }
 
 div.content {
-    width : 76%;
     padding : 2%;
-}
-
-div.footer {
-    width : 78%;
-    padding : 1%;
-}
-
-hr {
-    border-width : 1px 0 0 0;
+    background-color : #ffffff;
+    border-color : #cccccc;
+    border-width : 1px;
     border-style : solid;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    border : 1px solid;
-    padding : 0.2em;
-}
-
-h1, h2, h3, h4, h5, h6, hr {
-    border-color : #aaaaff;
-}
-
 p.time, p.time a {
-    font-size : small;
+    font-size : smaller;
     color : #999999;
-    text-align : right;
+    text-align : center;
 }
