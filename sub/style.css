@@ -45,4 +45,8 @@ h1, h2, h3, h4, h5, h6 {
     border-color : #006666;
 }
 
-
+hr {
+    border-width : 3px 0 0 0;
+    border-style : dotted;
+    border-color : #006666;
+}
