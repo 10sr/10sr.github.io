@@ -1,10 +1,6 @@
-2012/6/1くらい更新
-
 ## [Arch](https://wiki.archlinux.org/index.php/Main_Page)
 
-by <http://10sr.github.com>
-
-<http://togetter.com/li/269698> 
+<http://togetter.com/li/269698>
 
 古いの：<https://www.jottit.com/z45qk/>
 
@@ -50,10 +46,10 @@ by <http://10sr.github.com>
 * [Pacmatic: Get emails about pending system updates with cron-pacmatic](http://kmkeen.com/pacmatic/index.html)
 * [pacmanのキーサーバを設定する - 冷凍庫](http://d.hatena.ne.jp/sr10/20120311/1331446584)
 * pacman.conf
- * uncomment UseSyslog
- * ILiveCandy
+    * uncomment UseSyslog
+    * ILiveCandy
 * yaourt
- * /tmpをtmpfsでマウントしてたりすると領域が足りなかったりするのでそのときは--tmp <dir>とかつける
+    * /tmpをtmpfsでマウントしてたりすると領域が足りなかったりするのでそのときは--tmp <dir>とかつける
 
 ### syslog-ng.conf
 * log everything to tty12

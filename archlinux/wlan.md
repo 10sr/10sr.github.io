@@ -9,21 +9,23 @@
 * `/etc/rc.conf` の MODULES に b43 を追加。
 * wicd を使っていて、 wl から b43 に変えた場合、インターフェイスの設定がずれてるのでip linkとか見ながら書き換える
 
+***
+
+* pm-utils
+    * /etc/pm/power.d/wireless.sh というファイルを作り、 /usr/sbin/iwconfig wlan0 power off と書いて実行権限を付与
+* wicd
+    * Acer AspireOneにおいて問題がある模様 → [wicd before connecting reload wlan module — Gist](https://gist.github.com/2133000)
+    * → ドライバを b43 にしたら不要になった気がするので無効にしてみる
+* laptop-mode tools
+    * 無線LANがつながらなくなったので、/etc/laptop-mode/conf.d内にあるwireless系の3つの設定を無効
+    * → ドライバを wl から b43 に変えたら動くようになったので、３つをautoに戻す。
+    * → やっぱりダメかも。 0 にする。
+
+* ipv6 が原因かもしれないという記述を見たので、 /boot/grub/menu.lst に ipv6.disable=1 を追加してみる
+
 ### wlan0: deauthenticating from by local choice (reason=3)
 
 [Random disconnecting | Wicd - ArchWiki](https://wiki.archlinux.org/index.php/Wicd#Random_disconnecting)
-
-* pm-utils
- * /etc/pm/power.d/wireless.sh というファイルを作り、 /usr/sbin/iwconfig wlan0 power off と書いて実行権限を付与
-* wicd
- * Acer AspireOneにおいて問題がある模様 → [wicd before connecting reload wlan module — Gist](https://gist.github.com/2133000)
- * → ドライバを b43 にしたら不要になった気がするので無効にしてみる
-* laptop-mode tools
- * 無線LANがつながらなくなったので、/etc/laptop-mode/conf.d内にあるwireless系の3つの設定を無効
- * → ドライバを wl から b43 に変えたら動くようになったので、３つをautoに戻す。
- * → やっぱりダメかも。 0 にする。
-
-* ipv6 が原因かもしれないという記述を見たので、 /boot/grub/menu.lst に ipv6.disable=1 を追加してみる
 
 ***
 参考

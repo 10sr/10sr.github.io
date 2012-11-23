@@ -1,7 +1,5 @@
 <https://wiki.archlinux.org/index.php/List_of_Applications>
 
-# applications
-
 ### acpid
 電源の動作を設定するデーモン。電源ボタンの動作、ノートPCを閉じたときの動作とかも設定できる。
 
@@ -59,7 +57,7 @@ acpidとかcpufrequtilsとかと連携する
 * glances
 * ncdu
 
-## player 
+## player
 
 * moc xmms2
 * cmus
@@ -84,11 +82,11 @@ acpidとかcpufrequtilsとかと連携する
 * udisks - udevのラッパーみたいなもの？よく分かってない。
 とりあえずこれ入れると、pcmanfmとかでディスクの一般ユーザでのマウントができるようになる
 * pcmanfm
- * [PCManFM Trashcan not working? - ArchWiki](https://wiki.archlinux.org/index.php/Pcmanfm#Trashcan_not_working.3F)
-  * gvfsをインストール
-  * ~/.xinitrc に `exec ck-launch-session dbus-launch openbox-session`
+    * [PCManFM Trashcan not working? - ArchWiki](https://wiki.archlinux.org/index.php/Pcmanfm#Trashcan_not_working.3F)
+        * gvfsをインストール
+        * ~/.xinitrc に `exec ck-launch-session dbus-launch openbox-session`
 * dropbox
- * 設定でシステム起動時に起動を有効にすると、~/.config/autostart/dropbox.desktopが生成される
+    * 設定でシステム起動時に起動を有効にすると、~/.config/autostart/dropbox.desktopが生成される
 * pinta
 * mtpaint
 * rubyroom
@@ -96,21 +94,21 @@ acpidとかcpufrequtilsとかと連携する
 ### openbox
 
 * lxappearance
- * simple-icon-theme
+    * simple-icon-theme
 * tint2
- * [dmedvinsky/gsimplecal](https://github.com/dmedvinsky/gsimplecal)
- * volumeicon
+    * [dmedvinsky/gsimplecal](https://github.com/dmedvinsky/gsimplecal)
+    * volumeicon
 * dmenu
 * feh
 * obmenugen-bin
- * インストールしたら既存のmenu.xmlをバックアップしておく。
- * `$ obmenugen` とすればmenu.xmlがpipeを使ってメニューを自動生成するように書き換えられる。
- * wikiからコピーしたexit-menuを付け加える。
- * 最終的な状態：[obmenugen generated menu for openbox — Gist](https://gist.github.com/2101119#comments)
- * rc.xmlにはこう：[openbox configuration newly added codes — Gist](https://gist.github.com/1998681)
+    * インストールしたら既存のmenu.xmlをバックアップしておく。
+    * `$ obmenugen` とすればmenu.xmlがpipeを使ってメニューを自動生成するように書き換えられる。
+    * wikiからコピーしたexit-menuを付け加える。
+    * 最終的な状態：[obmenugen generated menu for openbox — Gist](https://gist.github.com/2101119#comments)
+    * rc.xmlにはこう：[openbox configuration newly added codes — Gist](https://gist.github.com/1998681)
 * [Xcompmgr - ArchWiki](https://wiki.archlinux.org/index.php/Xcompmgr)
- * xcompmgrを入れて、xcompmgr -cするだけ。
- * とりあえず起動時に設定したけど常用するかは様子見
+    * xcompmgrを入れて、xcompmgr -cするだけ。
+    * とりあえず起動時に設定したけど常用するかは様子見
 
 ### fonts
 * 日本語フォント monapo

@@ -5,12 +5,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<!-- <link rel="stylesheet" href="style.css" type="text/css" /> -->
-<title>wlan | title</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<title>wlan | Arch Linux Memo</title>
 </head>
 <body>
-<h1 class="title">wlan | <a href="index.html">title</a></h1>
-<h2 class="subtitle">subtitle</h2>
+<h1 class="title">wlan | <a href="index.html">archlinux</a></h1>
+<h2 class="subtitle">arch linux memo</h2>
+
 <ul class="menu">
 <li><a href="index.html">index</a></li>
 <li><a href="applications.html">applications</a></li>
@@ -31,24 +32,31 @@
 <li><code>/etc/rc.conf</code> の MODULES に b43 を追加。</li>
 <li>wicd を使っていて、 wl から b43 に変えた場合、インターフェイスの設定がずれてるのでip linkとか見ながら書き換える</li>
 </ul>
-<h3>wlan0: deauthenticating from by local choice (reason=3)</h3>
-<p><a href="https://wiki.archlinux.org/index.php/Wicd#Random_disconnecting">Random disconnecting | Wicd - ArchWiki</a></p>
+<hr />
 <ul>
-<li>pm-utils</li>
+<li>pm-utils<ul>
 <li>/etc/pm/power.d/wireless.sh というファイルを作り、 /usr/sbin/iwconfig wlan0 power off と書いて実行権限を付与</li>
-<li>wicd</li>
+</ul>
+</li>
+<li>wicd<ul>
 <li>Acer AspireOneにおいて問題がある模様 → <a href="https://gist.github.com/2133000">wicd before connecting reload wlan module — Gist</a></li>
 <li>→ ドライバを b43 にしたら不要になった気がするので無効にしてみる</li>
-<li>laptop-mode tools</li>
+</ul>
+</li>
+<li>
+<p>laptop-mode tools</p>
+<ul>
 <li>無線LANがつながらなくなったので、/etc/laptop-mode/conf.d内にあるwireless系の3つの設定を無効</li>
 <li>→ ドライバを wl から b43 に変えたら動くようになったので、３つをautoに戻す。</li>
-<li>
-<p>→ やっぱりダメかも。 0 にする。</p>
+<li>→ やっぱりダメかも。 0 にする。</li>
+</ul>
 </li>
 <li>
 <p>ipv6 が原因かもしれないという記述を見たので、 /boot/grub/menu.lst に ipv6.disable=1 を追加してみる</p>
 </li>
 </ul>
+<h3>wlan0: deauthenticating from by local choice (reason=3)</h3>
+<p><a href="https://wiki.archlinux.org/index.php/Wicd#Random_disconnecting">Random disconnecting | Wicd - ArchWiki</a></p>
 <hr />
 <p>参考</p>
 <p><a href="http://linuxwireless.org/en/users/Drivers/b43">b43 - Linux Wireless</a></p>
@@ -62,6 +70,11 @@
 <p><a href="https://wiki.archlinux.org/index.php/Acer_Aspire_One_D250">Acer Aspire One D250 - ArchWiki</a></p>
 <p>[14e4:4315]</p>
 </div>
+
+<div class="footer">
+<hr class="fsep" />
+<p class="time">Page generated from <a href="wlan.md">wlan.md</a> at Fri, 23 Nov 2012 15:53:20 +0900.</p>
+</div>
 </body>
 </html>
-<!-- Last update : Fri, 23 Nov 2012 15:12:46 +0900 -->
+<!-- Last update : Fri, 23 Nov 2012 15:53:20 +0900 -->

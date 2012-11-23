@@ -5,12 +5,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<!-- <link rel="stylesheet" href="style.css" type="text/css" /> -->
-<title>applications | title</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<title>applications | Arch Linux Memo</title>
 </head>
 <body>
-<h1 class="title">applications | <a href="index.html">title</a></h1>
-<h2 class="subtitle">subtitle</h2>
+<h1 class="title">applications | <a href="index.html">archlinux</a></h1>
+<h2 class="subtitle">arch linux memo</h2>
+
 <ul class="menu">
 <li><a href="index.html">index</a></li>
 <li><a href="applications.html">applications</a></li>
@@ -19,7 +20,6 @@
 
 <div class="content">
 <p><a href="https://wiki.archlinux.org/index.php/List_of_Applications">https://wiki.archlinux.org/index.php/List_of_Applications</a></p>
-<h1>applications</h1>
 <h3>acpid</h3>
 <p>電源の動作を設定するデーモン。電源ボタンの動作、ノートPCを閉じたときの動作とかも設定できる。</p>
 <h3>pm-utils</h3>
@@ -95,34 +95,48 @@ NOLM_AC_DPMS_STANDBY=1800
 <li>gstreamer0.10-plugins</li>
 <li>udisks - udevのラッパーみたいなもの？よく分かってない。
 とりあえずこれ入れると、pcmanfmとかでディスクの一般ユーザでのマウントができるようになる</li>
-<li>pcmanfm</li>
-<li><a href="https://wiki.archlinux.org/index.php/Pcmanfm#Trashcan_not_working.3F">PCManFM Trashcan not working? - ArchWiki</a></li>
+<li>pcmanfm<ul>
+<li><a href="https://wiki.archlinux.org/index.php/Pcmanfm#Trashcan_not_working.3F">PCManFM Trashcan not working? - ArchWiki</a><ul>
 <li>gvfsをインストール</li>
 <li>~/.xinitrc に <code>exec ck-launch-session dbus-launch openbox-session</code></li>
-<li>dropbox</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>dropbox<ul>
 <li>設定でシステム起動時に起動を有効にすると、~/.config/autostart/dropbox.desktopが生成される</li>
+</ul>
+</li>
 <li>pinta</li>
 <li>mtpaint</li>
 <li>rubyroom</li>
 </ul>
 <h3>openbox</h3>
 <ul>
-<li>lxappearance</li>
+<li>lxappearance<ul>
 <li>simple-icon-theme</li>
-<li>tint2</li>
+</ul>
+</li>
+<li>tint2<ul>
 <li><a href="https://github.com/dmedvinsky/gsimplecal">dmedvinsky/gsimplecal</a></li>
 <li>volumeicon</li>
+</ul>
+</li>
 <li>dmenu</li>
 <li>feh</li>
-<li>obmenugen-bin</li>
+<li>obmenugen-bin<ul>
 <li>インストールしたら既存のmenu.xmlをバックアップしておく。</li>
 <li><code>$ obmenugen</code> とすればmenu.xmlがpipeを使ってメニューを自動生成するように書き換えられる。</li>
 <li>wikiからコピーしたexit-menuを付け加える。</li>
 <li>最終的な状態：<a href="https://gist.github.com/2101119#comments">obmenugen generated menu for openbox — Gist</a></li>
 <li>rc.xmlにはこう：<a href="https://gist.github.com/1998681">openbox configuration newly added codes — Gist</a></li>
-<li><a href="https://wiki.archlinux.org/index.php/Xcompmgr">Xcompmgr - ArchWiki</a></li>
+</ul>
+</li>
+<li><a href="https://wiki.archlinux.org/index.php/Xcompmgr">Xcompmgr - ArchWiki</a><ul>
 <li>xcompmgrを入れて、xcompmgr -cするだけ。</li>
 <li>とりあえず起動時に設定したけど常用するかは様子見</li>
+</ul>
+</li>
 </ul>
 <h3>fonts</h3>
 <ul>
@@ -175,6 +189,11 @@ ttf-baekmuk</li>
 </ul>
 <h2><a href="http://kkovacs.eu/cool-but-obscure-unix-tools">Cool, but obscure unix tools :: Software architect Kristof Kovacs</a></h2>
 </div>
+
+<div class="footer">
+<hr class="fsep" />
+<p class="time">Page generated from <a href="applications.md">applications.md</a> at Fri, 23 Nov 2012 15:54:23 +0900.</p>
+</div>
 </body>
 </html>
-<!-- Last update : Fri, 23 Nov 2012 15:39:25 +0900 -->
+<!-- Last update : Fri, 23 Nov 2012 15:54:23 +0900 -->
