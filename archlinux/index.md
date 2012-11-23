@@ -1,3 +1,5 @@
+[../index.html](..index.html)
+
 ## [Arch](https://wiki.archlinux.org/index.php/Main_Page)
 
 <http://togetter.com/li/269698>
