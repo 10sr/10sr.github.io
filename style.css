@@ -35,18 +35,17 @@ ul.menu {
     list-style-type : none;
 }
 
-div.content, div.footer {
+div.page {
     align : left;
     margin : 1%;
+    width : 80%;
 }
 
 div.content {
-    width : 76%;
     padding : 2%;
 }
 
 div.footer {
-    width : 78%;
     padding : 1%;
 }
 
