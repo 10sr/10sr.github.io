@@ -1,3 +1,5 @@
+<https://wiki.archlinux.org/index.php/List_of_Applications>
+
 # applications
 
 ### acpid
