@@ -1,5 +1,7 @@
 <https://wiki.archlinux.org/index.php/List_of_Applications>
 
+systemdに移行したあたりで変わった部分があるかも
+
 ### acpid
 電源の動作を設定するデーモン。電源ボタンの動作、ノートPCを閉じたときの動作とかも設定できる。
 
