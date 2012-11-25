@@ -22,9 +22,13 @@ ul.menu li a:visited {
 }
 
 h1.title {
+    position : fixed;
+    top : 0;
+    left : 0;
+    font-size : 700%;
+    z-index : -1;
+    margin : 1%;
     border : none;
-    margin : 0%;
-    text-align : right;
 }
 
 div.content {
