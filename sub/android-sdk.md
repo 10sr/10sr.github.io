@@ -1,3 +1,5 @@
+上手く行ってない感
+
 [Android - ArchWiki](https://wiki.archlinux.org/index.php/Android)
 
 android-sdk
