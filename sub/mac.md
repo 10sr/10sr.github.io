@@ -18,7 +18,7 @@
 * xquartz (latest)
 * kedit coteditor
 * [Xee](http://wakaba.c3.cx/s/apps/xee.html)
-[PictPicker](http://www.geocities.jp/kwhr0/) 
+[PictPicker](http://www.geocities.jp/kwhr0/)
 [絵箱](http://nekobooks.com/tools/ebako/)
 * [MenuCalendarClock](http://www.objectpark.net/mcc.html)
 * [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html)
@@ -26,7 +26,6 @@
 * [MenuMeters](http://www.ragingmenace.com/software/menumeters/index.html) [MiniUsage](http://nsek.net/SYW/software/japanese/miniusage/index.html)
 * [iStat Pro, a Dashboard Widget by iSlayer](http://www.islayer.com/apps/istatpro/)
 * [Vox](http://voxapp.didgeroo.com/index.html) [Cog](http://cogx.org/)
-* [JDiskReport | JGoodies](http://www.jgoodies.com/freeware/jdiskreport/) [[N] MacのHDD使用状態を可視化する「GrandPerspective」と「Disk Inventory X」](http://netafull.net/macsoft/029185.html)
 
 ## prefs
 
