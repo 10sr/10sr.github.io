@@ -70,3 +70,7 @@
 ## memo
 
 * [圧縮解凍ソフトで中身を見ることの出来るフリーウェア -パソコン関連の覚え書き](http://oldmacuser.blog75.fc2.com/blog-entry-68.html)
+* [Simple Notepad メモ帳 ノート - Google Play の Android アプリ](https://play.google.com/store/apps/details?id=org.mightyfrog.android.simplenotepad&feature=search_result)
+[Notes - Google Play の Android アプリ](https://play.google.com/store/apps/details?id=nl.jacobras.notes&feature=search_result)
+[Simply Note - Google Play の Android アプリ](https://play.google.com/store/apps/details?id=it.sephiroth.inotes&feature=search_result)
+[Classic Notes Lite + App Box - Google Play の Android アプリ](https://play.google.com/store/apps/details?id=com.flufflydelusions.app.enotesclassiclite&feature=related_apps)
