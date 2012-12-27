@@ -98,7 +98,7 @@ acpidとかcpufrequtilsとかと連携する
 * lxappearance
     * simple-icon-theme
 * tint2
-    * [dmedvinsky/gsimplecal](https://github.com/dmedvinsky/gsimplecal)
+    * [gsimplecal](https://github.com/dmedvinsky/gsimplecal)
     * volumeicon
 * dmenu
 * feh
