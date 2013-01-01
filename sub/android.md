@@ -1,14 +1,12 @@
 # home
 
-## zeam launcher
-
-使用中
+## *zeam launcher
 
 ## launcherpro
 
 ## nemus launcher
 
-# かれんだー
+# calender
 
 ## すっぴんカレンダー
 
@@ -16,7 +14,7 @@
 
 ## extdatewidget
 
-## minimalistic text
+## *minimalistic text
 
 # lock
 
@@ -53,7 +51,7 @@ no screen off と併用するとスリープする
 
 なんかよく分からない
 
-## just player
+## *just player
 
 ## ez folder player free
 
@@ -144,7 +142,7 @@ no screen off と併用するとスリープする
 上のメニューいらない気がする
 文字をもっと小さくしたい
 
-## twicca
+## *twicca
 
 ## trumpet
 
@@ -270,15 +268,19 @@ likeがない
 
 終了がしにくい
 
-## dolphin browser
-
-表示領域がちょっと小さい
+## *dolphin browser
 
 ## ilunascape
 
 タブが少し邪魔
 
+## boat browser
+
+背景が必ず黒い。なんだこれ
+
 # pixiv
+
+## *pxviewer
 
 ## pixroid
 
