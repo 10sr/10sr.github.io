@@ -13,6 +13,7 @@
 
 <ul class="menu">
 <li><a href="index.html">index</a></li>
+<li><a href="android-sdk.html">android-sdk</a></li>
 <li><a href="applications.html">applications</a></li>
 <li><a href="wlan.html">wlan</a></li>
 </ul>
@@ -21,45 +22,68 @@
 <div class="page">
 <div class="content">
 <p><a href="https://wiki.archlinux.org/index.php/List_of_Applications">https://wiki.archlinux.org/index.php/List_of_Applications</a></p>
+
 <p>systemdに移行したあたりで変わった部分があるかも</p>
+
 <h3>acpid</h3>
+
 <p>電源の動作を設定するデーモン。電源ボタンの動作、ノートPCを閉じたときの動作とかも設定できる。</p>
+
 <h3>pm-utils</h3>
+
 <p>suspend, hibernateなどの動作を細かく設定できる。pm-suspendとかの動作には管理者権限が必要。</p>
+
 <h3>cpufrequtils</h3>
+
 <p>cpuの周波数を操作するデーモン</p>
+
 <h3>dbus</h3>
+
 <p>なんかいろんなアプリケーションで使われるメッセージシステム。</p>
+
 <h3>udev</h3>
+
 <p>ユーザによるディスクのマウント (HALはobsolete)</p>
+
 <h3>policykit</h3>
+
 <h3>upower</h3>
+
 <p>一般ユーザが電源落とすのに必要かも</p>
+
 <h3>locate</h3>
+
 <p><a href="http://carolina.mff.cuni.cz/~trmac/blog/mlocate/">mlocate</a>
 をインストールする</p>
+
 <h3>laptop-mode tools</h3>
+
 <p>ノートPCでの省電力とかの設定をうまくやるもの？
 acpidとかcpufrequtilsとかと連携する</p>
+
 <ul>
 <li>→ <a href="wlan">wlan</a></li>
 <li><a href="https://bbs.archlinux.org/viewtopic.php?pid=1066184#p1066184">[SOLVED]laptop-mode: failed - udev not active? (Page 1) / Laptop Issues / Arch Linux Forums</a>
 のとおりに、<code>/usr/share/laptop-mode-tools/modules/hdparm</code>のはじめの辺りにある<code>/sbin/udevadm</code>を<code>/usr/bin/udevadm</code>に書き換え</li>
-<li>
-<p>/etc/laptop-mode/conf.d/dpms-standby.conf で</p>
+<li><p>/etc/laptop-mode/conf.d/dpms-standby.conf で</p>
+
 <pre><code>BATT_DPMS_STANDBY=300
 LM_AC_DPMS_STANDBY=1800
 NOLM_AC_DPMS_STANDBY=1800
 </code></pre>
-<p>を設定</p>
-</li>
+
+<p>を設定</p></li>
 </ul>
+
 <h3>cron</h3>
+
 <ul>
 <li>はじめから入ってる</li>
 <li>ローカルでメール送りつけるようなのは多分<a href="https://wiki.archlinux.org/index.php/Local_Mail_Delivery_with_Postfix">ここらへん</a>参照。</li>
 </ul>
+
 <h2>テキスト系の</h2>
+
 <ul>
 <li>bash-completion</li>
 <li>links</li>
@@ -74,14 +98,19 @@ NOLM_AC_DPMS_STANDBY=1800
 <li>glances</li>
 <li>ncdu</li>
 </ul>
+
 <h2>player</h2>
+
 <ul>
 <li>moc xmms2</li>
 <li>cmus</li>
 <li>mpg123</li>
 </ul>
+
 <h2>desktop applications</h2>
+
 <p>基本的にあんまり大きくないもの</p>
+
 <ul>
 <li>wicd : see <a href="wlan">wlan</a></li>
 <li>libnotify notify-sendがある</li>
@@ -97,50 +126,54 @@ NOLM_AC_DPMS_STANDBY=1800
 <li>gstreamer0.10-plugins</li>
 <li>udisks - udevのラッパーみたいなもの？よく分かってない。
 とりあえずこれ入れると、pcmanfmとかでディスクの一般ユーザでのマウントができるようになる</li>
-<li>pcmanfm<ul>
-<li><a href="https://wiki.archlinux.org/index.php/Pcmanfm#Trashcan_not_working.3F">PCManFM Trashcan not working? - ArchWiki</a><ul>
+<li>pcmanfm
+<ul>
+<li><a href="https://wiki.archlinux.org/index.php/Pcmanfm#Trashcan_not_working.3F">PCManFM Trashcan not working? - ArchWiki</a>
+<ul>
 <li>gvfsをインストール</li>
 <li>~/.xinitrc に <code>exec ck-launch-session dbus-launch openbox-session</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>dropbox<ul>
+</ul></li>
+</ul></li>
+<li>dropbox
+<ul>
 <li>設定でシステム起動時に起動を有効にすると、~/.config/autostart/dropbox.desktopが生成される</li>
-</ul>
-</li>
+</ul></li>
 <li>pinta</li>
 <li>mtpaint</li>
 <li>rubyroom</li>
 </ul>
+
 <h3>openbox</h3>
+
 <ul>
-<li>lxappearance<ul>
+<li>lxappearance
+<ul>
 <li>simple-icon-theme</li>
-</ul>
-</li>
-<li>tint2<ul>
+</ul></li>
+<li>tint2
+<ul>
 <li><a href="https://github.com/dmedvinsky/gsimplecal">gsimplecal</a></li>
 <li>volumeicon</li>
-</ul>
-</li>
+</ul></li>
 <li>dmenu</li>
 <li>feh</li>
-<li>obmenugen-bin<ul>
+<li>obmenugen-bin
+<ul>
 <li>インストールしたら既存のmenu.xmlをバックアップしておく。</li>
 <li><code>$ obmenugen</code> とすればmenu.xmlがpipeを使ってメニューを自動生成するように書き換えられる。</li>
 <li>wikiからコピーしたexit-menuを付け加える。</li>
 <li>最終的な状態：<a href="https://gist.github.com/2101119#comments">obmenugen generated menu for openbox — Gist</a></li>
 <li>rc.xmlにはこう：<a href="https://gist.github.com/1998681">openbox configuration newly added codes — Gist</a></li>
-</ul>
-</li>
-<li><a href="https://wiki.archlinux.org/index.php/Xcompmgr">Xcompmgr - ArchWiki</a><ul>
+</ul></li>
+<li><a href="https://wiki.archlinux.org/index.php/Xcompmgr">Xcompmgr - ArchWiki</a>
+<ul>
 <li>xcompmgrを入れて、xcompmgr -cするだけ。</li>
 <li>とりあえず起動時に設定したけど常用するかは様子見</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h3>fonts</h3>
+
 <ul>
 <li>日本語フォント monapo</li>
 <li>その他、
@@ -156,18 +189,25 @@ opendesktop-fonts
 ttf-baekmuk</li>
 <li>~/.fonts.conf　に　<a href="https://gist.github.com/2051565">my font config — Gist</a>　のように書いた。</li>
 </ul>
+
 <h3><a href="https://wiki.archlinux.org/index.php/Xdg-open">Xdg-open - ArchWiki</a></h3>
+
 <p>多分普通はpcmanfmで開いたほうが良い</p>
+
 <p>まず、 xdg-mime query filetype a.txt と xdg-mime query default text/plain を調べる。
 それがないと、mimeopenを使う。設定はxdg-mimeよりmimeopenのほうがずっと楽。</p>
+
 <ol>
 <li><code>perl-file-mimeinfo</code>をインストール</li>
 <li>パスが通ってないので、ログアウトするかmimeopenを探す。</li>
 <li><code>$ mimeopen -d file.ext</code> で開くプログラムが設定できる。</li>
 <li>これ以降は、xdg-openでも上で設定したプログラムで開かれるようになる。</li>
 </ol>
+
 <hr />
+
 <h1><a href="https://wiki.archlinux.org/index.php/LaTeX">LaTeX</a></h1>
+
 <ul>
 <li>texlive-most で出てきたのをとりあえず全部入れる</li>
 <li>あと texlive-langcjk</li>
@@ -176,8 +216,11 @@ ttf-baekmuk</li>
 <li><a href="http://d.hatena.ne.jp/bellbind/20101105/1288966798">platexをやめてxelatexを使おう - ラシウラ</a></li>
 <li><a href="http://d.hatena.ne.jp/hiroki_f/20111114/1321227216">lyxで日本語を使う。(ubuntu 11.10) - hiroki_fの日記</a> 多分不要？</li>
 </ul>
+
 <hr />
+
 <h2>入れるか迷ってるもの</h2>
+
 <ul>
 <li>prey</li>
 <li>kupfer</li>
@@ -189,13 +232,15 @@ ttf-baekmuk</li>
 <li>nmon</li>
 <li>dstat</li>
 </ul>
+
 <h2><a href="http://kkovacs.eu/cool-but-obscure-unix-tools">Cool, but obscure unix tools :: Software architect Kristof Kovacs</a></h2>
+
 </div>
 
 <div class="footer">
-<p class="time">Page generated from <a href="applications.md">applications.md</a> at Thu, 27 Dec 2012 19:06:06 +0900.</p>
+<p class="time">Page generated from <a href="applications.md">applications.md</a> at Fri, 04 Jan 2013 16:52:04 +0900.</p>
 </div>
 </div>
 </body>
 </html>
-<!-- Last update : Thu, 27 Dec 2012 19:06:06 +0900 -->
+<!-- Last update : Fri, 04 Jan 2013 16:52:04 +0900 -->
