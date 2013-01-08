@@ -70,6 +70,7 @@ ln
 * [ぶく速 女の子主人公とヒーロー（性別はは逆でも可）の恋愛要素があり、地の文があってモノローグが多すぎないファンタジー](http://2chbooknews.blog114.fc2.com/blog-entry-3623.html)
 * [ぶく速 主人公にばれてはいけない秘密(実は女とかなりすましとか)があるヒヤヒヤ系で恋愛要素ありの作品](http://2chbooknews.blog114.fc2.com/blog-entry-3612.html)
 * [ぶく速 少年少女、おっさんと少女、男女二人が理不尽で暴力的な世界に必死に抗おうとする物語](http://2chbooknews.blog114.fc2.com/blog-entry-3962.html)
+* [ぶく速 独特の世界観があって、この世界に長く浸かっていたいと思わせるような作品](http://2chbooknews.blog114.fc2.com/blog-entry-4001.html)
 * 浅井ラボ
 * 瑞智 士記
 * [回帰祭 小林めぐみ](http://d.hatena.ne.jp/sangencyaya/20081113/1226586279)
