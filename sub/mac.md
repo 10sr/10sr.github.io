@@ -1,3 +1,7 @@
+## bug
+
+* [spaces キーボード - Bing](http://www.bing.com/search?q=spaces%20%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89)
+
 ## todo:
 
 * 軽いブラウザ
