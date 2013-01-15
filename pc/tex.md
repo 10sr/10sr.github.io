@@ -1,4 +1,5 @@
-# tex
+tex
+====
 
 [なぜ TeX Live なのか](http://fugenji.org/~thomas/texlive-guide/why.html)
 
@@ -12,13 +13,13 @@ txlive 2012以降を使うこと。
 * ptexlive: texliveの日本語対応
 * e-tex: レジスタ制限の拡張
 * uptex/uplatex: unicode 化
-* babel: 多言語対応。つまり、多言語を同時に扱うパッケージ？
+* babel: 多言語対応。つまり、多言語を同時に扱うパッケージ？不要か？
 
 ## フォント
 
 [日本語フォントのセットアップ](http://www.fugenji.org/~thomas/texlive-guide/font_setup.html)
 
-## cmap-adobe-japan1
+### cmap-adobe-japan1
 
 なんだろうこれ？古い話かも
 
@@ -40,6 +41,22 @@ txlive 2012以降を使うこと。
 * luainputenc (多分要らない)
 * xindy
 
+## arch linux
+
+# [LaTeX](https://wiki.archlinux.org/index.php/LaTeX)
+* texlive-most で出てきたのをとりあえず全部入れる
+* あと texlive-langcjk
+* [texlive の xelatex で日本語UTFの文書を - popipopeの日記](http://d.hatena.ne.jp/popipope/20110514/1305374592)
+* [XeLaTeX で日本語する件について [電脳世界の奥底にて]](http://zrbabbler.sp.land.to/xelatex.html)
+* [platexをやめてxelatexを使おう - ラシウラ](http://d.hatena.ne.jp/bellbind/20101105/1288966798)
+* [lyxで日本語を使う。(ubuntu 11.10) - hiroki_fの日記](http://d.hatena.ne.jp/hiroki_f/20111114/1321227216) 多分不要？
+
+## tips
+
+### 図
+
+ドロー系使って、 ESP で保存するといいらしい。
+
 # lyx 
 
 jsarticle が使用不可になってて治らない。 reconfigure できない。
@@ -52,7 +69,10 @@ jsarticle が使用不可になってて治らない。 reconfigure できない
 
 ## xetex
 
-* 図の挿入時 `fig' になる
+* 図の挿入時 'fig' になる
+  => プリアンブル書いたら '図' にできるようになった。platex必要ないかも
+
+**************
 
 # その他の ref
 

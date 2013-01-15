@@ -39,14 +39,14 @@
 <li>ptexlive: texliveの日本語対応</li>
 <li>e-tex: レジスタ制限の拡張</li>
 <li>uptex/uplatex: unicode 化</li>
-<li>babel: 多言語対応。つまり、多言語を同時に扱うパッケージ？</li>
+<li>babel: 多言語対応。つまり、多言語を同時に扱うパッケージ？不要か？</li>
 </ul>
 
 <h2>フォント</h2>
 
 <p><a href="http://www.fugenji.org/~thomas/texlive-guide/font_setup.html">日本語フォントのセットアップ</a></p>
 
-<h2>cmap-adobe-japan1</h2>
+<h3>cmap-adobe-japan1</h3>
 
 <p>なんだろうこれ？古い話かも</p>
 
@@ -72,6 +72,25 @@
 <li>xindy</li>
 </ul>
 
+<h2>arch linux</h2>
+
+<h1><a href="https://wiki.archlinux.org/index.php/LaTeX">LaTeX</a></h1>
+
+<ul>
+<li>texlive-most で出てきたのをとりあえず全部入れる</li>
+<li>あと texlive-langcjk</li>
+<li><a href="http://d.hatena.ne.jp/popipope/20110514/1305374592">texlive の xelatex で日本語UTFの文書を - popipopeの日記</a></li>
+<li><a href="http://zrbabbler.sp.land.to/xelatex.html">XeLaTeX で日本語する件について [電脳世界の奥底にて]</a></li>
+<li><a href="http://d.hatena.ne.jp/bellbind/20101105/1288966798">platexをやめてxelatexを使おう - ラシウラ</a></li>
+<li><a href="http://d.hatena.ne.jp/hiroki_f/20111114/1321227216">lyxで日本語を使う。(ubuntu 11.10) - hiroki_fの日記</a> 多分不要？</li>
+</ul>
+
+<h2>tips</h2>
+
+<h3>図</h3>
+
+<p>ドロー系使って、 ESP で保存するといいらしい。</p>
+
 <h1>lyx</h1>
 
 <p>jsarticle が使用不可になってて治らない。 reconfigure できない。
@@ -85,8 +104,11 @@
 <h2>xetex</h2>
 
 <ul>
-<li>図の挿入時 `fig' になる</li>
+<li>図の挿入時 'fig' になる
+=> プリアンブル書いたら '図' にできるようになった。platex必要ないかも</li>
 </ul>
+
+<hr />
 
 <h1>その他の ref</h1>
 
@@ -98,4 +120,4 @@
 <hr />
 </body>
 </html>
-<!-- Last update : Tue, 15 Jan 2013 23:47:54 +0900 -->
+<!-- Last update : Wed, 16 Jan 2013 03:05:05 +0900 -->
