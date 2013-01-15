@@ -37,3 +37,23 @@ txlive 2012以降を使うこと。
 
 * etoolbox, makecmds を導入
 * collection-langcjk (依存で色々入る)
+* luainputenc (多分要らない)
+* xindy
+
+# lyx 
+
+jsarticle が使用不可になってて治らない。 reconfigure できない。
+ひとまず xetex 使う。
+=> ターミナルから起動 `open a.lyx` したらなぜか reconfigure 出来た。
+
+## platex + dvipdfmx
+
+基本的に、 [LyX/設定 - TeX Wiki](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?LyX%2F%E8%A8%AD%E5%AE%9A) の設定に従うとできた。ただし、文書クラスのクラスオプションは `papersize' を含めない。言語は、 日本語(cjk不使用)jis だとなぜか上手くいく。
+
+## xetex
+
+* 図の挿入時 `fig' になる
+
+# その他の ref
+
+* [Idea, Design, Engineering, Architecture, etc: LyX 1.6.0 on TeX Live 2010](http://voidptr.seesaa.net/article/182189330.html)
