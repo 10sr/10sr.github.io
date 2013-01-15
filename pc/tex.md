@@ -43,7 +43,8 @@ txlive 2012以降を使うこと。
 
 ## arch linux
 
-# [LaTeX](https://wiki.archlinux.org/index.php/LaTeX)
+[LaTeX](https://wiki.archlinux.org/index.php/LaTeX)
+
 * texlive-most で出てきたのをとりあえず全部入れる
 * あと texlive-langcjk
 * [texlive の xelatex で日本語UTFの文書を - popipopeの日記](http://d.hatena.ne.jp/popipope/20110514/1305374592)
