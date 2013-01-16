@@ -58,6 +58,8 @@ acpidとかcpufrequtilsとかと連携する
 * slurm
 * glances
 * ncdu
+* [source-highlight](http://www.geocities.jp/harddiskdive/source-highlight/)
+    * [Syntax highlighting in LESS](http://judsonsnotes.com/notes/index.php?option=com_content&view=article&id=564:syntax-highlighting-in-less&catid=37:tech-notes&Itemid=59)
 
 ## player
 
