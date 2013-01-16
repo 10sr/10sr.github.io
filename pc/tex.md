@@ -23,6 +23,11 @@ txlive 2012以降を使うこと。
 
 なんだろうこれ？古い話かも
 
+## xetex
+
+[XeLaTeX で日本語する件について [電脳世界の奥底にて]](http://zrbabbler.sp.land.to/xelatex.html#sec-zxjatype)
+[ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ [電脳世界の奥底にて]](http://zrbabbler.sp.land.to/zxjatype.html)
+
 ## mac
 
 [MacTeX - TeX Users Group](http://www.tug.org/mactex/)
@@ -40,6 +45,7 @@ txlive 2012以降を使うこと。
 * collection-langcjk (依存で色々入る)
 * luainputenc (多分要らない)
 * xindy
+* zxjatype いつの間にか入ってた
 
 ## arch linux
 
@@ -54,6 +60,8 @@ txlive 2012以降を使うこと。
 
 ## tips
 
+* なんか導入したら texhash を実行。
+
 ### 図
 
 ドロー系使って、 ESP で保存するといいらしい。
@@ -66,12 +74,17 @@ jsarticle が使用不可になってて治らない。 reconfigure できない
 
 ## platex + dvipdfmx
 
-基本的に、 [LyX/設定 - TeX Wiki](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?LyX%2F%E8%A8%AD%E5%AE%9A) の設定に従うとできた。ただし、文書クラスのクラスオプションは `papersize' を含めない。言語は、 日本語(cjk不使用)jis だとなぜか上手くいく。
+基本的に、 [LyX/設定](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?LyX%2F%E8%A8%AD%E5%AE%9A) の設定に従うとできた。ただし、文書クラスのクラスオプションは 'papersize' を含めない。言語は、 日本語(cjk不使用)jis だとなぜか上手くいく。
 
 ## xetex
 
 * 図の挿入時 'fig' になる
   => プリアンブル書いたら '図' にできるようになった。platex必要ないかも
+
+### zxjatype
+
+* [LyX - TeX Wiki](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?LyX) を参考に、レイアウトファイルを加える。
+  => 選択には出たけど、利用不可になる。 bxjsarticle.cls がない？
 
 **************
 
