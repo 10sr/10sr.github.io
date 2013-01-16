@@ -20,7 +20,7 @@
 * xcode
 * iterm2 command -> option
 * xquartz (latest)
-* kedit coteditor
+* coteditor
 * [Xee](http://wakaba.c3.cx/s/apps/xee.html)
 [PictPicker](http://www.geocities.jp/kwhr0/)
 [絵箱](http://nekobooks.com/tools/ebako/)
@@ -47,9 +47,15 @@
 * ヘッドフォンを挿してない時の音量を消音にする
 * ln -s CotEditor.app TextEdit.app
 
+## coteditor
+
+* 行末文字、タブ
+* 現在行
+* markdown syntax: [CotEditor用シンタックス定義 -Goodies -Works //ヴォルフロッシュ](http://wolfrosch.com/works/goodies/coteditor_syntax)
+
 ## tex
 
-[pc/tex](../pc/tex.html)
+[tex](tex.html)
 
 ## keys
 
