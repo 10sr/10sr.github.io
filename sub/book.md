@@ -74,6 +74,7 @@ ln
 * [ぶく速 ここ三年ぐらいの近作で少女向けレーベルのオススメって何かありますか？](http://2chbooknews.blog114.fc2.com/blog-entry-4009.html)
 * [ぶく速 人外または異世界人と普通の人の共同生活もの](http://2chbooknews.blog114.fc2.com/blog-entry-4025.html)
 * [ぶく速 1巻か上下巻ですっきり完結しているラノベ](http://2chbooknews.blog114.fc2.com/blog-entry-4054.html)
+* [ぶく速 あくまで学生女の子主人公で架空現代みたいな世界観な少女小説](http://2chbooknews.blog114.fc2.com/blog-entry-4062.html)
 * 浅井ラボ
 * 瑞智 士記
 * [回帰祭 小林めぐみ](http://d.hatena.ne.jp/sangencyaya/20081113/1226586279)
