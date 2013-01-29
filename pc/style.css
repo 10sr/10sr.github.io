@@ -1,0 +1,17 @@
+ul.menu {
+    /* margin : 0; */
+
+    /* padding : 1%; */
+
+    list-style-type : none;
+    text-align : right;
+
+}
+
+ul.menu li {
+    display : inline;
+}
+
+p.footer {
+    text-align : right;
+}
