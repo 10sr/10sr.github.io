@@ -24,9 +24,9 @@
 * この4つの違いが分からない。見た目では変わらないけど違いあるんだろうか？
 
 ### コンソールのキーマップ
-`/usr/share/kbd/keymaps`あたりのファイルを編集し、`/etc/rc.conf`に設定
+`/usr/share/kbd/keymaps`あたりのファイルを編集し、`/etc/vconsole.conf`に設定
 
-* capslockをctrlに
+* capslockをctrlに : change the line `keycode 58 = Caps_Lock` to `keycode 58 = Control`
 * backspaceがemacsで動くように修正
 * 結果→[capslock as ctrl, fix backspace for emacs — Gist](https://gist.github.com/2007521)
 * showkey を使うことで、キーコードみたいなのを調べられる
@@ -69,6 +69,11 @@
 * `# mkswap /2g.swap`
 * `# swapon /2g.swap` で終了するまでスワップが有効になる
 * `/etc/fstab` に `/2g.swap none swap defaults 0 0` を追記。
+
+### sudo
+
+1. visudo で `%wheel      ALL=(ALL) ALL` を有効化
+2. `gpasswd -a usename wheel`
 
 ***
 

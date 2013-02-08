@@ -6,22 +6,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <link rel="stylesheet" href="style.css" type="text/css" />
-<title>wlan | Arch Linux Memo</title>
+<title>network | Arch Linux Memo</title>
 </head>
 <body>
-<h1 class="title">wlan | <a href="index.html">archlinux</a></h1>
+<h1 class="title">network | <a href="index.html">archlinux</a></h1>
 
 <ul class="menu">
 <li><a href="index.html">index</a></li>
 <li><a href="android-sdk.html">android-sdk</a></li>
 <li><a href="applications.html">applications</a></li>
-<li><a href="wlan.html">wlan</a></li>
+<li><a href="network.html">network</a></li>
 </ul>
 
 
 <div class="page">
 <div class="content">
-<h3>wlan</h3>
+<h1>aspireone</h1>
 
 <ul>
 <li><code>$ lspci -nn | grep Broadcom</code></li>
@@ -88,12 +88,34 @@
 
 <p>[14e4:4315]</p>
 
+<h1>lets note</h1>
+
+<h2>wired</h2>
+
+<ol>
+<li>ip link set eth0 up</li>
+<li>dhcpcd eth0</li>
+</ol>
+
+<h2>wireless</h2>
+
+<ul>
+<li>インテル® Centrino® Advanced-N + WiMAX 6250</li>
+<li>wlp2s0</li>
+<li>wireless_tools, iw</li>
+<li>lspci -v すると、 Kernel driver に iwlwifi が使われてて、なんかできてるように見える？</li>
+<li>ip link set wlp2s0 up しても UP にはならない。そのまま dhcpcd wlp2s0 すれば良い。</li>
+<li><a href="https://wiki.archlinux.org/index.php/Wicd">Wicd - ArchWiki</a></li>
+</ul>
+
+<p>wifi-menu するとなんかできる？</p>
+
 </div>
 
 <div class="footer">
-<p class="time">Page generated from <a href="wlan.md">wlan.md</a> at Fri, 04 Jan 2013 16:52:04 +0900.</p>
+<p class="time">Page generated from <a href="network.md">network.md</a> at Fri, 08 Feb 2013 17:38:44 +0900.</p>
 </div>
 </div>
 </body>
 </html>
-<!-- Last update : Fri, 04 Jan 2013 16:52:04 +0900 -->
+<!-- Last update : Fri, 08 Feb 2013 17:38:44 +0900 -->

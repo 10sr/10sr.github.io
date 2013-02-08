@@ -1,4 +1,4 @@
-### wlan
+# aspireone
 
 * `$ lspci -nn | grep Broadcom`
 
@@ -49,3 +49,21 @@
 [Acer Aspire One D250 - ArchWiki](https://wiki.archlinux.org/index.php/Acer_Aspire_One_D250)
 
 [14e4:4315]
+
+# lets note
+
+## wired
+
+1. ip link set eth0 up
+2. dhcpcd eth0
+
+## wireless
+
+* インテル® Centrino® Advanced-N + WiMAX 6250
+* wlp2s0
+* wireless_tools, iw
+* lspci -v すると、 Kernel driver に iwlwifi が使われてて、なんかできてるように見える？
+* ip link set wlp2s0 up しても UP にはならない。そのまま dhcpcd wlp2s0 すれば良い。
+* [Wicd - ArchWiki](https://wiki.archlinux.org/index.php/Wicd)
+
+wifi-menu するとなんかできる？
