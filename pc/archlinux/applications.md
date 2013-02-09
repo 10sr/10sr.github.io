@@ -30,6 +30,12 @@ cpuの周波数を操作するデーモン
 ノートPCでの省電力とかの設定をうまくやるもの？
 acpidとかcpufrequtilsとかと連携する
 
+### [Secure Shell](https://wiki.archlinux.org/index.php/Secure_Shell)
+
+* pacman -S openssh
+* systemctl enable sshd.service
+* PasswordAuthentication yes
+
 * → [wlan](wlan)
 * [[SOLVED]laptop-mode: failed - udev not active? (Page 1) / Laptop Issues / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?pid=1066184#p1066184)
 のとおりに、`/usr/share/laptop-mode-tools/modules/hdparm`のはじめの辺りにある`/sbin/udevadm`を`/usr/bin/udevadm`に書き換え

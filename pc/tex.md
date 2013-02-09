@@ -101,3 +101,4 @@ jsarticle が使用不可になってて治らない。 reconfigure できない
 # その他の ref
 
 * [Idea, Design, Engineering, Architecture, etc: LyX 1.6.0 on TeX Live 2010](http://voidptr.seesaa.net/article/182189330.html)
+* [sakkiler's Note](http://sakkiler.hatenablog.com/entries/2012/10/18)
