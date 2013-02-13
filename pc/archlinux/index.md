@@ -75,6 +75,16 @@
 1. visudo で `%wheel      ALL=(ALL) ALL` を有効化
 2. `gpasswd -a usename wheel`
 
+### [コンソールフォント](https://wiki.archlinux.org/index.php/Fonts#Console_fonts) # なんかできない…
+
+`/etc/vconsole.conf` に以下を記述
+
+    FONT="LatGrkCyr-8x16"
+
+`/etc/mkinitcpio.conf` の HOOKS に consolemap を追
+
+`#mkinitcpio -p linux`
+
 ***
 
 ## memo
