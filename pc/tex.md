@@ -15,7 +15,9 @@ txlive 2012以降を使うこと。
 * uptex/uplatex: unicode 化
 * babel: 多言語対応。つまり、多言語を同時に扱うパッケージ？不要か？
 
-## フォント
+
+フォント
+-----
 
 [日本語フォントのセットアップ](http://www.fugenji.org/~thomas/texlive-guide/font_setup.html)
 
@@ -23,12 +25,21 @@ txlive 2012以降を使うこと。
 
 なんだろうこれ？古い話かも
 
-## xetex
+
+xetex
+-----
 
 [XeLaTeX で日本語する件について [電脳世界の奥底にて]](http://zrbabbler.sp.land.to/xelatex.html#sec-zxjatype)
 [ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ [電脳世界の奥底にて]](http://zrbabbler.sp.land.to/zxjatype.html)
 
-## mac
+
+
+install
+=======
+
+
+mac
+---
 
 [MacTeX - TeX Users Group](http://www.tug.org/mactex/)
 -> smaller packages
@@ -36,7 +47,7 @@ txlive 2012以降を使うこと。
 * basictex をインストール
 * maxtex-additions も入れたかも
 
-###  tlmgr / texlive manager (Applications -> utility)
+### tlmgr / texlive manager (Applications -> utility)
 
 [mactlmgr - Mac OS X GUI for TeX Live Manager](http://code.google.com/p/mactlmgr/)
 プログレスバーが出ないけどちゃんと動いてるらしい
@@ -47,18 +58,26 @@ txlive 2012以降を使うこと。
 * xindy
 * zxjatype いつの間にか入ってた
 
-## arch linux
+
+arch linux
+----------
 
 [LaTeX](https://wiki.archlinux.org/index.php/LaTeX)
 
 * texlive-most で出てきたのをとりあえず全部入れる
 * あと texlive-langcjk
-* [texlive の xelatex で日本語UTFの文書を - popipopeの日記](http://d.hatena.ne.jp/popipope/20110514/1305374592)
-* [XeLaTeX で日本語する件について [電脳世界の奥底にて]](http://zrbabbler.sp.land.to/xelatex.html)
-* [platexをやめてxelatexを使おう - ラシウラ](http://d.hatena.ne.jp/bellbind/20101105/1288966798)
-* [lyxで日本語を使う。(ubuntu 11.10) - hiroki_fの日記](http://d.hatena.ne.jp/hiroki_f/20111114/1321227216) 多分不要？
+* 以上で、 lyx 上で jarticle が使えるようになった気が
 
-## tips
+### font
+
+[日本語フォントのセットアップ](http://fugenji.org/~thomas/texlive-guide/font_setup.html)
+
+フォントマップは `./texmf-dist/fonts/map/dvipdfmx/jfontmaps/` かも。
+
+`sudo updmap-setup-kanji ipaex` で使えるようになった感
+
+tips
+----
 
 * なんか導入したら texhash を実行。
 
@@ -66,7 +85,8 @@ txlive 2012以降を使うこと。
 
 ドロー系使って、 ESP で保存するといいらしい。
 
-# lyx 
+lyx
+===
 
 jsarticle が使用不可になってて治らない。 reconfigure できない。
 ひとまず xetex 使う。
@@ -102,3 +122,9 @@ jsarticle が使用不可になってて治らない。 reconfigure できない
 
 * [Idea, Design, Engineering, Architecture, etc: LyX 1.6.0 on TeX Live 2010](http://voidptr.seesaa.net/article/182189330.html)
 * [sakkiler's Note](http://sakkiler.hatenablog.com/entries/2012/10/18)
+* [texlive の xelatex で日本語UTFの文書を - popipopeの日記](http://d.hatena.ne.jp/popipope/20110514/1305374592)
+* [XeLaTeX で日本語する件について [電脳世界の奥底にて]](http://zrbabbler.sp.land.to/xelatex.html)
+* [platexをやめてxelatexを使おう - ラシウラ](http://d.hatena.ne.jp/bellbind/20101105/1288966798)
+* [lyxで日本語を使う。(ubuntu 11.10) - hiroki_fの日記](http://d.hatena.ne.jp/hiroki_f/20111114/1321227216) 多分不要？
+
+
