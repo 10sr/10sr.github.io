@@ -126,9 +126,12 @@ acpidとかcpufrequtilsとかと連携する
 * obmenugen-bin
     * インストールしたら既存のmenu.xmlをバックアップしておく。
     * `$ obmenugen` とすればmenu.xmlがpipeを使ってメニューを自動生成するように書き換えられる。
-    * wikiからコピーしたexit-menuを付け加える。
-    * 最終的な状態：[obmenugen generated menu for openbox — Gist](https://gist.github.com/2101119#comments)
-    * rc.xmlにはこう：[openbox configuration newly added codes — Gist](https://gist.github.com/1998681)
+    * [wiki](https://wiki.archlinux.org/index.php/Openbox_Themes_and_Apps#Logout_dialog)
+    からコピーしたexit-menuを付け加える。
+    * 最終的な状態：
+    [obmenugen generated menu for openbox — Gist](https://gist.github.com/2101119#comments)
+    * rc.xmlにはこう：
+    [openbox configuration newly added codes — Gist](https://gist.github.com/1998681)
 * [Xcompmgr - ArchWiki](https://wiki.archlinux.org/index.php/Xcompmgr)
     * xcompmgrを入れて、xcompmgr -cするだけ。
     * とりあえず起動時に設定したけど常用するかは様子見
