@@ -1,36 +1,47 @@
 <https://wiki.archlinux.org/index.php/List_of_Applications>
 
+daemons
+=======
+
 systemdに移行したあたりで変わった部分があるかも
 
-### acpid
+## acpid
+
 電源の動作を設定するデーモン。電源ボタンの動作、ノートPCを閉じたときの動作とかも設定できる。
 
-### pm-utils
+## pm-utils
+
 suspend, hibernateなどの動作を細かく設定できる。pm-suspendとかの動作には管理者権限が必要。
 
-### cpufrequtils
+## cpufrequtils
+
 cpuの周波数を操作するデーモン
 
-### dbus
+## dbus
+
 なんかいろんなアプリケーションで使われるメッセージシステム。
 
-### udev
+## udev
+
 ユーザによるディスクのマウント (HALはobsolete)
 
-### policykit
+## policykit
 
-### upower
+## upower
+
 一般ユーザが電源落とすのに必要かも
 
-### locate
+## locate
+
 [mlocate](http://carolina.mff.cuni.cz/~trmac/blog/mlocate/)
 をインストールする
 
-### laptop-mode tools
+## laptop-mode tools
+
 ノートPCでの省電力とかの設定をうまくやるもの？
 acpidとかcpufrequtilsとかと連携する
 
-### [Secure Shell](https://wiki.archlinux.org/index.php/Secure_Shell)
+## [Secure Shell](https://wiki.archlinux.org/index.php/Secure_Shell)
 
 * pacman -S openssh
 * systemctl enable sshd.service
@@ -46,11 +57,12 @@ acpidとかcpufrequtilsとかと連携する
         NOLM_AC_DPMS_STANDBY=1800
 を設定
 
-### cron
+## cron
+
 * はじめから入ってる
 * ローカルでメール送りつけるようなのは多分[ここらへん](https://wiki.archlinux.org/index.php/Local_Mail_Delivery_with_Postfix)参照。
 
-## テキスト系の
+# テキスト系の
 
 * bash-completion
 * links
@@ -74,7 +86,8 @@ acpidとかcpufrequtilsとかと連携する
 * mpg123
 
 
-## desktop applications
+# desktop applications
+
 基本的にあんまり大きくないもの
 
 * wicd : see [wlan](wlan)
@@ -101,7 +114,7 @@ acpidとかcpufrequtilsとかと連携する
 * mtpaint
 * rubyroom
 
-### openbox
+## openbox
 
 * lxappearance
     * simple-icon-theme
@@ -113,14 +126,18 @@ acpidとかcpufrequtilsとかと連携する
 * obmenugen-bin
     * インストールしたら既存のmenu.xmlをバックアップしておく。
     * `$ obmenugen` とすればmenu.xmlがpipeを使ってメニューを自動生成するように書き換えられる。
-    * wikiからコピーしたexit-menuを付け加える。
-    * 最終的な状態：[obmenugen generated menu for openbox — Gist](https://gist.github.com/2101119#comments)
-    * rc.xmlにはこう：[openbox configuration newly added codes — Gist](https://gist.github.com/1998681)
+    * [wiki](https://wiki.archlinux.org/index.php/Openbox_Themes_and_Apps#Logout_dialog)
+    からコピーしたexit-menuを付け加える。
+    * 最終的な状態：
+    [obmenugen generated menu for openbox — Gist](https://gist.github.com/2101119#comments)
+    * rc.xmlにはこう：
+    [openbox configuration newly added codes — Gist](https://gist.github.com/1998681)
 * [Xcompmgr - ArchWiki](https://wiki.archlinux.org/index.php/Xcompmgr)
     * xcompmgrを入れて、xcompmgr -cするだけ。
     * とりあえず起動時に設定したけど常用するかは様子見
 
-### fonts
+## fonts
+
 * 日本語フォント monapo
 * その他、
 ttf-freebanglafont
@@ -135,7 +152,8 @@ opendesktop-fonts
 ttf-baekmuk
 * ~/.fonts.conf　に　[my font config — Gist](https://gist.github.com/2051565)　のように書いた。
 
-### [Xdg-open - ArchWiki](https://wiki.archlinux.org/index.php/Xdg-open)
+## [Xdg-open - ArchWiki](https://wiki.archlinux.org/index.php/Xdg-open)
+
 多分普通はpcmanfmで開いたほうが良い
 
 まず、 xdg-mime query filetype a.txt と xdg-mime query default text/plain を調べる。
@@ -146,9 +164,23 @@ ttf-baekmuk
 2. `$ mimeopen -d file.ext` で開くプログラムが設定できる。
 3. これ以降は、xdg-openでも上で設定したプログラムで開かれるようになる。
 
+
+## python-gtk
+
+### python-gtk2
+
+* python2 じゃないと使えない？
+
+### gtk3 (gobject)
+
+gtk3, python-gobject を入れる。
+
+gobject, gobject2 があり、それぞれ py2, py3k のパッケージがある（計４つ）。普通は gobject を使えば良い？
+
 ***
-***
-## 入れるか迷ってるもの
+
+# 入れるか迷ってるもの
+
 * prey
 * kupfer
 * bmon
