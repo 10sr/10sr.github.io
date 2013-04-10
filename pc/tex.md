@@ -15,6 +15,11 @@ txlive 2012以降を使うこと。
 * uptex/uplatex: unicode 化
 * babel: 多言語対応。つまり、多言語を同時に扱うパッケージ？不要か？
 
+note
+----
+
+* jbibtex -> pbibtex
+
 
 フォント
 -----
