@@ -7,4 +7,9 @@
 [Reflector](https://wiki.archlinux.org/index.php/Reflector)
 ======
 
+Arandr
+======
+
+* GUI frontend for xrandr
+
 
