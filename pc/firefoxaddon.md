@@ -22,8 +22,10 @@
   <https://addons.mozilla.org/firefox/addon/8186>
 * SQLite Manager 0.7.7
   <http://sqlite-manager.googlecode.com/>
-* Tab Utilities Lite 1.5
+* Tab Utilities Lite 1.5 (Disabled)
   <http://addons.mozilla.org/addon/62581>
+* Tab Utilities Lite CustomEdition 1.1.5.20130408
+  <https://addons.mozilla.org/addon/tab-utilities-lite-customed/>
 * Vertical Tabs 0.9.3
   <https://addons.mozilla.org/firefox/addon/vertical-tabs/>
 * X-notifier 3.0.4
