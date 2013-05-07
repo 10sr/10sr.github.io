@@ -22,7 +22,8 @@ brightness
 * `$ cd /sys/class/backlight`
 * なんか適当に探す。 `max_brightness` を見つつ `brightness` を設定。
 
-    # echo 20 >/sys/class/backlight/acpi_video0/brightness
+
+        # echo 20 >/sys/class/backlight/acpi_video0/brightness
 
 
 Startup

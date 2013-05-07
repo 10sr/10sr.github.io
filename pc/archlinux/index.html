@@ -31,7 +31,8 @@
 <li><code>$ cd /sys/class/backlight</code></li>
 <li>
 <p>なんか適当に探す。 <code>max_brightness</code> を見つつ <code>brightness</code> を設定。</p>
-<h1>echo 20 &gt;/sys/class/backlight/acpi_video0/brightness</h1>
+<pre><code># echo 20 &gt;/sys/class/backlight/acpi_video0/brightness
+</code></pre>
 </li>
 </ul>
 <h2>Startup</h2>
@@ -53,4 +54,4 @@ WantedBy=multi-user.target
 </div>
 </body>
 </html>
-<!-- Last update : Tue, 07 May 2013 11:47:28 +0900 -->
+<!-- Last update : Tue, 07 May 2013 11:49:40 +0900 -->
