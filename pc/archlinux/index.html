@@ -24,7 +24,33 @@
 <li>Download PKGBUILD from <a href="https://aur.archlinux.org/">https://aur.archlinux.org/</a> or somewhere.</li>
 <li>Install by <code>makepkg -si</code></li>
 </ol>
+<h1>Prefs</h1>
+<h2>brightness</h2>
+<p><a href="https://wiki.archlinux.org/index.php/Backlight">Backlight - ArchWiki</a></p>
+<ul>
+<li><code>$ cd /sys/class/backlight</code></li>
+<li>
+<p>なんか適当に探す。 <code>max_brightness</code> を見つつ <code>brightness</code> を設定。</p>
+<h1>echo 20 &gt;/sys/class/backlight/acpi_video0/brightness</h1>
+</li>
+</ul>
+<h2>Startup</h2>
+<p><a href="https://wiki.archlinux.org/index.php/Systemd_FAQ#Q:_How_can_I_make_a_script_start_during_the_boot_process.3F">systemd FAQ - ArchWiki</a></p>
+<p>次のようなファイルを作り、 <code>/etc/systemd/system/myrc.service</code> として保存</p>
+<pre><code>[Unit]
+Description=My script
+
+[Service]
+ExecStart=/usr/local/bin/myrc.sh
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<p>Enable it.</p>
+<pre><code># systemctl enable myrc.service
+</code></pre>
+<p>Create script file and chmod +x.</p>
 </div>
 </body>
 </html>
-<!-- Last update : Wed, 10 Apr 2013 21:27:13 +0900 -->
+<!-- Last update : Tue, 07 May 2013 11:47:28 +0900 -->
