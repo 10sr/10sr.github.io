@@ -8,6 +8,9 @@ vi
 
 [NetDaemon: vi](http://www.srs.ne.jp/~north/netdaemon/vi.html)
 
+* デバッグ
+    `-D` を使う
+
 置換
 ----
 
@@ -27,11 +30,6 @@ svn
 3. commit
 
         $ svn ci -m "message"
-
-
-
-vi
-===
 
 
 git-svn
