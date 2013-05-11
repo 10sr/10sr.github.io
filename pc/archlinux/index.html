@@ -51,7 +51,10 @@ WantedBy=multi-user.target
 <pre><code># systemctl enable myrc.service
 </code></pre>
 <p>Create script file and chmod +x.</p>
+<h2>acpi 周りの設定とか</h2>
+<p>現状、 acpi に関わるのは <code>acpid</code>, <code>systemd-logind</code>, <code>laptop-mode-tools</code> がある？</p>
+<p>フタを閉じるとサスペンドするのは <code>/etc/systemd/logind.conf</code> に設定されてるせい。 <code>HandleLidSwitch=ignore</code> にすることで無効にする。</p>
 </div>
 </body>
 </html>
-<!-- Last update : Tue, 07 May 2013 11:49:40 +0900 -->
+<!-- Last update : Sat, 11 May 2013 16:57:49 +0900 -->

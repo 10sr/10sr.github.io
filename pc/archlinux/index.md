@@ -47,3 +47,11 @@ Enable it.
     # systemctl enable myrc.service
 
 Create script file and chmod +x.
+
+
+acpi 周りの設定とか
+-----------------
+
+現状、 acpi に関わるのは `acpid`, `systemd-logind`, `laptop-mode-tools` がある？
+
+フタを閉じるとサスペンドするのは `/etc/systemd/logind.conf` に設定されてるせい。 `HandleLidSwitch=ignore` にすることで無効にする。
