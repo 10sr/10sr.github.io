@@ -30,12 +30,22 @@
 <ul>
 <li>GUI frontend for xrandr</li>
 </ul>
+<h1><a href="http://www.gnu.org/software/src-highlite/source-highlight.html">source-highlight</a></h1>
+<p>ソースに色つけできる。 LESS で使うには以下。</p>
+<pre><code>_src_hilite_lp_path="`which src-hilite-lesspipe.sh 2&gt;/dev/null`"
+if test -n "$_src_hilite_lp_path"
+then
+    export LESSOPEN="| $_src_hilite_lp_path %s"
+fi
+</code></pre>
+<h2>Change Colors</h2>
+<p>/usr/bin/src_hilite_lesspipe.sh を見るとわかるように、 style ファイルは esc.style に決め打ちになっている。そのため、 /usr/share/source-highlight/esc.style を直接編集する。</p>
 </div>
 
 <div class="footer">
-<p class="time">Page generated from <a href="softs.md">softs.md</a> at Sat, 11 May 2013 17:08:19 +0900.</p>
+<p class="time">Page generated from <a href="softs.md">softs.md</a> at Tue, 04 Jun 2013 13:44:39 +0900.</p>
 </div>
 </div>
 </body>
 </html>
-<!-- Last update : Sat, 11 May 2013 17:08:19 +0900 -->
+<!-- Last update : Tue, 04 Jun 2013 13:44:39 +0900 -->
