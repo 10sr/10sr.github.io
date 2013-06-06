@@ -82,3 +82,9 @@
 [Notes](https://play.google.com/store/apps/details?id=nl.jacobras.notes&feature=search_result)
 [Simply Note](https://play.google.com/store/apps/details?id=it.sephiroth.inotes&feature=search_result)
 [Classic Notes Lite + App Box](https://play.google.com/store/apps/details?id=com.flufflydelusions.app.enotesclassiclite&feature=related_apps)
+
+## スクリーンキャスト
+
+1. Quicktime でとる
+2. [MPEG Streamclip](http://www.squared5.com/) とか使って切り出す
+3. 必要であれば [Miro](http://www.getmiro.com/) を使って変換
