@@ -34,3 +34,10 @@ Memo
 ====
 
 [【まとめ】これ知らないプログラマって損してんなって思う汎用的なツール 100超 #PHP #JavaScript #Python #Ruby #HTML - Qiita [キータ]](http://qiita.com/items/f570f057a0ff927b47dc)
+
+wireshark
+--------
+
+[パケットキャプチャツール「Wireshark」 - Wiresharkって？ - ネットワークエンジニアを目指して](http://www.itbook.info/study/wireshark1.html)
+
+[Tshark（キャプチャツール）](http://homepage2.nifty.com/protocol/tshark/index.html)
