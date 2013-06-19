@@ -52,6 +52,7 @@
 <h2>xetex</h2>
 <p><a href="http://zrbabbler.sp.land.to/xelatex.html#sec-zxjatype">XeLaTeX で日本語する件について [電脳世界の奥底にて]</a>
 <a href="http://zrbabbler.sp.land.to/zxjatype.html">ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ [電脳世界の奥底にて]</a></p>
+<p>今は platex 使ってる</p>
 <h1>install</h1>
 <h2>mac</h2>
 <p><a href="http://www.tug.org/mactex/">MacTeX - TeX Users Group</a>
@@ -81,14 +82,19 @@
 <p><a href="http://fugenji.org/~thomas/texlive-guide/font_setup.html">日本語フォントのセットアップ</a></p>
 <p>フォントマップは <code>./texmf-dist/fonts/map/dvipdfmx/jfontmaps/</code> かも。</p>
 <p><code>sudo updmap-setup-kanji ipaex</code> で使えるようになった感</p>
+<h2>windows</h2>
+<p>install-tl を使用。 jsarticles とか入ってない気がするので TexLiveManager で適宜入れる。</p>
+<p><a href="http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?TeX%20installers%20for%20Windows">TeX installers for Windows - TeX Wiki</a>
+<a href="http://d.hatena.ne.jp/hyuki/20120915/tex">TeX Live 2012をWindows 7 (64bit)環境にインストールしたメモ - 結城浩のはてな日記</a>
+<a href="http://www.tug.org/texlive/acquire-netinstall.html">Installing TeX Live over the Internet - TeX Users Group</a></p>
 <h2>tips</h2>
 <ul>
-<li>なんか導入したら texhash を実行。</li>
+<li>なんか導入したら texhash を実行するといいらしい。</li>
 </ul>
 <h3>図</h3>
 <p>ドロー系使って、 ESP で保存するといいらしい。</p>
 <h1>lyx</h1>
-<p>jsarticle が使用不可になってて治らない。 reconfigure できない。
+<p>mac で jsarticle が使用不可になってて治らない。 reconfigure できない。
 ひとまず xetex 使う。
 =&gt; ターミナルから起動 <code>open a.lyx</code> したらなぜか reconfigure 出来た。</p>
 <h2>platex + dvipdfmx</h2>
@@ -125,6 +131,6 @@
 </ul>
 </div>
 <hr />
-<p class="footer">Last update: Tue, 18 Jun 2013 16:37:08 +1000</p>
+<p class="footer">Last update: Wed, 19 Jun 2013 15:23:00 +1000</p>
 </body>
 </html>
