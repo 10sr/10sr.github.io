@@ -38,6 +38,11 @@ h2 {
     border-width : 0.05em;
 }
 
+h1.title {
+    border-style : none none solid none;
+    border-width : 0.15;
+}
+
 ul.menu {
     /* margin : 0; */
 
