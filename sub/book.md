@@ -82,13 +82,14 @@ ln
 * [ぶく速 少女小説各レーベルの傾向](http://2chbooknews.blog114.fc2.com/blog-entry-4372.html)
 * [ぶく速 ハーレムラノベ、許せる主人公・許せない主人公](http://2chbooknews.blog114.fc2.com/blog-entry-4370.html)
 * [ぶく速 百合、少女が主人公、男性との恋愛がないラノベ](http://2chbooknews.blog114.fc2.com/blog-entry-4687.html?utm_source=feedly)
+* [ぶく速 図書館に入れても良いと思える少女向けラノベ](http://2chbooknews.blog114.fc2.com/blog-entry-5145.html)
 * 浅井ラボ
 * 瑞智 士記
-* [回帰祭 小林めぐみ](http://d.hatena.ne.jp/sangencyaya/20081113/1226586279)
 * 森田季節
 * 中村九郎
 *  大日本サムライガール 1 (星海社FICTIONS) [単行本（ソフトカバー）]至道 流星 (著), まごまご (イラスト)
 * 『煌夜祭』多崎 礼 (C・NOVELSファンタジア)
+* [回帰祭 小林めぐみ](http://d.hatena.ne.jp/sangencyaya/20081113/1226586279)
 ***
 * ヤングガン・カルナバル (トクマ・ノベルズ): 深見 真, 蕗野 冬: 本
 *** 
