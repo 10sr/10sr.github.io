@@ -1,3 +1,43 @@
+body {
+    font-family : monospace;
+    padding : 2%;
+    color : #444;
+}
+
+a:link {
+    text-decoration : none;
+}
+a:visited {
+    text-decoration : none;
+}
+a:hover {
+    text-decoration : underline;
+}
+a:active {
+    text-decoration : underline;
+}
+
+code {
+    background-color : #eee;
+    padding: 0.1em 0.2em;
+}
+
+pre {
+    background-color : #eee;
+    padding : 0.2em 0.4em;     /* topbuttom leftright*/
+    margin : 0 0.5em;
+}
+
+h1 {
+    border-style : none none double none;
+    border-width : 0.15em;
+}
+
+h2 {
+    border-style : none none solid none;
+    border-width : 0.05em;
+}
+
 ul.menu {
     /* margin : 0; */
 
