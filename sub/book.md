@@ -83,6 +83,7 @@ ln
 * [ぶく速 ハーレムラノベ、許せる主人公・許せない主人公](http://2chbooknews.blog114.fc2.com/blog-entry-4370.html)
 * [ぶく速 百合、少女が主人公、男性との恋愛がないラノベ](http://2chbooknews.blog114.fc2.com/blog-entry-4687.html?utm_source=feedly)
 * [ぶく速 図書館に入れても良いと思える少女向けラノベ](http://2chbooknews.blog114.fc2.com/blog-entry-5145.html)
+* [ぶく速 銃と魔法のファンタジー](http://2chbooknews.blog114.fc2.com/blog-entry-5129.html)
 * 浅井ラボ
 * 瑞智 士記
 * 森田季節
