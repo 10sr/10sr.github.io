@@ -1,7 +1,7 @@
 [About Me](about_me.html)
 
 書いたもの
-><http://d.hatena.ne.jp/sr10/>
+><http://10sr.hateblo.jp/>
 
 ついったー
 ><http://twitter.com/10sr>
