@@ -32,6 +32,11 @@ svn
         $ svn ci -m "message"
 
 
+
+git
+===
+
+
 git-svn
 -------
 
@@ -57,3 +62,23 @@ git-svn
 push 先の レポジトリの `hooks/post-receive` に以下のように書く
 
     (cd /path/to/non_bare/rep && git --git-dir=.git pull)
+
+
+stash
+-----
+
+stash create two commit object: work tree and index
+
+* woktree: default commit msg is like "WIP on xxx" and have two parent: index stash and
+ base commit
+* index: default commit msg is lile "index on xxx" and have one parent: base commit
+
+内容と作業ディレクトリが衝突した時： abort する
+
+
+
+Cannot use alias
+----------------
+
+あるシステムで、 `fatal: cannot exec 'git-st': Permission denied` というエラーが出てエイリアスが使えなかった。調べたところ PATH にアクセス出来ないディレクトリがあると良くないらしいので、 .bashrc に 
+`alias g="PATH=$HOME/.local/bin:/usr/bin:/bin: g"` と書いて解決した。

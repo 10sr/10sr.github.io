@@ -59,6 +59,7 @@
 </code></pre>
 </li>
 </ol>
+<h1>git</h1>
 <h2>git-svn</h2>
 <p><a href="http://sourceforge.jp/magazine/09/03/26/0834222/2">Subversionリポジトリと連携できるgit-svn | 2ページ | SourceForge.JP Magazine - SourceForge.JP</a></p>
 <ol>
@@ -85,8 +86,19 @@
 <p>push 先の レポジトリの <code>hooks/post-receive</code> に以下のように書く</p>
 <pre><code>(cd /path/to/non_bare/rep &amp;&amp; git --git-dir=.git pull)
 </code></pre>
+<h2>stash</h2>
+<p>stash create two commit object: work tree and index</p>
+<ul>
+<li>woktree: default commit msg is like "WIP on xxx" and have two parent: index stash and
+ base commit</li>
+<li>index: default commit msg is lile "index on xxx" and have one parent: base commit</li>
+</ul>
+<p>内容と作業ディレクトリが衝突した時： abort する</p>
+<h2>Cannot use alias</h2>
+<p>あるシステムで、 <code>fatal: cannot exec 'git-st': Permission denied</code> というエラーが出てエイリアスが使えなかった。調べたところ PATH にアクセス出来ないディレクトリがあると良くないらしいので、 .bashrc に 
+<code>alias g="PATH=$HOME/.local/bin:/usr/bin:/bin: g"</code> と書いて解決した。</p>
 </div>
 <hr />
-<p class="footer">Last update: Fri, 21 Jun 2013 11:17:12 +1000</p>
+<p class="footer">Last update: Fri, 05 Jul 2013 23:56:15 +0900</p>
 </body>
 </html>
