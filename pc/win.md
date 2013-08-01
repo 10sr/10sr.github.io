@@ -28,3 +28,18 @@ capslock2ctrl
 -------------
 
 * [Disable Caps Lock :: Useful Stuff :: JohnHaller.com](http://johnhaller.com/jh/useful_stuff/disable_caps_lock/)
+
+
+
+Virtualbox
+==========
+
+Virtualbox 上で使う時の設定
+
+* 上タスクバー
+* 旧テーマ
+* サウンドなし
+* 自動アップデート無効
+* 日本語表示
+* deamon tools lite
+* ネットワークドライブ
