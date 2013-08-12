@@ -60,12 +60,19 @@ WantedBy=multi-user.target
 <h2>acpi 周りの設定とか</h2>
 <p>現状、 acpi に関わるのは <code>acpid</code>, <code>systemd-logind</code>, <code>laptop-mode-tools</code> がある？</p>
 <p>フタを閉じるとサスペンドするのは <code>/etc/systemd/logind.conf</code> に設定されてるせい。 <code>HandleLidSwitch=ignore</code> にすることで無効にする。</p>
+<h2>network</h2>
+<p>無線を使うわけでなく、ネットワークが突然切れる可能性があるサーバなので、 wicd やめて ifplugd 使うことにした</p>
+<p><a href="https://wiki.archlinux.org/index.php/Network_Configuration">Network Configuration - ArchWiki</a></p>
+<p>$ sudo pacman -S ifplugd
+$ sudo systemctl enable ifplugd@eth0.service
+$ sudo systemctl enable dhcpcd@eth0
+$ sudo systemctl disable wicd.service</p>
 </div>
 
 <div class="footer">
-<p class="time">Page generated from <a href="index.md">index.md</a> at Mon, 27 May 2013 11:10:52 +0900.</p>
+<p class="time">Page generated from <a href="index.md">index.md</a> at Mon, 12 Aug 2013 16:43:18 +0900.</p>
 </div>
 </div>
 </body>
 </html>
-<!-- Last update : Mon, 27 May 2013 11:10:52 +0900 -->
+<!-- Last update : Mon, 12 Aug 2013 16:43:18 +0900 -->

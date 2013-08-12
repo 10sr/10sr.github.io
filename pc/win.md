@@ -43,3 +43,4 @@ Virtualbox 上で使う時の設定
 * 日本語表示
 * deamon tools lite
 * ネットワークドライブ
+* directx の設定 [Sun VirtualBox Direct3Dを有効にする方法｜passe'](http://ameblo.jp/ef-gc35-3223/entry-10343421443.html)

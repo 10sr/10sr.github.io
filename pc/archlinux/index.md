@@ -62,3 +62,18 @@ acpi 周りの設定とか
 現状、 acpi に関わるのは `acpid`, `systemd-logind`, `laptop-mode-tools` がある？
 
 フタを閉じるとサスペンドするのは `/etc/systemd/logind.conf` に設定されてるせい。 `HandleLidSwitch=ignore` にすることで無効にする。
+
+
+
+network
+-------
+
+
+無線を使うわけでなく、ネットワークが突然切れる可能性があるサーバなので、 wicd やめて ifplugd 使うことにした
+
+[Network Configuration - ArchWiki](https://wiki.archlinux.org/index.php/Network_Configuration)
+
+$ sudo pacman -S ifplugd
+$ sudo systemctl enable ifplugd@eth0.service
+$ sudo systemctl enable dhcpcd@eth0
+$ sudo systemctl disable wicd.service
