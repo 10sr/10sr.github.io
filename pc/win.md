@@ -24,11 +24,17 @@ cygwin
 * pkg-config
 
 
-capslock2ctrl
+Taskbar
+-------
+
+* show date in taskbar : [TTClock](http://chihiro718.jpn.org/JPN/software.html)
+
+
+Key remap
 -------------
 
 * [Disable Caps Lock :: Useful Stuff :: JohnHaller.com](http://johnhaller.com/jh/useful_stuff/disable_caps_lock/)
-
+* [SharpKeys](http://sharpkeys.codeplex.com/)
 
 
 Virtualbox
