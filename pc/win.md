@@ -3,9 +3,11 @@ softs
 
 * 7zip
 * dropbox
-* virtuawin alt 矢印で切り替え（ win 矢印は使えなかった）
+* virtuawin alt+arrow to switch desktops (win+arrow cannot be assigned)
 * security essentials
 * [tclock-101021-analog](http://www22.atpages.jp/tclock2ch/x64.html)
+* [iceiv+putty](http://ice.hotmint.com/putty/)
+Save prefs in ini by locating ini file
 
 
 cygwin
@@ -24,10 +26,19 @@ cygwin
 * pkg-config
 
 
-capslock2ctrl
+Taskbar
+-------
+
+* show date in taskbar : [TTClock](http://chihiro718.jpn.org/JPN/software.html)
+
+
+Key remap
 -------------
 
 * [Disable Caps Lock :: Useful Stuff :: JohnHaller.com](http://johnhaller.com/jh/useful_stuff/disable_caps_lock/)
+* [SharpKeys](http://sharpkeys.codeplex.com/)
+* [keyswap for xp](http://www.asahi-net.or.jp/~ee7k-nsd/)
+work well with hiragana key
 
 
 

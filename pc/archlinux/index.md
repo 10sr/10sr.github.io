@@ -73,7 +73,7 @@ network
 
 [Network Configuration - ArchWiki](https://wiki.archlinux.org/index.php/Network_Configuration)
 
-$ sudo pacman -S ifplugd
-$ sudo systemctl enable ifplugd@eth0.service
-$ sudo systemctl enable dhcpcd@eth0
-$ sudo systemctl disable wicd.service
+    $ sudo pacman -S ifplugd
+    $ sudo systemctl enable ifplugd@eth0.service
+    $ sudo systemctl enable dhcpcd@eth0
+    $ sudo systemctl disable wicd.service
