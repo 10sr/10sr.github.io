@@ -8,9 +8,9 @@ var DMD = (function(){
         if (window.addEventListener) {
             window.addEventListener("load", onLoadHandler, false);
             window.addEventListener("hashchange", onHashChangeHandler, false);
-        } else if (window.AttatchEvent) {
-            window.AttatchEvent("onload", onLoadHandler);
-            window.AttatchEvent("onhashchange", onHashChangeHandler);
+        } else if (window.attatchEvent) {
+            window.attatchEvent("onload", onLoadHandler);
+            window.attatchEvent("onhashchange", onHashChangeHandler);
         }
     };
 
