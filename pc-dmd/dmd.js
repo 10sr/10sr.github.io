@@ -1,13 +1,21 @@
 var DMD = (function(){
+    var div;
+
     function init(){
         // window.onload = onLoadHandler;
         // window.onhashchange = onHashChangeHandler;
         // or
-        window.addEventListener("load", onHashChangeHandler, false);
-        window.addEventListener("hashchange", onHashChangeHandler, false);
+        if (window.addEventListener) {
+            window.addEventListener("load", onLoadHandler, false);
+            window.addEventListener("hashchange", onHashChangeHandler, false);
+        } else if (window.AttatchEvent) {
+            window.AttatchEvent("onload", onLoadHandler);
+            window.AttatchEvent("onhashchange", onHashChangeHandler);
+        }
     };
 
     function onLoadHandler(){
+        div = window.document.getElementById("dmd-content");
         onHashChangeHandler();
     };
 
@@ -26,13 +34,11 @@ var DMD = (function(){
             // content available when xhr.status === 0 ...??
             // alert(xhr.status);
             // alert(xhr.responseText);
-            var div = window.document.getElementById("dmd-content");
             div.innerHTML = marked(xhr.responseText);
         });
     }
 
     function clearContent(){
-        var div = window.document.getElementById("dmd-content");
         div.innerHTML = "";
     }
 
