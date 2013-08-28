@@ -2,6 +2,7 @@ var DMD = (function(){
     var div_content;
     var div_menu;
     var pages_md = {};
+    var pages_url = {};
 
     function init(){
         // window.onload = onLoadHandler;
@@ -24,7 +25,11 @@ var DMD = (function(){
         for (var i = 0; i < pages.length; i++) {
             var name = pages[i].getAttribute("title");
 
-            pages_md[name] = pages[i].innerHTML;
+            if (pages[i].tagName.toLowerCase() === "pre") {
+                pages_md[name] = pages[i].innerHTML || "";
+            } else if (pages[i].tagName.toLowerCase() === "a") {
+                pages_url[name] = pages[i].getAttribute("href") || "";
+            }
 
             var linode = window.document.createElement("li");
             var anode = window.document.createElement("a");
@@ -55,7 +60,16 @@ var DMD = (function(){
 
     function loadContent(name){
         if (name) {
-            div_content.innerHTML = marked(pages_md[name] || "");
+            if (name in pages_md){
+                div_content.innerHTML = marked(pages_md[name] || "");
+            } else if (name in pages_url) {
+                fetchContent(pages_url[name], function(xhr){
+                    pages_md[name] = xhr.responseText || "";
+                    div_content.innerHTML = marked(pages_md[name] || "");
+                });
+            } else {
+                div_content.innerHTML = "No content found for '" + name + "'.";
+            }
         } else {
             clearContent();
         }
@@ -71,21 +85,19 @@ var DMD = (function(){
         div_content.innerHTML = "";
     }
 
-    function dirName(str){
-        return str.replace(/[^/]*$/, "");
+    function fetchContent(name, callback){
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", name, true);
+        xhr.onreadystatechange = function(){
+            if (xhr.readyState === 4) {
+                callback(xhr);
+            }
+        };
+        if (xhr.overrideMimeType) {
+            xhr.overrideMimeType('text/plain; charset=UTF-8');
+        }
+        xhr.send(null);
     }
-
-    // function getContent(name, callback){
-    //     var xhr = new XMLHttpRequest();
-    //     xhr.open("GET", name, true);
-    //     xhr.onreadystatechange = function(){
-    //         if (xhr.readyState === 4) {
-    //             callback(xhr);
-    //         }
-    //     };
-    //     xhr.overrideMimeType('text/plain; charset=UTF-8');
-    //     xhr.send(null);
-    // }
 
     return {
         init : init
