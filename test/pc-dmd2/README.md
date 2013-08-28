@@ -1,12 +1,13 @@
 Dynamic Markdown loader (dmd.js)
 =======================
 
-If javascript is enabled, dmd.js automatically collect contents written in
-markdown with their name and create a menu that references these contents.
-Markdown contents are shown with converted with `marked()`.
+If javascript is enabled, dmd.js automatically collect contents in the page with
+their titles and create a menu that references these contents.
+These contents are written in markdown and are converted with `marked()` when
+displayed.
 
-If javascript is not enabled, contents can be read as `pre`ed markdown or links
-to external files.
+If javascript is not enabled, contents are available as `pre`ed markdown texts
+or links to external files.
 
 
 Elements
@@ -31,4 +32,4 @@ When the hash changes the content whose title is specified by the hash is
 ### ul#dmd-menu
 
 If this element exists and javascript works, `li` elements each of who has an
-`a` element that references hash + `title` are appended.
+`a` element referencing hash + `title` are appended.
