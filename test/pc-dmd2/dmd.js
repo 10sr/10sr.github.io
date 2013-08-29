@@ -3,6 +3,7 @@ var DMD = (function(){
     var div_menu;
     var pages_md = {};
     var pages_url = {};
+    var default_page_name = null;
 
     function init(){
         // window.onload = onLoadHandler;
@@ -19,7 +20,7 @@ var DMD = (function(){
 
     function onLoadHandler(){
         div_content = window.document.getElementById("dmd-content");
-        if (! div_content) {return ;}
+        if (! div_content) { return; }
 
         div_menu = window.document.getElementById("dmd-menu");
 
@@ -27,10 +28,18 @@ var DMD = (function(){
         for (var i = 0; i < pages.length; i++) {
             var name = pages[i].getAttribute("title");
 
+            if (! name) { continue; }
+
             if (pages[i].tagName.toLowerCase() === "pre") {
                 pages_md[name] = pages[i].innerHTML || "";
             } else if (pages[i].tagName.toLowerCase() === "a") {
                 pages_url[name] = pages[i].getAttribute("href") || "";
+            } else {
+                pages_md[name] = "Cannot display '" + name + "' page.";
+            }
+
+            if (default_page_name === null) {
+                default_page_name = name;
             }
 
             if (div_menu) {
@@ -53,14 +62,14 @@ var DMD = (function(){
     };
 
     function onHashChangeHandler(){
-        if (! div_content) {return ;}
+        if (! div_content) { return; }
 
         var h = window.content.location.hash;
         // alert(h);
         if (h) {
-            loadContent(h.substr(1) || "");
+            loadContent(h.substr(1) || default_page_name);
         } else {
-            loadContent("");
+            loadContent(default_page_name);
         }
     }
 
