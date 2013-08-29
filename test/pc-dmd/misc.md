@@ -1,9 +1,3 @@
-Port Forward
-============
-
-    $ ssh -fND <port> <host>
-
-
 format epoch sec
 ================
 
