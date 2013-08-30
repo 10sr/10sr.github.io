@@ -73,14 +73,23 @@ var DMD = (function(){
         }
     }
 
+    function convertWikiLinks(str){
+        if (str) {
+            return str.replace(/\[\[([\w-/.]+)\]\]/g, '<a href="#$1">$1</a>');
+        }
+        return "";
+    }
+
     function loadContent(name){
         if (name) {
             if (name in pages_md){
-                div_content.innerHTML = marked(pages_md[name] || "");
+                div_content.innerHTML =
+                    marked(convertWikiLinks(pages_md[name] || ""));
             } else if (name in pages_url) {
                 fetchContent(pages_url[name], function(xhr){
                     pages_md[name] = xhr.responseText || "";
-                    div_content.innerHTML = marked(pages_md[name] || "");
+                    div_content.innerHTML =
+                        marked(convertWikiLinks(pages_md[name] || ""));
                 });
             } else {
                 div_content.innerHTML = "No content found for '" + name + "'.";
