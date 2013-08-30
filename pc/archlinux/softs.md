@@ -1,3 +1,14 @@
+VNC Server
+==========
+
+[Vncserver - ArchWiki](https://wiki.archlinux.org/index.php/Vnc)
+
+* Install tigervnc
+* start server by `vncserver :1`
+* kill server by `vncserver -kil :1`
+* access by `vnc://addr:5901`
+
+
 vsftpd
 ======
 
@@ -34,7 +45,7 @@ Arandr
 Change Colors
 -------------
 
-/usr/bin/src_hilite_lesspipe.sh を見るとわかるように、 style ファイルは esc.style に決め打ちになっている。そのため、 /usr/share/source-highlight/esc.style を直接編集する。
+`/usr/bin/src_hilite_lesspipe.sh` を見るとわかるように、 style ファイルは esc.style に決め打ちになっている。そのため、 /usr/share/source-highlight/esc.style を直接編集する。
 
 
 wireshark
