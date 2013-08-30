@@ -61,16 +61,18 @@ var DMD = (function(){
         onHashChangeHandler();
     };
 
+    function getCurrentHash(){
+        var h = window.content.location.hash;
+        if (h) {
+            return (h.substr(1) || "");
+        }
+        return "";
+    }
+
     function onHashChangeHandler(){
         if (! div_content) { return; }
 
-        var h = window.content.location.hash;
-        // alert(h);
-        if (h) {
-            loadContent(h.substr(1) || default_page_name);
-        } else {
-            loadContent(default_page_name);
-        }
+        loadContent(getCurrentHash() || default_page_name);
     }
 
     function convertWikiLinks(str){
