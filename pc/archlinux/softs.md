@@ -1,3 +1,16 @@
+Openbox
+=======
+
+Menu
+----
+
+[Openbox - ArchWiki](https://wiki.archlinux.org/index.php/Openbox#Menus)
+
+* archlinux-xdg-menu をインストール
+* `<menu id="root-menu" label="xdg-menu" execute="perl /usr/bin/xdg_menu --format openbox3-pipe"/>` を menu.xml に書く
+
+
+
 VNC Server
 ==========
 
