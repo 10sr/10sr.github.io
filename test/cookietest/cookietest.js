@@ -48,8 +48,8 @@ var CookieTest = (function(){
 
         alert("num1 : " + num1.toString() + " num2 : " + num2.toString());
 
-        setCookie(k1, num1.toString());
-        setCookie(k2, num2.toString());
+        setCookie(k1, num1.toString(), true);
+        setCookie(k2, num2.toString(), true);
     }
 
     return {
