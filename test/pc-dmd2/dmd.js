@@ -6,19 +6,19 @@ var DMD = (function(){
     var default_page_name = null;
 
     function init(){
-        // window.onload = onLoadHandler;
-        // window.onhashchange = onHashChangeHandler;
+        // window.onload = onLoadListener;
+        // window.onhashchange = onHashChangeListener;
         // or
         if (window.addEventListener) {
-            window.addEventListener("load", onLoadHandler, false);
-            window.addEventListener("hashchange", onHashChangeHandler, false);
+            window.addEventListener("load", onLoadListener, false);
+            window.addEventListener("hashchange", onHashChangeListener, false);
         } else if (window.attatchEvent) {
-            window.attatchEvent("onload", onLoadHandler);
-            window.attatchEvent("onhashchange", onHashChangeHandler);
+            window.attatchEvent("onload", onLoadListener);
+            window.attatchEvent("onhashchange", onHashChangeListener);
         }
     };
 
-    function onLoadHandler(){
+    function onLoadListener(){
         div_content = window.document.getElementById("dmd-content");
         if (! div_content) { return; }
 
@@ -58,7 +58,7 @@ var DMD = (function(){
             div_content.removeChild(div_content.lastChild);
         }
 
-        onHashChangeHandler();
+        onHashChangeListener();
     };
 
     function getCurrentHash(){
@@ -69,7 +69,7 @@ var DMD = (function(){
         return "";
     }
 
-    function onHashChangeHandler(){
+    function onHashChangeListener(){
         if (! div_content) { return; }
 
         loadContent(getCurrentHash() || default_page_name);

@@ -3,10 +3,10 @@ var StorageTest = (function(){
     var k2 = "key2";
 
     function init(){
-        window.addEventListener("load", onLoadHandler);
+        window.addEventListener("load", onLoadListener);
     }
 
-    function onLoadHandler(){
+    function onLoadListener(){
         if (! window.localStorage) {
             alert("This browser does not support localstorage.");
             return;

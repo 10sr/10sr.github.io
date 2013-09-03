@@ -3,7 +3,7 @@ var CookieTest = (function(){
     var k2 = "key2";
 
     function init(){
-        window.addEventListener("load", onLoadHandler);
+        window.addEventListener("load", onLoadListener);
     }
 
     function setCookie(key, value, secure){
@@ -30,7 +30,7 @@ var CookieTest = (function(){
         return null;
     }
 
-    function onLoadHandler(){
+    function onLoadListener(){
         var v1 = getCookie(k1);
         var v2 = getCookie(k2);
         var num1, num2;

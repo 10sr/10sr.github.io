@@ -2,24 +2,24 @@ var DMD = (function(){
     var div;
 
     function init(){
-        // window.onload = onLoadHandler;
-        // window.onhashchange = onHashChangeHandler;
+        // window.onload = onLoadListener;
+        // window.onhashchange = onHashChangeListener;
         // or
         if (window.addEventListener) {
-            window.addEventListener("load", onLoadHandler, false);
-            window.addEventListener("hashchange", onHashChangeHandler, false);
+            window.addEventListener("load", onLoadListener, false);
+            window.addEventListener("hashchange", onHashChangeListener, false);
         } else if (window.attatchEvent) {
-            window.attatchEvent("onload", onLoadHandler);
-            window.attatchEvent("onhashchange", onHashChangeHandler);
+            window.attatchEvent("onload", onLoadListener);
+            window.attatchEvent("onhashchange", onHashChangeListener);
         }
     };
 
-    function onLoadHandler(){
+    function onLoadListener(){
         div = window.document.getElementById("dmd-content");
-        onHashChangeHandler();
+        onHashChangeListener();
     };
 
-    function onHashChangeHandler(){
+    function onHashChangeListener(){
         var h = window.content.location.hash;
         // alert(h);
         if (h) {
