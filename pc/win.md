@@ -8,6 +8,8 @@ softs
 * [tclock-101021-analog](http://www22.atpages.jp/tclock2ch/x64.html)
 * [iceiv+putty](http://ice.hotmint.com/putty/)
 Save prefs in ini by locating ini file
+* caldix
+* [InsAssist](http://fow.minim.ne.jp/down/ap/a002.html)
 
 
 cygwin
