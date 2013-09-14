@@ -87,6 +87,7 @@ ln
 * [ぶく速 図書館に入れても良いと思える少女向けラノベ](http://2chbooknews.blog114.fc2.com/blog-entry-5145.html)
 * [ぶく速 銃と魔法のファンタジー](http://2chbooknews.blog114.fc2.com/blog-entry-5129.html)
 * [ぶく速 色んな意味で寸止めでない作品](http://2chbooknews.blog114.fc2.com/blog-entry-5275.html)
+* [ぶく速 暴力セックスグロ鬱のうち二つ以上入ってるラノベ](http://2chbooknews.blog114.fc2.com/blog-entry-5789.html)
 * 浅井ラボ
 * 瑞智 士記
 * 森田季節
