@@ -1,3 +1,6 @@
 [submodule "_dmd"]
 	path = _dmd
 	url = https://github.com/10sr/dmd.git
+[submodule "_marked"]
+	path = _marked
+	url = https://github.com/chjj/marked.git
