@@ -1,0 +1,3 @@
+[submodule "_dmd"]
+	path = _dmd
+	url = git@github.com:10sr/dmd.git
