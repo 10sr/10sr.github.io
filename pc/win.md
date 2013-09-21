@@ -10,6 +10,7 @@ softs
 Save prefs in ini by locating ini file
 * caldix
 * [InsAssist](http://fow.minim.ne.jp/down/ap/a002.html)
+* [Chocolatey Gallery](https://chocolatey.org/)
 
 
 cygwin
