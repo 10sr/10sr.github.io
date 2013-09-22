@@ -1,19 +1,5 @@
-<div id="ff_feed"></div>
-
-<p class="tweetswind">
-<!-- start twitterwind code -->
-<script type="text/javascript">
-<!--
-var twitterwind_option     = '{"isOnlyMe":"true","twitterwind_logo":"","twitterwind_logo_bgcolor":"FFFFFF","twitterwind_logo_color":"333303","followers_color":"000000","followers_bgcolor":"FFFFFF","twitterwind_max_length":"39","twitterwind_username":"none","twitterwind_username_color":"333333","twitterwind_username_bgcolor":"FFFFFF","twitterwind_twit":"block","twitterwind_twit_color":"333333","twitterwind_twit_bgcolor":"FFFFFF","twitterwind_twit_link_color":"0084B4","twitterwind_twit_scroll_color":"C0DEED","twitterwind_twit_scroll_bg_color":"FFFFFF","twitterwind_follower":"none","twitterwind_follower_bgcolor":"FFFFFF","twitterwind_frame_width":"320","twitterwind_frame_height":"480","twitterwind_frame_border":"false","twitterwind_frame_border_color":"C0DEED","twitterwind_base_font_size":"12","twitterwind_me_font_size":14,"twitterwind_caption_font_size":16,"twitterwind_scroll_height":456,"eusn":"ALQRSsYyjOE="}';
-var twitterwind_url        = 'http://www.tweetswind.com/twitterwind.php';
-//-->
-</script>
-<script type="text/javascript" src="http://www.tweetswind.com/js/twitterwind.js"></script>
+<!-- start TweetsWind code -->
+<iframe     scrolling="no" frameborder="0" id="twitterWindIframe"     style="width:320px;height:480px; border:none;"     src="http://www.tweetswind.com/show?option=%7B%22isOnlyMe%22%3A%20%22true%22%2C%20%22twitterwind_frame_width%22%3A%20%22320%22%2C%20%22twitterwind_frame_height%22%3A%20%22480%22%2C%20%22twitterwind_frame_border%22%3A%20%22none%22%2C%20%22twitterwind_frame_border_color%22%3A%20%22C0DEED%22%2C%20%22twitterwind_base_font_size%22%3A%20%2212%22%2C%20%22twitterwind_logoimage%22%3A%20%22whiteonblue%22%2C%20%22twitterwind_username%22%3A%20%22none%22%2C%20%22twitterwind_username_bgcolor%22%3A%20%22%22%2C%20%22twitterwind_username_color%22%3A%20%22333333%22%2C%20%22twitterwind_username_follow%22%3A%20%22off%22%2C%20%22twitterwind_max_length%22%3A%20%2239%22%2C%20%22twitterwind_logo_bgcolor%22%3A%20%22%22%2C%20%22twitterwind_twit%22%3A%20%22on%22%2C%20%22twitterwind_twit_scroll_color%22%3A%20%22C0DEED%22%2C%20%22twitterwind_twit_scroll_bg_color%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_twit_bgcolor%22%3A%20%22%22%2C%20%22twitterwind_twit_color%22%3A%20%22333333%22%2C%20%22twitterwind_twit_link_color%22%3A%20%220084B4%22%2C%20%22twitterwind_opacity%22%3A%20%22on%22%2C%20%22twitterwind_follower%22%3A%20%22inherit%22%2C%20%22twitterwind_follower_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22usn%22%3A%20%22115415%22%7D" allowTransparency="true"     > </iframe>
 <!--利用規約に従ってページ内に必ずリンクを表示してください-->
-<div style="font-size:12px; text-align:right; width:320px"><a target="_blank" href="http://www.tweetswind.com">Twitter ブログパーツ</a></div>
-<!-- end twitterwind code -->
-    <!--da4436684850f8409cbafa3614e826cb-->
-</p>
-
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript" src="feed.js"></script>
+<div style="font-size:12px; text-align:right; width:320px"><a target="_blank" href="http://www.tweetswind.com">TweetsWind</a></div> 
+<!-- end TweetsWind code -->
