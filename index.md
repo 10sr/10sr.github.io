@@ -1,4 +1,4 @@
-[About Me](about_me.html)
+[About Me](#about_me)
 
 書いたもの
 ><http://10sr.hateblo.jp/>
