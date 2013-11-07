@@ -6,6 +6,7 @@ body {
 
 .content {
     width : 75%;
+    text-align : center;
 }
 
 a:link {
