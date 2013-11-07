@@ -4,6 +4,10 @@ body {
     color : #444;
 }
 
+.content {
+    width : 75%;
+}
+
 a:link {
     text-decoration : none;
 }
