@@ -35,11 +35,13 @@ pre {
 h1 {
     border-style : none none double none;
     border-width : 0.15em;
+    margin-top : 2em;
 }
 
 h2 {
     border-style : none none solid none;
     border-width : 0.05em;
+    margin-top : 2em;
 }
 
 h1.title {
