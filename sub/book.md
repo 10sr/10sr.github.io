@@ -88,7 +88,8 @@ ln
 * [ぶく速 銃と魔法のファンタジー](http://2chbooknews.blog114.fc2.com/blog-entry-5129.html)
 * [ぶく速 色んな意味で寸止めでない作品](http://2chbooknews.blog114.fc2.com/blog-entry-5275.html)
 * [ぶく速 暴力セックスグロ鬱のうち二つ以上入ってるラノベ](http://2chbooknews.blog114.fc2.com/blog-entry-5789.html)
-* 浅井ラボ
+* [ぶく速 【GA文庫】抒情性のある作品・作家がここ３年ぐらいで悉く切られた感じだよな](http://2chbooknews.blog114.fc2.com/blog-entry-5856.html)
+* * 浅井ラボ
 * 瑞智 士記
 * 森田季節
 * 中村九郎
@@ -201,6 +202,7 @@ ln
 * 修羅場な俺と乙女禁猟区（ファミ通文庫）
 * 覇剣の皇姫アルティーナ(むらさきゆきや/ファミ通文庫)
 * 彼女は戦争妖精５
+* 疾走する思春期の みんな大好きな戦争
 
 ***
 

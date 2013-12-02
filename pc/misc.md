@@ -1,7 +1,32 @@
 Port Forward
 ============
 
+
+socks プロキシ
+--------------
+
+プロキシを立ててすぐに終了する
+
     $ ssh -fND <port> <host>
+
+
+port forward
+------------
+
+    $ ssh -L <localport>:<host_address>:<host_port> host_to_connect
+
+ローカルの localport を掴んで、それへの通信を host_to_connect を経由した host_port の host_address
+へ転送する
+
+
+nmap
+====
+
+    $ sudo nmap google.com
+
+    $ sudo nmap 192.168.2.100-200 # scan from 100 to 200
+
+
 
 
 format epoch sec
