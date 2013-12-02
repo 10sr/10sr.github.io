@@ -16,8 +16,9 @@ Save prefs in ini by locating ini file
 cygwin
 ------
 
-[最高のWindowsコマンドライン環境を求めて | roundropブログ implements Programmable](http://blog.roundrop.jp/show/34)
-[apt-cygでCygwinでもApt/yumっぽくインストールができるようになる。。 - それマグで！](http://takuya-1st.hatenablog.jp/entry/20110205/1296887435)
+* [最高のWindowsコマンドライン環境を求めて | roundropブログ implements Programmable](http://blog.roundrop.jp/show/34)
+* [apt-cygでCygwinでもApt/yumっぽくインストールができるようになる。。 - それマグで！](http://takuya-1st.hatenablog.jp/entry/20110205/1296887435)
+* [Cygwin/apt-cyg - discypus](http://discypus.jp/wiki/?Cygwin%2Fapt-cyg)
 
 
 ### apt-cyg
