@@ -16,7 +16,7 @@ refs
 ----
 
 * <http://www.kishiro.com/FreeBSD/ssh.html>
-* <http://tm.root-n.com/server:sshd:sshd_config>
+* <http://tm.root-n.com/server:sshd:sshd_config[>
 
 
 
