@@ -1,3 +1,23 @@
+SSHd Configs `/etc/ssh/sshd_config`
+===========
+
+Disable `PasswordAuthentication` and `ChallengeResponseAuthentication` to
+disable password authentication.
+
+
+`PermitRootLogin no
+PasswordAuthentication no
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+`
+
+refs
+----
+
+* <http://www.kishiro.com/FreeBSD/ssh.html>
+
+
+
 Port Forward
 ============
 
