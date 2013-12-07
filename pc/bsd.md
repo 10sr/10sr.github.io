@@ -49,3 +49,10 @@ pkgng
 7. `pkg update && pkg upgrade`
 8. Search packages by `pkg search sudo`
 9. Install packages by `pkg install sudo`
+
+
+Packages
+========
+
+* sudo
+* git
