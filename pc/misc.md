@@ -9,12 +9,14 @@ disable password authentication.
     PasswordAuthentication no
     PermitEmptyPasswords no
     ChallengeResponseAuthentication no
+    UsePAM no
 
 
 refs
 ----
 
 * <http://www.kishiro.com/FreeBSD/ssh.html>
+* <http://tm.root-n.com/server:sshd:sshd_config>
 
 
 
