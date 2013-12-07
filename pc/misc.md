@@ -5,11 +5,11 @@ Disable `PasswordAuthentication` and `ChallengeResponseAuthentication` to
 disable password authentication.
 
 
-`PermitRootLogin no
-PasswordAuthentication no
-PermitEmptyPasswords no
-ChallengeResponseAuthentication no
-`
+    PermitRootLogin no
+    PasswordAuthentication no
+    PermitEmptyPasswords no
+    ChallengeResponseAuthentication no
+
 
 refs
 ----
