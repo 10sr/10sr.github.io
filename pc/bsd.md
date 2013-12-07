@@ -56,3 +56,5 @@ Packages
 
 * sudo
 * git
+* tmux
+* emacs
