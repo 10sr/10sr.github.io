@@ -58,3 +58,4 @@ Packages
 * git
 * tmux
 * emacs
+* bash
