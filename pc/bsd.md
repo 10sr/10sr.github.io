@@ -15,9 +15,18 @@ Linked to `usr/home`.
 su
 ---
 
+Add users to group `wheel` by modifying `/etc/group`.
+
 * <http://d.hatena.ne.jp/torazuka/20110505/wheel>
 
-    Add users to group `wheel` by modifying `/etc/group`.
+
+
+Too Much Time to Invoke Emacs
+-----------------------------
+
+Add hostname to `127.0.0.1` of `/etc/hosts`.
+
+* <ttp://d.hatena.ne.jp/syohex/20120902/1346557876>
 
 
 
