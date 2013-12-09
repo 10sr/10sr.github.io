@@ -30,6 +30,7 @@ pre {
     background-color : #eee;
     padding : 0.2em 0.4em;     /* topbuttom leftright*/
     margin : 0.5em 0.5em;
+    text-indent: 0;
 }
 
 h1 {
@@ -44,11 +45,13 @@ h2 {
     margin-top : 1em;
 }
 
+/* title h1 */
 h1.title {
     border-style : none none solid none;
     border-width : 0.1em;
 }
 
+/* menu ul */
 ul.menu {
     /* margin : 0; */
 
@@ -59,10 +62,12 @@ ul.menu {
 
 }
 
+/* elements of menu ul */
 ul.menu li {
     display : inline;
 }
 
+/* footer paragraph */
 p.footer {
     text-align : right;
 }
