@@ -1,3 +1,12 @@
+How to Licence
+==============
+
+* <http://www.catch.jp/oss-license/2013/09/10/github/>
+* <http://qiita.com/tadsan/items/99d816e78ca429093b75>
+* <http://www.catch.jp/oss-license/2013/09/27/mit_license/>
+
+
+
 SSHd Configs `/etc/ssh/sshd_config`
 ===========
 
