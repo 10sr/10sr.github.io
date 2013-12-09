@@ -50,11 +50,11 @@ pkgng
 6. Follow [this instruction](http://april.fool.jp/blogs/2013/11/pkgng%e3%81%8c%e5%be%a9%e6%b4%bb%e3%81%97%e3%81%9f%e3%81%a8%e8%a8%80%e3%81%a3%e3%81%9f%e3%81%aa%e3%80%82%ef%bc%88%e4%b8%80%e9%83%a8%e3%81%ae%e5%a5%b4%e3%81%ab%e3%81%a8%e3%81%a3%e3%81%a6%ef%bc%89/)
     * Remove `packagesite` entry from `/usr/local/etc/pkg.conf`
     * `vi /usr/local/etc/pkg/repos/FreeBSD.conf` and add these:
-            FreeBSD: {
-              url: "pkg+http://pkg.FreeBSD.org/${ABI}/latest",
-              mirror_type: "srv",
-              enabled: yes
-            }
+          FreeBSD: {
+            url: "pkg+http://pkg.FreeBSD.org/${ABI}/latest",
+            mirror_type: "srv",
+            enabled: yes
+          }
 7. `pkg update && pkg upgrade`
 8. Search packages by `pkg search sudo`
 9. Install packages by `pkg install sudo`
