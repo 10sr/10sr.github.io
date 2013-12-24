@@ -12,6 +12,7 @@ Notes
 
 Linked to `usr/home`.
 
+
 su
 ---
 
@@ -27,6 +28,13 @@ Too Much Time to Invoke Emacs
 Add hostname to `127.0.0.1` of `/etc/hosts`.
 
 * <ttp://d.hatena.ne.jp/syohex/20120902/1346557876>
+
+
+Source Tree
+-----------
+
+I somehow cannot use `sysinstall` (cannot resolve hostmame) so I used svn like:
+`svn checkout svn://svn.FreeBSD.org/base/releng/9.2 /usr/src`
 
 
 
