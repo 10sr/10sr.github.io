@@ -2,6 +2,20 @@ Package
 =======
 
 
+Keyring Error
+-------------
+
+<https://bbs.archlinux.org/viewtopic.php?id=167612>
+
+Error message like:
+
+    error: key "E6B456CAF15447D5" could not be looked up remotely
+    error: required key missing from keyring
+    error: failed to commit transaction (unexpected error)
+
+might be solved by installing `archlinux-keyring` solely first.
+
+
 makepkg
 -------
 
