@@ -1,3 +1,6 @@
+\* : 使用中
+
+
 # home
 
 ## *zeam launcher
@@ -5,6 +8,8 @@
 ## launcherpro
 
 ## nemus launcher
+
+
 
 # calender
 
@@ -15,6 +20,8 @@
 ## extdatewidget
 
 ## *minimalistic text
+
+
 
 # lock
 
@@ -38,12 +45,34 @@ no screen off と併用するとスリープする
 
 2.2より上で使えないらしい
 
+
+
 # player
+
+2014/1/14 メモ：ウィジェットが一部使えないのは android 側の問題か？
+
+基本的な要件
+
+* ディレクトリ単位で再生したい
+* widget が良い感じのもの
+* UI 的にゴテゴテしてない
 
 試してないもの
 
 * mortplayer
 * simply music
+
+## [Simple MP3 Music Folder Player](https://play.google.com/store/apps/details?id=ch.juerg.simplemp3player)
+
+結構良い widget 使えない android 側の問題かも？
+
+## MePlayer Audio
+
+使いにくい
+
+## just player
+
+良かったけど、突然 widget が使えなくなった なぜ？
 
 ## flip
 
@@ -51,15 +80,13 @@ no screen off と併用するとスリープする
 
 なんかよく分からない
 
-## *just player
-
 ## ez folder player free
 
 ## vanilla
 
 ちょい癖がある
 
-## moty folderplayer
+## [moty folderplayer](https://play.google.com/store/apps/details?id=com.motysoft.player)
 
 アルバムアートが出ないのは寂しい
 
@@ -111,6 +138,8 @@ no screen off と併用するとスリープする
 
 起動しない
 
+
+
 # shoutcast
 
 ## xiialive lite
@@ -124,10 +153,12 @@ no screen off と併用するとスリープする
 
 ウィジェットがない
 
+
+
 # twitter
 
 * 白い
-* 任意のリスト見たいしたい
+* 任意のリスト見たりしたい
 * 表示領域は大きく
 
 ## tweetdeck
@@ -226,6 +257,8 @@ tweet につく操作がボタンでなくテキストなせいで見難い印�
 
 スクロールが引っかかる
 
+
+
 # tumblr
 
 ## tumblr
@@ -258,6 +291,8 @@ likeがない
 
 再読み込みとかない
 
+
+
 # browser
 
 ## opera mobile
@@ -278,6 +313,8 @@ likeがない
 
 背景が必ず黒い。なんだこれ
 
+
+
 # pixiv
 
 ## *pxviewer
@@ -294,6 +331,8 @@ likeがない
 
 漫画見にくい
 
+
+
 # niconico
 
 ## nicoviewer
@@ -304,7 +343,7 @@ likeがない
 
 動画再生時にタスクバーがなくなる
 
-## ニコブラウザ
+## *ニコブラウザ
 
 すっきりしてる。
 バックグラウンド再生がスムーズじゃない
