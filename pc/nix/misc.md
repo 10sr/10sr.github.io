@@ -1,3 +1,12 @@
+Mydns
+=====
+
+Register IP to mydns
+
+<https://gist.github.com/10sr/6696565>
+
+
+
 How to Licence
 ==============
 
@@ -122,8 +131,11 @@ git-svn
 
         $ git svn dcommit
 
+
+Hook after push
+---------------
+
 [Git で集中リポジトリーに push したら、自動でワーク・ディレクトリーにも反映させる](http://at-aka.blogspot.jp/2009/05/git-push.html)
-----------------
 
 push 先の レポジトリの `hooks/post-receive` に以下のように書く
 
