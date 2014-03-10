@@ -21,12 +21,6 @@ SSHd Configs `/etc/ssh/sshd_config`
 
 [SSHd Configurations](https://gist.github.com/10sr/9465133)
 
-refs
-----
-
-* <http://www.kishiro.com/FreeBSD/ssh.html>
-* <http://tm.root-n.com/server:sshd:sshd_config>
-
 
 
 Port Forward
