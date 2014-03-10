@@ -19,20 +19,7 @@ How to Licence
 SSHd Configs `/etc/ssh/sshd_config`
 ===========
 
-Disable `PasswordAuthentication` and `ChallengeResponseAuthentication` to
-disable password authentication.
-
-
-    Protocol 2
-    PermitRootLogin no
-    PasswordAuthentication no
-    PermitEmptyPasswords no
-    ChallengeResponseAuthentication no
-    UsePAM no
-    RSAAuthentication no
-    # do not look up the remote host name: this will improve performance
-    UseDNS no
-
+[SSHd Configurations](https://gist.github.com/10sr/9465133)
 
 refs
 ----
