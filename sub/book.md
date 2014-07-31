@@ -87,6 +87,7 @@ ln
 * [ぶく速 色んな意味で寸止めでない作品](http://2chbooknews.blog114.fc2.com/blog-entry-5275.html)
 * [ぶく速 暴力セックスグロ鬱のうち二つ以上入ってるラノベ](http://2chbooknews.blog114.fc2.com/blog-entry-5789.html)
 * [ぶく速 【GA文庫】抒情性のある作品・作家がここ３年ぐらいで悉く切られた感じだよな](http://2chbooknews.blog114.fc2.com/blog-entry-5856.html)
+* [アニメ化してないけど面白いラノベ：ひまねっと](http://himarin.net/archives/7788936.html)
 
 ***
 
