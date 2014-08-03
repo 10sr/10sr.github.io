@@ -10,9 +10,8 @@ softs
 
 * 7zip
 * dropbox
-* virtuawin alt+arrow to switch desktops (win+arrow cannot be assigned)
+* [仮想デスクトップ - 冷凍庫](http://d.hatena.ne.jp/sr10/20140202/1391344473)
 * security essentials
-* [tclock-101021-analog](http://www22.atpages.jp/tclock2ch/x64.html)
 * [iceiv+putty](http://ice.hotmint.com/putty/)
 Save prefs in ini by locating ini file
 * caldix
@@ -66,3 +65,9 @@ Virtualbox 上で使う時の設定
 * deamon tools lite
 * ネットワークドライブ
 * directx の設定 [Sun VirtualBox Direct3Dを有効にする方法｜passe'](http://ameblo.jp/ef-gc35-3223/entry-10343421443.html)
+
+
+VBoxHeadlessTray
+----------------
+
+GUIを出さずに済む。自動起動もできる。
