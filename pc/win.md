@@ -17,6 +17,8 @@ Save prefs in ini by locating ini file
 * caldix
 * [InsAssist](http://fow.minim.ne.jp/down/ap/a002.html)
 * [chocolatey](https://chocolatey.org/)
+* windirstat
+* synergy マウス・キーボード共有ソフト
 
 
 cygwin
