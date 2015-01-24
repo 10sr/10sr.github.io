@@ -1,5 +1,3 @@
-[About Me](#about_me)
-
 書いたもの
 ><http://10sr.hateblo.jp/>
 
