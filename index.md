@@ -8,9 +8,3 @@
 
 github
 ><https://github.com/10sr>
-
-ブックマーク
-><http://delicious.com/10sr>
-
-フィードまとめ
-><http://friendfeed.com/10sr>
