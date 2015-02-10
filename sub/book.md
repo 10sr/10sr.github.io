@@ -88,6 +88,9 @@ ln
 * [ぶく速 暴力セックスグロ鬱のうち二つ以上入ってるラノベ](http://2chbooknews.blog114.fc2.com/blog-entry-5789.html)
 * [ぶく速 【GA文庫】抒情性のある作品・作家がここ３年ぐらいで悉く切られた感じだよな](http://2chbooknews.blog114.fc2.com/blog-entry-5856.html)
 * [アニメ化してないけど面白いラノベ：ひまねっと](http://himarin.net/archives/7788936.html)
+* [「最近のラノベ」を理解したい人へ薦める、単巻で完結する10冊 - 法華狼の日記](http://d.hatena.ne.jp/hokke-ookami/20150202/1423067148)
+* [だいたい一年以内に刊行されたオススメの単巻ラノベ10選（石川博品抜き） - WINDBIRD](http://kazenotori.hatenablog.com/entry/2014/08/31/124315)
+* [「最近のラノベは～」の正体見たり加齢オバマ - 高度に発達した気遣いは、気違いと区別がつかない](http://d.hatena.ne.jp/srpglove/20150203/p1)
 
 ***
 
