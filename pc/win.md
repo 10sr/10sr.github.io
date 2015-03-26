@@ -17,7 +17,10 @@ Save prefs in ini by locating ini file
 * caldix
 * [InsAssist](http://fow.minim.ne.jp/down/ap/a002.html)
 * [chocolatey](https://chocolatey.org/)
-* windirstat
+* 使用量調査
+  * windirstat
+  * [DiskInfo](http://www.vector.co.jp/magazine/softnews/090522/n0905221.html)
+  * [DriveAnalyzer](http://www.vector.co.jp/magazine/softnews/041201/n0412012.html)
 * synergy マウス・キーボード共有ソフト
 
 
