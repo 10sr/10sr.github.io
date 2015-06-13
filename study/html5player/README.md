@@ -10,3 +10,6 @@ html5 で flv を再生できないか？
   これは結局プラグインがいるやつ？
 
 * https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats
+* http://stackoverflow.com/questions/2248800/play-flv-in-html
+
+  video.js は簡潔なやり方ではあるけど、裏で flash を使ってるように見える
