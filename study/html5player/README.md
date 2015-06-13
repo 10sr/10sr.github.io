@@ -8,3 +8,5 @@ html5 で flv を再生できないか？
 * http://www.lets-develop.com/html5-html-css-css3-php-wordpress-jquery-javascript-photoshop-illustrator-flash-tutorial/html-html5-html-5/how-to-embed-flv-html5-document/
 
   これは結局プラグインがいるやつ？
+
+* https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats
