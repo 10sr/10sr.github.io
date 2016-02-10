@@ -6,6 +6,7 @@
 * [ぶく速 形式自体が普通の小説ではないようなSF](http://2chbooknews.blog114.fc2.com/blog-entry-4342.html)
 * [ぶく速 社会とうまく関わりを持てない系の作品](http://2chbooknews.blog114.fc2.com/blog-entry-4014.html)
 * 公然の秘密 安部公房
+* ひとめあなたに… (創元SF文庫) 文庫 – 2008/5/29 新井 素子 (著)
 * 大江健三郎
 * 耳の物語 開高健
 * 北方謙三
