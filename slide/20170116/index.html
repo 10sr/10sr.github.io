@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+
+      .remark-slide-content {
+        font-size: 1.6em;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# OSS で<br>ソース行総数を4倍にする<br>PR を出してマージされた話
+
+## 2017/01/16
+
+## 10sr
+
+---
+
+# About Me
+
+* 10sr
+* XXXXXX
+    * Java とか Scala (Apache Spark) とか Python とか
+* 好きなものはスクリーンエディタです
+    * Emacs! Emacs!
+        * Emacs Lisp 書きます
+    * micro editor はかわいいです
+    * 宗教戦争は NO
+* ドール始めました
+
+---
+
+# 既存のコード行数に対して、3倍の行の追加を伴う PR を出しました
+
+---
+
+# 既存のコード行数に対して、3倍の行の追加を伴う PR を出しました
+
+* これ
+
+![addcore](addcore.png)
+
+---
+
+# 既存のコード行数に対して、3倍の行の追加を伴う PR を出しました
+
+それまでのソースの行数
+
+* 350 行
+
+この PR による追加
+
+* `+1,152 -17`
+
+---
+
+# 既存のコード行数に対して、3倍の行の追加を伴う PR を出しました
+
+どういう経緯でそういう PR を出したのか、どうやってそれがマージされたのかについて喋ります。
+
+---
+
+# 出したレポジトリ
+
+* editorconfig-emacs
+  * EditorConfig プロジェクトの Emacs プラグイン
+
+---
+
+# 出したレポジトリ
+
+* editorconfig-emacs
+  * EditorConfig プロジェクトの Emacs プラグイン
+
+## EditorConfig?
+* プロジェクトローカルなエディタ設定を共通化するファイル
+  * 申し訳ないですが詳しい説明はおこないません＞＜
+    * ググれば解説記事はたくさん出ると思います。便利なので使ってみるといいです
+* エディタ（など）ごとに Plugin がある
+  * Emacs, Vim, ATOM, IntelliJ, GitHub...
+
+
+---
+
+# 問題だったこと
+
+Emacs にはプラグイン管理システムがありますが、 EditorConfig プラグインのインストールはちょっと面倒だった
+
+1. Emacs パッケージシステムで EditorConfig プラグイン（ Emacs Lisp 部分）を導入する
+2. *それとは別に* 、システムのパッケージマネージャなどで `editorconfig` コマンドを導入する
+  * `brew install editorconfig` など
+
+---
+
+# 問題だったこと
+
+Emacs にはプラグイン管理システムがありますが、 EditorConfig プラグインのインストールはちょっと面倒だった
+
+1. Emacs パッケージシステムで EditorConfig プラグイン（ Emacs Lisp 部分）を導入する
+2. *それとは別に* 、システムのパッケージマネージャなどで `editorconfig` コマンドを導入する
+  * `brew install editorconfig` など
+
+ほんとは Emacs にプラグイン導入するだけで使えるようになってほしい…
+
+* エディタの設定なのに、そこだけ外部の環境に依存する
+* 初期化ファイルの共有だけで Emacs の設定が完結しない
+* <font color="red">＞地味に不便＜</font>
+
+---
+
+# 不便なのでどうにかしたい
+
+具体的には、 `editorconfig` コマンドのインストールをなしで済ませたい
+
+---
+
+# 不便なのでどうにかしたい
+
+具体的には、 `editorconfig` コマンドのインストールをなしで済ませたい
+
+-> `editorconfig` コマンドの全機能を Emacs Lisp で実装してしまえばいいのでは？？？？？
+
+---
+
+# 不便なのでどうにかしたい
+
+具体的には、 `editorconfig` コマンドのインストールをなしで済ませたい
+
+-> `editorconfig` コマンドの全機能を Emacs Lisp で実装してしまえばいいのでは？？？？？
+
+-> しました
+
+* 一週間くらいでガリガリ書いた
+* fnmatch (Glob) を再実装する必要があったりしたのがアレだった
+
+---
+
+## テスト通ったしプラグインから使ってもらうようにしたいな
+
+この時点で本家に取り込んでもらう気満々だった
+
+---
+
+## テスト通ったしプラグインから使ってもらうようにしたいな
+
+この時点で本家に取り込んでもらう気満々だった
+
+自分の実装は 1000 行超、それに対し今あるコードは 350 行程度
+
+-> いや無理でしょ…
+
+* 勝手にやってる野良プロジェクト
+* 自分は EditorConfig とはなんの関係もなかった
+
+---
+
+じゃあどうしようか？
+
+もともとの目的は、 Emacs パッケージだけで完結することだったはず
+
+プラグインに取り込んでもらう必要はない
+
+公開して、使えるようになれば十分では
+
+`editorconfig` コマンドとどちらを使うようにするか選択できるようにしよう
+
+-> 使用する関数を設定できる変数を追加する PR を出した
+
+-> これ全部こっちにいれちゃおうぜ。あと Emacs あんまり分かる人いないから Organization 入ってよ
+
+-> はい
+
+
+
+
+
+
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
