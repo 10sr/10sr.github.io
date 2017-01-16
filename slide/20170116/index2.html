@@ -15,9 +15,23 @@
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
 
+      @page {
+        size: 1210px 681px;
+        margin: 0;
+      }
+
+      @media print {
+        .remark-slide-scaler {
+          width: 100% !important;
+          height: 100% !important;
+          transform: scale(1) !important;
+          top: 0 !important;
+          left: 0 !important;
+        }
+      }
 
       .remark-slide-content {
-        font-size: 1.6em;
+        font-size: 1.4em;
       }
     </style>
   </head>
@@ -26,7 +40,7 @@
 
 class: center, middle
 
-# OSS で<br>ソース行総数を4倍にする<br>PR を出してマージされた話
+# EditorConfig に（多分）日本で一番詳しくなった話
 
 ## 2017/01/16
 
@@ -48,33 +62,121 @@ class: center, middle
 
 ---
 
-# 既存のコード行数に対して、3倍の行の追加を伴う PR を出しました
+# EditorConfig という便利なものがあります
 
 ---
 
-# 既存のコード行数に対して、3倍の行の追加を伴う PR を出しました
+# EditorConfig という便利なものがあります
 
-* これ
+http://editorconfig.org
 
-![addcore](addcore.png)
+> EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
+
+* プロジェクトにこんな感じのファイルを配置すると、いい感じにエディタを設定してくれる
+
+```ini
+[*]
+indent_style = space
+indent_size = 4
+
+[*.js]
+indent_size = 2
+```
 
 ---
 
-# 既存のコード行数に対して、3倍の行の追加を伴う PR を出しました
+# EditorConfig という便利なものがあります
 
-それまでのソースの行数
 
-* 350 行
 
-この PR による追加
+地味に利用者はそれなりにいます
 
-* `+1,152 -17`
+<!-- * Qiita 記事の :+1: で一番多いものは 217 -->
+* 使用しているプロジェクト（例）
+  * Node.js
+  * Ruby
+  * homebrew
+  * zsh
+  * そのほかいろいろ
+      * [Projects-Using-EditorConfig](https://github.com/editorconfig/editorconfig/wiki/Projects-Using-EditorConfig)
 
 ---
 
-# 既存のコード行数に対して、3倍の行の追加を伴う PR を出しました
+# EditorConfig という便利なものがあります
 
-どういう経緯でそういう PR を出したのか、どうやってそれがマージされたのかについて喋ります。
+* クロスエディタ
+* エディタ毎に Plugin がある
+  * Vim, ATOM, Notepad++, IntelliJ, GitHub...
+* もちろん Emacs 用プラグインもある
+
+
+---
+
+# Emacs 用 EditorConfig プラグイン
+
+https://github.com/editorconfig/editorconfig-emacs
+
+---
+
+# Emacs 用 EditorConfig プラグイン
+
+https://github.com/editorconfig/editorconfig-emacs
+
+べんりだけど、ちょっとイケてない部分があった
+
+-> インストール方法
+
+---
+
+# editorconfig-emacs
+
+インストール方法
+
+1. Emacs のパッケージ管理システムで `editorconfig` （ Emacs Lisp 部分）を導入する
+2. *それとは別に* 、システムのパッケージマネージャなどで `editorconfig` コマンドを導入する
+  * `brew install editorconfig` など
+  * <font color="red">＞地味に不便＜</font>
+
+
+---
+
+# editorconfig-emacs
+
+ほんとは Emacs にプラグイン導入するだけで使えるようになってほしい…
+
+* せっかく Emacs にパッケージシステムがあるのに、インストールがそれだけで完結しない
+  * エディタの設定なのに、そこだけ外部の環境に依存する
+  * 初期化ファイルの共有だけで Emacs の設定が完結しない
+
+---
+
+# どうにかしたい
+
+`editorconfig` コマンドのインストールをなしで済ませたい
+
+---
+
+# どうにかしたい
+
+`editorconfig` コマンドのインストールをなしで済ませたい
+
+-> `editorconfig` コマンドの全機能を <font color="red">Emacs Lisp</font> で実装してしまえばいいのでは？？？？？
+
+---
+
+# どうにかしたい
+
+`editorconfig` コマンドのインストールをなしで済ませたい
+
+-> `editorconfig` コマンドの全機能を <font color="red">Emacs Lisp</font> で実装してしまえばいいのでは？？？？？
+
+-> しました
+
+* 一週間くらいでガリガリ書いた
+* fnmatch (Glob) を再実装する必要があったりしたのがアレだった
+
+
+
 
 ---
 
@@ -120,6 +222,7 @@ Emacs にはプラグイン管理システムがありますが、 EditorConfig 
 
 ほんとは Emacs にプラグイン導入するだけで使えるようになってほしい…
 
+* せっかく Emacs にパッケージシステムがあるのに、インストールがそれだけで完結しない
 * エディタの設定なのに、そこだけ外部の環境に依存する
 * 初期化ファイルの共有だけで Emacs の設定が完結しない
 * <font color="red">＞地味に不便＜</font>
@@ -150,6 +253,10 @@ Emacs にはプラグイン管理システムがありますが、 EditorConfig 
 
 * 一週間くらいでガリガリ書いた
 * fnmatch (Glob) を再実装する必要があったりしたのがアレだった
+
+---
+
+## テスト通ったしプラグインから使ってもらうようにしたいな
 
 ---
 
