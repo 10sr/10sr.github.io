@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/10sr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://10sr.github.io
+  * I am 10sr (https://keybase.io/10sr) on keybase.
+  * I have a public key ASB3yXRP8gTioF--1EXNoZE3iQUxlzAlEwfj97G-5gr0ugo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101bc4f393c8baa91d3b1ab4f3bf3f841c1381eed32fb5672f29f65d168c7d61ded0a",
+            "host": "keybase.io",
+            "kid": "012077c9744ff204e2a05fbed445cda191378905319730251307e3f7b1bee60af4ba0a",
+            "uid": "be01a339d565817154c1fb9755208819",
+            "username": "10sr"
+        },
+        "service": {
+            "hostname": "10sr.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.22"
+    },
+    "ctime": 1494143548,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1494143460,
+        "hash": "c15a9365892c2ed8c158f5b6d693c59901293049d2eee1b4675c2150071ea6f11bf204ab56e143c6c25554f01af022e044b56a4553af26878d3b962ece58346f",
+        "seqno": 1056939
+    },
+    "prev": "e42c19e3ad0fbfdbd2f3d1131b6ba8f3bc00952a5787a2e922a61fc1dce71497",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgd8l0T/IE4qBfvtRFzaGRN4kFMZcwJRMH4/exvuYK9LoKp3BheWxvYWTFAvN7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxYmM0ZjM5M2M4YmFhOTFkM2IxYWI0ZjNiZjNmODQxYzEzODFlZWQzMmZiNTY3MmYyOWY2NWQxNjhjN2Q2MWRlZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNzdjOTc0NGZmMjA0ZTJhMDVmYmVkNDQ1Y2RhMTkxMzc4OTA1MzE5NzMwMjUxMzA3ZTNmN2IxYmVlNjBhZjRiYTBhIiwidWlkIjoiYmUwMWEzMzlkNTY1ODE3MTU0YzFmYjk3NTUyMDg4MTkiLCJ1c2VybmFtZSI6IjEwc3IifSwic2VydmljZSI6eyJob3N0bmFtZSI6IjEwc3IuZ2l0aHViLmlvIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjIifSwiY3RpbWUiOjE0OTQxNDM1NDgsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5NDE0MzQ2MCwiaGFzaCI6ImMxNWE5MzY1ODkyYzJlZDhjMTU4ZjViNmQ2OTNjNTk5MDEyOTMwNDlkMmVlZTFiNDY3NWMyMTUwMDcxZWE2ZjExYmYyMDRhYjU2ZTE0M2M2YzI1NTU0ZjAxYWYwMjJlMDQ0YjU2YTQ1NTNhZjI2ODc4ZDNiOTYyZWNlNTgzNDZmIiwic2Vxbm8iOjEwNTY5Mzl9LCJwcmV2IjoiZTQyYzE5ZTNhZDBmYmZkYmQyZjNkMTEzMWI2YmE4ZjNiYzAwOTUyYTU3ODdhMmU5MjJhNjFmYzFkY2U3MTQ5NyIsInNlcW5vIjo4LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQA6tSBZXDDHKMVm4jCT6GVGm+to+GM/RGf64Lj55nbO5VvRm+WpC/8x46uuiiMgcVWvhOL8A2g7Jt7YC+uFSRgqoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCAPtzqR/smrr9Px/mBdkvI1pt4Ge4EQP8v5oD4l+uz7W6N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/10sr
+
+==================================================================
