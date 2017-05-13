@@ -1,8 +1,8 @@
-書いたもの
-><http://10sr.hateblo.jp/>
+SNS Account
+-----------
 
-ついったー
-><http://twitter.com/10sr>
+Twitter: [@10sr](https://twitter.com/10sr)
 
-github
-><https://github.com/10sr>
+Mastodon: [@10sr](https://st.3ends.info/@10sr)
+
+GitHub: [10sr](https://github.com/10sr)
