@@ -2,6 +2,7 @@ body {
     font-family : monospace;
     padding : 0% 10%;
     color : #444;
+    background-color: #f9f9f9;
 }
 
 .content {
