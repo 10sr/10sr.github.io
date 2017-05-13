@@ -1,3 +1,10 @@
+Profile
+-------
+
+HN: 10sr
+
+
+
 SNS Accounts
 ------------
 
@@ -10,4 +17,6 @@ SNS Accounts
 Products and Contributings
 -------------
 
-* [EditorConfig Emacs Plugin](http://editorconfig.org)
+* [EditorConfig](http://editorconfig.org)
+* [EditorConfig Emacs Plugin](http://github.com/editorconfig/editorconfig-emacs)
+* [EditorConfig Micro Plugin](http://github.com/10sr/editorconfig-micro)
