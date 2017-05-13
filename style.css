@@ -1,11 +1,11 @@
 body {
     font-family : monospace;
-    padding : 2%;
+    padding : 0% 10%;
     color : #444;
 }
 
 .content {
-    margin : 5%;
+    margin : 3% 0%;
 }
 
 a:link {
@@ -36,7 +36,7 @@ pre {
 h1 {
     border-style : none none double none;
     border-width : 0.15em;
-    margin-top : 3em;
+    margin-top : 1em;
 }
 
 h2 {
