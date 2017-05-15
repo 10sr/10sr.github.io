@@ -1,3 +1,0 @@
-# compile of program using header and lib installed on $HOME/.local
-
-`$ CLFAGS=-I$HOME/.local/include LDFLAGS=-L$HOME/.local/lib ./configure --prefix=$HOME/.local && make && make install`
