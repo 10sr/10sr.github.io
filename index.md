@@ -17,7 +17,7 @@ SNS Accounts
 * Qiita: [10sr](http://qiita.com/10sr)
 * Keybase.io: [10sr](https://keybase.io/10sr)
 * Hatena: [sr10](http://profile.hatena.ne.jp/sr10/)
-* Ghost Blog [b.3ends.info](https://b.3ends.info)
+* Ghost Blog: [b.3ends.info](https://b.3ends.info)
 
 
 Products and Contributings
@@ -46,4 +46,5 @@ EditorConfig 公式プラグイン以外にも、個人的にパッケージを�
 - <https://github.com/10sr/switch-buffer-functions-el>
 - <https://github.com/10sr/shell-split-string-el>
 - <https://github.com/10sr/git-command-el>
+- <https://github.com/10sr/prompt-text-el>
 - <https://github.com/10sr/editorconfig-charset-extras-el>
