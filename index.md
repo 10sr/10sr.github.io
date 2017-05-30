@@ -19,7 +19,7 @@ SNS Accounts
 Products and Contributings
 -------------
 
-[EditorConfig](http://editorconfig.org) に、 
+[EditorConfig](http://editorconfig.org) で、
 [GitHub Organization](https://github.com/editorconfig/)
 のメンバーとして開発に参加しています。
 
