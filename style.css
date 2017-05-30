@@ -53,12 +53,6 @@ h3 {
     margin-top : 1em;
 }
 
-/* title h1 */
-h1.title {
-    border-style : none none solid none;
-    border-width : 0.1em;
-}
-
 /* menu ul */
 ul.menu {
     /* margin : 0; */
