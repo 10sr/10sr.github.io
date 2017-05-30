@@ -13,7 +13,7 @@ SNS Accounts
 * OStatus (Mastodon): [10sr@st.3ends.info](https://st.3ends.info/@10sr)
 * Qiita: [10sr](http://qiita.com/10sr)
 * Keybase.io: [10sr](https://keybase.io/10sr)
-* Hatena: [sr10](http://profile.hatena.ne.jp/sr10)
+* Hatena: [sr10](http://profile.hatena.ne.jp/sr10/)
 
 
 Products and Contributings
