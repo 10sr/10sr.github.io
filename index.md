@@ -3,7 +3,7 @@ Profile
 
 甘いものとカフェインが好きです。
 
-HN: 10sr
+Name: 10sr
 
 
 
