@@ -1,13 +1,15 @@
 var Render = (function(){
     var URL = null;
-    var DIV_ID = null;
+    var INPUT_ID = null;
+    var OUTPUT_ID = null;
 
     function init(opts){
         URL = opts.url;
-        DIV_ID = opts.div_id;
+        INPUT_ID = opts.inputId;
+        OUTPUT_ID = opts.outputId;
 
-        if (!(URL && DIV_ID)) {
-            console.log("Aborting: URL and/or DIV_ID not given");
+        if (!(URL && INPUT_ID && OUTPUT_ID)) {
+            console.log("Aborting: Required parameters not given");
             return;
         }
 
@@ -20,34 +22,22 @@ var Render = (function(){
     }
 
     function onLoadListener(){
-        var div_content = window.document.getElementById(DIV_ID);
-        if (! div_content) { return; }
-
-        while (div_content.hasChildNodes()) {
-            div_content.removeChild(div_content.lastChild);
+        var elemInput = window.document.getElementById(INPUT_ID);
+        var elemOutput = window.document.getElementById(OUTPUT_ID);
+        if (!(elemInput && elemOutput)) {
+            console.log("Aborting: Required elements not found");
+            return;
         }
 
-        fetchContent(URL, function(responseText){
-            div_content.innerHTML = marked(responseText);
-        });
-        return;
-    }
+        var rawContent = elemInput.innerText;
 
-    function fetchContent(url, callback){
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", url, true);
-        xhr.onreadystatechange = function(){
-            if (xhr.readyState === 4) {
-                callback(xhr.responseText);
-            }
-        };
-        if (xhr.overrideMimeType) {
-            xhr.overrideMimeType('text/plain; charset=UTF-8');
+        while (elemOutput.hasChildNodes()) {
+            elemOutput.removeChild(elemOutput.lastChild);
         }
-        xhr.send(null);
+
+        elemOutput.innerHTML = marked(rawContent);
         return;
     }
-
     return {
         init: init
     };

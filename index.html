@@ -12,16 +12,68 @@
   </head>
   <body>
     <h1 class="title">10sr</h1>
-    <div id="render-content" class="content">
+    <div id="render-output" class="content">
       <ul>
         <li><a href="index.md">index</a></li>
       </ul>
+      <pre id="render-input">
+Profile
+-------
+
+甘いものとカフェインが好きです。
+
+Name: 10sr
+
+
+
+SNS Accounts
+------------
+
+* Twitter: [@10sr](https://twitter.com/10sr)
+* GitHub: [10sr](https://github.com/10sr)
+* OStatus (Mastodon): [10sr@st.3ends.info](https://st.3ends.info/@10sr)
+* Qiita: [10sr](http://qiita.com/10sr)
+* keybase.io: [10sr](https://keybase.io/10sr)
+* Hatena: [sr10](http://profile.hatena.ne.jp/sr10/)
+
+
+Products and Contributings
+-------------
+
+### EditorConfig ([HomePage](http://editorconfig.org))
+
+
+[GitHub Organization](https://github.com/editorconfig/)
+のメンバーとして開発に参加しています。
+
+主に [Emacs Plugin](http://github.com/editorconfig/editorconfig-emacs)
+のほとんど全部を見ており、細かな改善・提出された Issue の処理的なことをしています。
+
+また、 [Micro Plugin](http://github.com/10sr/editorconfig-micro)
+も作っています。
+
+
+### Emacs Packages
+
+EditorConfig 公式プラグイン以外にも、個人的にパッケージを作ったりしています。
+
+
+- https://github.com/10sr/github-elpa
+- https://github.com/10sr/term-run-el
+- https://github.com/10sr/switch-buffer-functions-el
+- https://github.com/10sr/shell-split-string-el
+- https://github.com/10sr/git-command-el
+- https://github.com/10sr/prompt-text-el
+- https://github.com/10sr/editorconfig-charset-extras-el
+
+      </pre>
     </div>
     <hr />
     <script type="text/javascript">
       Render.init({
-          url: "index.md",
-          div_id: "render-content"
+      url: "index.md",
+      inputId: "render-input",
+      outputId: "render-output"
       });
     </script>
   </body>
