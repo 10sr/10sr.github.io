@@ -7,17 +7,22 @@
     <meta http-equiv="Content-Style-Type" content="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
-    <!-- TODO: Remove dmd dependency! -->
-    <script type="text/javascript" src="./dmd.js"></script>
+    <script type="text/javascript" src="./render.js"></script>
     <title>10sr.github.io</title>
   </head>
   <body>
     <h1 class="title">10sr</h1>
-    <div id="dmd-content" class="content">
+    <div id="render-content" class="content">
       <ul>
-        <li><a href="index.md" title="index" class="dmd-page">index</a></li>
+        <li><a href="index.md">index</a></li>
       </ul>
     </div>
     <hr />
+    <script type="text/javascript">
+      Render.init({
+          url: "index.md",
+          div_id: "render-content"
+      });
+    </script>
   </body>
 </html>
