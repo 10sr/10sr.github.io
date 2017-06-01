@@ -1,7 +1,7 @@
 body {
     font-family : sans-serif;
     font-size: 1.1em;
-    padding : 2% 10%;
+    padding : 10% 10%;
     color : #214;
     background-color: #f9f9f9;
 }
@@ -38,7 +38,6 @@ pre {
 h1 {
     border-style : none none double none;
     border-width : 0.15em;
-    margin-top : 3em;
 }
 
 h2 {
