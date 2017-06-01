@@ -51,22 +51,6 @@ h3 {
     margin-top : 2em;
 }
 
-/* menu ul */
-ul.menu {
-    /* margin : 0; */
-
-    /* padding : 1%; */
-
-    list-style-type : none;
-    text-align : right;
-
-}
-
-/* elements of menu ul */
-ul.menu li {
-    display : inline;
-}
-
 /* footer paragraph */
 p.footer {
     text-align : right;
