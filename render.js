@@ -1,3 +1,9 @@
+/**
+ * render.js - Render HTML content from Markdown string
+ * License: http://unlicense.org/
+ */
+
+
 var Render = (function(){
     var INPUT_ID = null;
     var OUTPUT_ID = null;
