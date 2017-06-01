@@ -1,14 +1,12 @@
 var Render = (function(){
-    var URL = null;
     var INPUT_ID = null;
     var OUTPUT_ID = null;
 
     function init(opts){
-        URL = opts.url;
         INPUT_ID = opts.inputId;
         OUTPUT_ID = opts.outputId;
 
-        if (!(URL && INPUT_ID && OUTPUT_ID)) {
+        if (!(INPUT_ID && OUTPUT_ID)) {
             console.log("Aborting: Required parameters not given");
             return;
         }
