@@ -9,6 +9,7 @@ body {
     max-width: 58rem;
     margin-right: auto;
     margin-left: auto;
+    padding: 1rem;
 }
 
 a:link {
