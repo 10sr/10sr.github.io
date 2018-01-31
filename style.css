@@ -7,7 +7,9 @@ body {
 }
 
 .content {
-    margin : 3% 0%;
+    max-width: 58rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 a:link {
