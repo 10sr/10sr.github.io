@@ -6,10 +6,10 @@ body {
 }
 
 .content {
-    max-width: 58rem;
+    max-width: 54rem;
     margin-right: auto;
     margin-left: auto;
-    padding: 1rem;
+    padding: 4rem;
 }
 
 a:link {
