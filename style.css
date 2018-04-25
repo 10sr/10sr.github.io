@@ -8,8 +8,9 @@ body {
 .content {
     max-width: 45rem;
     margin-right: auto;
-    margin-left: auto;
-    padding: 4rem;
+    /* margin-left: auto; */
+    margin-left: 0;
+    padding: 1rem;
 }
 
 a:link {
