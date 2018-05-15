@@ -35,21 +35,21 @@ pre {
     text-indent: 0;
 }
 
-h1 {
-    border-style : none none double none;
-    border-width : 0.15em;
-}
+/* h1 { */
+/*     border-style : none none double none; */
+/*     border-width : 0.15em; */
+/* } */
 
-h2 {
-    border-style : none none solid none;
-    border-width : 0.01em;
-    border-color : #aac;
-    margin-top : 3em;
-}
+/* h2 { */
+/*     border-style : none none solid none; */
+/*     border-width : 0.01em; */
+/*     border-color : #aac; */
+/*     margin-top : 3em; */
+/* } */
 
-h3 {
-    margin-top : 2em;
-}
+/* h3 { */
+/*     margin-top : 2em; */
+/* } */
 
 /* footer paragraph */
 p.footer {
