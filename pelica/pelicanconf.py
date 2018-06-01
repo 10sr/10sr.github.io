@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = '10sr'
 SITENAME = '10sr pelican test'
-SITEURL = ''
+SITEURL = 'https://10sr.github.io/pelica/output'
 
 PATH = 'content'
 
