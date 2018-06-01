@@ -1,3 +1,7 @@
+<http://profile.hatena.ne.jp/sr10/>
+
+<http://qiita.com/10sr>
+
 <https://medium.com/@10sr>
 
 <https://dev.to/10sr>
@@ -31,11 +35,7 @@
 
 <http://www.diigo.com/profile/srrr10>
 
-<http://twilog.org/10sr>
-
 <http://jottit.com/z45qk/>
-
-<http://10sr.hateblo.jp/>
 
 <http://codepad.org/users/10sr>
 
