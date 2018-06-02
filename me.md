@@ -26,6 +26,19 @@
 
 <http://d.hatena.ne.jp/sr10/>
 
+<https://www.diigo.com/profile/srrr10>
+
+<https://soundcloud.com/10sr>
+
+<http://b.hatena.ne.jp/sr10/>
+
+<https://gravatar.com/10sr>
+
+<https://readthedocs.org/profiles/10sr/>
+
+<https://travis-ci.org/10sr>
+
+<https://bitbucket.org/10sr/>
 
 ***
 
