@@ -40,6 +40,10 @@
 
 <https://bitbucket.org/10sr/>
 
+<https://app.terraform.io/10sr>
+
+<https://hub.docker.com/u/10sr/>
+
 ***
 
 <http://blog.textt.net/10sr>
