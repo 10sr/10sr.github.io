@@ -44,20 +44,14 @@
 
 <https://hub.docker.com/u/10sr/>
 
-***
-
 <http://blog.textt.net/10sr>
 
 <http://sourceforge.jp/users/sr10/>
-
-<http://www.diigo.com/profile/srrr10>
 
 <http://jottit.com/z45qk/>
 
 <http://codepad.org/users/10sr>
 
 <http://10sr.jottit.com>
-
-<https://bitbucket.org/10sr>
 
 <https://plus.google.com/118413039992611300939/posts>
