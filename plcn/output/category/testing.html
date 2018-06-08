@@ -45,6 +45,34 @@
 
 <article>
   <div class="article__title">
+    <h1><a href="../long-markdown-test.html">Long Markdown test</a></h1>
+  </div>
+  <div class="article__meta">
+    <p class="article__meta__post-date">Posted on: Fri 08 June 2018</p>
+    </p>
+  </div>
+  <div class="article__text">
+    <p>こんにちは、 <a href="https://github.com/editorconfig/editorconfig-emacs/graphs/contributors">EditorConfig Emacs Plugin をつくっています</a> 。</p>
+<h2>この文章はなに？</h2>
+<p><a href="http://editorconfig.org">EditorConfig</a> を書くとき・使うときに知っておくとべんりかもしれない細かな話を備忘録的につらつらと書いておくものです。
+順番は適当ですが、下に行くほどどうでもいい情報かもしれません。</p>
+<p>ここに書かれていることは、実のところほとんどドキュメント化されているわけではありません。
+ただし、 <code>.editorconfig</code> ファイルが正しく解釈されるかをテストする <a href="https://github.com/editorconfig/editorconfig-core-test">editorconfig-core-test</a> の中ですべて明示されていることなので、よほどのことがない限り変わらないんじゃないかなあと思います。</p>
+<p>この文章では、 EditorConfig の基本的な目的・使い方については説明しません。
+<a href="http://editorconfig.org">公式ドキュメント</a> や、 <a href="http://qiita.com/tags/EditorConfig">EditorConfig タグ</a> などをいい感じに参照してください。</p>
+<h2><code>editorconfig</code> コマンドの使い方</h2>
+<h3>独自なプロパティ定義</h3>
+<p><code>editorconfig</code> コマンドはサポートされている設定のみしか扱えないというわけではないので、 <code>.editorconfig</code> ファイルには好きな設定名と値のペアを追加することができます。</p>
+<p>例えば、 <code>/path/to/repo/.editorconfig</code> に</p>
+<p>```ini:/path/to/repo/.editorconfig
+[*.js]
+indent_style = space
+key0 …</p>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article__title">
     <h1><a href="../hoe.html">Hoe</a></h1>
   </div>
   <div class="article__meta">
