@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = '10sr'
 SITENAME = '10sr test pelican'
-SITEURL = 'https://10sr.github.io/plcn/output'
+SITEURL = ''
 
 PATH = 'content'
 
@@ -33,3 +33,9 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+
+##########
+### Themes
+
+THEME = 'hss'
