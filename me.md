@@ -57,3 +57,5 @@
 <https://plus.google.com/118413039992611300939/posts>
 
 <https://gitlab.com/10sr>
+
+<https://circleci.com/gh/10sr>
