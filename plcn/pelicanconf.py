@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = '10sr'
-SITENAME = '10sr test pelican'
+SITENAME = '10sr.github.io/b'
 SITEURL = ''
 
 PATH = 'content'
