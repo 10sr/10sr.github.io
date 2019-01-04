@@ -52,8 +52,6 @@
 
 <http://codepad.org/users/10sr>
 
-<http://10sr.jottit.com>
-
 <https://plus.google.com/118413039992611300939/posts>
 
 <https://gitlab.com/10sr>
