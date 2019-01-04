@@ -43,7 +43,7 @@ THEME = 'hss'
 USER_LOGO_URL = ''
 CUSTOM_HEADER_HTML = '''
 <style>
-.author .author__logo {
+.author, .author__logo {
     display: none;
 }
 </style>
