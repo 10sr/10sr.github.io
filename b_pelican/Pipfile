@@ -7,7 +7,7 @@ name = "pypi"
 
 [packages]
 
-pelican = "*"
+pelican = "==3.7.1"
 markdown = "*"
 
 
@@ -17,4 +17,4 @@ markdown = "*"
 
 [requires]
 
-python_version = "3.6"
+python_version = "3.7"
