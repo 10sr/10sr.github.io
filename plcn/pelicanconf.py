@@ -41,3 +41,10 @@ RELATIVE_URLS = True
 THEME = 'hss'
 #USER_LOGO_URL = 'https://s.gravatar.com/avatar/a5f8f466a1c07ac174d899690fdfcbe7?s=80'
 USER_LOGO_URL = ''
+CUSTOM_HEADER_HTML = '''
+<style>
+.author {
+    display: none;
+}
+</style>
+'''
