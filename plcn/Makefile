@@ -14,6 +14,7 @@ hss:
 
 gen: hss
 	$(pelican) ./content -s ./publishconf.py
+	git add ../b
 
 start stop:
 	$(pipenv) run ./develop_server.sh $@ 8888
