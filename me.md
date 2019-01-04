@@ -1,3 +1,5 @@
+<https://10sr.github.io/b>
+
 <http://profile.hatena.ne.jp/sr10/>
 
 <http://qiita.com/10sr>
