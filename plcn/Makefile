@@ -17,4 +17,4 @@ gen: hss
 	git add ../b
 
 start stop:
-	$(pipenv) run ./develop_server.sh $@ 8888
+	$(pipenv) run ./develop_server.sh $@ 8989
