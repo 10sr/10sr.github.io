@@ -1,6 +1,6 @@
 pipenv ?= pipenv
 pelican := $(pipenv) run pelican
-root := $(PWD)
+root := $(CURDIR)
 
 .PHONY: default help gen start stop
 
