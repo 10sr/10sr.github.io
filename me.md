@@ -1,5 +1,9 @@
 <https://10sr.github.io/b>
 
+<https://st.3ends.info/@10sr>
+
+<https://keybase.io/10sr>
+
 <http://profile.hatena.ne.jp/sr10/>
 
 <http://qiita.com/10sr>
