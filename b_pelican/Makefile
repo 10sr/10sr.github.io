@@ -4,11 +4,14 @@ root := $(CURDIR)
 
 content_dir := ./content
 
-.PHONY: default help gen start stop new
+.PHONY: default help gen start stop new installdeps
 
 default: help
 
 help:
+
+installdeps:
+	$(pipenv) install
 
 hss:
 	git clone --depth 1 --branch 10sr "https://github.com/10sr/pelican-hss.git hss"
