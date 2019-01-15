@@ -40,6 +40,7 @@ var Render = (function(){
         }
 
         elemOutput.innerHTML = marked(rawContent);
+        elemInput.style.display = "none";
         return;
     }
     return {
