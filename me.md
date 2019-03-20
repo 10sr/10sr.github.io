@@ -1,6 +1,6 @@
-<https://10sr.github.io/b>
+<https://3ends.info>
 
-<https://st.3ends.info/@10sr>
+<https://10sr.github.io/b>
 
 <https://keybase.io/10sr>
 
@@ -23,8 +23,6 @@
 <https://freezepeach.xyz/10sr>
 
 <https://freezepeach.xyz/pleroma.html#/users/13946>
-
-<https://b.3ends.info/>
 
 <http://10sr.hateblo.jp/>
 
