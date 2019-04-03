@@ -13,11 +13,11 @@ help:
 installdeps:
 	$(pipenv) install
 
-hss:
-	git clone --depth 1 --branch 10sr "https://github.com/10sr/pelican-hss.git hss"
-	git checkout 10sr
+theme:
+	git clone --depth 1 --branch 10sr "https://github.com/10sr/pelicanyan.git" theme
+	#git checkout 10sr
 
-gen: hss
+gen: theme
 	$(pelican) ./${content_dir} -s ./publishconf.py
 	git add ../b
 
