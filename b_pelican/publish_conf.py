@@ -9,7 +9,7 @@ from base_conf import *
 
 OUTPUT_PATH = '../b'
 OUTPUT_SOURCES = True
-SITEURL = 'https://10sr.github.io/b'
+SITEURL = '/b'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
