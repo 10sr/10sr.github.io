@@ -18,7 +18,7 @@ theme:
 	#git checkout 10sr
 
 gen: theme
-	$(pelican) ./${content_dir} -s ./publishconf.py
+	$(pelican) ./${content_dir} -s ./publish_conf.py
 	git add ../b
 
 start stop:

@@ -38,4 +38,8 @@ RELATIVE_URLS = True
 ##########
 ### Themes
 
-from theme_pelicanyan import *
+import os
+import sys
+sys.path.append(os.curdir)
+
+from theme_pelicanyan_conf import *
