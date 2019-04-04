@@ -13,8 +13,10 @@ help:
 installdeps:
 	$(pipenv) install
 
-theme:
-	git clone --depth 1 --branch 10sr "https://github.com/10sr/pelicanyan.git" theme
+theme: pelicanyan  # Update this to change theme
+
+pelicanyan:
+	git clone --depth 1 --branch 10sr "https://github.com/10sr/pelicanyan.git" pelicanyan
 	#git checkout 10sr
 
 gen: theme
