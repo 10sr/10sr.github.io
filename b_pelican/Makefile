@@ -18,10 +18,10 @@ theme:
 	#git checkout 10sr
 
 gen: theme
-	$(pelican) ./${content_dir} -s ./publishconf.py
+	$(pelican) ./${content_dir} -s ./publish_conf.py
 	git add ../b
 
-start stop:
+start stop restart:
 	$(pipenv) run ./develop_server.sh $@ 8989
 
 

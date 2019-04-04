@@ -5,7 +5,7 @@ import os
 import sys
 sys.path.append(os.curdir)
 
-from pelicanconf import *
+from base_conf import *
 
 OUTPUT_PATH = '../b'
 OUTPUT_SOURCES = True
