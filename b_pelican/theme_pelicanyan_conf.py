@@ -16,5 +16,5 @@ SITEMAP_SAVE_AS = 'sitemap.xml'
 DEFAULT_LANG = 'en'
 DATE_FORMATS = { 'en': '%B %d, %Y', }
 STATIC_PATHS = ['images', 'favicon.ico']
-SITEDESCRIPTION = 'sample blog'
+SITEDESCRIPTION = '10sr public'
 # TYPOGRIFY=True

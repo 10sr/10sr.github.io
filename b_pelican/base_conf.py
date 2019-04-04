@@ -23,7 +23,7 @@ AUTHOR_FEED_RSS = None
 #          ('Python.org', 'http://python.org/'),
 #          ('Jinja2', 'http://jinja.pocoo.org/'),
 #          ('You can modify those links in your config file', '#'),)
-LINKS = (("< Top", "https://10sr.github.io"),)
+LINKS = (("^ Top", "https://10sr.github.io"),)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
