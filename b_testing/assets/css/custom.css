@@ -47,3 +47,8 @@ blockquote {
 body  {
     /* font-family: sans-serif; */
 }
+
+
+aside.postpromonav nav {
+    display: none;
+}
