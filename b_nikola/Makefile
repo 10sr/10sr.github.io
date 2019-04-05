@@ -1,0 +1,21 @@
+pipenv := pipenv
+nikola := $(pipenv) run nikola
+output_dir := ../b_testing
+
+themes:
+	git clone https://github.com/10sr/nikola-themes.git themes
+
+installdeps:
+	$(pipenv) install
+
+update: build
+	git add $(output_dir)
+
+build:
+	$(nikola) $@
+
+serve:
+	$(nikola) $@ -b
+
+new_post:
+	$(nikola) $@ --format=markdown
