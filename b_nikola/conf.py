@@ -25,7 +25,7 @@ SITE_URL = "https://10sr.github.io/b_testing/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://10sr.github.io/b_testing/"
 BLOG_EMAIL = "8.slashes@gmail.com"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."  # (translatable)
+BLOG_DESCRIPTION = "10sr public Nikola."  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -150,7 +150,7 @@ NAVIGATION_LINKS = {
 NAVIGATION_ALT_LINKS = {DEFAULT_LANG: {}}
 
 # Name of the theme to use.
-THEME = "bootblog4"
+THEME = "v7/lanyon"
 
 # Primary color of your theme. This will be used to customize your theme.
 # Must be a HEX value.
@@ -1336,7 +1336,9 @@ WARN_ABOUT_TAG_METADATA = False
 
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
-GLOBAL_CONTEXT = {}
+GLOBAL_CONTEXT = {
+    "lanyon_subtheme": "layout-reverse"
+}
 
 # Add functions here and they will be called with template
 # GLOBAL_CONTEXT as parameter when the template is about to be
