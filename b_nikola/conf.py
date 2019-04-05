@@ -16,7 +16,7 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "10sr"  # (translatable)
+BLOG_AUTHOR = ""  # (translatable)
 BLOG_TITLE = "My Nikola Site"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
