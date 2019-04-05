@@ -138,7 +138,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("https://10sr.github.io", "^ Up"),
+        ("../", "^ Up"),
         ("/", "Top"),
         ("/archive.html", "Archive"),
         ("/categories/", "Tags"),
