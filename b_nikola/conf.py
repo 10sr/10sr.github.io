@@ -1342,6 +1342,7 @@ WARN_ABOUT_TAG_METADATA = False
 GLOBAL_CONTEXT = {
     "lanyon_subtheme": "layout-reverse",
     "has_custom_css": True,
+    "index_teasers": True,
 }
 
 # Add functions here and they will be called with template
