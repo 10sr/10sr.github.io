@@ -1,0 +1,49 @@
+html {
+    /* font-family: "PT Serif", Georgia, "Times New Roman", serif; */
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+
+.content h1 {
+    border-style : none none double none;
+    border-width : 0.1em;
+    border-color : #ccc;
+    margin-top : 2em;
+    margin-bottom : 1em;
+}
+
+.content h2 {
+    border-style : none none solid none;
+    border-width : 0.01em;
+    border-color : #aaa;
+    margin-top : 2em;
+    margin-bottom : 1em;
+}
+
+.content h3 {
+    margin-top : 2em;
+    margin-bottom : 1em;
+}
+
+
+.entry-content pre.code {
+    background-color : #eee;
+    padding : 0.9em 0.9em;     /* topbuttom leftright*/
+    margin : 1em .4em;
+    text-indent: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+blockquote {
+    color: #666;
+}
+
+/* ? */
+body  {
+    /* font-family: sans-serif; */
+}
