@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = ""  # (translatable)
-BLOG_TITLE = "My Nikola Site"  # (translatable)
+BLOG_TITLE = "10sr.github.io/b_testing"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://10sr.github.io/b_testing/"
@@ -138,6 +138,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        ("https://10sr.github.io", "^ Top"),
         ("/archive.html", "Archive"),
         ("/categories/", "Tags"),
         ("/rss.xml", "RSS feed"),
