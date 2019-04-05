@@ -22,8 +22,8 @@ BLOG_TITLE = "10sr.github.io/b_testing"  # (translatable)
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://10sr.github.io/b_testing"
 # This is the URL where Nikola's output will be deployed.
-# If not set, defaults to SITE_URL
-# BASE_URL = ""
+#  If not set, defaults to SITE_URL
+BASE_URL = "/b_testing"
 BLOG_EMAIL = "8.slashes@gmail.com"
 BLOG_DESCRIPTION = "10sr public Nikola."  # (translatable)
 
