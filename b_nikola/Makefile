@@ -11,7 +11,7 @@ installdeps:
 update: build
 	git add $(output_dir)
 
-build:
+build: themes
 	$(nikola) $@
 
 serve:
