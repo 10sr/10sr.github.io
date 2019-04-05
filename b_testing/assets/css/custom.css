@@ -52,3 +52,11 @@ body  {
 aside.postpromonav nav {
     display: none;
 }
+
+#footer {
+    margin-top: 3rem;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-top-style: solid;
+    padding-top: 1rem;
+}
