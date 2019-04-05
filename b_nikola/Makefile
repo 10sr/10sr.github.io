@@ -9,3 +9,6 @@ build:
 
 serve:
 	$(nikola) $@ -b
+
+new_post:
+	$(nikola) $@ --format=markdown
