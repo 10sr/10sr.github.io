@@ -6,51 +6,51 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>/b_testing/authors.xml</loc>
+  <loc>https://10sr.github.io/b_testing/authors.xml</loc>
   <lastmod>2019-04-05T09:33:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/b_testing/authors/roberto-alsina.xml</loc>
+  <loc>https://10sr.github.io/b_testing/authors/roberto-alsina.xml</loc>
   <lastmod>2019-04-05T09:33:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/b_testing/categories/blog.xml</loc>
+  <loc>https://10sr.github.io/b_testing/categories/blog.xml</loc>
   <lastmod>2019-04-05T09:33:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/b_testing/categories/cat_nikola.xml</loc>
+  <loc>https://10sr.github.io/b_testing/categories/cat_nikola.xml</loc>
   <lastmod>2019-04-05T09:33:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/b_testing/categories/cat_testing.xml</loc>
+  <loc>https://10sr.github.io/b_testing/categories/cat_testing.xml</loc>
   <lastmod>2019-04-05T09:33:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/b_testing/categories/demo.xml</loc>
+  <loc>https://10sr.github.io/b_testing/categories/demo.xml</loc>
   <lastmod>2019-04-05T09:33:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/b_testing/categories/nikola.xml</loc>
+  <loc>https://10sr.github.io/b_testing/categories/nikola.xml</loc>
   <lastmod>2019-04-05T09:33:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/b_testing/categories/python.xml</loc>
+  <loc>https://10sr.github.io/b_testing/categories/python.xml</loc>
   <lastmod>2019-04-05T09:33:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/b_testing/galleries/demo/rss.xml</loc>
+  <loc>https://10sr.github.io/b_testing/galleries/demo/rss.xml</loc>
   <lastmod>2019-04-05T09:34:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/b_testing/galleries/rss.xml</loc>
+  <loc>https://10sr.github.io/b_testing/galleries/rss.xml</loc>
   <lastmod>2019-04-05T09:34:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/b_testing/rss.xml</loc>
+  <loc>https://10sr.github.io/b_testing/rss.xml</loc>
   <lastmod>2019-04-05T09:33:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/b_testing/sitemap.xml</loc>
-  <lastmod>2019-04-05T09:34:00Z</lastmod>
+  <loc>https://10sr.github.io/b_testing/sitemap.xml</loc>
+  <lastmod>2019-04-05T09:37:00Z</lastmod>
  </sitemap>
 </sitemapindex>
