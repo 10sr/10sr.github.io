@@ -17,15 +17,15 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = ""  # (translatable)
-BLOG_TITLE = "10sr.github.io/b_testing"  # (translatable)
+BLOG_TITLE = "10sr.github.io/b"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://10sr.github.io/b_testing"
+SITE_URL = "https://10sr.github.io/b"
 # This is the URL where Nikola's output will be deployed.
 #  If not set, defaults to SITE_URL
-BASE_URL = "https://10sr.github.io/b_testing/"
+BASE_URL = "https://10sr.github.io/b/"
 BLOG_EMAIL = "8.slashes@gmail.com"
-BLOG_DESCRIPTION = "10sr public Nikola."  # (translatable)
+BLOG_DESCRIPTION = "10sr public Nikola"  # (translatable)
 
 # Nikola is multilingual!
 #

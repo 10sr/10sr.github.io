@@ -1,6 +1,6 @@
 pipenv := pipenv
 nikola := $(pipenv) run nikola
-output_dir := ../b_testing
+output_dir := ../b
 
 themes:
 	git clone https://github.com/10sr/nikola-themes.git themes
