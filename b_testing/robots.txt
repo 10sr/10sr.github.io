@@ -1,4 +1,0 @@
-Sitemap: https://10sr.github.io/b_testing/sitemapindex.xml
-
-User-Agent: *
-Host: 10sr.github.io
