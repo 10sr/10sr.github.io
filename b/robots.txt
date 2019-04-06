@@ -1,2 +1,4 @@
+Sitemap: https://10sr.github.io/b/sitemapindex.xml
+
 User-Agent: *
-Sitemap: /b/sitemap.xml
+Host: 10sr.github.io
