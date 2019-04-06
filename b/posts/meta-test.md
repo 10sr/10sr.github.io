@@ -1,5 +1,5 @@
-title: metatest
-slug: metatest
+title: Test of Metadata
+slug: meta-test
 date: 2019-04-05 14:26:37 JST
 type: text
 
