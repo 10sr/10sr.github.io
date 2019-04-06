@@ -17,5 +17,8 @@ build: themes
 serve:
 	$(nikola) $@ -b
 
+auto:
+	$(nikola) $@ -b
+
 new_post:
 	$(nikola) $@ --format=markdown
