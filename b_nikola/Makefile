@@ -21,4 +21,4 @@ auto:
 	$(nikola) $@ -b
 
 new_post:
-	$(nikola) $@ --format=markdown
+	$(nikola) $@ --format=markdown --date-path
