@@ -12,6 +12,6 @@ build
 
 
     make installdesp
-    make new_post
-    make auto
+    make new_post  # Create new post template
+    make auto  # Build page and open browser
     make update
