@@ -138,8 +138,8 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("//10sr.github.io", "^ Up"),
-        ("/", "Top"),
+        ("//10sr.github.io", "10sr.github.io"),
+        ("/", "Blog Top"),
         ("/archive.html", "Archive"),
         ("/categories/", "Tags"),
         ("/rss.xml", "RSS feed"),
