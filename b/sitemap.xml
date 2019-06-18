@@ -23,11 +23,11 @@
  </url>
  <url>
   <loc>https://10sr.github.io/b/archive.html</loc>
-  <lastmod>2019-06-14T04:01:00Z</lastmod>
+  <lastmod>2019-06-18T04:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/authors.html</loc>
-  <lastmod>2019-06-14T04:01:00Z</lastmod>
+  <lastmod>2019-06-18T04:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/authors/</loc>
@@ -143,7 +143,11 @@
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190614/post-with-date-path.html</loc>
-  <lastmod>2019-06-14T04:01:00Z</lastmod>
+  <lastmod>2019-06-18T04:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://10sr.github.io/b/posts/20190618/post-with-iso8601-time-string.html</loc>
+  <lastmod>2019-06-18T04:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/hexyl.html</loc>
