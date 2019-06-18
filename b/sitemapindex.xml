@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://10sr.github.io/b/authors.xml</loc>
-  <lastmod>2019-06-18T04:26:00Z</lastmod>
+  <lastmod>2019-06-18T04:41:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://10sr.github.io/b/authors/roberto-alsina.xml</loc>
@@ -47,10 +47,10 @@
  </sitemap>
  <sitemap>
   <loc>https://10sr.github.io/b/rss.xml</loc>
-  <lastmod>2019-06-18T04:26:00Z</lastmod>
+  <lastmod>2019-06-18T04:41:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://10sr.github.io/b/sitemap.xml</loc>
-  <lastmod>2019-06-18T04:26:00Z</lastmod>
+  <lastmod>2019-06-18T04:41:00Z</lastmod>
  </sitemap>
 </sitemapindex>
