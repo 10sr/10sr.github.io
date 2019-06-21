@@ -15,7 +15,7 @@ build: themes remove_posts
 	$(nikola) $@
 
 remove_posts:
-	$(RM) $(output_dir)/posts
+	$(RM) -rfv $(output_dir)/posts
 
 serve:
 	$(nikola) $@ -b
