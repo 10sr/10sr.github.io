@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://10sr.github.io/b/</loc>
-  <lastmod>2019-06-21T16:00:00Z</lastmod>
+  <lastmod>2019-06-21T16:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/2012/</loc>
@@ -146,63 +146,35 @@
   <lastmod>2019-06-21T16:03:00Z</lastmod>
  </url>
  <url>
-  <loc>https://10sr.github.io/b/posts/20190614/post-with-date-path.html</loc>
-  <lastmod>2019-06-21T16:00:00Z</lastmod>
- </url>
- <url>
   <loc>https://10sr.github.io/b/posts/20190618/post-with-iso8601-time-string.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
- </url>
- <url>
-  <loc>https://10sr.github.io/b/posts/20190618/ri-ben-yu-notaitoru.html</loc>
-  <lastmod>2019-06-21T16:00:00Z</lastmod>
+  <lastmod>2019-06-21T16:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/firefox-tab-center-redux.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-06-21T16:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/kuraudosutorezishi-ifen-ke.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-06-21T16:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/lun-li-de-dearutohayuan-lu-ganaitoiuyi-wei-dehanai.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-06-21T16:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/max-tea.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-06-21T16:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/sshd-configurations.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-06-21T16:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/windows-hua-xiang-biyuwa.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-06-21T16:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/hexyl.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
- </url>
- <url>
-  <loc>https://10sr.github.io/b/posts/lmt.html</loc>
-  <lastmod>2019-06-14T14:03:00Z</lastmod>
- </url>
- <url>
-  <loc>https://10sr.github.io/b/posts/mdtest.html</loc>
-  <lastmod>2019-06-14T14:03:00Z</lastmod>
- </url>
- <url>
-  <loc>https://10sr.github.io/b/posts/meta-test.html</loc>
-  <lastmod>2019-06-14T14:03:00Z</lastmod>
- </url>
- <url>
-  <loc>https://10sr.github.io/b/posts/newpost.html</loc>
-  <lastmod>2019-06-14T14:03:00Z</lastmod>
- </url>
- <url>
-  <loc>https://10sr.github.io/b/posts/welcome-to-nikola.html</loc>
-  <lastmod>2019-06-14T14:03:00Z</lastmod>
+  <lastmod>2019-06-21T16:10:00Z</lastmod>
  </url>
 </urlset>
