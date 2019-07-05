@@ -11,7 +11,7 @@ installdeps:
 update: build
 	git add $(output_dir)
 
-build: themes remove_posts
+build: themes
 	$(nikola) $@
 
 remove_posts:
