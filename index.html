@@ -11,9 +11,7 @@
     <script type="text/javascript" src="./render.js"></script>
   </head>
   <body>
-    <div id="render-output" class="content"></div>
-    <pre id="render-input">
-10sr
+    <pre id="render-input">10sr
 ====
 
 
@@ -54,8 +52,14 @@ Products and Contributings
 
 MELPA にあるもの： [https://melpa.org/#/?q=10sr](https://melpa.org/#/?q=10sr)
 
-----------------------------------------------------------------------
-    </pre>
+</pre>
+    <div class="content">
+      <div id="render-output"></div>
+      <div class="footer">
+        <hr />
+        <a href="https://github.com/10sr/10sr.github.io">10sr.github.io</a>
+      </div>
+    </div>
     <script type="text/javascript">
       (function(){
           var raw = new URL(window.document.location).searchParams.get("raw");

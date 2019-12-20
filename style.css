@@ -69,10 +69,13 @@ hr {
 }
 
 /* footer paragraph */
-p.footer {
+.footer {
     text-align : right;
 }
 
+.footer hr {
+    margin: 2em 0 0.5em 0;
+}
 
 /* /\* http://philarcher.org/diary/2013/headingnumbers/ *\/ */
 
