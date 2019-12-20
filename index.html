@@ -57,10 +57,15 @@ MELPA にあるもの： [https://melpa.org/#/?q=10sr](https://melpa.org/#/?q=10
 ----------------------------------------------------------------------
     </pre>
     <script type="text/javascript">
-      Render.init({
-      inputId: "render-input",
-      outputId: "render-output"
-      });
+      (function(){
+          var raw = new URL(window.document.location).searchParams.get("raw");
+          if (!raw) {
+              Render.init({
+                  inputId: "render-input",
+                  outputId: "render-output"
+              });
+          }
+      })();
     </script>
   </body>
 </html>
