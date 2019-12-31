@@ -7,170 +7,174 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://10sr.github.io/b/</loc>
-  <lastmod>2019-06-28T03:50:00Z</lastmod>
+  <lastmod>2019-07-05T04:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/2012/</loc>
-  <lastmod>2019-06-14T13:58:00Z</lastmod>
+  <lastmod>2019-06-18T04:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/2018/</loc>
-  <lastmod>2019-06-14T13:58:00Z</lastmod>
+  <lastmod>2019-06-18T04:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/2019/</loc>
-  <lastmod>2019-06-18T14:21:00Z</lastmod>
+  <lastmod>2019-07-05T04:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/archive.html</loc>
-  <lastmod>2019-06-28T03:50:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/authors.html</loc>
-  <lastmod>2019-06-21T16:00:00Z</lastmod>
+  <lastmod>2019-07-05T04:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/authors/</loc>
-  <lastmod>2019-06-18T14:21:00Z</lastmod>
+  <lastmod>2019-06-18T04:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/authors/roberto-alsina.html</loc>
-  <lastmod>2019-06-14T14:03:00Z</lastmod>
+  <lastmod>2019-06-18T04:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/categories/</loc>
-  <lastmod>2019-06-18T14:21:00Z</lastmod>
+  <lastmod>2019-07-05T04:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/categories/blog.html</loc>
-  <lastmod>2019-06-14T14:03:00Z</lastmod>
+  <lastmod>2019-06-18T04:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/categories/cat_nikola.html</loc>
-  <lastmod>2019-06-14T14:03:00Z</lastmod>
+  <lastmod>2019-06-18T04:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/categories/cat_testing.html</loc>
-  <lastmod>2019-06-14T14:03:00Z</lastmod>
+  <lastmod>2019-06-18T04:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/categories/demo.html</loc>
-  <lastmod>2019-06-14T14:03:00Z</lastmod>
+  <lastmod>2019-06-18T04:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/categories/nikola.html</loc>
-  <lastmod>2019-06-14T14:03:00Z</lastmod>
+  <lastmod>2019-06-18T04:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/categories/python.html</loc>
-  <lastmod>2019-06-14T14:03:00Z</lastmod>
+  <lastmod>2019-06-18T04:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/galleries/</loc>
-  <lastmod>2019-06-18T14:21:00Z</lastmod>
+  <lastmod>2019-07-05T04:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/galleries/demo/</loc>
-  <lastmod>2019-06-18T14:21:00Z</lastmod>
+  <lastmod>2019-07-05T04:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/index-1.html</loc>
-  <lastmod>2019-06-21T16:00:00Z</lastmod>
+  <lastmod>2019-07-05T04:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/listings/</loc>
-  <lastmod>2019-06-14T13:58:00Z</lastmod>
+  <lastmod>2019-06-18T04:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/listings/__pycache__/</loc>
-  <lastmod>2019-06-14T13:58:00Z</lastmod>
+  <lastmod>2019-06-18T04:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/listings/hello.py.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/about-nikola.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/bootstrap-demo.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/charts.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/creating-a-theme.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/dr-nikolas-vendetta.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/extending.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/handbook.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/internals.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/listings-demo.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/path-handlers.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/quickref.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/quickstart.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/social_buttons.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/pages/theming.html</loc>
-  <lastmod>2019-06-21T16:03:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190614/hexyl.html</loc>
-  <lastmod>2019-06-28T03:50:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/firefox-tab-center-redux.html</loc>
-  <lastmod>2019-06-28T03:50:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/kuraudosutorezishi-ifen-ke.html</loc>
-  <lastmod>2019-06-28T03:50:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/lun-li-de-dearutohayuan-lu-ganaitoiuyi-wei-dehanai.html</loc>
-  <lastmod>2019-06-28T03:50:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/max-tea.html</loc>
-  <lastmod>2019-06-28T03:50:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/sshd-configurations.html</loc>
-  <lastmod>2019-06-28T03:50:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/windows-hua-xiang-biyuwa.html</loc>
-  <lastmod>2019-06-28T03:50:00Z</lastmod>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://10sr.github.io/b/posts/20191231/windows-cbs-deirekutorinitsuite.html</loc>
+  <lastmod>2019-12-31T12:17:00Z</lastmod>
  </url>
 </urlset>
