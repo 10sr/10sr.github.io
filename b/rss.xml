@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Tue, 31 Dec 2019 12:17:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Windows CBS ディレクトリについて</title><link>https://10sr.github.io/b/posts/20191231/windows-cbs-deirekutorinitsuite.html</link><description>&lt;div&gt;&lt;p&gt;&lt;code&gt;C:\Windows\logs\CBS\CbsPersist_*.log&lt;/code&gt; というファイルが数 10GB 程度に膨れてディスクを圧迫していたことがあった。
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Mon, 06 Jan 2020 12:36:45 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Install Debian Sid on WSL</title><link>https://10sr.github.io/b/posts/20200106/wsl-debian-sid.html</link><description>&lt;div&gt;&lt;p&gt;まず普通に store にある debian をインストールして最新に合わせる。&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;sudo apt update &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade
+&lt;/pre&gt;
+
+
+&lt;p&gt;一応ミラーを jp に合わせてもう一度アップデートする。&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;sudoedit /etc/apt/sources.list
+&lt;span class="c1"&gt;## security 以外を ftp.jp.debian.org/debian/ にする&lt;/span&gt;
+sudo apt update &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade
+&lt;/pre&gt;
+
+
+&lt;p&gt;sid に変更してアップグレードする。以下一行だけにした。&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;sudo tee /etc/apt/sources.list &lt;span class="s"&gt;&amp;lt;&amp;lt;EOC&lt;/span&gt;
+&lt;span class="s"&gt;deb http://ftp.jp.debian.org/debian unstable main contrib&lt;/span&gt;
+&lt;span class="s"&gt;EOC&lt;/span&gt;
+sudo apt update
+sudo apt full-upgrade
+sudo apt autoremove
+&lt;/pre&gt;
+
+
+&lt;p&gt;再起動する。 &lt;em&gt;WSL 外&lt;/em&gt;（PowerShell など）から以下を実行する。&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;wsl.exe -t Debian
+&lt;/pre&gt;
+
+
+&lt;h3&gt;参考&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://wiki.debian.org/DebianUnstable"&gt;https://wiki.debian.org/DebianUnstable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://endaaman.me/-/debian-sid_on_laptop"&gt;https://endaaman.me/-/debian-sid_on_laptop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dnuka.github.io/upgrading-debian-to-unstable.html"&gt;https://dnuka.github.io/upgrading-debian-to-unstable.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200106/wsl-debian-sid.html</guid><pubDate>Mon, 06 Jan 2020 12:20:33 GMT</pubDate></item><item><title>Windows CBS ディレクトリについて</title><link>https://10sr.github.io/b/posts/20191231/windows-cbs-deirekutorinitsuite.html</link><description>&lt;div&gt;&lt;p&gt;&lt;code&gt;C:\Windows\logs\CBS\CbsPersist_*.log&lt;/code&gt; というファイルが数 10GB 程度に膨れてディスクを圧迫していたことがあった。
 少し調べたところ普通に削除してしまっても大丈夫っぽい。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;http://ivystar.jp/hardware/c-windows-logs-cbs-log-cleared-by-the-c-drive-of-refreshing/&lt;/li&gt;
