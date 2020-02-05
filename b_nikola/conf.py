@@ -177,7 +177,6 @@ THEME_CONFIG = {
         # "featured_strip_html": False,
         # # Contents of the sidebar, If empty, the sidebar is not displayed.
         # "sidebar": "",
-        "use_cdn": True,
     }
 }
 
@@ -1343,6 +1342,7 @@ GLOBAL_CONTEXT = {
     "lanyon_subtheme": "layout-reverse",
     "has_custom_css": True,
     "index_teasers": True,
+    "use_cdn": True,
 }
 
 # Add functions here and they will be called with template
