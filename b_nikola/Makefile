@@ -25,3 +25,5 @@ auto:
 
 new_post:
 	$(nikola) $@ --format=markdown --date-path
+
+new: new_post
