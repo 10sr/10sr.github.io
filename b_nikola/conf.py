@@ -164,19 +164,20 @@ THEME_COLOR = "#5670d4"
 # bootstrap4 supports: navbar_light (defaults to False)
 THEME_CONFIG = {
     DEFAULT_LANG: {
-        # Show the latest featured post in a large box, with the previewimage as its background.
-        "featured_large": False,
-        # Show the first (remaining) two featured posts in small boxes.
-        "featured_small": False,
-        # Show featured posts on mobile.
-        "featured_on_mobile": True,
-        # Show image in `featured_large` on mobile.
-        # `featured_small` displays them only on desktop.
-        "featured_large_image_on_mobile": True,
-        # Strip HTML from featured post text.
-        "featured_strip_html": False,
-        # Contents of the sidebar, If empty, the sidebar is not displayed.
-        "sidebar": "",
+        # # Show the latest featured post in a large box, with the previewimage as its background.
+        # "featured_large": False,
+        # # Show the first (remaining) two featured posts in small boxes.
+        # "featured_small": False,
+        # # Show featured posts on mobile.
+        # "featured_on_mobile": True,
+        # # Show image in `featured_large` on mobile.
+        # # `featured_small` displays them only on desktop.
+        # "featured_large_image_on_mobile": True,
+        # # Strip HTML from featured post text.
+        # "featured_strip_html": False,
+        # # Contents of the sidebar, If empty, the sidebar is not displayed.
+        # "sidebar": "",
+        "use_cdn": True,
     }
 }
 
