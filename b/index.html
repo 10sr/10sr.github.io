@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://10sr.github.io/b/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/20200106/wsl-debian-sid.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/20200205/explore-filesystem-of-stopped-docker-container.html" type="text/html">
 </head>
 <body class="layout-reverse">
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -52,7 +52,30 @@
         
 
 <div class="posts">
-    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20200106/wsl-debian-sid.html" class="u-url">Install Debian Sid on WSL</a></h1>
+    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20200205/explore-filesystem-of-stopped-docker-container.html" class="u-url">Explore filesystem of stopped docker container</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn"></span></p>
+            <p class="dateline"><a href="posts/20200205/explore-filesystem-of-stopped-docker-container.html" rel="bookmark"><time class="post-date published dt-published" datetime="2020-02-05T13:56:40+09:00" title="2020-02-05 13:56">2020-02-05 13:56</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    停止したコンテナにあったファイルをみたい。
+以下のようにするとできる。
+# コンテナの ID を探す（先頭のハッシュ）
+docker ps -a | grep NAME
+
+# 新しくイメージを作成する
+docker commit CONTAINER_ID t
+
+# 実行
+docker run -it t bash -i
+
+
+
+参考
+
+linux - Exploring Docker container's file system - Stack Overflow
+    </div>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20200106/wsl-debian-sid.html" class="u-url">Install Debian Sid on WSL</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn"></span></p>
             <p class="dateline"><a href="posts/20200106/wsl-debian-sid.html" rel="bookmark"><time class="post-date published dt-published" datetime="2020-01-06T21:20:33+09:00" title="2020-01-06 21:20">2020-01-06 21:20</time></a></p>
@@ -71,9 +94,7 @@ sudo apt update &amp;&amp; sudo apt upgrade
 
 
 sid に変更してアップグレードする。以下一行だけにした。
-s
-    </div>
-    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20191231/windows-cbs-deirekutorinitsuite.html" class="u-url">Windows CBS ディレクトリについて</a></h1>
+sudo tee /etc/apt/sources.list &lt;<eoc deb http: unstable main contrib eoc sudo apt update full-upgrade autoremove wsl wsl.exe debian https:><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20191231/windows-cbs-deirekutorinitsuite.html" class="u-url">Windows CBS ディレクトリについて</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn"></span></p>
             <p class="dateline"><a href="posts/20191231/windows-cbs-deirekutorinitsuite.html" rel="bookmark"><time class="post-date published dt-published" datetime="2019-12-31T21:13:49+09:00" title="2020-12-31 21:13">2020-12-31 21:13</time></a></p>
@@ -83,7 +104,7 @@ s
 少し調べたところ普通に削除してしまっても大丈夫っぽい。
 
 http://ivystar.jp/hardware/c-windows-logs-cbs-log-cleared-by-the-c-drive-of-refreshing/
-https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1266
+https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1266732207
     </div>
     </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20190622/firefox-tab-center-redux.html" class="u-url">Firefox Tab Center Redux</a></h1>
         <div class="metadata">
@@ -113,7 +134,7 @@ PDF を見るには GhostScript が必要 らしい
 
 https://newsgroup.xnview.com/viewtopic.php?f=17&amp;t=1228&amp;p=144365&amp;hilit=pdf#p144365
 https://www.xnview.com/wiki/index.php/Ghostscript
-https://www.ghostscript.com/dow
+https://www.ghostscript.com/download/gsdnld.html
     </div>
     </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20190622/lun-li-de-dearutohayuan-lu-ganaitoiuyi-wei-dehanai.html" class="u-url">論理的であるとは遠慮がないという意味ではない</a></h1>
         <div class="metadata">
@@ -125,7 +146,10 @@ https://www.ghostscript.com/dow
 http://www.huffingtonpost.jp/rootport/logical-thinking_b_5776270.html
 
 １．「論理的である」とは「遠慮がない」という意味ではない。
-どういうわけか、「気を遣わないこと」を「論理的だ」と思っている人はとても多い。感情面に配慮せずに議論することを「論理的な議論」だと信じている人には、なんというか、もう、げん
+どういうわけか、「気を遣わないこと」を「論理的だ」と思っている人はとても多い。感情面に配慮せずに議論することを「論理的な議論」だと信じている人には、なんというか、もう、げんなりさせられる。
+言うまでもなく、論理的であることと、他人の感情に配慮することは、対立概念ではない。論理的に事実の分析を積み重ねながら、同時に他人の感情に配慮することも可能だ。論理的思考と感情的配慮は両立できる。
+ただし、極端に論理的でありながら感情面にも気が回る「ほんとうに頭脳明晰な人」は、とても希少だ。
+そういう人物に、私は今までの人生でたった２人しか出会っていない。私はむしろ運がいいほうで、１人も出会わずに生涯を終える人も少なくないだろう。「ほんとうに頭脳明晰な人」の存在を知らなければ、論理的思考と感
     </div>
     </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20190622/kuraudosutorezishi-ifen-ke.html" class="u-url">クラウドストレージ使い分け</a></h1>
         <div class="metadata">
@@ -148,7 +172,9 @@ OneDrive
 Nextcloud
 自分でホストしてるので、一番安全で容量が大きい。
 他に預けると不安なのとか置いてる気がする。
-自分で動かしてるので、使えなくしてしまうの
+自分で動かしてるので、使えなくしてしまうのが少し怖い。
+Google Drive
+今はなにも置いてない。
     </div>
     </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20190622/sshd-configurations.html" class="u-url">SSHd Configurations</a></h1>
         <div class="metadata">
@@ -165,7 +191,17 @@ PasswordAuthentication no
 PermitEmptyPasswords no
 ChallengeResponseAuthentication no
 UsePAM no
-RSAAuth
+RSAAuthentication no
+# do not look up the remote host name: this will improve performance
+UseDNS no
+
+
+
+References
+
+http://www.kishiro.com/FreeBSD/ssh.html
+http://tm.root-n.com/server:sshd:sshd_config
+https://github.com/10sr/junks/commit/4c2af25e2fee6a9e56ced053fa
     </div>
     </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20190622/max-tea.html" class="u-url">紅茶抽出飽和砂糖水溶液（MAX紅茶）</a></h1>
         <div class="metadata">
@@ -192,7 +228,7 @@ RSAAuth
 https://github.com/sharkdp/hexyl
 brew install hexyl
     </div>
-    </article>
+    </article></eoc>
 </div>
 
 
@@ -206,7 +242,7 @@ brew install hexyl
         
         <footer id="footer"><p>Contents © 2020         <a href="mailto:8.slashes@gmail.com"></a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
-        </footer>
+        </footer></article>
 </div>
     </div>
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
@@ -217,5 +253,6 @@ brew install hexyl
     moment.locale("en");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates -->
+</div>
 </body>
 </html>

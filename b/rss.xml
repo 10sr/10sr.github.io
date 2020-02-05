@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Mon, 06 Jan 2020 12:36:45 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Install Debian Sid on WSL</title><link>https://10sr.github.io/b/posts/20200106/wsl-debian-sid.html</link><description>&lt;div&gt;&lt;p&gt;まず普通に store にある debian をインストールして最新に合わせる。&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Wed, 05 Feb 2020 05:00:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Explore filesystem of stopped docker container</title><link>https://10sr.github.io/b/posts/20200205/explore-filesystem-of-stopped-docker-container.html</link><description>&lt;div&gt;&lt;p&gt;停止したコンテナにあったファイルをみたい。&lt;/p&gt;
+&lt;p&gt;以下のようにするとできる。&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;コンテナの&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="err"&gt;を探す（先頭のハッシュ）&lt;/span&gt;
+&lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;ps&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;grep&lt;/span&gt; &lt;span class="n"&gt;NAME&lt;/span&gt;
+
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;新しくイメージを作成する&lt;/span&gt;
+&lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="k"&gt;commit&lt;/span&gt; &lt;span class="n"&gt;CONTAINER_ID&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;
+
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;実行&lt;/span&gt;
+&lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;it&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="n"&gt;bash&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;参考&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/20813486/exploring-docker-containers-file-system#20816397"&gt;linux - Exploring Docker container's file system - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200205/explore-filesystem-of-stopped-docker-container.html</guid><pubDate>Wed, 05 Feb 2020 04:56:40 GMT</pubDate></item><item><title>Install Debian Sid on WSL</title><link>https://10sr.github.io/b/posts/20200106/wsl-debian-sid.html</link><description>&lt;div&gt;&lt;p&gt;まず普通に store にある debian をインストールして最新に合わせる。&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;sudo apt update &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade
 &lt;/pre&gt;
 
