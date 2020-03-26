@@ -16,3 +16,9 @@ Build and Publish
     make auto  # Build page and open browser
     make update  # Update HTML and git add them (do not commit)
     git commit
+
+
+Customize CSS
+-------------
+
+Edit `files/assets/css/custom.css`.

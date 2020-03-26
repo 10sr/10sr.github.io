@@ -39,6 +39,11 @@ body {
     border-radius: 3px;
 }
 
+.entry-content pre.code .err {
+    /* Hack to stop highlighting japanese text */
+    border: none;
+}
+
 blockquote {
     color: #666;
 }
