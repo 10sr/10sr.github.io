@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Wed, 05 Feb 2020 05:00:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Explore filesystem of stopped docker container</title><link>https://10sr.github.io/b/posts/20200205/explore-filesystem-of-stopped-docker-container.html</link><description>&lt;div&gt;&lt;p&gt;停止したコンテナにあったファイルをみたい。&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Thu, 26 Mar 2020 03:41:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>dtach</title><link>https://10sr.github.io/b/posts/20200326/dtach.html</link><description>&lt;div&gt;&lt;p&gt;GNU screen からデタッチ機能だけを切り出したようなやつ&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://wiki.archlinux.org/index.php/Dtach"&gt;datch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# s.dtach というソケットで開始 C-^ でデタッチ&lt;/span&gt;
+dtach -c s.dtach -e &lt;span class="s1"&gt;'^^'&lt;/span&gt; bash -i
+&lt;span class="c1"&gt;# s.dtach というソケットにアタッチ&lt;/span&gt;
+dtach -a s.dtach
+&lt;span class="c1"&gt;# s.dtach というソケットにアタッチ なければ作る&lt;/span&gt;
+dtach -A s.dtach -e &lt;span class="s1"&gt;'^^'&lt;/span&gt; bash -i
+&lt;/pre&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200326/dtach.html</guid><pubDate>Thu, 26 Mar 2020 03:35:31 GMT</pubDate></item><item><title>Explore filesystem of stopped docker container</title><link>https://10sr.github.io/b/posts/20200205/explore-filesystem-of-stopped-docker-container.html</link><description>&lt;div&gt;&lt;p&gt;停止したコンテナにあったファイルをみたい。&lt;/p&gt;
 &lt;p&gt;以下のようにするとできる。&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;コンテナの&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="err"&gt;を探す（先頭のハッシュ）&lt;/span&gt;
 &lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;ps&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;grep&lt;/span&gt; &lt;span class="n"&gt;NAME&lt;/span&gt;
@@ -121,7 +131,4 @@ disable password authentication.&lt;/p&gt;
 &lt;li&gt;開いたスペースに再び砂糖を詰める&lt;/li&gt;
 &lt;li&gt;紅茶をほぼ一杯まで入れる&lt;/li&gt;
 &lt;li&gt;混ぜる。完成。&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622/max-tea.html</guid><pubDate>Fri, 21 Jun 2019 15:55:01 GMT</pubDate></item><item><title>hexyl</title><link>https://10sr.github.io/b/posts/20190614/hexyl.html</link><description>&lt;div&gt;&lt;p&gt;Hexyl がべんり&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/sharkdp/hexyl"&gt;https://github.com/sharkdp/hexyl&lt;/a&gt;&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;brew install hexyl
-&lt;/pre&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190614/hexyl.html</guid><pubDate>Fri, 14 Jun 2019 02:43:43 GMT</pubDate></item></channel></rss>
+&lt;/ol&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622/max-tea.html</guid><pubDate>Fri, 21 Jun 2019 15:55:01 GMT</pubDate></item></channel></rss>
