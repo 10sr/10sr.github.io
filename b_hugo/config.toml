@@ -3,6 +3,7 @@ languageCode = "ja-jp"
 theme = "lanyon-hugo"
 publishDir = "../b_hugo_publish"
 relativeURLs = true
+uglyurls = true
 
 [params]
 title = "10sr Hugo"

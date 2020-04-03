@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on </title>
-    <link>http://10sr.github.io/b_hugo_publish/posts/</link>
+    <link>http://10sr.github.io/b_hugo_publish/posts.html</link>
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>My First Post</title>
-      <link>http://10sr.github.io/b_hugo_publish/posts/20200403-my-first-post/</link>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20200403-my-first-post.html</link>
       <pubDate>Fri, 03 Apr 2020 21:06:58 +0900</pubDate>
       
-      <guid>http://10sr.github.io/b_hugo_publish/posts/20200403-my-first-post/</guid>
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20200403-my-first-post.html</guid>
       <description>eee</description>
     </item>
     
