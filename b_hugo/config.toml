@@ -2,6 +2,7 @@ baseURL = "http://10sr.github.io/b_hugo_publish"
 languageCode = "ja-jp"
 theme = "lanyon-hugo"
 publishDir = "../b_hugo_publish"
+relativeURLs = true
 
 [params]
 title = "10sr Hugo"
