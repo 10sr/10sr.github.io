@@ -1,0 +1,23 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> </title>
+    <link>http://example.org/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2020</rights>
+    <updated>2020-04-03 21:06:58 &#43;0900 JST</updated>
+
+    
+      <item>
+        <title>My First Post</title>
+        <link>http://example.org/posts/my-first-post/</link>
+        <pubDate>Fri, 03 Apr 2020 21:06:58 JST</pubDate>
+        <author></author>
+        <guid>http://example.org/posts/my-first-post/</guid>
+        <description>&lt;p&gt;eee&lt;/p&gt;
+</description>
+      </item>
+    
+
+  </channel>
+</rss>
