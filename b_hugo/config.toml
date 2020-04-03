@@ -1,4 +1,8 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "ja-jp"
 theme = "lanyon-hugo"
+publishDir = "../b_hugo_publish"
+
+[params]
+title = "10sr Hugo"
+description = ""

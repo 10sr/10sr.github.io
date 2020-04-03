@@ -6,3 +6,7 @@ themes/lanyon-hugo:
 
 local:
 	hugo server -D
+
+
+build:
+	hugo -D
