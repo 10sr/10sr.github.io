@@ -13,7 +13,7 @@ Build and Publish
 
     make installdesp
     make new  # Create new post template
-    make auto  # Build page and open browser
+    make local  # Run local server and open browser
     make update  # Update HTML and git add them (do not commit)
     git commit
 

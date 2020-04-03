@@ -20,6 +20,7 @@ remove_posts:
 serve:
 	$(nikola) $@ -b
 
+local: auto  # Run local server
 auto:
 	$(nikola) $@ -b
 
