@@ -24,6 +24,8 @@ auto:
 	$(nikola) $@ -b
 
 new_post:
-	$(nikola) $@ --format=markdown
+#	$(nikola) $@ --format=markdown
+	./new_post.sh
+
 
 new: new_post
