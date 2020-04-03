@@ -5,7 +5,7 @@ type: text
 
 GNU screen からデタッチ機能だけを切り出したようなやつ
 
-- [datch](https://wiki.archlinux.org/index.php/Dtach)
+- [dtach](https://wiki.archlinux.org/index.php/Dtach)
 
 
 ```sh
