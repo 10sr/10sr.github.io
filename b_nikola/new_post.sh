@@ -20,9 +20,7 @@ fi
 cat <<__EOC__ >$post_path
 ---
 title: $slug
-slug: $slug
 date: $date
-type: text
 ---
 
 Write your post here.
