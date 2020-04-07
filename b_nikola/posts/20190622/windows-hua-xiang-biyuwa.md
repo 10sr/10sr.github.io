@@ -1,7 +1,9 @@
+---
 title: Windows 画像ビューワ
 slug: windows-hua-xiang-biyuwa
 date: 2019-06-22 00:59:12+09:00
 type: text
+---
 
 XnView MP というやつ
 

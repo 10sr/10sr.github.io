@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://10sr.github.io/b/</loc>
-  <lastmod>2020-04-03T08:02:00Z</lastmod>
+  <lastmod>2020-04-07T02:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/2019/</loc>
@@ -15,11 +15,11 @@
  </url>
  <url>
   <loc>https://10sr.github.io/b/2020/</loc>
-  <lastmod>2020-04-03T08:01:00Z</lastmod>
+  <lastmod>2020-04-07T02:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/archive.html</loc>
-  <lastmod>2020-04-03T08:16:00Z</lastmod>
+  <lastmod>2020-04-07T02:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/authors.html</loc>
@@ -35,54 +35,50 @@
  </url>
  <url>
   <loc>https://10sr.github.io/b/index-1.html</loc>
-  <lastmod>2020-04-03T08:16:00Z</lastmod>
+  <lastmod>2020-04-07T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190614/hexyl.html</loc>
-  <lastmod>2020-04-03T08:16:00Z</lastmod>
+  <lastmod>2020-04-07T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/firefox-tab-center-redux.html</loc>
-  <lastmod>2020-04-03T08:16:00Z</lastmod>
+  <lastmod>2020-04-07T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/kuraudosutorezishi-ifen-ke.html</loc>
-  <lastmod>2020-04-03T08:16:00Z</lastmod>
+  <lastmod>2020-04-07T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/lun-li-de-dearutohayuan-lu-ganaitoiuyi-wei-dehanai.html</loc>
-  <lastmod>2020-04-03T08:16:00Z</lastmod>
+  <lastmod>2020-04-07T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/max-tea.html</loc>
-  <lastmod>2020-04-03T08:16:00Z</lastmod>
+  <lastmod>2020-04-07T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/sshd-configurations.html</loc>
-  <lastmod>2020-04-03T08:16:00Z</lastmod>
+  <lastmod>2020-04-07T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190622/windows-hua-xiang-biyuwa.html</loc>
-  <lastmod>2020-04-03T08:16:00Z</lastmod>
+  <lastmod>2020-04-07T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20191231/windows-cbs-deirekutorinitsuite.html</loc>
-  <lastmod>2020-04-03T08:16:00Z</lastmod>
+  <lastmod>2020-04-07T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20200106/wsl-debian-sid.html</loc>
-  <lastmod>2020-04-03T08:16:00Z</lastmod>
+  <lastmod>2020-04-07T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20200205/explore-filesystem-of-stopped-docker-container.html</loc>
-  <lastmod>2020-04-03T12:35:00Z</lastmod>
- </url>
- <url>
-  <loc>https://10sr.github.io/b/posts/20200326-dtach.html</loc>
-  <lastmod>2020-04-03T08:25:00Z</lastmod>
+  <lastmod>2020-04-07T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/dtach.html</loc>
-  <lastmod>2020-04-03T12:35:00Z</lastmod>
+  <lastmod>2020-04-07T02:56:00Z</lastmod>
  </url>
 </urlset>

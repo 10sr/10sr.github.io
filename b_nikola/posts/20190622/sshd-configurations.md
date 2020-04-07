@@ -1,7 +1,9 @@
+---
 title: SSHd Configurations
 slug: sshd-configurations
 date: 2019-06-22 00:56:18+09:00
 type: text
+---
 
 `/etc/ssh/sshd_config`
 ----------------------

@@ -1,7 +1,9 @@
+---
 title: 論理的であるとは遠慮がないという意味ではない
 slug: lun-li-de-dearutohayuan-lu-ganaitoiuyi-wei-dehanai
 date: 2019-06-22 00:58:29+09:00
 type: text
+---
 
 <http://neroeee3.tumblr.com/post/167354420622/１論理的であるとは遠慮がないという意味ではない>
 <http://www.huffingtonpost.jp/rootport/logical-thinking_b_5776270.html>
