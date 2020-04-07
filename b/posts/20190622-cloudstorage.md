@@ -1,8 +1,6 @@
 ---
 title: クラウドストレージ使い分け
-slug: kuraudosutorezishi-ifen-ke
 date: 2019-06-22 00:57:18+09:00
-type: text
 ---
 
 今のところ動かしてるのは以下の４つ

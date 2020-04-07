@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Tue, 07 Apr 2020 03:00:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>dtach</title><link>https://10sr.github.io/b/posts/dtach.html</link><description>&lt;div&gt;&lt;p&gt;GNU screen からデタッチ機能だけを切り出したようなやつ&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Tue, 07 Apr 2020 05:16:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>dtach</title><link>https://10sr.github.io/b/posts/20200326-dtach.html</link><description>&lt;div&gt;&lt;p&gt;GNU screen からデタッチ機能だけを切り出したようなやつ&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://wiki.archlinux.org/index.php/Dtach"&gt;dtach&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -9,7 +9,7 @@ dtach -c s.dtach -e &lt;span class="s1"&gt;'^^'&lt;/span&gt; bash -i
 dtach -a s.dtach
 &lt;span class="c1"&gt;# s.dtach というソケットにアタッチ なければ作る&lt;/span&gt;
 dtach -A s.dtach -e &lt;span class="s1"&gt;'^^'&lt;/span&gt; bash -i
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/dtach.html</guid><pubDate>Wed, 25 Mar 2020 18:35:31 GMT</pubDate></item><item><title>Explore filesystem of stopped docker container</title><link>https://10sr.github.io/b/posts/20200205/explore-filesystem-of-stopped-docker-container.html</link><description>&lt;div&gt;&lt;p&gt;停止したコンテナにあったファイルをみたい。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200326-dtach.html</guid><pubDate>Wed, 25 Mar 2020 18:35:31 GMT</pubDate></item><item><title>Explore filesystem of stopped docker container</title><link>https://10sr.github.io/b/posts/20200205-explore-filesystem-of-stopped-docker-container.html</link><description>&lt;div&gt;&lt;p&gt;停止したコンテナにあったファイルをみたい。&lt;/p&gt;
 &lt;p&gt;以下のようにするとできる。&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;コンテナの&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="err"&gt;を探す（先頭のハッシュ）&lt;/span&gt;
 &lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;ps&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;grep&lt;/span&gt; &lt;span class="n"&gt;NAME&lt;/span&gt;
@@ -25,7 +25,7 @@ dtach -A s.dtach -e &lt;span class="s1"&gt;'^^'&lt;/span&gt; bash -i
 &lt;p&gt;参考&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://stackoverflow.com/questions/20813486/exploring-docker-containers-file-system#20816397"&gt;linux - Exploring Docker container's file system - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200205/explore-filesystem-of-stopped-docker-container.html</guid><pubDate>Tue, 04 Feb 2020 19:56:40 GMT</pubDate></item><item><title>Install Debian Sid on WSL</title><link>https://10sr.github.io/b/posts/20200106/wsl-debian-sid.html</link><description>&lt;div&gt;&lt;p&gt;まず普通に store にある debian をインストールして最新に合わせる。&lt;/p&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200205-explore-filesystem-of-stopped-docker-container.html</guid><pubDate>Tue, 04 Feb 2020 19:56:40 GMT</pubDate></item><item><title>Install Debian Sid on WSL</title><link>https://10sr.github.io/b/posts/20200106-wsl-debian-sid.html</link><description>&lt;div&gt;&lt;p&gt;まず普通に store にある debian をインストールして最新に合わせる。&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt update &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -57,12 +57,12 @@ sudo apt autoremove
 &lt;li&gt;&lt;a href="https://wiki.debian.org/DebianUnstable"&gt;https://wiki.debian.org/DebianUnstable&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://endaaman.me/-/debian-sid_on_laptop"&gt;https://endaaman.me/-/debian-sid_on_laptop&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://dnuka.github.io/upgrading-debian-to-unstable.html"&gt;https://dnuka.github.io/upgrading-debian-to-unstable.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200106/wsl-debian-sid.html</guid><pubDate>Mon, 06 Jan 2020 03:20:33 GMT</pubDate></item><item><title>Windows CBS ディレクトリについて</title><link>https://10sr.github.io/b/posts/20191231/windows-cbs-deirekutorinitsuite.html</link><description>&lt;div&gt;&lt;p&gt;&lt;code&gt;C:\Windows\logs\CBS\CbsPersist_*.log&lt;/code&gt; というファイルが数 10GB 程度に膨れてディスクを圧迫していたことがあった。
+&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200106-wsl-debian-sid.html</guid><pubDate>Mon, 06 Jan 2020 03:20:33 GMT</pubDate></item><item><title>Windows CBS ディレクトリについて</title><link>https://10sr.github.io/b/posts/20191231-windows-cbs.html</link><description>&lt;div&gt;&lt;p&gt;&lt;code&gt;C:\Windows\logs\CBS\CbsPersist_*.log&lt;/code&gt; というファイルが数 10GB 程度に膨れてディスクを圧迫していたことがあった。
 少し調べたところ普通に削除してしまっても大丈夫っぽい。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;http://ivystar.jp/hardware/c-windows-logs-cbs-log-cleared-by-the-c-drive-of-refreshing/&lt;/li&gt;
 &lt;li&gt;https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1266732207&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20191231/windows-cbs-deirekutorinitsuite.html</guid><pubDate>Tue, 31 Dec 2019 03:13:49 GMT</pubDate></item><item><title>Firefox Tab Center Redux</title><link>https://10sr.github.io/b/posts/20190622/firefox-tab-center-redux.html</link><description>&lt;div&gt;&lt;p&gt;タブを縦置きするプラグイン&lt;/p&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20191231-windows-cbs.html</guid><pubDate>Tue, 31 Dec 2019 03:13:49 GMT</pubDate></item><item><title>Firefox Tab Center Redux</title><link>https://10sr.github.io/b/posts/20190622-firefox-tab-center-redux.html</link><description>&lt;div&gt;&lt;p&gt;タブを縦置きするプラグイン&lt;/p&gt;
 &lt;p&gt;MacBookAir のマシンで間隔を詰めるためにアドオンの設定ページから以下の CSS を追加&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;st-wrapper&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;shrinked&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;tab&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;pinned&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;29&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="cp"&gt;!important&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -70,14 +70,14 @@ sudo apt autoremove
 &lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;p&gt;https://github.com/eoger/tabcenter-redux/wiki/Custom-CSS-tweaks&lt;/p&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622/firefox-tab-center-redux.html</guid><pubDate>Fri, 21 Jun 2019 06:59:50 GMT</pubDate></item><item><title>Windows 画像ビューワ</title><link>https://10sr.github.io/b/posts/20190622/windows-hua-xiang-biyuwa.html</link><description>&lt;div&gt;&lt;p&gt;XnView MP というやつ&lt;/p&gt;
+&lt;p&gt;https://github.com/eoger/tabcenter-redux/wiki/Custom-CSS-tweaks&lt;/p&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-firefox-tab-center-redux.html</guid><pubDate>Fri, 21 Jun 2019 06:59:50 GMT</pubDate></item><item><title>Windows 画像ビューワ</title><link>https://10sr.github.io/b/posts/20190622-windows-image-viewer.html</link><description>&lt;div&gt;&lt;p&gt;XnView MP というやつ&lt;/p&gt;
 &lt;p&gt;https://www.xnview.com/en/xnviewmp/#downloads&lt;/p&gt;
 &lt;p&gt;PDF を見るには GhostScript が必要 らしい&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;https://newsgroup.xnview.com/viewtopic.php?f=17&amp;amp;t=1228&amp;amp;p=144365&amp;amp;hilit=pdf#p144365&lt;/li&gt;
 &lt;li&gt;https://www.xnview.com/wiki/index.php/Ghostscript&lt;/li&gt;
 &lt;li&gt;https://www.ghostscript.com/download/gsdnld.html&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622/windows-hua-xiang-biyuwa.html</guid><pubDate>Fri, 21 Jun 2019 06:59:12 GMT</pubDate></item><item><title>論理的であるとは遠慮がないという意味ではない</title><link>https://10sr.github.io/b/posts/20190622/lun-li-de-dearutohayuan-lu-ganaitoiuyi-wei-dehanai.html</link><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://neroeee3.tumblr.com/post/167354420622/%EF%BC%91%E8%AB%96%E7%90%86%E7%9A%84%E3%81%A7%E3%81%82%E3%82%8B%E3%81%A8%E3%81%AF%E9%81%A0%E6%85%AE%E3%81%8C%E3%81%AA%E3%81%84%E3%81%A8%E3%81%84%E3%81%86%E6%84%8F%E5%91%B3%E3%81%A7%E3%81%AF%E3%81%AA%E3%81%84"&gt;http://neroeee3.tumblr.com/post/167354420622/１論理的であるとは遠慮がないという意味ではない&lt;/a&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-windows-image-viewer.html</guid><pubDate>Fri, 21 Jun 2019 06:59:12 GMT</pubDate></item><item><title>論理的であるとは遠慮がないという意味ではない</title><link>https://10sr.github.io/b/posts/20190622-lgcl.html</link><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://neroeee3.tumblr.com/post/167354420622/%EF%BC%91%E8%AB%96%E7%90%86%E7%9A%84%E3%81%A7%E3%81%82%E3%82%8B%E3%81%A8%E3%81%AF%E9%81%A0%E6%85%AE%E3%81%8C%E3%81%AA%E3%81%84%E3%81%A8%E3%81%84%E3%81%86%E6%84%8F%E5%91%B3%E3%81%A7%E3%81%AF%E3%81%AA%E3%81%84"&gt;http://neroeee3.tumblr.com/post/167354420622/１論理的であるとは遠慮がないという意味ではない&lt;/a&gt;
 &lt;a href="http://www.huffingtonpost.jp/rootport/logical-thinking_b_5776270.html"&gt;http://www.huffingtonpost.jp/rootport/logical-thinking_b_5776270.html&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;１．「論理的である」とは「遠慮がない」という意味ではない。&lt;/p&gt;
@@ -86,7 +86,7 @@ sudo apt autoremove
 &lt;p&gt;ただし、極端に論理的でありながら感情面にも気が回る「ほんとうに頭脳明晰な人」は、とても希少だ。&lt;/p&gt;
 &lt;p&gt;そういう人物に、私は今までの人生でたった２人しか出会っていない。私はむしろ運がいいほうで、１人も出会わずに生涯を終える人も少なくないだろう。「ほんとうに頭脳明晰な人」の存在を知らなければ、論理的思考と感情的配慮が両立することを理解するのは難しいかもしれない。&lt;/p&gt;
 &lt;p&gt;自分は論理的だと思っている人は、まず「ただ遠慮がないだけ」なのか、それとも、ほんとうに頭脳明晰な人を目指しているのか、自省してみるといいだろう。&lt;/p&gt;
-&lt;/blockquote&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622/lun-li-de-dearutohayuan-lu-ganaitoiuyi-wei-dehanai.html</guid><pubDate>Fri, 21 Jun 2019 06:58:29 GMT</pubDate></item><item><title>クラウドストレージ使い分け</title><link>https://10sr.github.io/b/posts/20190622/kuraudosutorezishi-ifen-ke.html</link><description>&lt;div&gt;&lt;p&gt;今のところ動かしてるのは以下の４つ&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-lgcl.html</guid><pubDate>Fri, 21 Jun 2019 06:58:29 GMT</pubDate></item><item><title>クラウドストレージ使い分け</title><link>https://10sr.github.io/b/posts/20190622-cloudstorage.html</link><description>&lt;div&gt;&lt;p&gt;今のところ動かしてるのは以下の４つ&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Nextcloud&lt;/li&gt;
 &lt;li&gt;Dropbox&lt;/li&gt;
@@ -103,7 +103,7 @@ sudo apt autoremove
 他に預けると不安なのとか置いてる気がする。&lt;/p&gt;
 &lt;p&gt;自分で動かしてるので、使えなくしてしまうのが少し怖い。&lt;/p&gt;
 &lt;h3&gt;Google Drive&lt;/h3&gt;
-&lt;p&gt;今はなにも置いてない。&lt;/p&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622/kuraudosutorezishi-ifen-ke.html</guid><pubDate>Fri, 21 Jun 2019 06:57:18 GMT</pubDate></item><item><title>SSHd Configurations</title><link>https://10sr.github.io/b/posts/20190622/sshd-configurations.html</link><description>&lt;div&gt;&lt;h3&gt;&lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;今はなにも置いてない。&lt;/p&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-cloudstorage.html</guid><pubDate>Fri, 21 Jun 2019 06:57:18 GMT</pubDate></item><item><title>SSHd Configurations</title><link>https://10sr.github.io/b/posts/20190622-sshd-configurations.html</link><description>&lt;div&gt;&lt;h3&gt;&lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Disable &lt;code&gt;PasswordAuthentication&lt;/code&gt; and &lt;code&gt;ChallengeResponseAuthentication&lt;/code&gt; to
 disable password authentication.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;Protocol 2&lt;/span&gt;
@@ -123,7 +123,7 @@ disable password authentication.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://www.kishiro.com/FreeBSD/ssh.html"&gt;http://www.kishiro.com/FreeBSD/ssh.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://tm.root-n.com/server:sshd:sshd_config"&gt;http://tm.root-n.com/server:sshd:sshd_config&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;https://github.com/10sr/junks/commit/4c2af25e2fee6a9e56ced053fa054ab6c7f69ee9&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622/sshd-configurations.html</guid><pubDate>Fri, 21 Jun 2019 06:56:18 GMT</pubDate></item><item><title>紅茶抽出飽和砂糖水溶液（MAX紅茶）</title><link>https://10sr.github.io/b/posts/20190622/max-tea.html</link><description>&lt;div&gt;&lt;p&gt;http://nantara.seesaa.net/article/117731852.html&lt;/p&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-sshd-configurations.html</guid><pubDate>Fri, 21 Jun 2019 06:56:18 GMT</pubDate></item><item><title>紅茶抽出飽和砂糖水溶液（MAX紅茶）</title><link>https://10sr.github.io/b/posts/20190622-max-tea.html</link><description>&lt;div&gt;&lt;p&gt;http://nantara.seesaa.net/article/117731852.html&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;砂糖をウイスキーのビンか何かに詰める&lt;/li&gt;
 &lt;li&gt;濃いめに入れた紅茶を空の瓶として2/3程度入れる&lt;/li&gt;
@@ -131,4 +131,4 @@ disable password authentication.&lt;/p&gt;
 &lt;li&gt;開いたスペースに再び砂糖を詰める&lt;/li&gt;
 &lt;li&gt;紅茶をほぼ一杯まで入れる&lt;/li&gt;
 &lt;li&gt;混ぜる。完成。&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622/max-tea.html</guid><pubDate>Fri, 21 Jun 2019 06:55:01 GMT</pubDate></item></channel></rss>
+&lt;/ol&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-max-tea.html</guid><pubDate>Fri, 21 Jun 2019 06:55:01 GMT</pubDate></item></channel></rss>

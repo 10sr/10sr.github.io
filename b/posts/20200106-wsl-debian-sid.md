@@ -1,8 +1,6 @@
 ---
 title: Install Debian Sid on WSL
-slug: wsl-debian-sid
 date: 2020-01-06 21:20:33+09:00
-type: text
 ---
 
 
