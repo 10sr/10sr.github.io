@@ -1071,7 +1071,6 @@ MARKDOWN_EXTENSIONS = [
     "markdown.extensions.fenced_code",
     "markdown.extensions.codehilite",
     "markdown.extensions.extra",
-    "markdown.extensions.meta",
 ]
 
 # Options to be passed to markdown extensions (See https://python-markdown.github.io/reference/)
@@ -1188,7 +1187,7 @@ MARKDOWN_EXTENSIONS = [
 # Bootstrap is served from BootstrapCDN (provided by MaxCDN)
 # Set this to False if you want to host your site without requiring access to
 # external resources.
-# USE_CDN = False
+USE_CDN = True
 
 # Check for USE_CDN compatibility.
 # If you are using custom themes, have configured the CSS properly and are
@@ -1342,7 +1341,6 @@ GLOBAL_CONTEXT = {
     "lanyon_subtheme": "layout-reverse",
     "has_custom_css": True,
     "index_teasers": True,
-    "use_cdn": True,
 }
 
 # Add functions here and they will be called with template
