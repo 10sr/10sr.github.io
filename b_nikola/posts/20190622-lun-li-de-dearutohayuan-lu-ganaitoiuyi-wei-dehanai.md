@@ -1,6 +1,5 @@
 ---
 title: 論理的であるとは遠慮がないという意味ではない
-slug: lun-li-de-dearutohayuan-lu-ganaitoiuyi-wei-dehanai
 date: 2019-06-22 00:58:29+09:00
 type: text
 ---

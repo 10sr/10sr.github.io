@@ -1,6 +1,5 @@
 ---
 title: Windows CBS ディレクトリについて
-slug: windows-cbs-deirekutorinitsuite
 date: 2019-12-31 21:13:49+09:00
 type: text
 ---
