@@ -1,7 +1,6 @@
 ---
 title: Explore filesystem of stopped docker container
 date: 2020-02-05 13:56:40+09:00
-type: text
 ---
 
 停止したコンテナにあったファイルをみたい。

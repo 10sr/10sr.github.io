@@ -1,7 +1,6 @@
 ---
 title: Windows CBS ディレクトリについて
 date: 2019-12-31 21:13:49+09:00
-type: text
 ---
 
 

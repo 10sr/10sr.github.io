@@ -1,7 +1,6 @@
 ---
 title: Firefox Tab Center Redux
 date: 2019-06-22 00:59:50+09:00
-type: text
 ---
 
 タブを縦置きするプラグイン

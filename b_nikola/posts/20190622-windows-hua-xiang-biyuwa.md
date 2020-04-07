@@ -1,7 +1,6 @@
 ---
 title: Windows 画像ビューワ
 date: 2019-06-22 00:59:12+09:00
-type: text
 ---
 
 XnView MP というやつ
