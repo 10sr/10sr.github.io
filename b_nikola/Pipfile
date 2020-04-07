@@ -9,6 +9,7 @@ verify_ssl = true
 Nikola = "*"
 aiohttp = "*"
 watchdog = "*"
+ruamel-yaml = "*"
 
 [requires]
 python_version = "3.7"
