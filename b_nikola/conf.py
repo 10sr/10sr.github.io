@@ -877,6 +877,9 @@ IMAGE_FOLDERS = {"images": "images"}
 #     ("icon", "/favicon.ico", "16x16"),
 #     ("icon", "/icon_128x128.png", "128x128"),
 # )
+FAVICONS = (
+    ("icon", "//github.com/10sr.png?size=32", "32x32"),
+)
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
 INDEX_TEASERS = True
