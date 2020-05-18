@@ -33,7 +33,7 @@ var Render = (function(){
             return;
         }
 
-        var rawContent = elemInput.innerText;
+        var rawContent = _dedentContent(elemInput.innerText.replace(/^\n/, ""));
 
         while (elemOutput.hasChildNodes()) {
             elemOutput.removeChild(elemOutput.lastChild);
@@ -43,6 +43,13 @@ var Render = (function(){
         elemInput.style.display = "none";
         return;
     }
+
+    function _dedentContent(content){
+        var indentSize = content.match(/^ */)[0].length
+        var re = new RegExp("^" + " ".repeat(indentSize), "gm")
+        return content.replace(re, "");
+    }
+
     return {
         init: init
     };
