@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Tue, 07 Apr 2020 07:09:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>dtach</title><link>https://10sr.github.io/b/posts/20200326-dtach.html</link><description>&lt;div&gt;&lt;p&gt;GNU screen からデタッチ機能だけを切り出したようなやつ&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Fri, 05 Jun 2020 07:05:02 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ubuntu の MySQL (MariaDB) Root ログイン</title><link>https://10sr.github.io/b/posts/20200605-ubuntu-mysql-root.html</link><description>&lt;div&gt;&lt;h3&gt;問題&lt;/h3&gt;
+&lt;p&gt;MariaDB の root のパスワードを設定しようとして、 &lt;code&gt;mysql_secure_installation&lt;/code&gt;
+を実行したり以下のようにしたりしてもログインできるようにならない場合がある。&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;set password for 'root'@'localhost'=password('pw');&lt;/span&gt;
+&lt;span class="err"&gt;# or&lt;/span&gt;
+&lt;span class="err"&gt;update mysql.user set password=password('pw') where user = 'root';&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;原因&lt;/h3&gt;
+&lt;p&gt;Ubuntu の MariaDB のインストールではデフォルトで &lt;code&gt;unix_socket&lt;/code&gt; プラグインが設定されている。
+そのため以下のようになる。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ホスト上で root になって mysql コマンドを実行すれば、認証なしでログインできる&lt;ul&gt;
+&lt;li&gt;間違ったパスワードを入力してもよい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;root ユーザ以外・別のホストからではパスワードを正しく入力しても root としてログインできない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これは以下のようにして確認できる。&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;MariaDB [(none)]&amp;gt; select host, user, plugin from mysql.user;&lt;/span&gt;
+&lt;span class="err"&gt;+-----------+------+-------------+&lt;/span&gt;
+&lt;span class="err"&gt;| host      | user | plugin      |&lt;/span&gt;
+&lt;span class="err"&gt;+-----------+------+-------------+&lt;/span&gt;
+&lt;span class="err"&gt;| localhost | root | unix_socket |&lt;/span&gt;
+&lt;span class="err"&gt;| %         | 10sr |             |&lt;/span&gt;
+&lt;span class="err"&gt;+-----------+------+-------------+&lt;/span&gt;
+&lt;span class="err"&gt;2 rows in set (0.00 sec)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;よって、これに従ってローカルの root からだけ root を使うようにするか、もしくは以下のようにしてプラグインを無効にする。&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;update mysql.user set plugin='' where user='root';&lt;/span&gt;
+&lt;span class="err"&gt;flush privileges;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Ansible&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;unix_socket&lt;/code&gt; プラグインを有効にした状態で mysql の task を実行するには、以下のように &lt;code&gt;login_unix_socket&lt;/code&gt; を設定すればよい。&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;Add users&lt;/span&gt;
+  &lt;span class="nt"&gt;mysql_user&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"{{&lt;/span&gt;&lt;span class="nv"&gt; &lt;/span&gt;&lt;span class="s"&gt;item.name&lt;/span&gt;&lt;span class="nv"&gt; &lt;/span&gt;&lt;span class="s"&gt;}}"&lt;/span&gt;
+    &lt;span class="nt"&gt;password&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"{{&lt;/span&gt;&lt;span class="nv"&gt; &lt;/span&gt;&lt;span class="s"&gt;item.password&lt;/span&gt;&lt;span class="nv"&gt; &lt;/span&gt;&lt;span class="s"&gt;}}"&lt;/span&gt;
+    &lt;span class="nt"&gt;priv&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"{{&lt;/span&gt;&lt;span class="nv"&gt; &lt;/span&gt;&lt;span class="s"&gt;item.priv&lt;/span&gt;&lt;span class="nv"&gt; &lt;/span&gt;&lt;span class="s"&gt;}}"&lt;/span&gt;
+    &lt;span class="nt"&gt;host&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"{{&lt;/span&gt;&lt;span class="nv"&gt; &lt;/span&gt;&lt;span class="s"&gt;item.host&lt;/span&gt;&lt;span class="nv"&gt; &lt;/span&gt;&lt;span class="s"&gt;}}"&lt;/span&gt;
+    &lt;span class="nt"&gt;login_unix_socket&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;/var/run/mysqld/mysqld.sock&lt;/span&gt;
+  &lt;span class="nt"&gt;loop&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"{{&lt;/span&gt;&lt;span class="nv"&gt; &lt;/span&gt;&lt;span class="s"&gt;mysql_users&lt;/span&gt;&lt;span class="nv"&gt; &lt;/span&gt;&lt;span class="s"&gt;}}"&lt;/span&gt;
+  &lt;span class="nt"&gt;become&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;yes&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;参考&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://fsck.jp/?p=793"&gt;Ubuntu 18.04 + MariaDB | 技術メモの壁&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/41846000/mariadb-password-and-unix-socket-authentication-for-root"&gt;update mysql.user set plugin='' where user='root';&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://jyn.jp/ubuntu-16-04-mariadb-password-bug/"&gt;Ubunt 16.04でMariaDBをインストールするとパスワードが変 | 純規の暇人趣味ブログ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/43379892/mariadb-cannot-login-as-root/43424234#43424234"&gt;UPDATE mysql.user SET plugin = '' WHERE plugin = 'unix_socket'; FLUSH PRIVILEGES;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200605-ubuntu-mysql-root.html</guid><pubDate>Thu, 04 Jun 2020 20:04:01 GMT</pubDate></item><item><title>Nextcloud Plugin Update Error</title><link>https://10sr.github.io/b/posts/20200601-nextcloud-plugin.html</link><description>&lt;div&gt;&lt;p&gt;Plugin のアップデート後、ログイン画面の代わりに以下の文面が表示されログインできなくなった。&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;The files of the app Plain text editor (files_texteditor) were not replaced correctly. Make sure it is a version compatible with the server.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Nextcloud のディレクトリ以下の &lt;code&gt;custom_apps&lt;/code&gt; から、 &lt;code&gt;files_texteditor&lt;/code&gt; ディレクトリを削除したら正常にログインできるようになった。
+&lt;code&gt;apps&lt;/code&gt; 以下にも同名のディレクトリがあるが、そっちは触らなくて良さそうだった。&lt;/p&gt;
+&lt;p&gt;Nextcloud 自体のバージョンが最新でないときにプラグインのアップデートはあまりしないほうがいいのかもしれない。&lt;/p&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200601-nextcloud-plugin.html</guid><pubDate>Mon, 01 Jun 2020 05:51:22 GMT</pubDate></item><item><title>dtach</title><link>https://10sr.github.io/b/posts/20200326-dtach.html</link><description>&lt;div&gt;&lt;p&gt;GNU screen からデタッチ機能だけを切り出したようなやつ&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://wiki.archlinux.org/index.php/Dtach"&gt;dtach&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -103,32 +167,4 @@ sudo apt autoremove
 他に預けると不安なのとか置いてる気がする。&lt;/p&gt;
 &lt;p&gt;自分で動かしてるので、使えなくしてしまうのが少し怖い。&lt;/p&gt;
 &lt;h3&gt;Google Drive&lt;/h3&gt;
-&lt;p&gt;今はなにも置いてない。&lt;/p&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-cloudstorage.html</guid><pubDate>Fri, 21 Jun 2019 06:57:18 GMT</pubDate></item><item><title>SSHd Configurations</title><link>https://10sr.github.io/b/posts/20190622-sshd-configurations.html</link><description>&lt;div&gt;&lt;h3&gt;&lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Disable &lt;code&gt;PasswordAuthentication&lt;/code&gt; and &lt;code&gt;ChallengeResponseAuthentication&lt;/code&gt; to
-disable password authentication.&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;Protocol 2&lt;/span&gt;
-&lt;span class="err"&gt;PermitRootLogin no&lt;/span&gt;
-&lt;span class="err"&gt;PasswordAuthentication no&lt;/span&gt;
-&lt;span class="err"&gt;PermitEmptyPasswords no&lt;/span&gt;
-&lt;span class="err"&gt;ChallengeResponseAuthentication no&lt;/span&gt;
-&lt;span class="err"&gt;UsePAM no&lt;/span&gt;
-&lt;span class="err"&gt;RSAAuthentication no&lt;/span&gt;
-&lt;span class="err"&gt;# do not look up the remote host name: this will improve performance&lt;/span&gt;
-&lt;span class="err"&gt;UseDNS no&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;h3&gt;References&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.kishiro.com/FreeBSD/ssh.html"&gt;http://www.kishiro.com/FreeBSD/ssh.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tm.root-n.com/server:sshd:sshd_config"&gt;http://tm.root-n.com/server:sshd:sshd_config&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;https://github.com/10sr/junks/commit/4c2af25e2fee6a9e56ced053fa054ab6c7f69ee9&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-sshd-configurations.html</guid><pubDate>Fri, 21 Jun 2019 06:56:18 GMT</pubDate></item><item><title>紅茶抽出飽和砂糖水溶液（MAX紅茶）</title><link>https://10sr.github.io/b/posts/20190622-max-tea.html</link><description>&lt;div&gt;&lt;p&gt;http://nantara.seesaa.net/article/117731852.html&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;砂糖をウイスキーのビンか何かに詰める&lt;/li&gt;
-&lt;li&gt;濃いめに入れた紅茶を空の瓶として2/3程度入れる&lt;/li&gt;
-&lt;li&gt;まぜる&lt;/li&gt;
-&lt;li&gt;開いたスペースに再び砂糖を詰める&lt;/li&gt;
-&lt;li&gt;紅茶をほぼ一杯まで入れる&lt;/li&gt;
-&lt;li&gt;混ぜる。完成。&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-max-tea.html</guid><pubDate>Fri, 21 Jun 2019 06:55:01 GMT</pubDate></item></channel></rss>
+&lt;p&gt;今はなにも置いてない。&lt;/p&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-cloudstorage.html</guid><pubDate>Fri, 21 Jun 2019 06:57:18 GMT</pubDate></item></channel></rss>
