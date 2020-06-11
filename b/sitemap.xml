@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>https://10sr.github.io/b/archive.html</loc>
-  <lastmod>2020-06-05T07:04:00Z</lastmod>
+  <lastmod>2020-06-11T07:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/authors.html</loc>
@@ -35,7 +35,7 @@
  </url>
  <url>
   <loc>https://10sr.github.io/b/index-1.html</loc>
-  <lastmod>2020-06-05T07:04:00Z</lastmod>
+  <lastmod>2020-06-11T07:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20190614-hexyl.html</loc>
@@ -87,6 +87,10 @@
  </url>
  <url>
   <loc>https://10sr.github.io/b/posts/20200605-ubuntu-mysql-root.html</loc>
-  <lastmod>2020-06-05T07:05:00Z</lastmod>
+  <lastmod>2020-06-11T07:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://10sr.github.io/b/posts/20200611-date-loop.html</loc>
+  <lastmod>2020-06-11T07:39:00Z</lastmod>
  </url>
 </urlset>

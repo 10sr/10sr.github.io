@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html prefix="" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Shellscript で日付ごとにコマンドを実行する | 10sr.github.io/b</title>
+<link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/poole.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/lanyon.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="https://10sr.github.io/b/posts/20200611-date-loop.html">
+<link rel="icon" href="//github.com/10sr.png?size=32" sizes="32x32">
+<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><meta name="author" content="">
+<link rel="prev" href="20200605-ubuntu-mysql-root.html" title="Ubuntu の MySQL (MariaDB) Root ログイン" type="text/html">
+<meta property="og:site_name" content="10sr.github.io/b">
+<meta property="og:title" content="Shellscript で日付ごとにコマンドを実行する">
+<meta property="og:url" content="https://10sr.github.io/b/posts/20200611-date-loop.html">
+<meta property="og:description" content="date は GNU Coreutils の奴が必要。
+以下では日付のフォーマットは YYYYMMDD になっている。
+#!/bin/bash
+set -euxo pipefail
+
+# 2019/12/1 &lt;= date &lt; 2020/2/1
+start_from=20191201
+stop_at=20200201
+
+date=$start_from
+
+while true
+do
+    if ">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-06-11T07:26:59+09:00">
+</head>
+<body class="layout-reverse">
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        <div class="sidebar-item">
+            <p>A reserved <a href="https://getnikola.com" target="_blank">Nikola</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> for Jekyll,
+            ported to Nikola by <a href="https://twitter.com/ralsina" target="_blank">@ralsina</a>.</p>
+        </div>
+        
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../archive.html">Archive</a>
+        <a class="sidebar-nav-item" href="../categories/">Tags</a>
+        <a class="sidebar-nav-item" href="../rss.xml">RSS feed</a>
+        <a class="sidebar-nav-item" href="//10sr.github.io">10sr.github.io</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://10sr.github.io/b/" title="10sr.github.io/b" rel="home">10sr.github.io/b</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Shellscript で日付ごとにコマンドを実行する</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn"></span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="post-date published dt-published" datetime="2020-06-11T07:26:59+09:00" itemprop="datePublished" title="2020-06-11 07:26">2020-06-11 07:26</time></a></p>
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p><code>date</code> は GNU Coreutils の奴が必要。
+以下では日付のフォーマットは YYYYMMDD になっている。</p>
+<pre class="code literal-block"><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="nb">set</span> -euxo pipefail
+
+<span class="c1"># 2019/12/1 &lt;= date &lt; 2020/2/1</span>
+<span class="nv">start_from</span><span class="o">=</span><span class="m">20191201</span>
+<span class="nv">stop_at</span><span class="o">=</span><span class="m">20200201</span>
+
+<span class="nv">date</span><span class="o">=</span><span class="nv">$start_from</span>
+
+<span class="k">while</span> <span class="nb">true</span>
+<span class="k">do</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$date</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"</span><span class="nv">$stop_at</span><span class="s2">"</span> <span class="o">]</span>
+    <span class="k">then</span>
+        <span class="nb">break</span>
+    <span class="k">fi</span>
+
+    <span class="nb">echo</span> date: <span class="nv">$date</span>
+
+    <span class="c1"># Next</span>
+    <span class="nv">date</span><span class="o">=</span><span class="sb">`</span>date -d <span class="s2">"</span><span class="nv">$date</span><span class="s2"> 1day"</span> <span class="s2">"+%Y%m%d"</span><span class="sb">`</span>
+<span class="k">done</span>
+
+<span class="nb">echo</span> Done
+</code></pre>
+
+
+<ul>
+<li><a href="https://qiita.com/YumaInaura/items/ffb8f10abf33474d1b1e">Linux—シェルスクリプトで日付でループする (Mac対応あり) - Qiita</a></li>
+<li><a href="https://techblog.recochoku.jp/1213">シェルスクリプトである期間日付でループする | レコチョクのエンジニアブログ</a></li>
+<li><a href="https://www.ppoohh.info/post-791/">シェルスクリプトで1日毎の日付でループする処理 | ppoohh 's blog</a></li>
+</ul>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="20200605-ubuntu-mysql-root.html" rel="prev" title="Ubuntu の MySQL (MariaDB) Root ログイン">Previous post</a>
+            </li>
+        </ul></nav></aside></article><footer id="footer"><p>Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a></p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="../assets/js/moment-with-locales.min.js"></script><script src="../assets/js/fancydates.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
