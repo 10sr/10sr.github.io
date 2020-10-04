@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Jun 2020 07:39:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Shellscript で日付ごとにコマンドを実行する</title><link>https://10sr.github.io/b/posts/20200611-date-loop.html</link><description>&lt;div&gt;&lt;p&gt;&lt;code&gt;date&lt;/code&gt; は GNU Coreutils の奴が必要。
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Sun, 04 Oct 2020 21:34:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>制限つき Gmail SMTP サーバを swaks から使う</title><link>https://10sr.github.io/b/posts/20201005-swaks-smtp.html</link><description>&lt;div&gt;&lt;p&gt;&lt;code&gt;swaks&lt;/code&gt; を使用すると任意の SMTP サーバを使用してメールを送信できる&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ swaks --server aspmx.l.google.com --to &lt;span class="m"&gt;8&lt;/span&gt;.slashes@gmail.com
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;実際にはいろいろ制限かかっててメール送れないかも。&lt;/p&gt;
+&lt;h3&gt;参考&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp"&gt;https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://support.google.com/a/answer/176600?hl=ja"&gt;https://support.google.com/a/answer/176600?hl=ja&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20201005-swaks-smtp.html</guid><pubDate>Sun, 04 Oct 2020 12:21:12 GMT</pubDate></item><item><title>Shellscript で日付ごとにコマンドを実行する</title><link>https://10sr.github.io/b/posts/20200611-date-loop.html</link><description>&lt;div&gt;&lt;p&gt;&lt;code&gt;date&lt;/code&gt; は GNU Coreutils の奴が必要。
 以下では日付のフォーマットは YYYYMMDD になっている。&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
 &lt;span class="nb"&gt;set&lt;/span&gt; -euxo pipefail
@@ -173,13 +183,4 @@ sudo apt autoremove
 &lt;li&gt;https://newsgroup.xnview.com/viewtopic.php?f=17&amp;amp;t=1228&amp;amp;p=144365&amp;amp;hilit=pdf#p144365&lt;/li&gt;
 &lt;li&gt;https://www.xnview.com/wiki/index.php/Ghostscript&lt;/li&gt;
 &lt;li&gt;https://www.ghostscript.com/download/gsdnld.html&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-windows-image-viewer.html</guid><pubDate>Fri, 21 Jun 2019 06:59:12 GMT</pubDate></item><item><title>論理的であるとは遠慮がないという意味ではない</title><link>https://10sr.github.io/b/posts/20190622-lgcl.html</link><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://neroeee3.tumblr.com/post/167354420622/%EF%BC%91%E8%AB%96%E7%90%86%E7%9A%84%E3%81%A7%E3%81%82%E3%82%8B%E3%81%A8%E3%81%AF%E9%81%A0%E6%85%AE%E3%81%8C%E3%81%AA%E3%81%84%E3%81%A8%E3%81%84%E3%81%86%E6%84%8F%E5%91%B3%E3%81%A7%E3%81%AF%E3%81%AA%E3%81%84"&gt;http://neroeee3.tumblr.com/post/167354420622/１論理的であるとは遠慮がないという意味ではない&lt;/a&gt;
-&lt;a href="http://www.huffingtonpost.jp/rootport/logical-thinking_b_5776270.html"&gt;http://www.huffingtonpost.jp/rootport/logical-thinking_b_5776270.html&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;１．「論理的である」とは「遠慮がない」という意味ではない。&lt;/p&gt;
-&lt;p&gt;どういうわけか、「気を遣わないこと」を「論理的だ」と思っている人はとても多い。感情面に配慮せずに議論することを「論理的な議論」だと信じている人には、なんというか、もう、げんなりさせられる。&lt;/p&gt;
-&lt;p&gt;言うまでもなく、論理的であることと、他人の感情に配慮することは、対立概念ではない。論理的に事実の分析を積み重ねながら、同時に他人の感情に配慮することも可能だ。論理的思考と感情的配慮は両立できる。&lt;/p&gt;
-&lt;p&gt;ただし、極端に論理的でありながら感情面にも気が回る「ほんとうに頭脳明晰な人」は、とても希少だ。&lt;/p&gt;
-&lt;p&gt;そういう人物に、私は今までの人生でたった２人しか出会っていない。私はむしろ運がいいほうで、１人も出会わずに生涯を終える人も少なくないだろう。「ほんとうに頭脳明晰な人」の存在を知らなければ、論理的思考と感情的配慮が両立することを理解するのは難しいかもしれない。&lt;/p&gt;
-&lt;p&gt;自分は論理的だと思っている人は、まず「ただ遠慮がないだけ」なのか、それとも、ほんとうに頭脳明晰な人を目指しているのか、自省してみるといいだろう。&lt;/p&gt;
-&lt;/blockquote&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-lgcl.html</guid><pubDate>Fri, 21 Jun 2019 06:58:29 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20190622-windows-image-viewer.html</guid><pubDate>Fri, 21 Jun 2019 06:59:12 GMT</pubDate></item></channel></rss>
