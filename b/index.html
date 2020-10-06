@@ -15,7 +15,7 @@
 <link rel="canonical" href="https://10sr.github.io/b/">
 <link rel="icon" href="//github.com/10sr.png?size=32" sizes="32x32">
 <link rel="next" href="index-1.html" type="text/html">
-<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><link rel="prefetch" href="posts/20201005-jenkins-plugins.html" type="text/html">
+<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><link rel="prefetch" href="posts/20201007-awk-tsv.html" type="text/html">
 </head>
 <body class="layout-reverse">
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -53,7 +53,15 @@
         
 
 <div class="posts">
-    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20201005-jenkins-plugins.html" class="u-url">Jenkins にインストールされたプラグインの一覧を取得する</a></h1>
+    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20201007-awk-tsv.html" class="u-url">AWK で TSV のあるカラムを値で絞る</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn"></span></p>
+            <p class="dateline"><a href="posts/20201007-awk-tsv.html" rel="bookmark"><time class="post-date published dt-published" datetime="2020-10-06T23:33:01+09:00" title="2020-10-06 23:33">2020-10-06 23:33</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    cat input.txt | awk -F\\t '$3 ~ /REGEXP/'
+    </div>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20201005-jenkins-plugins.html" class="u-url">Jenkins にインストールされたプラグインの一覧を取得する</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn"></span></p>
             <p class="dateline"><a href="posts/20201005-jenkins-plugins.html" rel="bookmark"><time class="post-date published dt-published" datetime="2020-10-04T22:03:29+09:00" title="2020-10-04 22:03">2020-10-04 22:03</time></a></p>
@@ -209,22 +217,6 @@ s
 
 http://ivystar.jp/hardware/c-windows-logs-cbs-log-cleared-by-the-c-drive-of-refreshing/
 https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1266
-    </div>
-    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/20190622-firefox-tab-center-redux.html" class="u-url">Firefox Tab Center Redux</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn"></span></p>
-            <p class="dateline"><a href="posts/20190622-firefox-tab-center-redux.html" rel="bookmark"><time class="post-date published dt-published" datetime="2019-06-21T15:59:50+09:00" title="2019-06-21 15:59">2019-06-21 15:59</time></a></p>
-        </div>
-    </header><div class="p-summary entry-summary">
-    タブを縦置きするプラグイン
-MacBookAir のマシンで間隔を詰めるためにアドオンの設定ページから以下の CSS を追加
-st-wrapper.shrinked .tab:not(.pinned) {
-  height: 29px !important;
-}
-
-
-
-https://github.com/eoger/tabcenter-redux/wiki/Custom-CSS-tweaks
     </div>
     </article>
 </div>
