@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Shellscript で日付ごとにコマンドを実行する &middot; 10sr Hugo
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="../css/poole.css">
+  <link rel="stylesheet" href="../css/syntax.css">
+  <link rel="stylesheet" href="../css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="../atom.xml">
+</head>
+
+
+  <body class="layout-reverse">
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item " href="../">Home</a>
+    <a class="sidebar-nav-item " href="../post">Posts</a>
+    </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 2020. All rights reserved.</p>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="../" title="Home">10sr Hugo</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+<div class="post">
+  <h1 class="post-title">Shellscript で日付ごとにコマンドを実行する</h1>
+  <span class="post-date">Jun 11, 2020</span>
+  <p><code>date</code> は GNU Coreutils の奴が必要。
+以下では日付のフォーマットは YYYYMMDD になっている。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>set -euxo pipefail
+
+<span style="color:#75715e"># 2019/12/1 &lt;= date &lt; 2020/2/1</span>
+start_from<span style="color:#f92672">=</span><span style="color:#ae81ff">20191201</span>
+stop_at<span style="color:#f92672">=</span><span style="color:#ae81ff">20200201</span>
+
+date<span style="color:#f92672">=</span>$start_from
+
+<span style="color:#66d9ef">while</span> true
+<span style="color:#66d9ef">do</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$date<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span>$stop_at<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>
+    <span style="color:#66d9ef">then</span>
+        break
+    <span style="color:#66d9ef">fi</span>
+
+    echo date: $date
+
+    <span style="color:#75715e"># Next</span>
+    date<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>date -d <span style="color:#e6db74">&#34;</span>$date<span style="color:#e6db74"> 1day</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;+%Y%m%d&#34;</span><span style="color:#e6db74">`</span>
+<span style="color:#66d9ef">done</span>
+
+echo Done
+</code></pre></div><ul>
+<li><a href="https://qiita.com/YumaInaura/items/ffb8f10abf33474d1b1e">Linux—シェルスクリプトで日付でループする (Mac対応あり) - Qiita</a></li>
+<li><a href="https://techblog.recochoku.jp/1213">シェルスクリプトである期間日付でループする | レコチョクのエンジニアブログ</a></li>
+<li><a href="https://www.ppoohh.info/post-791/">シェルスクリプトで1日毎の日付でループする処理 | ppoohh &lsquo;s blog</a></li>
+</ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+  </body>
+</html>
+

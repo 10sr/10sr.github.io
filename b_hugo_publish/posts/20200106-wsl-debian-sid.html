@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Install Debian Sid on WSL &middot; 10sr Hugo
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="../css/poole.css">
+  <link rel="stylesheet" href="../css/syntax.css">
+  <link rel="stylesheet" href="../css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="../atom.xml">
+</head>
+
+
+  <body class="layout-reverse">
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item " href="../">Home</a>
+    <a class="sidebar-nav-item " href="../post">Posts</a>
+    </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 2020. All rights reserved.</p>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="../" title="Home">10sr Hugo</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+<div class="post">
+  <h1 class="post-title">Install Debian Sid on WSL</h1>
+  <span class="post-date">Jan 6, 2020</span>
+  <p>まず普通に store にある debian をインストールして最新に合わせる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade
+</code></pre></div><p>一応ミラーを jp に合わせてもう一度アップデートする。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudoedit /etc/apt/sources.list
+<span style="color:#75715e">## security 以外を ftp.jp.debian.org/debian/ にする</span>
+sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade
+</code></pre></div><p>sid に変更してアップグレードする。以下一行だけにした。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo tee /etc/apt/sources.list <span style="color:#e6db74">&lt;&lt;EOC
+</span><span style="color:#e6db74">deb http://ftp.jp.debian.org/debian unstable main contrib
+</span><span style="color:#e6db74">EOC</span>
+sudo apt update
+sudo apt full-upgrade
+sudo apt autoremove
+</code></pre></div><p>再起動する。 <em>WSL 外</em>（PowerShell など）から以下を実行する。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">wsl.exe -t Debian
+</code></pre></div><h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://wiki.debian.org/DebianUnstable">https://wiki.debian.org/DebianUnstable</a></li>
+<li><a href="https://endaaman.me/-/debian-sid_on_laptop">https://endaaman.me/-/debian-sid_on_laptop</a></li>
+<li><a href="https://dnuka.github.io/upgrading-debian-to-unstable.html">https://dnuka.github.io/upgrading-debian-to-unstable.html</a></li>
+</ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+  </body>
+</html>
+

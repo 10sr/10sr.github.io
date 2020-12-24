@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Ubuntu の MySQL (MariaDB) Root ログイン &middot; 10sr Hugo
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="../css/poole.css">
+  <link rel="stylesheet" href="../css/syntax.css">
+  <link rel="stylesheet" href="../css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="../atom.xml">
+</head>
+
+
+  <body class="layout-reverse">
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item " href="../">Home</a>
+    <a class="sidebar-nav-item " href="../post">Posts</a>
+    </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 2020. All rights reserved.</p>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="../" title="Home">10sr Hugo</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+<div class="post">
+  <h1 class="post-title">Ubuntu の MySQL (MariaDB) Root ログイン</h1>
+  <span class="post-date">Jun 5, 2020</span>
+  <h2 id="問題">問題</h2>
+<p>MariaDB の root のパスワードを設定しようとして、 <code>mysql_secure_installation</code>
+を実行したり以下のようにしたりしてもログインできるようにならない場合がある。</p>
+<pre><code>set password for 'root'@'localhost'=password('pw');
+# or
+update mysql.user set password=password('pw') where user = 'root';
+</code></pre>
+<h2 id="原因">原因</h2>
+<p>Ubuntu の MariaDB のインストールではデフォルトで <code>unix_socket</code> プラグインが設定されている。
+そのため以下のようになる。</p>
+<ul>
+<li>ホスト上で root になって mysql コマンドを実行すれば、認証なしでログインできる
+<ul>
+<li>間違ったパスワードを入力してもよい</li>
+</ul>
+</li>
+<li>root ユーザ以外・別のホストからではパスワードを正しく入力しても root としてログインできない</li>
+</ul>
+<p>これは以下のようにして確認できる。</p>
+<pre><code>MariaDB [(none)]&gt; select host, user, plugin from mysql.user;
++-----------+------+-------------+
+| host      | user | plugin      |
++-----------+------+-------------+
+| localhost | root | unix_socket |
+| %         | 10sr |             |
++-----------+------+-------------+
+2 rows in set (0.00 sec)
+</code></pre><p>よって、これに従ってローカルの root からだけ root を使うようにするか、もしくは以下のようにしてプラグインを無効にする。</p>
+<pre><code>update mysql.user set plugin='' where user='root';
+flush privileges;
+</code></pre><h2 id="ansible">Ansible</h2>
+<p><code>unix_socket</code> プラグインを有効にした状態で mysql の task を実行するには、以下のように <code>login_unix_socket</code> を設定すればよい。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- name: Add users
+  mysql_user:
+    name: <span style="color:#e6db74">&#34;{{ item.name }}&#34;</span>
+    password: <span style="color:#e6db74">&#34;{{ item.password }}&#34;</span>
+    priv: <span style="color:#e6db74">&#34;{{ item.priv }}&#34;</span>
+    host: <span style="color:#e6db74">&#34;{{ item.host }}&#34;</span>
+    login_unix_socket: /var/run/mysqld/mysqld.sock
+  loop: <span style="color:#e6db74">&#34;{{ mysql_users }}&#34;</span>
+  become: yes
+</code></pre></div><h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://fsck.jp/?p=793">Ubuntu 18.04 + MariaDB | 技術メモの壁</a></li>
+<li><a href="https://stackoverflow.com/questions/41846000/mariadb-password-and-unix-socket-authentication-for-root">update mysql.user set plugin=&rsquo;&rsquo; where user='root&rsquo;;</a></li>
+<li><a href="https://jyn.jp/ubuntu-16-04-mariadb-password-bug/">Ubunt 16.04でMariaDBをインストールするとパスワードが変 | 純規の暇人趣味ブログ</a></li>
+<li><a href="https://stackoverflow.com/questions/43379892/mariadb-cannot-login-as-root/43424234#43424234">UPDATE mysql.user SET plugin = '&rsquo; WHERE plugin = &lsquo;unix_socket&rsquo;; FLUSH PRIVILEGES;</a></li>
+</ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+  </body>
+</html>
+

@@ -6,18 +6,231 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 03 Apr 2020 21:06:58 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 24 Dec 2020 14:57:43 +0900</lastBuildDate>
     
 	<atom:link href="http://10sr.github.io/b_hugo_publish/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My First Post</title>
-      <link>http://10sr.github.io/b_hugo_publish/posts/20200403-my-first-post.html</link>
-      <pubDate>Fri, 03 Apr 2020 21:06:58 +0900</pubDate>
+      <title>Emacs の fill-column のあたり</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20201224-emacs-fill-column.html</link>
+      <pubDate>Thu, 24 Dec 2020 14:57:43 +0900</pubDate>
       
-      <guid>http://10sr.github.io/b_hugo_publish/posts/20200403-my-first-post.html</guid>
-      <description>eee</description>
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20201224-emacs-fill-column.html</guid>
+      <description>fill-column バッファの各行の文字数の最大幅のようなものを設定する変数（？）。これを設定しただけでは何も起きないような気がする。
+いろいろな関数やモードがこの変数をデフォルト値的なものとして参照してる。
+set-fill-column この関数は fill-column の値を設定する。 デフォルト値が現在のカラムの位置になるため、今の場所を行の最大幅にするみたいなことができる。
+自動折返し auto-fill-mode を使用する。例えば、以下のように追加する。
+;; https://www.emacswiki.org/emacs/AutoFillMode (add-hook &#39;text-mode-hook &#39;turn-on-auto-fill)  他にもコメント行だけで有効にしたりできるらしい。
+現在の最大幅の表示 最大幅のところに線を引ける。
+Emacs 27.1 以降は display-fill-column-indicator-mode が使える。 この関数は fill-column の値を最大幅として使用する。
+それ以前のバージョンは fill-column-indicator (fci-mode) が使えそう。
+線を引くのではなく背景色を変えるような方法は今のところなさそう？
+最大幅を超えた行のハイライト 長過ぎる行を警告する目的で、設定した最大幅を超えた行をハイライトしたり、超えた文字だけをハイライトしたりできる。
+これを実現する一つとして、例えば whitespace-mode がある。 whitespace-style に lines を設定すると超過した行全体が、 lines-tail を設定すると超過した部分だけがハイライトされる。 最大幅は whitespace-line-column で設定する。 この値が nil である場合 fill-column の値が参照される。
+その他 fill-column の値にしたがって見た目上の折返しを行う visual-fill-column とかがある。</description>
+    </item>
+    
+    <item>
+      <title>Github の PR をローカルに Chekcout する</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20201123-checkout-pr.html</link>
+      <pubDate>Mon, 23 Nov 2020 00:36:20 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20201123-checkout-pr.html</guid>
+      <description>https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally
+git fetch origin pull/ID/head:BRANCHNAME  </description>
+    </item>
+    
+    <item>
+      <title>AWK で TSV のあるカラムを値で絞る</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20201007-awk-tsv.html</link>
+      <pubDate>Wed, 07 Oct 2020 08:33:01 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20201007-awk-tsv.html</guid>
+      <description>cat input.txt | awk -F\\t &#39;$3 ~ /REGEXP/&#39;  </description>
+    </item>
+    
+    <item>
+      <title>Jenkins にインストールされたプラグインの一覧を取得する</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20201005-jenkins-plugins.html</link>
+      <pubDate>Mon, 05 Oct 2020 07:03:29 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20201005-jenkins-plugins.html</guid>
+      <description>スクリプトコンソールなどで以下を実行する
+def plugins = jenkins.model.Jenkins.instance.getPluginManager().getPlugins() plugins.each {println &amp;#34;${it.getShortName()}: ${it.getVersion()}&amp;#34;} </description>
+    </item>
+    
+    <item>
+      <title>制限つき Gmail SMTP サーバを swaks から使う</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20201005-swaks-smtp.html</link>
+      <pubDate>Mon, 05 Oct 2020 06:21:12 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20201005-swaks-smtp.html</guid>
+      <description>swaks を使用すると任意の SMTP サーバを使用してメールを送信できる
+$ swaks --server aspmx.l.google.com --to 8.slashes@gmail.com  実際にはいろいろ制限かかっててメール送れないかも。
+参考  https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp https://support.google.com/a/answer/176600?hl=ja  </description>
+    </item>
+    
+    <item>
+      <title>Shellscript で日付ごとにコマンドを実行する</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20200611-date-loop.html</link>
+      <pubDate>Thu, 11 Jun 2020 16:26:59 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20200611-date-loop.html</guid>
+      <description>date は GNU Coreutils の奴が必要。 以下では日付のフォーマットは YYYYMMDD になっている。
+#!/bin/bash set -euxo pipefail # 2019/12/1 &amp;lt;= date &amp;lt; 2020/2/1 start_from=20191201 stop_at=20200201 date=$start_from while true do if [ &amp;#34;$date&amp;#34; = &amp;#34;$stop_at&amp;#34; ] then break fi echo date: $date # Next date=`date -d &amp;#34;$date1day&amp;#34; &amp;#34;+%Y%m%d&amp;#34;` done echo Done  Linux—シェルスクリプトで日付でループする (Mac対応あり) - Qiita シェルスクリプトである期間日付でループする | レコチョクのエンジニアブログ シェルスクリプトで1日毎の日付でループする処理 | ppoohh &amp;lsquo;s blog  </description>
+    </item>
+    
+    <item>
+      <title>Ubuntu の MySQL (MariaDB) Root ログイン</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20200605-ubuntu-mysql-root.html</link>
+      <pubDate>Fri, 05 Jun 2020 14:04:01 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20200605-ubuntu-mysql-root.html</guid>
+      <description>問題 MariaDB の root のパスワードを設定しようとして、 mysql_secure_installation を実行したり以下のようにしたりしてもログインできるようにならない場合がある。
+set password for &#39;root&#39;@&#39;localhost&#39;=password(&#39;pw&#39;); # or update mysql.user set password=password(&#39;pw&#39;) where user = &#39;root&#39;;  原因 Ubuntu の MariaDB のインストールではデフォルトで unix_socket プラグインが設定されている。 そのため以下のようになる。
+ ホスト上で root になって mysql コマンドを実行すれば、認証なしでログインできる  間違ったパスワードを入力してもよい   root ユーザ以外・別のホストからではパスワードを正しく入力しても root としてログインできない  これは以下のようにして確認できる。
+MariaDB [(none)]&amp;gt; select host, user, plugin from mysql.user; +-----------+------+-------------+ | host | user | plugin | +-----------+------+-------------+ | localhost | root | unix_socket | | % | 10sr | | +-----------+------+-------------+ 2 rows in set (0.</description>
+    </item>
+    
+    <item>
+      <title>Nextcloud Plugin Update Error</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20200601-nextcloud-plugin.html</link>
+      <pubDate>Mon, 01 Jun 2020 23:51:22 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20200601-nextcloud-plugin.html</guid>
+      <description>Plugin のアップデート後、ログイン画面の代わりに以下の文面が表示されログインできなくなった。
+The files of the app Plain text editor (files_texteditor) were not replaced correctly. Make sure it is a version compatible with the server.  Nextcloud のディレクトリ以下の custom_apps から、 files_texteditor ディレクトリを削除したら正常にログインできるようになった。 apps 以下にも同名のディレクトリがあるが、そっちは触らなくて良さそうだった。
+Nextcloud 自体のバージョンが最新でないときにプラグインのアップデートはあまりしないほうがいいのかもしれない。</description>
+    </item>
+    
+    <item>
+      <title>dtach</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20200326-dtach.html</link>
+      <pubDate>Thu, 26 Mar 2020 12:35:31 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20200326-dtach.html</guid>
+      <description>GNU screen からデタッチ機能だけを切り出したようなやつ
+ dtach  # s.dtach というソケットで開始 C-^ でデタッチ dtach -c s.dtach -e &amp;#39;^^&amp;#39; bash -i # s.dtach というソケットにアタッチ dtach -a s.dtach # s.dtach というソケットにアタッチ なければ作る dtach -A s.dtach -e &amp;#39;^^&amp;#39; bash -i </description>
+    </item>
+    
+    <item>
+      <title>Explore filesystem of stopped docker container</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20200205-explore-filesystem-of-stopped-docker-container.html</link>
+      <pubDate>Wed, 05 Feb 2020 13:56:40 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20200205-explore-filesystem-of-stopped-docker-container.html</guid>
+      <description>停止したコンテナにあったファイルをみたい。
+以下のようにするとできる。
+# コンテナの ID を探す（先頭のハッシュ） docker ps -a | grep NAME # 新しくイメージを作成する docker commit CONTAINER_ID t # 実行 docker run -it t bash -i 参考
+ linux - Exploring Docker container&#39;s file system - Stack Overflow  </description>
+    </item>
+    
+    <item>
+      <title>Install Debian Sid on WSL</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20200106-wsl-debian-sid.html</link>
+      <pubDate>Mon, 06 Jan 2020 21:20:33 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20200106-wsl-debian-sid.html</guid>
+      <description>まず普通に store にある debian をインストールして最新に合わせる。
+sudo apt update &amp;amp;&amp;amp; sudo apt upgrade 一応ミラーを jp に合わせてもう一度アップデートする。
+sudoedit /etc/apt/sources.list ## security 以外を ftp.jp.debian.org/debian/ にする sudo apt update &amp;amp;&amp;amp; sudo apt upgrade sid に変更してアップグレードする。以下一行だけにした。
+sudo tee /etc/apt/sources.list &amp;lt;&amp;lt;EOC deb http://ftp.jp.debian.org/debian unstable main contrib EOC sudo apt update sudo apt full-upgrade sudo apt autoremove 再起動する。 WSL 外（PowerShell など）から以下を実行する。
+wsl.exe -t Debian 参考  https://wiki.debian.org/DebianUnstable https://endaaman.me/-/debian-sid_on_laptop https://dnuka.github.io/upgrading-debian-to-unstable.html  </description>
+    </item>
+    
+    <item>
+      <title>Windows CBS ディレクトリについて</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20191231-windows-cbs.html</link>
+      <pubDate>Tue, 31 Dec 2019 21:13:49 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20191231-windows-cbs.html</guid>
+      <description>C:\Windows\logs\CBS\CbsPersist_*.log というファイルが数 10GB 程度に膨れてディスクを圧迫していたことがあった。 少し調べたところ普通に削除してしまっても大丈夫っぽい。
+ http://ivystar.jp/hardware/c-windows-logs-cbs-log-cleared-by-the-c-drive-of-refreshing/ https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1266732207  </description>
+    </item>
+    
+    <item>
+      <title>Firefox Tab Center Redux</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20190622-firefox-tab-center-redux.html</link>
+      <pubDate>Sat, 22 Jun 2019 00:59:50 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20190622-firefox-tab-center-redux.html</guid>
+      <description>タブを縦置きするプラグイン
+MacBookAir のマシンで間隔を詰めるためにアドオンの設定ページから以下の CSS を追加
+st-wrapper.shrinked .tab:not(.pinned) { height: 29px !important; } https://github.com/eoger/tabcenter-redux/wiki/Custom-CSS-tweaks</description>
+    </item>
+    
+    <item>
+      <title>Windows 画像ビューワ</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20190622-windows-image-viewer.html</link>
+      <pubDate>Sat, 22 Jun 2019 00:59:12 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20190622-windows-image-viewer.html</guid>
+      <description>XnView MP というやつ
+https://www.xnview.com/en/xnviewmp/#downloads
+PDF を見るには GhostScript が必要 らしい
+ https://newsgroup.xnview.com/viewtopic.php?f=17&amp;amp;t=1228&amp;amp;p=144365&amp;amp;hilit=pdf#p144365 https://www.xnview.com/wiki/index.php/Ghostscript https://www.ghostscript.com/download/gsdnld.html  </description>
+    </item>
+    
+    <item>
+      <title>論理的であるとは遠慮がないという意味ではない</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20190622-lgcl.html</link>
+      <pubDate>Sat, 22 Jun 2019 00:58:29 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20190622-lgcl.html</guid>
+      <description>http://neroeee3.tumblr.com/post/167354420622/１論理的であるとは遠慮がないという意味ではない http://www.huffingtonpost.jp/rootport/logical-thinking_b_5776270.html
+ １．「論理的である」とは「遠慮がない」という意味ではない。
+どういうわけか、「気を遣わないこと」を「論理的だ」と思っている人はとても多い。感情面に配慮せずに議論することを「論理的な議論」だと信じている人には、なんというか、もう、げんなりさせられる。
+言うまでもなく、論理的であることと、他人の感情に配慮することは、対立概念ではない。論理的に事実の分析を積み重ねながら、同時に他人の感情に配慮することも可能だ。論理的思考と感情的配慮は両立できる。
+ただし、極端に論理的でありながら感情面にも気が回る「ほんとうに頭脳明晰な人」は、とても希少だ。
+そういう人物に、私は今までの人生でたった２人しか出会っていない。私はむしろ運がいいほうで、１人も出会わずに生涯を終える人も少なくないだろう。「ほんとうに頭脳明晰な人」の存在を知らなければ、論理的思考と感情的配慮が両立することを理解するのは難しいかもしれない。
+自分は論理的だと思っている人は、まず「ただ遠慮がないだけ」なのか、それとも、ほんとうに頭脳明晰な人を目指しているのか、自省してみるといいだろう。
+ </description>
+    </item>
+    
+    <item>
+      <title>クラウドストレージ使い分け</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20190622-cloudstorage.html</link>
+      <pubDate>Sat, 22 Jun 2019 00:57:18 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20190622-cloudstorage.html</guid>
+      <description>今のところ動かしてるのは以下の４つ
+ Nextcloud Dropbox OneDrive Google Drive  Dropbox この中では容量があまり大きくない。 スマホからの保存が一番優秀な気がするので、一時保存によく使ってる気がする。
+OneDrive 画像ビューアが Web, スマホ通して一番優秀な気がするので、主に画像の保存に使ってる。
+Nextcloud 自分でホストしてるので、一番安全で容量が大きい。 他に預けると不安なのとか置いてる気がする。
+自分で動かしてるので、使えなくしてしまうのが少し怖い。
+Google Drive 今はなにも置いてない。</description>
+    </item>
+    
+    <item>
+      <title>SSHd Configurations</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20190622-sshd-configurations.html</link>
+      <pubDate>Sat, 22 Jun 2019 00:56:18 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20190622-sshd-configurations.html</guid>
+      <description>/etc/ssh/sshd_config Disable PasswordAuthentication and ChallengeResponseAuthentication to disable password authentication.
+Protocol 2 PermitRootLogin no PasswordAuthentication no PermitEmptyPasswords no ChallengeResponseAuthentication no UsePAM no RSAAuthentication no # do not look up the remote host name: this will improve performance UseDNS no  References  http://www.kishiro.com/FreeBSD/ssh.html http://tm.root-n.com/server:sshd:sshd_config https://github.com/10sr/junks/commit/4c2af25e2fee6a9e56ced053fa054ab6c7f69ee9  </description>
+    </item>
+    
+    <item>
+      <title>紅茶抽出飽和砂糖水溶液（MAX紅茶）</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20190622-max-tea.html</link>
+      <pubDate>Sat, 22 Jun 2019 00:55:01 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20190622-max-tea.html</guid>
+      <description>http://nantara.seesaa.net/article/117731852.html
+ 砂糖をウイスキーのビンか何かに詰める 濃いめに入れた紅茶を空の瓶として2/3程度入れる まぜる 開いたスペースに再び砂糖を詰める 紅茶をほぼ一杯まで入れる 混ぜる。完成。  </description>
+    </item>
+    
+    <item>
+      <title>hexyl</title>
+      <link>http://10sr.github.io/b_hugo_publish/posts/20190614-hexyl.html</link>
+      <pubDate>Fri, 14 Jun 2019 11:43:43 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b_hugo_publish/posts/20190614-hexyl.html</guid>
+      <description>Hexyl がべんり
+https://github.com/sharkdp/hexyl
+brew install hexyl </description>
     </item>
     
   </channel>
