@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Sun, 22 Nov 2020 15:37:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Github の PR をローカルに Chekcout する</title><link>https://10sr.github.io/b/posts/20201123-checkout-pr.html</link><description>&lt;div&gt;&lt;p&gt;https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10sr.github.io/b</title><link>https://10sr.github.io/b</link><description>10sr public Nikola</description><atom:link href="https://10sr.github.io/b/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:8.slashes@gmail.com"&gt;&lt;/a&gt; </copyright><lastBuildDate>Thu, 24 Dec 2020 06:28:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Emacs の fill-column のあたり</title><link>https://10sr.github.io/b/posts/20201224-emacs-fill-column.html</link><description>&lt;div&gt;&lt;h2&gt;&lt;code&gt;fill-column&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;バッファの各行の文字数の最大幅のようなものを設定する変数（？）。これを設定しただけでは何も起きないような気がする。&lt;/p&gt;
+&lt;p&gt;いろいろな関数やモードがこの変数をデフォルト値的なものとして参照してる。&lt;/p&gt;
+&lt;h3&gt;&lt;code&gt;set-fill-column&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;この関数は &lt;code&gt;fill-column&lt;/code&gt; の値を設定する。
+デフォルト値が現在のカラムの位置になるため、今の場所を行の最大幅にするみたいなことができる。&lt;/p&gt;
+&lt;h2&gt;自動折返し&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;auto-fill-mode&lt;/code&gt; を使用する。例えば、以下のように追加する。&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;;; https://www.emacswiki.org/emacs/AutoFillMode&lt;/span&gt;
+&lt;span class="err"&gt;(add-hook 'text-mode-hook 'turn-on-auto-fill)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;他にもコメント行だけで有効にしたりできるらしい。&lt;/p&gt;
+&lt;h2&gt;現在の最大幅の表示&lt;/h2&gt;
+&lt;p&gt;最大幅のところに線を引ける。&lt;/p&gt;
+&lt;p&gt;Emacs 27.1 以降は &lt;code&gt;display-fill-column-indicator-mode&lt;/code&gt; が使える。
+この関数は &lt;code&gt;fill-column&lt;/code&gt; の値を最大幅として使用する。&lt;/p&gt;
+&lt;p&gt;それ以前のバージョンは fill-column-indicator (&lt;code&gt;fci-mode&lt;/code&gt;) が使えそう。&lt;/p&gt;
+&lt;p&gt;線を引くのではなく背景色を変えるような方法は今のところなさそう？&lt;/p&gt;
+&lt;h2&gt;最大幅を超えた行のハイライト&lt;/h2&gt;
+&lt;p&gt;長過ぎる行を警告する目的で、設定した最大幅を超えた行をハイライトしたり、超えた文字だけをハイライトしたりできる。&lt;/p&gt;
+&lt;p&gt;これを実現する一つとして、例えば &lt;code&gt;whitespace-mode&lt;/code&gt; がある。
+&lt;code&gt;whitespace-style&lt;/code&gt; に &lt;code&gt;lines&lt;/code&gt; を設定すると超過した行全体が、
+&lt;code&gt;lines-tail&lt;/code&gt; を設定すると超過した部分だけがハイライトされる。
+最大幅は &lt;code&gt;whitespace-line-column&lt;/code&gt; で設定する。
+この値が &lt;code&gt;nil&lt;/code&gt; である場合 &lt;code&gt;fill-column&lt;/code&gt; の値が参照される。&lt;/p&gt;
+&lt;h2&gt;その他&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;fill-column&lt;/code&gt; の値にしたがって見た目上の折返しを行う &lt;code&gt;visual-fill-column&lt;/code&gt; とかがある。&lt;/p&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20201224-emacs-fill-column.html</guid><pubDate>Wed, 23 Dec 2020 20:57:43 GMT</pubDate></item><item><title>Github の PR をローカルに Chekcout する</title><link>https://10sr.github.io/b/posts/20201123-checkout-pr.html</link><description>&lt;div&gt;&lt;p&gt;https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;git fetch origin pull/ID/head:BRANCHNAME&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20201123-checkout-pr.html</guid><pubDate>Sun, 22 Nov 2020 06:36:20 GMT</pubDate></item><item><title>AWK で TSV のあるカラムを値で絞る</title><link>https://10sr.github.io/b/posts/20201007-awk-tsv.html</link><description>&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;cat input.txt | awk -F\\t '$3 ~ /REGEXP/'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;</description><guid>https://10sr.github.io/b/posts/20201007-awk-tsv.html</guid><pubDate>Tue, 06 Oct 2020 14:33:01 GMT</pubDate></item><item><title>Jenkins にインストールされたプラグインの一覧を取得する</title><link>https://10sr.github.io/b/posts/20201005-jenkins-plugins.html</link><description>&lt;div&gt;&lt;p&gt;スクリプトコンソールなどで以下を実行する&lt;/p&gt;
@@ -137,36 +165,4 @@ dtach -A s.dtach -e &lt;span class="s1"&gt;'^^'&lt;/span&gt; bash -i
 &lt;p&gt;参考&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://stackoverflow.com/questions/20813486/exploring-docker-containers-file-system#20816397"&gt;linux - Exploring Docker container's file system - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200205-explore-filesystem-of-stopped-docker-container.html</guid><pubDate>Tue, 04 Feb 2020 19:56:40 GMT</pubDate></item><item><title>Install Debian Sid on WSL</title><link>https://10sr.github.io/b/posts/20200106-wsl-debian-sid.html</link><description>&lt;div&gt;&lt;p&gt;まず普通に store にある debian をインストールして最新に合わせる。&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt update &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade
-&lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;p&gt;一応ミラーを jp に合わせてもう一度アップデートする。&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudoedit /etc/apt/sources.list
-&lt;span class="c1"&gt;## security 以外を ftp.jp.debian.org/debian/ にする&lt;/span&gt;
-sudo apt update &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade
-&lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;p&gt;sid に変更してアップグレードする。以下一行だけにした。&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo tee /etc/apt/sources.list &lt;span class="s"&gt;&amp;lt;&amp;lt;EOC&lt;/span&gt;
-&lt;span class="s"&gt;deb http://ftp.jp.debian.org/debian unstable main contrib&lt;/span&gt;
-&lt;span class="s"&gt;EOC&lt;/span&gt;
-sudo apt update
-sudo apt full-upgrade
-sudo apt autoremove
-&lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;p&gt;再起動する。 &lt;em&gt;WSL 外&lt;/em&gt;（PowerShell など）から以下を実行する。&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;wsl.exe -t Debian
-&lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;h3&gt;参考&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://wiki.debian.org/DebianUnstable"&gt;https://wiki.debian.org/DebianUnstable&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://endaaman.me/-/debian-sid_on_laptop"&gt;https://endaaman.me/-/debian-sid_on_laptop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://dnuka.github.io/upgrading-debian-to-unstable.html"&gt;https://dnuka.github.io/upgrading-debian-to-unstable.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200106-wsl-debian-sid.html</guid><pubDate>Mon, 06 Jan 2020 03:20:33 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;&lt;/div&gt;</description><guid>https://10sr.github.io/b/posts/20200205-explore-filesystem-of-stopped-docker-container.html</guid><pubDate>Tue, 04 Feb 2020 19:56:40 GMT</pubDate></item></channel></rss>
