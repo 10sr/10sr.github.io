@@ -38,7 +38,7 @@
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
     <p>
-      A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.
+      desc
     </p>
   </div>
 
@@ -75,201 +75,61 @@
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20210302_squashfs.html">SquashFS</a></h1>
         <span class="post-date">Mar 2, 2021</span>
-        <p>使ったことないけど便利そう</p>
-<p><a href="https://wiki.archlinux.org/index.php/Full_system_backup_with_SquashFS">https://wiki.archlinux.org/index.php/Full_system_backup_with_SquashFS</a></p>
-
+        使ったことないけど便利そう https://wiki.archlinux.org/index.php/Full_system_backup_with_SquashFS
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20201224-emacs-fill-column.html">Emacs の fill-column のあたり</a></h1>
         <span class="post-date">Dec 24, 2020</span>
-        <h1 id="fill-column"><code>fill-column</code></h1>
-<p>バッファの各行の文字数の最大幅のようなものを設定する変数（？）。これを設定しただけでは何も起きないような気がする。</p>
-<p>いろいろな関数やモードがこの変数をデフォルト値的なものとして参照してる。</p>
-<h2 id="set-fill-column"><code>set-fill-column</code></h2>
-<p>この関数は <code>fill-column</code> の値を設定する。
-デフォルト値が現在のカラムの位置になるため、今の場所を行の最大幅にするみたいなことができる。</p>
-<h1 id="自動折返し">自動折返し</h1>
-<p><code>auto-fill-mode</code> を使用する。例えば、以下のように追加する。</p>
-<pre><code>;; https://www.emacswiki.org/emacs/AutoFillMode
-(add-hook 'text-mode-hook 'turn-on-auto-fill)
-</code></pre>
-<p>他にもコメント行だけで有効にしたりできるらしい。</p>
-<h1 id="現在の最大幅の表示">現在の最大幅の表示</h1>
-<p>最大幅のところに線を引ける。</p>
-<p>Emacs 27.1 以降は <code>display-fill-column-indicator-mode</code> が使える。
-この関数は <code>fill-column</code> の値を最大幅として使用する。</p>
-<p>それ以前のバージョンは fill-column-indicator (<code>fci-mode</code>) が使えそう。</p>
-<p>線を引くのではなく背景色を変えるような方法は今のところなさそう？</p>
-<h1 id="最大幅を超えた行のハイライト">最大幅を超えた行のハイライト</h1>
-<p>長過ぎる行を警告する目的で、設定した最大幅を超えた行をハイライトしたり、超えた文字だけをハイライトしたりできる。</p>
-<p>これを実現する一つとして、例えば <code>whitespace-mode</code> がある。
-<code>whitespace-style</code> に <code>lines</code> を設定すると超過した行全体が、
-<code>lines-tail</code> を設定すると超過した部分だけがハイライトされる。
-最大幅は <code>whitespace-line-column</code> で設定する。
-この値が <code>nil</code> である場合 <code>fill-column</code> の値が参照される。</p>
-<h1 id="その他">その他</h1>
-<p><code>fill-column</code> の値にしたがって見た目上の折返しを行う <code>visual-fill-column</code> とかがある。</p>
-
+        fill-column バッファの各行の文字数の最大幅のようなものを設定する変数（？）。これを設定しただけでは何も起きないような気がする。 いろいろな関数やモードが
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20201123-checkout-pr.html">Github の PR をローカルに Chekcout する</a></h1>
         <span class="post-date">Nov 23, 2020</span>
-        <p><a href="https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally">https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally</a></p>
-<pre><code>git fetch origin pull/ID/head:BRANCHNAME
-</code></pre>
-
+        https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally git fetch origin pull/ID/head:BRANCHNAME
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20201007-awk-tsv.html">AWK で TSV のあるカラムを値で絞る</a></h1>
         <span class="post-date">Oct 7, 2020</span>
-        <pre><code>cat input.txt | awk -F\\t '$3 ~ /REGEXP/'
-</code></pre>
-
+        cat input.txt | awk -F\\t '$3 ~ /REGEXP/'
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20201005-jenkins-plugins.html">Jenkins にインストールされたプラグインの一覧を取得する</a></h1>
         <span class="post-date">Oct 5, 2020</span>
-        <p>スクリプトコンソールなどで以下を実行する</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy"><span style="color:#66d9ef">def</span> plugins <span style="color:#f92672">=</span> jenkins<span style="color:#f92672">.</span><span style="color:#a6e22e">model</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Jenkins</span><span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getPluginManager</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getPlugins</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span>
-plugins<span style="color:#f92672">.</span><span style="color:#a6e22e">each</span> <span style="color:#f92672">{</span>println <span style="color:#e6db74">&#34;${it.getShortName()}: ${it.getVersion()}&#34;</span><span style="color:#f92672">}</span>
-</code></pre></div>
+        スクリプトコンソールなどで以下を実行する def plugins = jenkins.model.Jenkins.instance.getPluginManager().getPlugins() plugins.each {println &#34;${it.getShortName()}: ${it.getVersion()}&#34;}
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20201005-swaks-smtp.html">制限つき Gmail SMTP サーバを swaks から使う</a></h1>
         <span class="post-date">Oct 5, 2020</span>
-        <p><code>swaks</code> を使用すると任意の SMTP サーバを使用してメールを送信できる</p>
-<pre><code>$ swaks --server aspmx.l.google.com --to 8.slashes@gmail.com
-</code></pre>
-<p>実際にはいろいろ制限かかっててメール送れないかも。</p>
-<h2 id="参考">参考</h2>
-<ul>
-<li><a href="https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp">https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp</a></li>
-<li><a href="https://support.google.com/a/answer/176600?hl=ja">https://support.google.com/a/answer/176600?hl=ja</a></li>
-</ul>
-
+        swaks を使用すると任意の SMTP サーバを使用してメールを送信できる $ swaks --server aspmx.l.google.com --to 8.slashes@gmail.com 実際にはいろいろ制限かかっててメール送れないかも。 参考 https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp https://support.google.com/a/answer/176600?hl=ja
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20200611-date-loop.html">Shellscript で日付ごとにコマンドを実行する</a></h1>
         <span class="post-date">Jun 11, 2020</span>
-        <p><code>date</code> は GNU Coreutils の奴が必要。
-以下では日付のフォーマットは YYYYMMDD になっている。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
-</span><span style="color:#75715e"></span>set -euxo pipefail
-
-<span style="color:#75715e"># 2019/12/1 &lt;= date &lt; 2020/2/1</span>
-start_from<span style="color:#f92672">=</span><span style="color:#ae81ff">20191201</span>
-stop_at<span style="color:#f92672">=</span><span style="color:#ae81ff">20200201</span>
-
-date<span style="color:#f92672">=</span>$start_from
-
-<span style="color:#66d9ef">while</span> true
-<span style="color:#66d9ef">do</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$date<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span>$stop_at<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>
-    <span style="color:#66d9ef">then</span>
-        break
-    <span style="color:#66d9ef">fi</span>
-
-    echo date: $date
-
-    <span style="color:#75715e"># Next</span>
-    date<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>date -d <span style="color:#e6db74">&#34;</span>$date<span style="color:#e6db74"> 1day</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;+%Y%m%d&#34;</span><span style="color:#e6db74">`</span>
-<span style="color:#66d9ef">done</span>
-
-echo Done
-</code></pre></div><ul>
-<li><a href="https://qiita.com/YumaInaura/items/ffb8f10abf33474d1b1e">Linux—シェルスクリプトで日付でループする (Mac対応あり) - Qiita</a></li>
-<li><a href="https://techblog.recochoku.jp/1213">シェルスクリプトである期間日付でループする | レコチョクのエンジニアブログ</a></li>
-<li><a href="https://www.ppoohh.info/post-791/">シェルスクリプトで1日毎の日付でループする処理 | ppoohh &lsquo;s blog</a></li>
-</ul>
-
+        date は GNU Coreutils の奴が必要。 以下では日付のフォーマットは YYYYMMDD になっている。 #!/bin/bash set -euxo pipefail # 2019/12/1 &lt;= date &lt; 2020/2/1 start_from=20191201 stop_at=20200201 date=$start_from while true do if [ &#34;$date&#34; = &#34;$stop_at&#34; ] then break fi echo date: $date # Next date=`date -d &#34;$date1day&#34; &#34;+%Y%m%d&#34;` done echo Done L
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20200605-ubuntu-mysql-root.html">Ubuntu の MySQL (MariaDB) Root ログイン</a></h1>
         <span class="post-date">Jun 5, 2020</span>
-        <h2 id="問題">問題</h2>
-<p>MariaDB の root のパスワードを設定しようとして、 <code>mysql_secure_installation</code>
-を実行したり以下のようにしたりしてもログインできるようにならない場合がある。</p>
-<pre><code>set password for 'root'@'localhost'=password('pw');
-# or
-update mysql.user set password=password('pw') where user = 'root';
-</code></pre>
-<h2 id="原因">原因</h2>
-<p>Ubuntu の MariaDB のインストールではデフォルトで <code>unix_socket</code> プラグインが設定されている。
-そのため以下のようになる。</p>
-<ul>
-<li>ホスト上で root になって mysql コマンドを実行すれば、認証なしでログインできる
-<ul>
-<li>間違ったパスワードを入力してもよい</li>
-</ul>
-</li>
-<li>root ユーザ以外・別のホストからではパスワードを正しく入力しても root としてログインできない</li>
-</ul>
-<p>これは以下のようにして確認できる。</p>
-<pre><code>MariaDB [(none)]&gt; select host, user, plugin from mysql.user;
-+-----------+------+-------------+
-| host      | user | plugin      |
-+-----------+------+-------------+
-| localhost | root | unix_socket |
-| %         | 10sr |             |
-+-----------+------+-------------+
-2 rows in set (0.00 sec)
-</code></pre><p>よって、これに従ってローカルの root からだけ root を使うようにするか、もしくは以下のようにしてプラグインを無効にする。</p>
-<pre><code>update mysql.user set plugin='' where user='root';
-flush privileges;
-</code></pre><h2 id="ansible">Ansible</h2>
-<p><code>unix_socket</code> プラグインを有効にした状態で mysql の task を実行するには、以下のように <code>login_unix_socket</code> を設定すればよい。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- name: Add users
-  mysql_user:
-    name: <span style="color:#e6db74">&#34;{{ item.name }}&#34;</span>
-    password: <span style="color:#e6db74">&#34;{{ item.password }}&#34;</span>
-    priv: <span style="color:#e6db74">&#34;{{ item.priv }}&#34;</span>
-    host: <span style="color:#e6db74">&#34;{{ item.host }}&#34;</span>
-    login_unix_socket: /var/run/mysqld/mysqld.sock
-  loop: <span style="color:#e6db74">&#34;{{ mysql_users }}&#34;</span>
-  become: yes
-</code></pre></div><h2 id="参考">参考</h2>
-<ul>
-<li><a href="https://fsck.jp/?p=793">Ubuntu 18.04 + MariaDB | 技術メモの壁</a></li>
-<li><a href="https://stackoverflow.com/questions/41846000/mariadb-password-and-unix-socket-authentication-for-root">update mysql.user set plugin=&rsquo;&rsquo; where user='root&rsquo;;</a></li>
-<li><a href="https://jyn.jp/ubuntu-16-04-mariadb-password-bug/">Ubunt 16.04でMariaDBをインストールするとパスワードが変 | 純規の暇人趣味ブログ</a></li>
-<li><a href="https://stackoverflow.com/questions/43379892/mariadb-cannot-login-as-root/43424234#43424234">UPDATE mysql.user SET plugin = '&rsquo; WHERE plugin = &lsquo;unix_socket&rsquo;; FLUSH PRIVILEGES;</a></li>
-</ul>
-
+        問題 MariaDB の root のパスワードを設定しようとして、 mysql_secure_installation を実行したり以下のようにしたりしてもログインできるようにならない場合がある。 set password for 'root'@'localhost'=password('pw'); # or update mysql.user set password=password('pw')
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20200601-nextcloud-plugin.html">Nextcloud Plugin Update Error</a></h1>
         <span class="post-date">Jun 1, 2020</span>
-        <p>Plugin のアップデート後、ログイン画面の代わりに以下の文面が表示されログインできなくなった。</p>
-<pre><code>The files of the app Plain text editor (files_texteditor) were not replaced correctly. Make sure it is a version compatible with the server.
-</code></pre>
-<p>Nextcloud のディレクトリ以下の <code>custom_apps</code> から、 <code>files_texteditor</code> ディレクトリを削除したら正常にログインできるようになった。
-<code>apps</code> 以下にも同名のディレクトリがあるが、そっちは触らなくて良さそうだった。</p>
-<p>Nextcloud 自体のバージョンが最新でないときにプラグインのアップデートはあまりしないほうがいいのかもしれない。</p>
-
+        Plugin のアップデート後、ログイン画面の代わりに以下の文面が表示されログインできなくなった。 The files of the app Plain text editor (files_texteditor) were not replaced correctly. Make sure it is a version compatible with the server. Nextcloud のディ
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20200326-dtach.html">dtach</a></h1>
         <span class="post-date">Mar 26, 2020</span>
-        <p>GNU screen からデタッチ機能だけを切り出したようなやつ</p>
-<ul>
-<li><a href="https://wiki.archlinux.org/index.php/Dtach">dtach</a></li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># s.dtach というソケットで開始 C-^ でデタッチ</span>
-dtach -c s.dtach -e <span style="color:#e6db74">&#39;^^&#39;</span> bash -i
-<span style="color:#75715e"># s.dtach というソケットにアタッチ</span>
-dtach -a s.dtach
-<span style="color:#75715e"># s.dtach というソケットにアタッチ なければ作る</span>
-dtach -A s.dtach -e <span style="color:#e6db74">&#39;^^&#39;</span> bash -i
-</code></pre></div>
+        GNU screen からデタッチ機能だけを切り出したようなやつ dtach # s.dtach というソケットで開始 C-^ でデタッチ dtach -c s.dtach -e &#39;^^&#39; bash -i # s.dtach というソケットにアタッチ dtach -a s.dtach # s.dtach とい
     </div>
   
 </div>
