@@ -4,9 +4,20 @@
     <link>http://10sr.github.io/b_hugo_publish/</link>
     <language>en-us</language>
     <author></author>
-    <rights>(C) 2020</rights>
-    <updated>2020-12-24 14:57:43 &#43;0900 JST</updated>
+    <rights>(C) 2021</rights>
+    <updated>2021-03-02 14:57:16 &#43;0900 JST</updated>
 
+    
+      <item>
+        <title>SquashFS</title>
+        <link>http://10sr.github.io/b_hugo_publish/posts/20210302_squashfs.html</link>
+        <pubDate>Tue, 02 Mar 2021 14:57:16 JST</pubDate>
+        <author></author>
+        <guid>http://10sr.github.io/b_hugo_publish/posts/20210302_squashfs.html</guid>
+        <description>&lt;p&gt;使ったことないけど便利そう&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.archlinux.org/index.php/Full_system_backup_with_SquashFS&#34;&gt;https://wiki.archlinux.org/index.php/Full_system_backup_with_SquashFS&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
     
       <item>
         <title>Emacs の fill-column のあたり</title>

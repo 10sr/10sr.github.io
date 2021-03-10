@@ -10,3 +10,6 @@ local:
 
 build:
 	hugo -D
+
+git-add:
+	git add ../b_hugo_publish

@@ -46,7 +46,7 @@
     </nav>
 
   <div class="sidebar-item">
-    <p>&copy; 2020. All rights reserved.</p>
+    <p>&copy; 2021. All rights reserved.</p>
   </div>
 </div>
 
@@ -69,6 +69,14 @@
 
 
 <div class="posts">
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20210302_squashfs.html">SquashFS</a></h1>
+        <span class="post-date">Mar 2, 2021</span>
+        <p>使ったことないけど便利そう</p>
+<p><a href="https://wiki.archlinux.org/index.php/Full_system_backup_with_SquashFS">https://wiki.archlinux.org/index.php/Full_system_backup_with_SquashFS</a></p>
+
+    </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20201224-emacs-fill-column.html">Emacs の fill-column のあたり</a></h1>
@@ -260,26 +268,6 @@ dtach -a s.dtach
 <span style="color:#75715e"># s.dtach というソケットにアタッチ なければ作る</span>
 dtach -A s.dtach -e <span style="color:#e6db74">&#39;^^&#39;</span> bash -i
 </code></pre></div>
-    </div>
-  
-    <div class="post">
-        <h1 class="post-title"><a href="http://10sr.github.io/b_hugo_publish/posts/20200205-explore-filesystem-of-stopped-docker-container.html">Explore filesystem of stopped docker container</a></h1>
-        <span class="post-date">Feb 5, 2020</span>
-        <p>停止したコンテナにあったファイルをみたい。</p>
-<p>以下のようにするとできる。</p>
-<pre><code class="language-shellscript" data-lang="shellscript"># コンテナの ID を探す（先頭のハッシュ）
-docker ps -a | grep NAME
-
-# 新しくイメージを作成する
-docker commit CONTAINER_ID t
-
-# 実行
-docker run -it t bash -i
-</code></pre><p>参考</p>
-<ul>
-<li><a href="https://stackoverflow.com/questions/20813486/exploring-docker-containers-file-system#20816397">linux - Exploring Docker container's file system - Stack Overflow</a></li>
-</ul>
-
     </div>
   
 </div>
