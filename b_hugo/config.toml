@@ -1,10 +1,13 @@
 baseURL = "http://10sr.github.io/b_hugo_publish"
 languageCode = "ja-jp"
+hasCJKLanguage = true
 theme = "lanyon-hugo"
 publishDir = "../b_hugo_publish"
 relativeURLs = true
-uglyurls = true
+uglyURLs = true
+verbose = true
+verboseLog = true
 
 [params]
 title = "10sr Hugo"
-description = ""
+description = "desc"
