@@ -5,8 +5,18 @@
     <language>en-us</language>
     <author></author>
     <rights>(C) 2021</rights>
-    <updated>2021-03-02 14:57:16 &#43;0900 JST</updated>
+    <updated>2021-03-31 12:47:54 &#43;0900 JST</updated>
 
+    
+      <item>
+        <title>socat</title>
+        <link>http://10sr.github.io/b/posts/20210331-socat.html</link>
+        <pubDate>Wed, 31 Mar 2021 12:47:54 JST</pubDate>
+        <author></author>
+        <guid>http://10sr.github.io/b/posts/20210331-socat.html</guid>
+        <description>&lt;p&gt;&lt;a href=&#34;http://x68000.q-e-d.net/~68user/unix/pickup?socat&#34;&gt;http://x68000.q-e-d.net/~68user/unix/pickup?socat&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
     
       <item>
         <title>SquashFS</title>
