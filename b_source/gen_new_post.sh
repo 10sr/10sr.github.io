@@ -7,7 +7,7 @@ echo slug: $slug
 yyyymmdd=`date '+%Y%m%d'`
 date=`date '+%Y-%m-%d %H:%M:%S%z' | sed 's/..$/:&/'`
 
-posts_dir=posts
+posts_dir=content/posts
 
 post_path=$posts_dir/$yyyymmdd-$slug.md
 
