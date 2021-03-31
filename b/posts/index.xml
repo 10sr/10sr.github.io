@@ -13,10 +13,10 @@
     
     <item>
       <title>SquashFS</title>
-      <link>http://10sr.github.io/b/posts/20210302_squashfs.html</link>
+      <link>http://10sr.github.io/b/posts/20210302-squashfs.html</link>
       <pubDate>Tue, 02 Mar 2021 14:57:16 +0900</pubDate>
       
-      <guid>http://10sr.github.io/b/posts/20210302_squashfs.html</guid>
+      <guid>http://10sr.github.io/b/posts/20210302-squashfs.html</guid>
       <description>使ったことないけど便利そう https://wiki.archlinux.org/index.php/Full_system_backup_with_SquashFS</description>
     </item>
     
