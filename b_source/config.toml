@@ -4,6 +4,7 @@ hasCJKLanguage = true
 theme = "lanyon-hugo"
 publishDir = "../b"
 relativeURLs = true
+CanonifyURLs = true
 uglyURLs = true
 verbose = true
 verboseLog = true
