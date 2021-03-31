@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+	<meta name="generator" content="Hugo 0.62.2" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      10sr.github.io/b &middot; 
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="../css/poole.css">
+  <link rel="stylesheet" href="../css/syntax.css">
+  <link rel="stylesheet" href="../css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="../atom.xml">
+</head>
+
+
+  <body class="layout-reverse">
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>
+      10sr static blog
+    </p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item  active " href="../">Home</a>
+    <a class="sidebar-nav-item " href="../post">Posts</a>
+    </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 2021. All rights reserved.</p>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="../" title="Home">10sr.github.io/b</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+
+
+
+<div class="posts">
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200205-explore-filesystem-of-stopped-docker-container.html">Explore filesystem of stopped docker container</a></h1>
+        <span class="post-date">Feb 5, 2020</span>
+        停止したコンテナにあったファイルをみたい。 以下のようにするとできる。 # コンテナの ID を探す（先頭のハッシュ） docker ps -a | grep NAME # 新しくイメージを作成
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200106-wsl-debian-sid.html">Install Debian Sid on WSL</a></h1>
+        <span class="post-date">Jan 6, 2020</span>
+        まず普通に store にある debian をインストールして最新に合わせる。 sudo apt update &amp;&amp; sudo apt upgrade 一応ミラーを jp に合わせてもう一度アップデートする。 sudoedit /etc/apt/sources.list ## security 以外を ftp.jp.debian.org/debian/ にする
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20191231-windows-cbs.html">Windows CBS ディレクトリについて</a></h1>
+        <span class="post-date">Dec 31, 2019</span>
+        C:\Windows\logs\CBS\CbsPersist_*.log というファイルが数 10GB 程度に膨れてディスクを圧迫していたことがあった。 少し調べたところ普通に削除してしまっても大丈夫っぽい。 http://ivystar.jp/hardware/c-windows-logs-cbs-log-cleared-by-the-c-drive-of-refreshing/ https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1266732207
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20190622-firefox-tab-center-redux.html">Firefox Tab Center Redux</a></h1>
+        <span class="post-date">Jun 22, 2019</span>
+        タブを縦置きするプラグイン MacBookAir のマシンで間隔を詰めるためにアドオンの設定ページから以下の CSS を追加 st-wrapper.shrinked .tab:not(.pinned) { height: 29px !important; } https://github.com/eoger/tabcenter-redux/wiki/Custom-CSS-tweaks
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20190622-windows-image-viewer.html">Windows 画像ビューワ</a></h1>
+        <span class="post-date">Jun 22, 2019</span>
+        XnView MP というやつ https://www.xnview.com/en/xnviewmp/#downloads PDF を見るには GhostScript が必要 らしい https://newsgroup.xnview.com/viewtopic.php?f=17&amp;t=1228&amp;p=144365&amp;hilit=pdf#p144365 https://www.xnview.com/wiki/index.php/Ghostscript https://www.ghostscript.com/download/gsdnld.html
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20190622-lgcl.html">論理的であるとは遠慮がないという意味ではない</a></h1>
+        <span class="post-date">Jun 22, 2019</span>
+        http://neroeee3.tumblr.com/post/167354420622/１論理的であるとは遠慮がないという意味ではない http://www.huffingtonpost.jp/rootport/logical-thinking_b_5776270.html １
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20190622-cloudstorage.html">クラウドストレージ使い分け</a></h1>
+        <span class="post-date">Jun 22, 2019</span>
+        今のところ動かしてるのは以下の４つ Nextcloud Dropbox OneDrive Google Drive Dropbox この中では容量があまり大きくない。 スマホからの保存が一番優秀な気がするので、一時保存によく使っ
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20190622-sshd-configurations.html">SSHd Configurations</a></h1>
+        <span class="post-date">Jun 22, 2019</span>
+        /etc/ssh/sshd_config Disable PasswordAuthentication and ChallengeResponseAuthentication to disable password authentication.
+Protocol 2 PermitRootLogin no PasswordAuthentication no PermitEmptyPasswords no ChallengeResponseAuthentication no UsePAM no RSAAuthentication no # do not look up the remote host name: this will improve performance UseDNS no  References  http://www.kishiro.com/FreeBSD/ssh.html http://tm.root-n.com/server:sshd:sshd_config https://github.com/10sr/junks/commit/4c2af25e2fee6a9e56ced053fa054ab6c7f69ee9  
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20190622-max-tea.html">紅茶抽出飽和砂糖水溶液（MAX紅茶）</a></h1>
+        <span class="post-date">Jun 22, 2019</span>
+        http://nantara.seesaa.net/article/117731852.html 砂糖をウイスキーのビンか何かに詰める 濃いめに入れた紅茶を空の瓶として2/3程度入れる まぜる 開いたスペースに再び砂糖を詰める 紅茶をほぼ一杯ま
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20190614-hexyl.html">hexyl</a></h1>
+        <span class="post-date">Jun 14, 2019</span>
+        Hexyl がべんり https://github.com/sharkdp/hexyl brew install hexyl
+    </div>
+  
+</div>
+
+<div class="pagination">
+  
+  <span class="pagination-item older">Older</span>
+  
+
+  
+  <a class="pagination-item newer" href="../b/">Newer</a>
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+  </body>
+</html>
+

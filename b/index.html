@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+	<meta name="generator" content="Hugo 0.62.2" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      10sr.github.io/b &middot; 
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="./css/poole.css">
+  <link rel="stylesheet" href="./css/syntax.css">
+  <link rel="stylesheet" href="./css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="./assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="./atom.xml">
+</head>
+
+
+  <body class="layout-reverse">
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>
+      10sr static blog
+    </p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item  active " href="./">Home</a>
+    <a class="sidebar-nav-item " href="./post">Posts</a>
+    </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 2021. All rights reserved.</p>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="./" title="Home">10sr.github.io/b</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+
+
+
+<div class="posts">
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20210302_squashfs.html">SquashFS</a></h1>
+        <span class="post-date">Mar 2, 2021</span>
+        使ったことないけど便利そう https://wiki.archlinux.org/index.php/Full_system_backup_with_SquashFS
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201224-emacs-fill-column.html">Emacs の fill-column のあたり</a></h1>
+        <span class="post-date">Dec 24, 2020</span>
+        fill-column バッファの各行の文字数の最大幅のようなものを設定する変数（？）。これを設定しただけでは何も起きないような気がする。 いろいろな関数やモードが
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201123-checkout-pr.html">Github の PR をローカルに Chekcout する</a></h1>
+        <span class="post-date">Nov 23, 2020</span>
+        https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally git fetch origin pull/ID/head:BRANCHNAME
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201007-awk-tsv.html">AWK で TSV のあるカラムを値で絞る</a></h1>
+        <span class="post-date">Oct 7, 2020</span>
+        cat input.txt | awk -F\\t '$3 ~ /REGEXP/'
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201005-jenkins-plugins.html">Jenkins にインストールされたプラグインの一覧を取得する</a></h1>
+        <span class="post-date">Oct 5, 2020</span>
+        スクリプトコンソールなどで以下を実行する def plugins = jenkins.model.Jenkins.instance.getPluginManager().getPlugins() plugins.each {println &#34;${it.getShortName()}: ${it.getVersion()}&#34;}
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201005-swaks-smtp.html">制限つき Gmail SMTP サーバを swaks から使う</a></h1>
+        <span class="post-date">Oct 5, 2020</span>
+        swaks を使用すると任意の SMTP サーバを使用してメールを送信できる $ swaks --server aspmx.l.google.com --to 8.slashes@gmail.com 実際にはいろいろ制限かかっててメール送れないかも。 参考 https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp https://support.google.com/a/answer/176600?hl=ja
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200611-date-loop.html">Shellscript で日付ごとにコマンドを実行する</a></h1>
+        <span class="post-date">Jun 11, 2020</span>
+        date は GNU Coreutils の奴が必要。 以下では日付のフォーマットは YYYYMMDD になっている。 #!/bin/bash set -euxo pipefail # 2019/12/1 &lt;= date &lt; 2020/2/1 start_from=20191201 stop_at=20200201 date=$start_from while true do if [ &#34;$date&#34; = &#34;$stop_at&#34; ] then break fi echo date: $date # Next date=`date -d &#34;$date1day&#34; &#34;+%Y%m%d&#34;` done echo Done L
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200605-ubuntu-mysql-root.html">Ubuntu の MySQL (MariaDB) Root ログイン</a></h1>
+        <span class="post-date">Jun 5, 2020</span>
+        問題 MariaDB の root のパスワードを設定しようとして、 mysql_secure_installation を実行したり以下のようにしたりしてもログインできるようにならない場合がある。 set password for 'root'@'localhost'=password('pw'); # or update mysql.user set password=password('pw')
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200601-nextcloud-plugin.html">Nextcloud Plugin Update Error</a></h1>
+        <span class="post-date">Jun 1, 2020</span>
+        Plugin のアップデート後、ログイン画面の代わりに以下の文面が表示されログインできなくなった。 The files of the app Plain text editor (files_texteditor) were not replaced correctly. Make sure it is a version compatible with the server. Nextcloud のディ
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200326-dtach.html">dtach</a></h1>
+        <span class="post-date">Mar 26, 2020</span>
+        GNU screen からデタッチ機能だけを切り出したようなやつ dtach # s.dtach というソケットで開始 C-^ でデタッチ dtach -c s.dtach -e &#39;^^&#39; bash -i # s.dtach というソケットにアタッチ dtach -a s.dtach # s.dtach とい
+    </div>
+  
+</div>
+
+<div class="pagination">
+  
+  <a class="pagination-item older" href="./b/page/2.html">Older</a>
+  
+
+  
+  <span class="pagination-item newer">Newer</span>
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+  </body>
+</html>
+
