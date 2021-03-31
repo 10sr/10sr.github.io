@@ -13,3 +13,7 @@ build:
 
 git-add:
 	git add ../b
+
+new:
+#	$(nikola) $@ --format=markdown
+	./gen_new_post.sh
