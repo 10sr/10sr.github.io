@@ -6,10 +6,19 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 31 Mar 2021 12:47:54 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jul 2021 14:37:52 +0900</lastBuildDate>
     
 	<atom:link href="http://10sr.github.io/b/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mac SMC Reset</title>
+      <link>http://10sr.github.io/b/posts/20210708-mac-smc-reset.html</link>
+      <pubDate>Thu, 08 Jul 2021 14:37:52 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b/posts/20210708-mac-smc-reset.html</guid>
+      <description>問題 Mac を電源に繋がないと、残量 90% 程度でも突然死する やってみたこと これ： https://support.apple.com/ja-jp/HT201295 T2 チップは入っていなかった。 Mac をシステム終了します。 内蔵キーボードで</description>
+    </item>
     
     <item>
       <title>socat</title>

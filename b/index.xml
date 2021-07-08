@@ -5,8 +5,33 @@
     <language>en-us</language>
     <author></author>
     <rights>(C) 2021</rights>
-    <updated>2021-03-31 12:47:54 &#43;0900 JST</updated>
+    <updated>2021-07-08 14:37:52 &#43;0900 JST</updated>
 
+    
+      <item>
+        <title>Mac SMC Reset</title>
+        <link>http://10sr.github.io/b/posts/20210708-mac-smc-reset.html</link>
+        <pubDate>Thu, 08 Jul 2021 14:37:52 JST</pubDate>
+        <author></author>
+        <guid>http://10sr.github.io/b/posts/20210708-mac-smc-reset.html</guid>
+        <description>&lt;h2 id=&#34;問題&#34;&gt;問題&lt;/h2&gt;
+&lt;p&gt;Mac を電源に繋がないと、残量 90% 程度でも突然死する&lt;/p&gt;
+&lt;h2 id=&#34;やってみたこと&#34;&gt;やってみたこと&lt;/h2&gt;
+&lt;p&gt;これ： &lt;a href=&#34;https://support.apple.com/ja-jp/HT201295&#34;&gt;https://support.apple.com/ja-jp/HT201295&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;T2 チップは入っていなかった。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Mac をシステム終了します。
+内蔵キーボードで、以下のキーをすべて長押しします。
+    キーボードの左側の「shift 」キー
+    キーボードの左側の「control 」キー
+    キーボードの左側の「option (Alt) 」キー
+上記 3 つのすべてのキーを押し続けている間に、電源ボタンも長押しします。
+4 つのキーを全部押した状態のノートブックキーボード
+4 つすべてのキーを 10 秒押し続けます。
+すべてのキーから指を放し、電源ボタンを押して Mac の電源を入れます。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;とりあえずこれで様子見する。&lt;/p&gt;
+</description>
+      </item>
     
       <item>
         <title>socat</title>
