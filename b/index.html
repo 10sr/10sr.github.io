@@ -73,9 +73,9 @@
 <div class="posts">
   
     <div class="post">
-        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20210830-ad-hoc-pod.html">ad-hoc-pod</a></h1>
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20210830-ad-hoc-pod.html">Kubernetes クラスタで一時的になにかの Pod を起動する</a></h1>
         <span class="post-date">Aug 30, 2021</span>
-        Kubernetes クラスタで一時的になにかの Pod を起動する。 $ kubectl run -it --rm --image=mysql:5.7 --restart=Never mysql-client -- bash -i root@mysql-client:/# mysql -uroot -h mysql-host -p mysql&gt; show databases; 実行後もし pod が残っていたら削除する。 $ kubectl get po $ kubectl delete po mysql-client https://medium.com/@judomu/how-to-connect-with-an-interactive-kubernetes-mysql-client-utilizing-secrets-ecf39557d7bb
+        $ kubectl run -it --rm --image=mysql:5.7 --restart=Never mysql-client -- bash -i root@mysql-client:/# mysql -uroot -h mysql-host -p mysql&gt; show databases; 実行後もし pod が残っていたら削除する。 $ kubectl get po $ kubectl delete po mysql-client https://medium.com/@judomu/how-to-connect-with-an-interactive-kubernetes-mysql-client-utilizing-secrets-ecf39557d7bb
     </div>
   
     <div class="post">

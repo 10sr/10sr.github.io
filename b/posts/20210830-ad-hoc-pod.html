@@ -9,7 +9,7 @@
 
   <title>
     
-      ad-hoc-pod &middot; 10sr.github.io/b
+      Kubernetes クラスタで一時的になにかの Pod を起動する &middot; 10sr.github.io/b
     
   </title>
 
@@ -67,16 +67,15 @@
 
 
 <div class="post">
-  <h1 class="post-title">ad-hoc-pod</h1>
+  <h1 class="post-title">Kubernetes クラスタで一時的になにかの Pod を起動する</h1>
   <span class="post-date">Aug 30, 2021</span>
-  <p>Kubernetes クラスタで一時的になにかの Pod を起動する。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl run -it --rm --image<span style="color:#f92672">=</span>mysql:5.7 --restart<span style="color:#f92672">=</span>Never mysql-client -- bash -i
+  <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl run -it --rm --image<span style="color:#f92672">=</span>mysql:5.7 --restart<span style="color:#f92672">=</span>Never mysql-client -- bash -i
 root@mysql-client:/# mysql -uroot -h mysql-host -p
 mysql&gt; show databases;
 </code></pre></div><p>実行後もし pod が残っていたら削除する。</p>
-<pre><code>$ kubectl get po
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl get po
 $ kubectl delete po mysql-client
-</code></pre><ul>
+</code></pre></div><ul>
 <li><a href="https://medium.com/@judomu/how-to-connect-with-an-interactive-kubernetes-mysql-client-utilizing-secrets-ecf39557d7bb">https://medium.com/@judomu/how-to-connect-with-an-interactive-kubernetes-mysql-client-utilizing-secrets-ecf39557d7bb</a></li>
 </ul>
 </div>
