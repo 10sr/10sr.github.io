@@ -73,6 +73,12 @@
 <div class="posts">
   
     <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20210830-ad-hoc-pod.html">ad-hoc-pod</a></h1>
+        <span class="post-date">Aug 30, 2021</span>
+        Kubernetes クラスタで一時的になにかの Pod を起動する。 $ kubectl run -it --rm --image=mysql:5.7 --restart=Never mysql-client -- bash -i root@mysql-client:/# mysql -uroot -h mysql-host -p mysql&gt; show databases; 実行後もし pod が残っていたら削除する。 $ kubectl get po $ kubectl delete po mysql-client https://medium.com/@judomu/how-to-connect-with-an-interactive-kubernetes-mysql-client-utilizing-secrets-ecf39557d7bb
+    </div>
+  
+    <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20210708-mac-smc-reset.html">Mac SMC Reset</a></h1>
         <span class="post-date">Jul 8, 2021</span>
         問題 Mac を電源に繋がないと、残量 90% 程度でも突然死する やってみたこと これ： https://support.apple.com/ja-jp/HT201295 T2 チップは入っていなかった。 Mac をシステム終了します。 内蔵キーボードで
@@ -124,12 +130,6 @@
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200611-date-loop.html">Shellscript で日付ごとにコマンドを実行する</a></h1>
         <span class="post-date">Jun 11, 2020</span>
         date は GNU Coreutils の奴が必要。 以下では日付のフォーマットは YYYYMMDD になっている。 #!/bin/bash set -euxo pipefail # 2019/12/1 &lt;= date &lt; 2020/2/1 start_from=20191201 stop_at=20200201 date=$start_from while true do if [ &#34;$date&#34; = &#34;$stop_at&#34; ] then break fi echo date: $date # Next date=`date -d &#34;$date1day&#34; &#34;+%Y%m%d&#34;` done echo Done L
-    </div>
-  
-    <div class="post">
-        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200605-ubuntu-mysql-root.html">Ubuntu の MySQL (MariaDB) Root ログイン</a></h1>
-        <span class="post-date">Jun 5, 2020</span>
-        問題 MariaDB の root のパスワードを設定しようとして、 mysql_secure_installation を実行したり以下のようにしたりしてもログインできるようにならない場合がある。 set password for 'root'@'localhost'=password('pw'); # or update mysql.user set password=password('pw')
     </div>
   
 </div>

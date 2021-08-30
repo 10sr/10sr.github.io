@@ -5,8 +5,27 @@
     <language>en-us</language>
     <author></author>
     <rights>(C) 2021</rights>
-    <updated>2021-07-08 14:37:52 &#43;0900 JST</updated>
+    <updated>2021-08-30 17:07:30 &#43;0900 JST</updated>
 
+    
+      <item>
+        <title>ad-hoc-pod</title>
+        <link>http://10sr.github.io/b/posts/20210830-ad-hoc-pod.html</link>
+        <pubDate>Mon, 30 Aug 2021 17:07:30 JST</pubDate>
+        <author></author>
+        <guid>http://10sr.github.io/b/posts/20210830-ad-hoc-pod.html</guid>
+        <description>&lt;p&gt;Kubernetes クラスタで一時的になにかの Pod を起動する。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ kubectl run -it --rm --image&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;mysql:5.7 --restart&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Never mysql-client -- bash -i
+root@mysql-client:/# mysql -uroot -h mysql-host -p
+mysql&amp;gt; show databases;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;実行後もし pod が残っていたら削除する。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ kubectl get po
+$ kubectl delete po mysql-client
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@judomu/how-to-connect-with-an-interactive-kubernetes-mysql-client-utilizing-secrets-ecf39557d7bb&#34;&gt;https://medium.com/@judomu/how-to-connect-with-an-interactive-kubernetes-mysql-client-utilizing-secrets-ecf39557d7bb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      </item>
     
       <item>
         <title>Mac SMC Reset</title>

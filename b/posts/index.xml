@@ -6,10 +6,19 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 08 Jul 2021 14:37:52 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 30 Aug 2021 17:07:30 +0900</lastBuildDate>
     
 	<atom:link href="http://10sr.github.io/b/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ad-hoc-pod</title>
+      <link>http://10sr.github.io/b/posts/20210830-ad-hoc-pod.html</link>
+      <pubDate>Mon, 30 Aug 2021 17:07:30 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b/posts/20210830-ad-hoc-pod.html</guid>
+      <description>Kubernetes クラスタで一時的になにかの Pod を起動する。 $ kubectl run -it --rm --image=mysql:5.7 --restart=Never mysql-client -- bash -i root@mysql-client:/# mysql -uroot -h mysql-host -p mysql&amp;gt; show databases; 実行後もし pod が残っていたら削除する。 $ kubectl get po $ kubectl delete po mysql-client https://medium.com/@judomu/how-to-connect-with-an-interactive-kubernetes-mysql-client-utilizing-secrets-ecf39557d7bb</description>
+    </item>
     
     <item>
       <title>Mac SMC Reset</title>
