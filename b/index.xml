@@ -121,6 +121,20 @@ $ kubectl delete po mysql-client
       </item>
     
       <item>
+        <title>bluetooth-keyboard</title>
+        <link>http://10sr.github.io/b/posts/20201119-bluetooth-keyboard.html</link>
+        <pubDate>Thu, 19 Nov 2020 00:00:00 &#43;0900</pubDate>
+        <author></author>
+        <guid>http://10sr.github.io/b/posts/20201119-bluetooth-keyboard.html</guid>
+        <description>&lt;p&gt;なんか時間を置くと入力が通らなくなる&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;その他の bluetooth オプションから、デバイスによる pc の検出をオンにした&lt;/li&gt;
+&lt;li&gt;デバイスマネージャから bluetooth の省電力設定を無効にする &lt;a href=&#34;https://itojisan.xyz/trouble/12215/#5&#34;&gt;https://itojisan.xyz/trouble/12215/#5&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      </item>
+    
+      <item>
         <title>AWK で TSV のあるカラムを値で絞る</title>
         <link>http://10sr.github.io/b/posts/20201007-awk-tsv.html</link>
         <pubDate>Wed, 07 Oct 2020 08:33:01 &#43;0900</pubDate>

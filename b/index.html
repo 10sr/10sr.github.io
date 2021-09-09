@@ -109,6 +109,12 @@
     </div>
   
     <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201119-bluetooth-keyboard.html">bluetooth-keyboard</a></h1>
+        <span class="post-date">Nov 19, 2020</span>
+        なんか時間を置くと入力が通らなくなる その他の bluetooth オプションから、デバイスによる pc の検出をオンにした デバイスマネージャから bluetooth の省電力設定を無効に
+    </div>
+  
+    <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201007-awk-tsv.html">AWK で TSV のあるカラムを値で絞る</a></h1>
         <span class="post-date">Oct 7, 2020</span>
         cat input.txt | awk -F\\t '$3 ~ /REGEXP/'
@@ -124,12 +130,6 @@
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201005-swaks-smtp.html">制限つき Gmail SMTP サーバを swaks から使う</a></h1>
         <span class="post-date">Oct 5, 2020</span>
         swaks を使用すると任意の SMTP サーバを使用してメールを送信できる $ swaks --server aspmx.l.google.com --to 8.slashes@gmail.com 実際にはいろいろ制限かかっててメール送れないかも。 参考 https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp https://support.google.com/a/answer/176600?hl=ja
-    </div>
-  
-    <div class="post">
-        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200611-date-loop.html">Shellscript で日付ごとにコマンドを実行する</a></h1>
-        <span class="post-date">Jun 11, 2020</span>
-        date は GNU Coreutils の奴が必要。 以下では日付のフォーマットは YYYYMMDD になっている。 #!/bin/bash set -euxo pipefail # 2019/12/1 &lt;= date &lt; 2020/2/1 start_from=20191201 stop_at=20200201 date=$start_from while true do if [ &#34;$date&#34; = &#34;$stop_at&#34; ] then break fi echo date: $date # Next date=`date -d &#34;$date1day&#34; &#34;+%Y%m%d&#34;` done echo Done L
     </div>
   
 </div>

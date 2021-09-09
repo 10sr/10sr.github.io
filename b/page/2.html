@@ -73,6 +73,12 @@
 <div class="posts">
   
     <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200611-date-loop.html">Shellscript で日付ごとにコマンドを実行する</a></h1>
+        <span class="post-date">Jun 11, 2020</span>
+        date は GNU Coreutils の奴が必要。 以下では日付のフォーマットは YYYYMMDD になっている。 #!/bin/bash set -euxo pipefail # 2019/12/1 &lt;= date &lt; 2020/2/1 start_from=20191201 stop_at=20200201 date=$start_from while true do if [ &#34;$date&#34; = &#34;$stop_at&#34; ] then break fi echo date: $date # Next date=`date -d &#34;$date1day&#34; &#34;+%Y%m%d&#34;` done echo Done L
+    </div>
+  
+    <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200605-ubuntu-mysql-root.html">Ubuntu の MySQL (MariaDB) Root ログイン</a></h1>
         <span class="post-date">Jun 5, 2020</span>
         問題 MariaDB の root のパスワードを設定しようとして、 mysql_secure_installation を実行したり以下のようにしたりしてもログインできるようにならない場合がある。 set password for 'root'@'localhost'=password('pw'); # or update mysql.user set password=password('pw')
@@ -124,12 +130,6 @@
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20190622-lgcl.html">論理的であるとは遠慮がないという意味ではない</a></h1>
         <span class="post-date">Jun 22, 2019</span>
         http://neroeee3.tumblr.com/post/167354420622/１論理的であるとは遠慮がないという意味ではない http://www.huffingtonpost.jp/rootport/logical-thinking_b_5776270.html １
-    </div>
-  
-    <div class="post">
-        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20190622-cloudstorage.html">クラウドストレージ使い分け</a></h1>
-        <span class="post-date">Jun 22, 2019</span>
-        今のところ動かしてるのは以下の４つ Nextcloud Dropbox OneDrive Google Drive Dropbox この中では容量があまり大きくない。 スマホからの保存が一番優秀な気がするので、一時保存によく使っ
     </div>
   
 </div>
