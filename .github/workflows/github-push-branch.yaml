@@ -36,5 +36,5 @@ jobs:
       - name: Update and commit files
         run: |
           bash .github/workflows/github-push-branch.sh
-          git commit -m "Auto commit via GitHub Actions"
+          git diff --exit-code || git commit -m "Auto commit via GitHub Actions"
           git push origin gh-pages
