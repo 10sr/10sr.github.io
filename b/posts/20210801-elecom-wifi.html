@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      elecom-wifi &middot; 10sr.github.io/b
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="../css/poole.css">
+  <link rel="stylesheet" href="../css/syntax.css">
+  <link rel="stylesheet" href="../css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="../atom.xml">
+</head>
+
+
+  <body class="layout-reverse">
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>
+      10sr static blog
+    </p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item " href="../">Home</a>
+    <a class="sidebar-nav-item " href="../post">Posts</a>
+    </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 2021. All rights reserved.</p>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="../" title="Home">10sr.github.io/b</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+<div class="post">
+  <h1 class="post-title">elecom-wifi</h1>
+  <span class="post-date">Aug 1, 2021</span>
+  <p>ELECOM WDC-867SU3S を指して自動でインストールされるドライバを使用すると wifi 接続ができない</p>
+<p>なので以下の手順で MediaTek のドライバをインストールする</p>
+<ol>
+<li>デバイスのプロパティから、今インストールされているドライバを削除する</li>
+<li>WDC-867SU3S を PC から抜く</li>
+<li><a href="https://www.mediatek.com/products/connectivity-and-networking/broadband-wifi">https://www.mediatek.com/products/connectivity-and-networking/broadband-wifi</a> にアクセスする</li>
+<li>MT7612U を探し、そのドライバをダウンロードする
+<ul>
+<li>ダウンロードされたのは <code>IS_Setup_ICS_011916_1.5.39.173.zip</code> という名前だった</li>
+</ul>
+</li>
+<li>インストーラを起動しインストールする</li>
+<li>WDC-867SU3S を PC に挿し、接続できることを確認する</li>
+</ol>
+<hr>
+<p>アダプタのプロパティから、 Country Region (5GHz) を #1 (36 - 140) に変更</p>
+<ul>
+<li><a href="https://michisugara.jp/wifi">https://michisugara.jp/wifi</a></li>
+</ul>
+<p>参考</p>
+<ul>
+<li><a href="https://bbs.kakaku.com/bbs/K0000686834/SortID=19095598/">https://bbs.kakaku.com/bbs/K0000686834/SortID=19095598/</a></li>
+<li><a href="https://itojisan.xyz/trouble/15748/">https://itojisan.xyz/trouble/15748/</a></li>
+</ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+  </body>
+</html>
+

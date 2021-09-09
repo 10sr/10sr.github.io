@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>elecom-wifi</title>
+      <link>http://10sr.github.io/b/posts/20210801-elecom-wifi.html</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b/posts/20210801-elecom-wifi.html</guid>
+      <description>ELECOM WDC-867SU3S を指して自動でインストールされるドライバを使用すると wifi 接続ができない なので以下の手順で MediaTek のドライバをインストールする デバイスのプロパティ</description>
+    </item>
+    
+    <item>
       <title>Mac SMC Reset</title>
       <link>http://10sr.github.io/b/posts/20210708-mac-smc-reset.html</link>
       <pubDate>Thu, 08 Jul 2021 14:37:52 +0900</pubDate>

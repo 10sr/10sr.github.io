@@ -27,6 +27,39 @@ $ kubectl delete po mysql-client
       </item>
     
       <item>
+        <title>elecom-wifi</title>
+        <link>http://10sr.github.io/b/posts/20210801-elecom-wifi.html</link>
+        <pubDate>Sun, 01 Aug 2021 00:00:00 &#43;0900</pubDate>
+        <author></author>
+        <guid>http://10sr.github.io/b/posts/20210801-elecom-wifi.html</guid>
+        <description>&lt;p&gt;ELECOM WDC-867SU3S を指して自動でインストールされるドライバを使用すると wifi 接続ができない&lt;/p&gt;
+&lt;p&gt;なので以下の手順で MediaTek のドライバをインストールする&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;デバイスのプロパティから、今インストールされているドライバを削除する&lt;/li&gt;
+&lt;li&gt;WDC-867SU3S を PC から抜く&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mediatek.com/products/connectivity-and-networking/broadband-wifi&#34;&gt;https://www.mediatek.com/products/connectivity-and-networking/broadband-wifi&lt;/a&gt; にアクセスする&lt;/li&gt;
+&lt;li&gt;MT7612U を探し、そのドライバをダウンロードする
+&lt;ul&gt;
+&lt;li&gt;ダウンロードされたのは &lt;code&gt;IS_Setup_ICS_011916_1.5.39.173.zip&lt;/code&gt; という名前だった&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;インストーラを起動しインストールする&lt;/li&gt;
+&lt;li&gt;WDC-867SU3S を PC に挿し、接続できることを確認する&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;アダプタのプロパティから、 Country Region (5GHz) を #1 (36 - 140) に変更&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://michisugara.jp/wifi&#34;&gt;https://michisugara.jp/wifi&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;参考&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bbs.kakaku.com/bbs/K0000686834/SortID=19095598/&#34;&gt;https://bbs.kakaku.com/bbs/K0000686834/SortID=19095598/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://itojisan.xyz/trouble/15748/&#34;&gt;https://itojisan.xyz/trouble/15748/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      </item>
+    
+      <item>
         <title>Mac SMC Reset</title>
         <link>http://10sr.github.io/b/posts/20210708-mac-smc-reset.html</link>
         <pubDate>Thu, 08 Jul 2021 14:37:52 &#43;0900</pubDate>
