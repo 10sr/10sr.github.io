@@ -1,0 +1,40 @@
+name: GitHub Push Branch
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # Download from https://github.com/gohugoio/hugo/releases ?
+      - name: Install hugo
+        run: snap install hugo --channel=extended
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch more commits
+        run: |
+          git fetch --depth 100 origin master
+          git fetch --depth 100 origin gh-pages || true
+
+      - name: Add Git settings
+        run: |
+          git config --local user.email "139241+10sr@users.noreply.github.com"
+          git config --local user.name "${{ github.actor }}"
+
+      - name: Checkout branch
+        run: git switch -c gh-pages origin/gh-pages || git switch -c gh-pages origin/master
+
+      - name: Merge master
+        run: git merge --no-ff origin/master
+
+      - name: Update and commit files
+        run: |
+          bash .github/workflows/github-push-branch.sh
+          git commit -m "Auto commit via GitHub Actions"
+          git push origin gh-pages
