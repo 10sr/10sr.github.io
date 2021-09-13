@@ -37,7 +37,7 @@ jobs:
         run: |
           set -euxo pipefail
           bash .github/workflows/update-gh-pages.sh
-          if ! git diff --exit-code
+          if ! git diff --cached --exit-code
           then
             git commit -m "Auto commit via GitHub Actions"
             git push origin gh-pages
