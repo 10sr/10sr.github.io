@@ -36,7 +36,7 @@ jobs:
       - name: Update and commit files
         run: |
           set -euxo pipefail
-          bash .github/workflows/github-push-branch.sh
+          bash .github/workflows/update-gh-pages.sh
           if ! git diff --exit-code
           then
             git commit -m "Auto commit via GitHub Actions"
