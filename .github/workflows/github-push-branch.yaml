@@ -37,5 +37,8 @@ jobs:
         run: |
           set -euxo pipefail
           bash .github/workflows/github-push-branch.sh
-          git diff --exit-code || git commit -m "Auto commit via GitHub Actions"
-          git push origin gh-pages
+          if ! git diff --exit-code
+          then
+            git commit -m "Auto commit via GitHub Actions"
+            git push origin gh-pages
+          fi
