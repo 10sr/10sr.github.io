@@ -67,7 +67,7 @@
       <pubDate>Mon, 23 Nov 2020 00:36:20 +0900</pubDate>
       
       <guid>http://10sr.github.io/b/posts/20201123-checkout-pr.html</guid>
-      <description>https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally git fetch origin pull/ID/head:BRANCHNAME</description>
+      <description>https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally git fetch origin pull/ID/head:BRANCHNAME スクリプト版： https://github.com/10sr/bin/blob/master/bin/git-checkout-pr</description>
     </item>
     
     <item>

@@ -150,6 +150,7 @@ $ kubectl delete po mysql-client
         <description>&lt;p&gt;&lt;a href=&#34;https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally&#34;&gt;https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;git fetch origin pull/ID/head:BRANCHNAME
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;スクリプト版： &lt;a href=&#34;https://github.com/10sr/bin/blob/master/bin/git-checkout-pr&#34;&gt;https://github.com/10sr/bin/blob/master/bin/git-checkout-pr&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
     
