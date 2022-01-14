@@ -9,7 +9,7 @@
 
   <title>
     
-      elecom-wifi &middot; 10sr.github.io/b
+      他モジュールの logger 設定 &middot; 10sr.github.io/b
     
   </title>
 
@@ -67,33 +67,18 @@
 
 
 <div class="post">
-  <h1 class="post-title">elecom-wifi</h1>
-  <span class="post-date">Aug 1, 2021</span>
-  <p>ELECOM WDC-867SU3S を指して自動でインストールされるドライバを使用すると wifi 接続ができない</p>
-<p>なので以下の手順で MediaTek のドライバをインストールする</p>
-<ol>
-<li>デバイスのプロパティから、今インストールされているドライバを削除する</li>
-<li>WDC-867SU3S を PC から抜く</li>
-<li><a href="https://www.mediatek.com/products/connectivity-and-networking/broadband-wifi">https://www.mediatek.com/products/connectivity-and-networking/broadband-wifi</a> にアクセスする</li>
-<li>MT7612U を探し、そのドライバをダウンロードする
-<ul>
-<li>ダウンロードされたのは <code>IS_Setup_ICS_011916_1.5.39.173.zip</code> という名前だった</li>
-</ul>
-</li>
-<li>インストーラを起動しインストールする</li>
-<li>WDC-867SU3S を PC に挿し、接続できることを確認する</li>
-</ol>
-<hr>
-<p>アダプタのプロパティから、 Country Region (5GHz) を #1 (36 - 140) に変更</p>
-<ul>
-<li><a href="https://michisugara.jp/wifi">https://michisugara.jp/wifi</a></li>
-</ul>
-<p>参考</p>
-<ul>
-<li><a href="https://bbs.kakaku.com/bbs/K0000686834/SortID=19095598/">https://bbs.kakaku.com/bbs/K0000686834/SortID=19095598/</a></li>
-<li><a href="https://itojisan.xyz/trouble/15748/">https://itojisan.xyz/trouble/15748/</a></li>
-</ul>
-</div>
+  <h1 class="post-title">他モジュールの logger 設定</h1>
+  <span class="post-date">Jan 14, 2022</span>
+  <p>依存している他モジュールが logger を使用しているとき、その設定をしてデバッグログを stderr などに出力させたい。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> logging
+
+sf_logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(<span style="color:#e6db74">&#34;snowflake&#34;</span>)
+sf_logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>DEBUG)
+
+sf_handler <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>StreamHandler()
+
+sf_formatter <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>Formatter(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(name)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>)
+</code></pre></div></div>
 
       </div>
     </div>

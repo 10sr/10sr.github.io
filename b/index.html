@@ -48,7 +48,7 @@
     </nav>
 
   <div class="sidebar-item">
-    <p>&copy; 2021. All rights reserved.</p>
+    <p>&copy; 2022. All rights reserved.</p>
   </div>
 </div>
 
@@ -71,6 +71,12 @@
 
 
 <div class="posts">
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20220114-python-logger.html">他モジュールの logger 設定</a></h1>
+        <span class="post-date">Jan 14, 2022</span>
+        依存している他モジュールが logger を使用しているとき、その設定をしてデバッグログを stderr などに出力させたい。 import logging sf_logger = logging.getLogger(&#34;snowflake&#34;) sf_logger.setLevel(logging.DEBUG) sf_handler = logging.StreamHandler() sf_formatter = logging.Formatter(&#39;%(asctime)s- %(name)s- %(levelname)s- %(message)s&#39;)
+    </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20210830-ad-hoc-pod.html">Kubernetes クラスタで一時的になにかの Pod を起動する</a></h1>
@@ -124,12 +130,6 @@
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201007-awk-tsv.html">AWK で TSV のあるカラムを値で絞る</a></h1>
         <span class="post-date">Oct 7, 2020</span>
         cat input.txt | awk -F\\t '$3 ~ /REGEXP/'
-    </div>
-  
-    <div class="post">
-        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201005-jenkins-plugins.html">Jenkins にインストールされたプラグインの一覧を取得する</a></h1>
-        <span class="post-date">Oct 5, 2020</span>
-        スクリプトコンソールなどで以下を実行する def plugins = jenkins.model.Jenkins.instance.getPluginManager().getPlugins() plugins.each {println &#34;${it.getShortName()}: ${it.getVersion()}&#34;}
     </div>
   
 </div>

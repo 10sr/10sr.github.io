@@ -6,7 +6,16 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 30 Aug 2021 17:07:30 +0900</lastBuildDate><atom:link href="http://10sr.github.io/b/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Jan 2022 11:00:00 +0900</lastBuildDate><atom:link href="http://10sr.github.io/b/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>他モジュールの logger 設定</title>
+      <link>http://10sr.github.io/b/posts/20220114-python-logger.html</link>
+      <pubDate>Fri, 14 Jan 2022 11:00:00 +0900</pubDate>
+      
+      <guid>http://10sr.github.io/b/posts/20220114-python-logger.html</guid>
+      <description>依存している他モジュールが logger を使用しているとき、その設定をしてデバッグログを stderr などに出力させたい。 import logging sf_logger = logging.getLogger(&amp;#34;snowflake&amp;#34;) sf_logger.setLevel(logging.DEBUG) sf_handler = logging.StreamHandler() sf_formatter = logging.Formatter(&amp;#39;%(asctime)s- %(name)s- %(levelname)s- %(message)s&amp;#39;)</description>
+    </item>
+    
     <item>
       <title>Kubernetes クラスタで一時的になにかの Pod を起動する</title>
       <link>http://10sr.github.io/b/posts/20210830-ad-hoc-pod.html</link>

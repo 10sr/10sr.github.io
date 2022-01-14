@@ -48,7 +48,7 @@
     </nav>
 
   <div class="sidebar-item">
-    <p>&copy; 2021. All rights reserved.</p>
+    <p>&copy; 2022. All rights reserved.</p>
   </div>
 </div>
 
@@ -71,6 +71,12 @@
 
 
 <div class="posts">
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201005-jenkins-plugins.html">Jenkins にインストールされたプラグインの一覧を取得する</a></h1>
+        <span class="post-date">Oct 5, 2020</span>
+        スクリプトコンソールなどで以下を実行する def plugins = jenkins.model.Jenkins.instance.getPluginManager().getPlugins() plugins.each {println &#34;${it.getShortName()}: ${it.getVersion()}&#34;}
+    </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201005-swaks-smtp.html">制限つき Gmail SMTP サーバを swaks から使う</a></h1>
@@ -124,12 +130,6 @@
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20190622-firefox-tab-center-redux.html">Firefox Tab Center Redux</a></h1>
         <span class="post-date">Jun 22, 2019</span>
         タブを縦置きするプラグイン MacBookAir のマシンで間隔を詰めるためにアドオンの設定ページから以下の CSS を追加 st-wrapper.shrinked .tab:not(.pinned) { height: 29px !important; } https://github.com/eoger/tabcenter-redux/wiki/Custom-CSS-tweaks
-    </div>
-  
-    <div class="post">
-        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20190622-windows-image-viewer.html">Windows 画像ビューワ</a></h1>
-        <span class="post-date">Jun 22, 2019</span>
-        XnView MP というやつ https://www.xnview.com/en/xnviewmp/#downloads PDF を見るには GhostScript が必要 らしい https://newsgroup.xnview.com/viewtopic.php?f=17&amp;t=1228&amp;p=144365&amp;hilit=pdf#p144365 https://www.xnview.com/wiki/index.php/Ghostscript https://www.ghostscript.com/download/gsdnld.html
     </div>
   
 </div>

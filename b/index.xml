@@ -4,9 +4,27 @@
     <link>http://10sr.github.io/b/</link>
     <language>en-us</language>
     <author></author>
-    <rights>(C) 2021</rights>
-    <updated>2021-08-30 17:07:30 &#43;0900 &#43;0900</updated>
+    <rights>(C) 2022</rights>
+    <updated>2022-01-14 11:00:00 &#43;0900 &#43;0900</updated>
 
+    
+      <item>
+        <title>他モジュールの logger 設定</title>
+        <link>http://10sr.github.io/b/posts/20220114-python-logger.html</link>
+        <pubDate>Fri, 14 Jan 2022 11:00:00 &#43;0900</pubDate>
+        <author></author>
+        <guid>http://10sr.github.io/b/posts/20220114-python-logger.html</guid>
+        <description>&lt;p&gt;依存している他モジュールが logger を使用しているとき、その設定をしてデバッグログを stderr などに出力させたい。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; logging
+
+sf_logger &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; logging&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;getLogger(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;snowflake&amp;#34;&lt;/span&gt;)
+sf_logger&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;setLevel(logging&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;DEBUG)
+
+sf_handler &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; logging&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;StreamHandler()
+
+sf_formatter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; logging&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Formatter(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%(asctime)s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; - &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%(name)s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; - &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%(levelname)s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; - &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%(message)s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
     
       <item>
         <title>Kubernetes クラスタで一時的になにかの Pod を起動する</title>
