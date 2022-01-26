@@ -15,4 +15,7 @@ sf_logger.setLevel(logging.DEBUG)
 sf_handler = logging.StreamHandler()
 
 sf_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+sf_handler.setFormatter(sf_formatter)
+sf_logger.addHandler(sf_handler)
 ```
