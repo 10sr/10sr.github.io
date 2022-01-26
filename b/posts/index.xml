@@ -13,7 +13,7 @@
       <pubDate>Fri, 14 Jan 2022 11:00:00 +0900</pubDate>
       
       <guid>http://10sr.github.io/b/posts/20220114-python-logger.html</guid>
-      <description>依存している他モジュールが logger を使用しているとき、その設定をしてデバッグログを stderr などに出力させたい。 import logging sf_logger = logging.getLogger(&amp;#34;snowflake&amp;#34;) sf_logger.setLevel(logging.DEBUG) sf_handler = logging.StreamHandler() sf_formatter = logging.Formatter(&amp;#39;%(asctime)s- %(name)s- %(levelname)s- %(message)s&amp;#39;)</description>
+      <description>依存している他モジュールが logger を使用しているとき、その設定をしてデバッグログを stderr などに出力させたい。 import logging sf_logger = logging.getLogger(&amp;#34;snowflake&amp;#34;) sf_logger.setLevel(logging.DEBUG) sf_handler = logging.StreamHandler() sf_formatter = logging.Formatter(&amp;#39;%(asctime)s- %(name)s- %(levelname)s- %(message)s&amp;#39;) sf_handler.setFormatter(sf_formatter) sf_logger.addHandler(sf_handler)</description>
     </item>
     
     <item>

@@ -23,6 +23,9 @@ sf_logger&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;setLevel(loggin
 sf_handler &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; logging&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;StreamHandler()
 
 sf_formatter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; logging&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Formatter(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%(asctime)s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; - &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%(name)s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; - &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%(levelname)s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; - &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%(message)s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+
+sf_handler&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;setFormatter(sf_formatter)
+sf_logger&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;addHandler(sf_handler)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     

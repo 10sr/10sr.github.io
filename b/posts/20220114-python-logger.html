@@ -78,6 +78,9 @@ sf_logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:
 sf_handler <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>StreamHandler()
 
 sf_formatter <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>Formatter(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(name)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>)
+
+sf_handler<span style="color:#f92672">.</span>setFormatter(sf_formatter)
+sf_logger<span style="color:#f92672">.</span>addHandler(sf_handler)
 </code></pre></div></div>
 
       </div>
