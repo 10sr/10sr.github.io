@@ -108,7 +108,8 @@ $ kubectl delete po mysql-client
         <pubDate>Wed, 31 Mar 2021 12:47:54 &#43;0900</pubDate>
         <author></author>
         <guid>http://10sr.github.io/b/posts/20210331-socat.html</guid>
-        <description>&lt;p&gt;&lt;a href=&#34;http://x68000.q-e-d.net/~68user/unix/pickup?socat&#34;&gt;http://x68000.q-e-d.net/~68user/unix/pickup?socat&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;入力と出力をファイルやソケットなどに接続できる&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://x68000.q-e-d.net/~68user/unix/pickup?socat&#34;&gt;http://x68000.q-e-d.net/~68user/unix/pickup?socat&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
     
