@@ -13,7 +13,7 @@
       <pubDate>Fri, 14 Jan 2022 11:00:00 +0900</pubDate>
       
       <guid>http://10sr.github.io/b/posts/20220114-python-logger.html</guid>
-      <description>依存している他モジュールが logger を使用しているとき、その設定をしてデバッグログを stderr などに出力させたい。 import logging sf_logger = logging.getLogger(&amp;#34;snowflake&amp;#34;) sf_logger.setLevel(logging.DEBUG) sf_handler = logging.StreamHandler() sf_formatter = logging.Formatter(&amp;#39;%(asctime)s- %(name)s- %(levelname)s- %(message)s&amp;#39;) sf_handler.setFormatter(sf_formatter) sf_logger.addHandler(sf_handler)</description>
+      <description>依存している他モジュールが logger を使用しているとき、その設定をしてデバッグログを stderr などに出力させたい。 import logging sf_logger = logging.getLogger(&amp;#34;snowflake&amp;#34;) sf_logger.setLevel(logging.DEBUG) sf_handler = logging.StreamHandler() sf_formatter = logging.Formatter(&amp;#39;%(asctime)s - %(name)s - %(levelname)s - %(message)s&amp;#39;) sf_handler.setFormatter(sf_formatter) sf_logger.addHandler(sf_handler)</description>
     </item>
     
     <item>
@@ -121,7 +121,7 @@
       <pubDate>Thu, 11 Jun 2020 16:26:59 +0900</pubDate>
       
       <guid>http://10sr.github.io/b/posts/20200611-date-loop.html</guid>
-      <description>date は GNU Coreutils の奴が必要。 以下では日付のフォーマットは YYYYMMDD になっている。 #!/bin/bash set -euxo pipefail # 2019/12/1 &amp;lt;= date &amp;lt; 2020/2/1 start_from=20191201 stop_at=20200201 date=$start_from while true do if [ &amp;#34;$date&amp;#34; = &amp;#34;$stop_at&amp;#34; ] then break fi echo date: $date # Next date=`date -d &amp;#34;$date1day&amp;#34; &amp;#34;+%Y%m%d&amp;#34;` done echo Done L</description>
+      <description>date は GNU Coreutils の奴が必要。 以下では日付のフォーマットは YYYYMMDD になっている。 #!/bin/bash set -euxo pipefail # 2019/12/1 &amp;lt;= date &amp;lt; 2020/2/1 start_from=20191201 stop_at=20200201 date=$start_from while true do if [ &amp;#34;$date&amp;#34; = &amp;#34;$stop_at&amp;#34; ] then break fi echo date: $date # Next date=`date -d &amp;#34;$date 1day&amp;#34; &amp;#34;+%Y%m%d&amp;#34;` done echo Done</description>
     </item>
     
     <item>
@@ -221,7 +221,7 @@
       
       <guid>http://10sr.github.io/b/posts/20190622-sshd-configurations.html</guid>
       <description>/etc/ssh/sshd_config Disable PasswordAuthentication and ChallengeResponseAuthentication to disable password authentication.
-Protocol 2 PermitRootLogin no PasswordAuthentication no PermitEmptyPasswords no ChallengeResponseAuthentication no UsePAM no RSAAuthentication no # do not look up the remote host name: this will improve performance UseDNS no  References  http://www.kishiro.com/FreeBSD/ssh.html http://tm.root-n.com/server:sshd:sshd_config https://github.com/10sr/junks/commit/4c2af25e2fee6a9e56ced053fa054ab6c7f69ee9  </description>
+Protocol 2 PermitRootLogin no PasswordAuthentication no PermitEmptyPasswords no ChallengeResponseAuthentication no UsePAM no RSAAuthentication no # do not look up the remote host name: this will improve performance UseDNS no References http://www.kishiro.com/FreeBSD/ssh.html http://tm.root-n.com/server:sshd:sshd_config https://github.com/10sr/junks/commit/4c2af25e2fee6a9e56ced053fa054ab6c7f69ee9 </description>
     </item>
     
     <item>

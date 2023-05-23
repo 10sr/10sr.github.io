@@ -70,21 +70,21 @@
   <h1 class="post-title">Install Debian Sid on WSL</h1>
   <span class="post-date">Jan 6, 2020</span>
   <p>まず普通に store にある debian をインストールして最新に合わせる。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade
-</code></pre></div><p>一応ミラーを jp に合わせてもう一度アップデートする。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudoedit /etc/apt/sources.list
-<span style="color:#75715e">## security 以外を ftp.jp.debian.org/debian/ にする</span>
-sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade
-</code></pre></div><p>sid に変更してアップグレードする。以下一行だけにした。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo tee /etc/apt/sources.list <span style="color:#e6db74">&lt;&lt;EOC
-</span><span style="color:#e6db74">deb http://ftp.jp.debian.org/debian unstable main contrib
-</span><span style="color:#e6db74">EOC</span>
-sudo apt update
-sudo apt full-upgrade
-sudo apt autoremove
-</code></pre></div><p>再起動する。 <em>WSL 外</em>（PowerShell など）から以下を実行する。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">wsl.exe -t Debian
-</code></pre></div><h2 id="参考">参考</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade
+</span></span></code></pre></div><p>一応ミラーを jp に合わせてもう一度アップデートする。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudoedit /etc/apt/sources.list
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## security 以外を ftp.jp.debian.org/debian/ にする</span>
+</span></span><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade
+</span></span></code></pre></div><p>sid に変更してアップグレードする。以下一行だけにした。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo tee /etc/apt/sources.list <span style="color:#e6db74">&lt;&lt;EOC
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb http://ftp.jp.debian.org/debian unstable main contrib
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOC</span>
+</span></span><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt full-upgrade
+</span></span><span style="display:flex;"><span>sudo apt autoremove
+</span></span></code></pre></div><p>再起動する。 <em>WSL 外</em>（PowerShell など）から以下を実行する。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl.exe -t Debian
+</span></span></code></pre></div><h2 id="参考">参考</h2>
 <ul>
 <li><a href="https://wiki.debian.org/DebianUnstable">https://wiki.debian.org/DebianUnstable</a></li>
 <li><a href="https://endaaman.me/-/debian-sid_on_laptop">https://endaaman.me/-/debian-sid_on_laptop</a></li>

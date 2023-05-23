@@ -70,9 +70,9 @@
   <h1 class="post-title">Jenkins にインストールされたプラグインの一覧を取得する</h1>
   <span class="post-date">Oct 5, 2020</span>
   <p>スクリプトコンソールなどで以下を実行する</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy"><span style="color:#66d9ef">def</span> plugins <span style="color:#f92672">=</span> jenkins<span style="color:#f92672">.</span><span style="color:#a6e22e">model</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Jenkins</span><span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getPluginManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getPlugins</span><span style="color:#f92672">()</span>
-plugins<span style="color:#f92672">.</span><span style="color:#a6e22e">each</span> <span style="color:#f92672">{</span>println <span style="color:#e6db74">&#34;${it.getShortName()}: ${it.getVersion()}&#34;</span><span style="color:#f92672">}</span>
-</code></pre></div></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> plugins <span style="color:#f92672">=</span> jenkins<span style="color:#f92672">.</span><span style="color:#a6e22e">model</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Jenkins</span><span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getPluginManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getPlugins</span><span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>plugins<span style="color:#f92672">.</span><span style="color:#a6e22e">each</span> <span style="color:#f92672">{</span>println <span style="color:#e6db74">&#34;${it.getShortName()}: ${it.getVersion()}&#34;</span><span style="color:#f92672">}</span>
+</span></span></code></pre></div></div>
 
       </div>
     </div>

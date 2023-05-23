@@ -73,13 +73,13 @@
 <ul>
 <li><a href="https://wiki.archlinux.org/index.php/Dtach">dtach</a></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># s.dtach というソケットで開始 C-^ でデタッチ</span>
-dtach -c s.dtach -e <span style="color:#e6db74">&#39;^^&#39;</span> bash -i
-<span style="color:#75715e"># s.dtach というソケットにアタッチ</span>
-dtach -a s.dtach
-<span style="color:#75715e"># s.dtach というソケットにアタッチ なければ作る</span>
-dtach -A s.dtach -e <span style="color:#e6db74">&#39;^^&#39;</span> bash -i
-</code></pre></div></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># s.dtach というソケットで開始 C-^ でデタッチ</span>
+</span></span><span style="display:flex;"><span>dtach -c s.dtach -e <span style="color:#e6db74">&#39;^^&#39;</span> bash -i
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># s.dtach というソケットにアタッチ</span>
+</span></span><span style="display:flex;"><span>dtach -a s.dtach
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># s.dtach というソケットにアタッチ なければ作る</span>
+</span></span><span style="display:flex;"><span>dtach -A s.dtach -e <span style="color:#e6db74">&#39;^^&#39;</span> bash -i
+</span></span></code></pre></div></div>
 
       </div>
     </div>

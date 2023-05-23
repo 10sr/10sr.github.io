@@ -97,25 +97,25 @@ update mysql.user set password=password('pw') where user = 'root';
 +-----------+------+-------------+
 2 rows in set (0.00 sec)
 </code></pre><p>よって、これに従ってローカルの root からだけ root を使うようにするか、もしくは以下のようにしてプラグインを無効にする。</p>
-<pre tabindex="0"><code>update mysql.user set plugin='' where user='root';
+<pre tabindex="0"><code>update mysql.user set plugin=&#39;&#39; where user=&#39;root&#39;;
 flush privileges;
 </code></pre><h2 id="ansible">Ansible</h2>
 <p><code>unix_socket</code> プラグインを有効にした状態で mysql の task を実行するには、以下のように <code>login_unix_socket</code> を設定すればよい。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Add users</span>
-  <span style="color:#f92672">mysql_user</span>:
-    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;{{ item.name }}&#34;</span>
-    <span style="color:#f92672">password</span>: <span style="color:#e6db74">&#34;{{ item.password }}&#34;</span>
-    <span style="color:#f92672">priv</span>: <span style="color:#e6db74">&#34;{{ item.priv }}&#34;</span>
-    <span style="color:#f92672">host</span>: <span style="color:#e6db74">&#34;{{ item.host }}&#34;</span>
-    <span style="color:#f92672">login_unix_socket</span>: <span style="color:#ae81ff">/var/run/mysqld/mysqld.sock</span>
-  <span style="color:#f92672">loop</span>: <span style="color:#e6db74">&#34;{{ mysql_users }}&#34;</span>
-  <span style="color:#f92672">become</span>: <span style="color:#66d9ef">yes</span>
-</code></pre></div><h2 id="参考">参考</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Add users</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">mysql_user</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;{{ item.name }}&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">password</span>: <span style="color:#e6db74">&#34;{{ item.password }}&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">priv</span>: <span style="color:#e6db74">&#34;{{ item.priv }}&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">host</span>: <span style="color:#e6db74">&#34;{{ item.host }}&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">login_unix_socket</span>: <span style="color:#ae81ff">/var/run/mysqld/mysqld.sock</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">loop</span>: <span style="color:#e6db74">&#34;{{ mysql_users }}&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">become</span>: <span style="color:#66d9ef">yes</span>
+</span></span></code></pre></div><h2 id="参考">参考</h2>
 <ul>
 <li><a href="https://fsck.jp/?p=793">Ubuntu 18.04 + MariaDB | 技術メモの壁</a></li>
-<li><a href="https://stackoverflow.com/questions/41846000/mariadb-password-and-unix-socket-authentication-for-root">update mysql.user set plugin='' where user=&lsquo;root&rsquo;;</a></li>
+<li><a href="https://stackoverflow.com/questions/41846000/mariadb-password-and-unix-socket-authentication-for-root">update mysql.user set plugin=&rsquo;&rsquo; where user=&lsquo;root&rsquo;;</a></li>
 <li><a href="https://jyn.jp/ubuntu-16-04-mariadb-password-bug/">Ubunt 16.04でMariaDBをインストールするとパスワードが変 | 純規の暇人趣味ブログ</a></li>
-<li><a href="https://stackoverflow.com/questions/43379892/mariadb-cannot-login-as-root/43424234#43424234">UPDATE mysql.user SET plugin = '' WHERE plugin = &lsquo;unix_socket&rsquo;; FLUSH PRIVILEGES;</a></li>
+<li><a href="https://stackoverflow.com/questions/43379892/mariadb-cannot-login-as-root/43424234#43424234">UPDATE mysql.user SET plugin = &rsquo;&rsquo; WHERE plugin = &lsquo;unix_socket&rsquo;; FLUSH PRIVILEGES;</a></li>
 </ul>
 </div>
 

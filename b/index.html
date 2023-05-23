@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
   <head>
-	<meta name="generator" content="Hugo 0.92.0" />
+	<meta name="generator" content="Hugo 0.111.3">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   
@@ -75,7 +75,7 @@
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20220114-python-logger.html">他モジュールの logger 設定</a></h1>
         <span class="post-date">Jan 14, 2022</span>
-        依存している他モジュールが logger を使用しているとき、その設定をしてデバッグログを stderr などに出力させたい。 import logging sf_logger = logging.getLogger(&#34;snowflake&#34;) sf_logger.setLevel(logging.DEBUG) sf_handler = logging.StreamHandler() sf_formatter = logging.Formatter(&#39;%(asctime)s- %(name)s- %(levelname)s- %(message)s&#39;) sf_handler.setFormatter(sf_formatter) sf_logger.addHandler(sf_handler)
+        依存している他モジュールが logger を使用しているとき、その設定をしてデバッグログを stderr などに出力させたい。 import logging sf_logger = logging.getLogger(&#34;snowflake&#34;) sf_logger.setLevel(logging.DEBUG) sf_handler = logging.StreamHandler() sf_formatter = logging.Formatter(&#39;%(asctime)s - %(name)s - %(levelname)s - %(message)s&#39;) sf_handler.setFormatter(sf_formatter) sf_logger.addHandler(sf_handler)
     </div>
   
     <div class="post">

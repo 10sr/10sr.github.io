@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
   <head>
-	<meta name="generator" content="Hugo 0.92.0" />
+	<meta name="generator" content="Hugo 0.111.3">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   
@@ -87,7 +87,7 @@
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200611-date-loop.html">Shellscript で日付ごとにコマンドを実行する</a></h1>
         <span class="post-date">Jun 11, 2020</span>
-        date は GNU Coreutils の奴が必要。 以下では日付のフォーマットは YYYYMMDD になっている。 #!/bin/bash set -euxo pipefail # 2019/12/1 &lt;= date &lt; 2020/2/1 start_from=20191201 stop_at=20200201 date=$start_from while true do if [ &#34;$date&#34; = &#34;$stop_at&#34; ] then break fi echo date: $date # Next date=`date -d &#34;$date1day&#34; &#34;+%Y%m%d&#34;` done echo Done L
+        date は GNU Coreutils の奴が必要。 以下では日付のフォーマットは YYYYMMDD になっている。 #!/bin/bash set -euxo pipefail # 2019/12/1 &lt;= date &lt; 2020/2/1 start_from=20191201 stop_at=20200201 date=$start_from while true do if [ &#34;$date&#34; = &#34;$stop_at&#34; ] then break fi echo date: $date # Next date=`date -d &#34;$date 1day&#34; &#34;+%Y%m%d&#34;` done echo Done
     </div>
   
     <div class="post">

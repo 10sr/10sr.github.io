@@ -71,30 +71,30 @@
   <span class="post-date">Jun 11, 2020</span>
   <p><code>date</code> は GNU Coreutils の奴が必要。
 以下では日付のフォーマットは YYYYMMDD になっている。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
-</span><span style="color:#75715e"></span>set -euxo pipefail
-
-<span style="color:#75715e"># 2019/12/1 &lt;= date &lt; 2020/2/1</span>
-start_from<span style="color:#f92672">=</span><span style="color:#ae81ff">20191201</span>
-stop_at<span style="color:#f92672">=</span><span style="color:#ae81ff">20200201</span>
-
-date<span style="color:#f92672">=</span>$start_from
-
-<span style="color:#66d9ef">while</span> true
-<span style="color:#66d9ef">do</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$date<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span>$stop_at<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>
-    <span style="color:#66d9ef">then</span>
-        break
-    <span style="color:#66d9ef">fi</span>
-
-    echo date: $date
-
-    <span style="color:#75715e"># Next</span>
-    date<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>date -d <span style="color:#e6db74">&#34;</span>$date<span style="color:#e6db74"> 1day&#34;</span> <span style="color:#e6db74">&#34;+%Y%m%d&#34;</span><span style="color:#e6db74">`</span>
-<span style="color:#66d9ef">done</span>
-
-echo Done
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>set -euxo pipefail
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2019/12/1 &lt;= date &lt; 2020/2/1</span>
+</span></span><span style="display:flex;"><span>start_from<span style="color:#f92672">=</span><span style="color:#ae81ff">20191201</span>
+</span></span><span style="display:flex;"><span>stop_at<span style="color:#f92672">=</span><span style="color:#ae81ff">20200201</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>date<span style="color:#f92672">=</span>$start_from
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> true
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$date<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span>$stop_at<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>        break
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    echo date: $date
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Next</span>
+</span></span><span style="display:flex;"><span>    date<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>date -d <span style="color:#e6db74">&#34;</span>$date<span style="color:#e6db74"> 1day&#34;</span> <span style="color:#e6db74">&#34;+%Y%m%d&#34;</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo Done
+</span></span></code></pre></div><ul>
 <li><a href="https://qiita.com/YumaInaura/items/ffb8f10abf33474d1b1e">Linux—シェルスクリプトで日付でループする (Mac対応あり) - Qiita</a></li>
 <li><a href="https://techblog.recochoku.jp/1213">シェルスクリプトである期間日付でループする | レコチョクのエンジニアブログ</a></li>
 <li><a href="https://www.ppoohh.info/post-791/">シェルスクリプトで1日毎の日付でループする処理 | ppoohh &rsquo;s blog</a></li>
