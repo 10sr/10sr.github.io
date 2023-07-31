@@ -12,3 +12,8 @@ verboseLog = true
 [params]
 title = "10sr.github.io/b"
 description = "10sr static blog"
+
+[menu]
+[[menu.main]]
+  name = 'Source'
+  URL = 'https://github.com/10sr/10sr.github.io/tree/master/b_source'
