@@ -1,4 +1,9 @@
+.PHONY: theme local build git-add new
+
 theme: themes/lanyon-hugo
+	cd themes/lanyon-hugo
+	git fetch
+	git switch -d origin/master
 
 themes/lanyon-hugo:
 	git clone https://github.com/10sr/lanyon-hugo.git $@
