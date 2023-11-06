@@ -5,6 +5,7 @@
     <link>http://10sr.github.io/b/categories.html</link>
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language><atom:link href="http://10sr.github.io/b/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja-jp</language>
+    <atom:link href="http://10sr.github.io/b/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
