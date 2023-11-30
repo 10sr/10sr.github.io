@@ -5,8 +5,7 @@ on:
     inputs:
       slug:
         description: 'Post slug'
-        default: ''
-        required: false
+        required: true
 
 jobs:
   gen:
@@ -18,6 +17,9 @@ jobs:
 
       - name: Create new branch
         run: git switch -c gen-new-post-$RANDOM
+
+      - name: Test if slug is given
+        run: test -n "${{ github.event.inputs.slug }}"
 
       - name: Generate template file
         run: make new slug="${{ github.event.inputs.slug }}"
