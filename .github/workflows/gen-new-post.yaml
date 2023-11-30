@@ -1,0 +1,33 @@
+name: Generate new post template
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Post slug'
+        default: ''
+        required: false
+
+jobs:
+  gen:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Create new branch
+        run: git switch -c gen-new-post-$RANDOM
+
+      - name: Generate template file
+        run: make gen_new_post slug="${{ github.event.inputs.slug }}"
+        with:
+          directory: ./b_source/
+
+      - name: Git Add and Commit
+        run: |
+          git add ./b_source/content
+          git commit -m "Commit post template, slug='${{ github.event.inputs.slug }}'"
+
+      - name: Create Pull Request
+        run: gh pr create --title "Add post '${{ github.event.inputs.slug }}'" --body ""
