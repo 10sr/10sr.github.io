@@ -21,8 +21,7 @@ jobs:
 
       - name: Generate template file
         run: make gen_new_post slug="${{ github.event.inputs.slug }}"
-        with:
-          directory: ./b_source/
+        working-directory: ./b_source/
 
       - name: Git Add and Commit
         run: |
