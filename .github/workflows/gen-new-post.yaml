@@ -23,6 +23,11 @@ jobs:
         run: make gen_new_post slug="${{ github.event.inputs.slug }}"
         working-directory: ./b_source/
 
+      - name: Add Git settings
+        run: |
+          git config --local user.email "139241+10sr@users.noreply.github.com"
+          git config --local user.name "${{ github.actor }}"
+
       - name: Git Add and Commit
         run: |
           git add ./b_source/content
