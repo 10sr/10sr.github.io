@@ -20,7 +20,7 @@ jobs:
         run: git switch -c gen-new-post-$RANDOM
 
       - name: Generate template file
-        run: make gen_new_post slug="${{ github.event.inputs.slug }}"
+        run: make new slug="${{ github.event.inputs.slug }}"
         working-directory: ./b_source/
 
       - name: Add Git settings
