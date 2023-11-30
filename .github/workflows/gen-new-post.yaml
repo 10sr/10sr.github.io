@@ -35,7 +35,7 @@ jobs:
 
       - name: Create Pull Request
         run: |
-          git push
+          git push origin HEAD
           gh pr create --title "Add post '${{ github.event.inputs.slug }}'" --body ""
         env:
           GH_TOKEN: ${{ github.token }}
