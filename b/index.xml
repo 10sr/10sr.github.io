@@ -35,7 +35,7 @@
 &lt;h2 id=&#34;ibs-hardware-workaround-の有効化&#34;&gt;IBS hardware workaround の有効化&lt;/h2&gt;
 &lt;p&gt;AMD CBS &amp;gt; CPU Common Options &amp;gt; IBS hardware workaround を有効化する。&lt;/p&gt;
 &lt;p&gt;-&amp;gt; 結果的にこの設定によって解決した雰囲気がある。 may impact performance と書いてあるが、あまり違いは感じない。&lt;/p&gt;
-&lt;h1 id=&#34;その他やってないこと関係して調べたこと&#34;&gt;その他やってないこと・関係して調べたこと&lt;/h1&gt;
+&lt;h1 id=&#34;その他やってないこと関係して調べたことなど&#34;&gt;その他やってないこと・関係して調べたことなど&lt;/h1&gt;
 &lt;h2 id=&#34;s3modern-standby-support-設定の変更&#34;&gt;S3/Modern Standby Support 設定の変更&lt;/h2&gt;
 &lt;p&gt;AMD PBS &amp;gt; Power Saving Configuration &amp;gt; S3/Modern Standby Support から modern の方を使ってみる？&lt;/p&gt;
 &lt;p&gt;-&amp;gt; 結局触らなかった。&lt;/p&gt;
