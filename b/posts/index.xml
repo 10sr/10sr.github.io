@@ -6,8 +6,15 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 14 Jan 2022 11:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 30 Nov 2023 20:34:28 +0000</lastBuildDate>
     <atom:link href="http://10sr.github.io/b/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hx77g のブルスク問題</title>
+      <link>http://10sr.github.io/b/posts/20231130-hx77g.html</link>
+      <pubDate>Thu, 30 Nov 2023 20:34:28 +0000</pubDate>
+      <guid>http://10sr.github.io/b/posts/20231130-hx77g.html</guid>
+      <description>概要 Minisforum の hx77g を買った。 買った直後から、スリープ復帰後にブルースクリーン→再起動が発生する問題が発生したのでなんとかする。 スリープしない限り発生</description>
+    </item>
     <item>
       <title>他モジュールの logger 設定</title>
       <link>http://10sr.github.io/b/posts/20220114-python-logger.html</link>
@@ -174,8 +181,7 @@
       <link>http://10sr.github.io/b/posts/20190622-sshd-configurations.html</link>
       <pubDate>Sat, 22 Jun 2019 00:56:18 +0900</pubDate>
       <guid>http://10sr.github.io/b/posts/20190622-sshd-configurations.html</guid>
-      <description>/etc/ssh/sshd_config Disable PasswordAuthentication and ChallengeResponseAuthentication to disable password authentication.
-Protocol 2 PermitRootLogin no PasswordAuthentication no PermitEmptyPasswords no ChallengeResponseAuthentication no UsePAM no RSAAuthentication no # do not look up the remote host name: this will improve performance UseDNS no References http://www.kishiro.com/FreeBSD/ssh.html http://tm.root-n.com/server:sshd:sshd_config https://github.com/10sr/junks/commit/4c2af25e2fee6a9e56ced053fa054ab6c7f69ee9 </description>
+      <description>/etc/ssh/sshd_config Disable PasswordAuthentication and ChallengeResponseAuthentication to disable password authentication.&#xA;Protocol 2 PermitRootLogin no PasswordAuthentication no PermitEmptyPasswords no ChallengeResponseAuthentication no UsePAM no RSAAuthentication no # do not look up the remote host name: this will improve performance UseDNS no References http://www.kishiro.com/FreeBSD/ssh.html http://tm.root-n.com/server:sshd:sshd_config https://github.com/10sr/junks/commit/4c2af25e2fee6a9e56ced053fa054ab6c7f69ee9 </description>
     </item>
     <item>
       <title>紅茶抽出飽和砂糖水溶液（MAX紅茶）</title>

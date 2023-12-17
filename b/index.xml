@@ -4,9 +4,49 @@
     <link>http://10sr.github.io/b/</link>
     <language>en-us</language>
     <author></author>
-    <rights>(C) 2022</rights>
-    <updated>2022-01-14 11:00:00 &#43;0900 &#43;0900</updated>
+    <rights>(C) 2023</rights>
+    <updated>2023-11-30 20:34:28 &#43;0000 UTC</updated>
 
+    
+      <item>
+        <title>hx77g のブルスク問題</title>
+        <link>http://10sr.github.io/b/posts/20231130-hx77g.html</link>
+        <pubDate>Thu, 30 Nov 2023 20:34:28 UTC</pubDate>
+        <author></author>
+        <guid>http://10sr.github.io/b/posts/20231130-hx77g.html</guid>
+        <description>&lt;h1 id=&#34;概要&#34;&gt;概要&lt;/h1&gt;
+&lt;p&gt;Minisforum の hx77g を買った。&lt;/p&gt;
+&lt;p&gt;買った直後から、スリープ復帰後にブルースクリーン→再起動が発生する問題が発生したのでなんとかする。
+スリープしない限り発生しないが、スリープするとほぼ必ず発生している。&lt;/p&gt;
+&lt;h1 id=&#34;やったこと&#34;&gt;やったこと&lt;/h1&gt;
+&lt;h2 id=&#34;休止状態の無効化&#34;&gt;休止状態の無効化&lt;/h2&gt;
+&lt;p&gt;管理者でコマンドプロンプトを開き、以下を実行する。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;powercfg.exe /hibernate off 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;-&amp;gt; これは関係あったかよくわからない。ただ、個人的な好みと、休止状態は SSD に悪いという旨のやたら圧の強い記事を複数見かけたという理由でこのままにしておく。&lt;/p&gt;
+&lt;h2 id=&#34;pss-support-の無効化&#34;&gt;PSS Support の無効化&lt;/h2&gt;
+&lt;p&gt;BIOS 設定から CPU Configuration &amp;gt; PSS Support を無効化する。&lt;/p&gt;
+&lt;p&gt;-&amp;gt; 関係があったかよくわからない。とりあえずそのままにしている。&lt;/p&gt;
+&lt;h2 id=&#34;ibs-hardware-workaround-の有効化&#34;&gt;IBS hardware workaround の有効化&lt;/h2&gt;
+&lt;p&gt;AMD CBS &amp;gt; CPU Common Options &amp;gt; IBS hardware workaround を有効化する。&lt;/p&gt;
+&lt;p&gt;-&amp;gt; 結果的にこの設定によって解決した雰囲気がある。 may impact performance と書いてあるが、あまり違いは感じない。&lt;/p&gt;
+&lt;h1 id=&#34;その他やってないこと関係して調べたこと&#34;&gt;その他やってないこと・関係して調べたこと&lt;/h1&gt;
+&lt;h2 id=&#34;s3modern-standby-support-設定の変更&#34;&gt;S3/Modern Standby Support 設定の変更&lt;/h2&gt;
+&lt;p&gt;AMD PBS &amp;gt; Power Saving Configuration &amp;gt; S3/Modern Standby Support から modern の方を使ってみる？&lt;/p&gt;
+&lt;p&gt;-&amp;gt; 結局触らなかった。&lt;/p&gt;
+&lt;h2 id=&#34;イベントビューアの確認&#34;&gt;イベントビューアの確認&lt;/h2&gt;
+&lt;p&gt;イベントビューアーを見ると、「ドライバーは \Device\Harddisk1\DR10 でコントローラ エラーを検出しました」という「エラー」がその時間に出ていた。&lt;/p&gt;
+&lt;p&gt;1 は USB デバイスなので関係ないかもしれない…&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://it-trouble.help/deviceharddisk1dr2-%E3%81%A7%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9-%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E6%A4%9C%E5%87%BA%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/&#34;&gt;https://it-trouble.help/deviceharddisk1dr2-%E3%81%A7%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9-%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E6%A4%9C%E5%87%BA%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;メモリ診断&#34;&gt;メモリ診断&lt;/h2&gt;
+&lt;p&gt;Windows メモリ診断を使ったが問題は見つからなかった。&lt;/p&gt;
+&lt;h2 id=&#34;電源プラン&#34;&gt;電源プラン&lt;/h2&gt;
+&lt;p&gt;コントロールパネルから電源プランを「高パフォーマンス」に変更&lt;/p&gt;
+&lt;p&gt;-&amp;gt; やっぱり戻した&lt;/p&gt;
+&lt;h2 id=&#34;モニタ繋ぎ変え&#34;&gt;モニタ繋ぎ変え&lt;/h2&gt;
+&lt;p&gt;別の理由でモニタを購入し、繋ぎ変えた時に一度再起動が発生した。それ以後起きていなそう。&lt;/p&gt;
+</description>
+      </item>
     
       <item>
         <title>他モジュールの logger 設定</title>

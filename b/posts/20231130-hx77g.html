@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      hx77g のブルスク問題 &middot; 10sr.github.io/b
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="../css/poole.css">
+  <link rel="stylesheet" href="../css/syntax.css">
+  <link rel="stylesheet" href="../css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="../atom.xml">
+
+  
+  <script src='../js/script.js'></script>
+</head>
+
+
+  <body class="layout-reverse">
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>
+      10sr static blog
+    </p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item " href="../">Home</a>
+    <a class="sidebar-nav-item " href="../posts.html">Posts</a><a class="sidebar-nav-item" href="https://github.com/10sr/10sr.github.io/tree/master/b_source" title="">Source</a>
+    </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 2023. All rights reserved.</p>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="../" title="Home">10sr.github.io/b</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+<div class="post">
+  <h1 class="post-title">hx77g のブルスク問題</h1>
+  <span class="post-date">Nov 30, 2023</span>
+  <h1 id="概要">概要</h1>
+<p>Minisforum の hx77g を買った。</p>
+<p>買った直後から、スリープ復帰後にブルースクリーン→再起動が発生する問題が発生したのでなんとかする。
+スリープしない限り発生しないが、スリープするとほぼ必ず発生している。</p>
+<h1 id="やったこと">やったこと</h1>
+<h2 id="休止状態の無効化">休止状態の無効化</h2>
+<p>管理者でコマンドプロンプトを開き、以下を実行する。</p>
+<pre><code>powercfg.exe /hibernate off 
+</code></pre>
+<p>-&gt; これは関係あったかよくわからない。ただ、個人的な好みと、休止状態は SSD に悪いという旨のやたら圧の強い記事を複数見かけたという理由でこのままにしておく。</p>
+<h2 id="pss-support-の無効化">PSS Support の無効化</h2>
+<p>BIOS 設定から CPU Configuration &gt; PSS Support を無効化する。</p>
+<p>-&gt; 関係があったかよくわからない。とりあえずそのままにしている。</p>
+<h2 id="ibs-hardware-workaround-の有効化">IBS hardware workaround の有効化</h2>
+<p>AMD CBS &gt; CPU Common Options &gt; IBS hardware workaround を有効化する。</p>
+<p>-&gt; 結果的にこの設定によって解決した雰囲気がある。 may impact performance と書いてあるが、あまり違いは感じない。</p>
+<h1 id="その他やってないこと関係して調べたこと">その他やってないこと・関係して調べたこと</h1>
+<h2 id="s3modern-standby-support-設定の変更">S3/Modern Standby Support 設定の変更</h2>
+<p>AMD PBS &gt; Power Saving Configuration &gt; S3/Modern Standby Support から modern の方を使ってみる？</p>
+<p>-&gt; 結局触らなかった。</p>
+<h2 id="イベントビューアの確認">イベントビューアの確認</h2>
+<p>イベントビューアーを見ると、「ドライバーは \Device\Harddisk1\DR10 でコントローラ エラーを検出しました」という「エラー」がその時間に出ていた。</p>
+<p>1 は USB デバイスなので関係ないかもしれない…</p>
+<p><a href="https://it-trouble.help/deviceharddisk1dr2-%E3%81%A7%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9-%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E6%A4%9C%E5%87%BA%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/">https://it-trouble.help/deviceharddisk1dr2-%E3%81%A7%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9-%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E6%A4%9C%E5%87%BA%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</a></p>
+<h2 id="メモリ診断">メモリ診断</h2>
+<p>Windows メモリ診断を使ったが問題は見つからなかった。</p>
+<h2 id="電源プラン">電源プラン</h2>
+<p>コントロールパネルから電源プランを「高パフォーマンス」に変更</p>
+<p>-&gt; やっぱり戻した</p>
+<h2 id="モニタ繋ぎ変え">モニタ繋ぎ変え</h2>
+<p>別の理由でモニタを購入し、繋ぎ変えた時に一度再起動が発生した。それ以後起きていなそう。</p>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+  </body>
+</html>
+

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
   <head>
-	<meta name="generator" content="Hugo 0.120.4">
+	<meta name="generator" content="Hugo 0.121.1">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   
@@ -51,7 +51,7 @@
     </nav>
 
   <div class="sidebar-item">
-    <p>&copy; 2022. All rights reserved.</p>
+    <p>&copy; 2023. All rights reserved.</p>
   </div>
 </div>
 
@@ -74,6 +74,12 @@
 
 
 <div class="posts">
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201007-awk-tsv.html">AWK で TSV のあるカラムを値で絞る</a></h1>
+        <span class="post-date">Oct 7, 2020</span>
+        cat input.txt | awk -F\\t '$3 ~ /REGEXP/'
+    </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201005-jenkins-plugins.html">Jenkins にインストールされたプラグインの一覧を取得する</a></h1>
@@ -127,12 +133,6 @@
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20191231-windows-cbs.html">Windows CBS ディレクトリについて</a></h1>
         <span class="post-date">Dec 31, 2019</span>
         C:\Windows\logs\CBS\CbsPersist_*.log というファイルが数 10GB 程度に膨れてディスクを圧迫していたことがあった。 少し調べたところ普通に削除してしまっても大丈夫っぽい。 http://ivystar.jp/hardware/c-windows-logs-cbs-log-cleared-by-the-c-drive-of-refreshing/ https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1266732207
-    </div>
-  
-    <div class="post">
-        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20190622-firefox-tab-center-redux.html">Firefox Tab Center Redux</a></h1>
-        <span class="post-date">Jun 22, 2019</span>
-        タブを縦置きするプラグイン MacBookAir のマシンで間隔を詰めるためにアドオンの設定ページから以下の CSS を追加 st-wrapper.shrinked .tab:not(.pinned) { height: 29px !important; } https://github.com/eoger/tabcenter-redux/wiki/Custom-CSS-tweaks
     </div>
   
 </div>
