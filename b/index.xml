@@ -27,6 +27,11 @@
 &lt;h2 id=&#34;pss-support-の無効化&#34;&gt;PSS Support の無効化&lt;/h2&gt;
 &lt;p&gt;BIOS 設定から CPU Configuration &amp;gt; PSS Support を無効化する。&lt;/p&gt;
 &lt;p&gt;-&amp;gt; 関係があったかよくわからない。とりあえずそのままにしている。&lt;/p&gt;
+&lt;p&gt;参考&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.photoclip.net/blog/2023/08/07/minisforum-venus-series-um790pro-13/&#34;&gt;https://www.photoclip.net/blog/2023/08/07/minisforum-venus-series-um790pro-13/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uzusi.blog115.fc2.com/blog-entry-275.html&#34;&gt;http://uzusi.blog115.fc2.com/blog-entry-275.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;ibs-hardware-workaround-の有効化&#34;&gt;IBS hardware workaround の有効化&lt;/h2&gt;
 &lt;p&gt;AMD CBS &amp;gt; CPU Common Options &amp;gt; IBS hardware workaround を有効化する。&lt;/p&gt;
 &lt;p&gt;-&amp;gt; 結果的にこの設定によって解決した雰囲気がある。 may impact performance と書いてあるが、あまり違いは感じない。&lt;/p&gt;
