@@ -19,4 +19,4 @@ git-add:
 
 new:
 #	$(nikola) $@ --format=markdown
-	./gen_new_post.sh
+	./gen_new_post.sh "$(slug)"

@@ -1,8 +1,13 @@
 #!/bin/bash
 set -eu
 
-read -p "post slug: " slug
-echo slug: $slug
+slug=${1:-}
+
+if test -z "$slug"
+then
+    read -p "post slug: " slug
+    echo slug: $slug
+fi
 
 yyyymmdd=`date '+%Y%m%d'`
 date=`date '+%Y-%m-%d %H:%M:%S%z' | sed 's/..$/:&/'`
