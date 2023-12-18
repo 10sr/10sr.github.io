@@ -24,6 +24,8 @@ jobs:
       - name: Generate template file
         run: make new slug="${{ github.event.inputs.slug }}"
         working-directory: ./b_source/
+        env:
+          TZ: Asia/Tokyo
 
       - name: Add Git settings
         run: |
