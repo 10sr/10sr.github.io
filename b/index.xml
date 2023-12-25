@@ -9,7 +9,7 @@
 
     
       <item>
-        <title>hx77g のブルスク問題</title>
+        <title>hx77g のブルスク問題など</title>
         <link>http://10sr.github.io/b/posts/20231130-hx77g.html</link>
         <pubDate>Thu, 30 Nov 2023 20:34:28 UTC</pubDate>
         <author></author>
@@ -50,6 +50,15 @@
 &lt;p&gt;-&amp;gt; やっぱり戻した。&lt;/p&gt;
 &lt;h2 id=&#34;モニタ繋ぎ変え&#34;&gt;モニタ繋ぎ変え&lt;/h2&gt;
 &lt;p&gt;別の理由でモニタを購入し、繋ぎ変えた時に一度再起動が発生した。それ以後起きていなそう。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;ディスプレイと-gpu-設定&#34;&gt;ディスプレイと GPU 設定&lt;/h1&gt;
+&lt;p&gt;ディスプレイを USB4 で接続して FFXV ベンチを走らせたところ、 iGPU を使用していることがわかった。
+設定のシステム＞ディスプレイ＞グラフィック＞既定のグラフィック設定を変更するから dGPU を選択したところ、（参考 URL の記述とは異なり）ブラックアウトせず、そのまま dGPU が有効になってくれた。
+これは再起動しても維持されることを確認した。&lt;/p&gt;
+&lt;p&gt;参考&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pc.watch.impress.co.jp/docs/column/nishikawa/1537130.html&#34;&gt;【西川和久の不定期コラム】Ryzen+Radeon搭載で本格的にゲームもプレイできるミニPC！「MINISFORUM HX77G」 - PC Watch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       </item>
     
