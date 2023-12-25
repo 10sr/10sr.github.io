@@ -29,8 +29,8 @@
 &lt;p&gt;-&amp;gt; 関係があったかよくわからない。とりあえずそのままにしている。&lt;/p&gt;
 &lt;p&gt;参考&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.photoclip.net/blog/2023/08/07/minisforum-venus-series-um790pro-13/&#34;&gt;https://www.photoclip.net/blog/2023/08/07/minisforum-venus-series-um790pro-13/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://uzusi.blog115.fc2.com/blog-entry-275.html&#34;&gt;http://uzusi.blog115.fc2.com/blog-entry-275.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.photoclip.net/blog/2023/08/07/minisforum-venus-series-um790pro-13/&#34;&gt;【UM790 Pro】いまだに落ちる(7) いえ、もう落ちませんよ | BEACH RESORT PHOTOCLIP #run&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uzusi.blog115.fc2.com/blog-entry-275.html&#34;&gt;うずしの日課 KP41病に悩んで解決まで→1か月ぶりに再発→解決しました&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;ibs-hardware-workaround-の有効化&#34;&gt;IBS hardware workaround の有効化&lt;/h2&gt;
 &lt;p&gt;AMD CBS &amp;gt; CPU Common Options &amp;gt; IBS hardware workaround を有効化する。&lt;/p&gt;
@@ -42,7 +42,7 @@
 &lt;h2 id=&#34;イベントビューアの確認&#34;&gt;イベントビューアの確認&lt;/h2&gt;
 &lt;p&gt;イベントビューアーを見ると、「ドライバーは \Device\Harddisk1\DR10 でコントローラ エラーを検出しました」という「エラー」がその時間に出ていた。&lt;/p&gt;
 &lt;p&gt;1 は USB デバイスなので関係ないかもしれない…&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://it-trouble.help/deviceharddisk1dr2-%E3%81%A7%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9-%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E6%A4%9C%E5%87%BA%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/&#34;&gt;https://it-trouble.help/deviceharddisk1dr2-%E3%81%A7%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9-%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E6%A4%9C%E5%87%BA%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://it-trouble.help/deviceharddisk1dr2-%E3%81%A7%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9-%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E6%A4%9C%E5%87%BA%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/&#34;&gt;\Device\Harddisk1\DR2 でコントローラ エラーを検出しました | ITトラブル支援&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;メモリ診断&#34;&gt;メモリ診断&lt;/h2&gt;
 &lt;p&gt;Windows メモリ診断を使ったが問題は見つからなかった。&lt;/p&gt;
 &lt;h2 id=&#34;電源プラン&#34;&gt;電源プラン&lt;/h2&gt;
