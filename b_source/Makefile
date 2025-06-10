@@ -4,7 +4,7 @@ theme: themes/lanyon-hugo
 	cd themes/lanyon-hugo && git fetch && git switch -d origin/10sr
 
 themes/lanyon-hugo:
-	git clone https://github.com/10sr/lanyon-hugo.git $@
+	git clone --depth=10 https://github.com/10sr/lanyon-hugo.git $@
 
 
 local:
