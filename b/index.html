@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
   <head>
-	<meta name="generator" content="Hugo 0.147.8">
+	<meta name="generator" content="Hugo 0.123.7">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   
@@ -51,7 +51,7 @@
     </nav>
 
   <div class="sidebar-item">
-    <p>&copy; 2023. All rights reserved.</p>
+    <p>&copy; 2026. All rights reserved.</p>
   </div>
 </div>
 
@@ -76,127 +76,63 @@
 <div class="posts">
   
     <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20260202-mac-docker-rm.html">Mac の docker がストレージを使うので空ける</a></h1>
+        <span class="post-date">Feb 2, 2026</span>
+        以下を実行する。 $ docker rm $(docker ps -a -q) $ docker rmi $(docker images -q) $ docker volume rm $(docker volume ls |awk &#39;{print $2}&#39;) $ rm -rf ~/Library/Containers/com.docker.docker/Data/* Docker for Macを使っているとストレージ容量不足になる問題をなんとかする #Docker -
+    </div>
+  
+    <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20231130-hx77g.html">hx77g のブルスク問題など</a></h1>
         <span class="post-date">Nov 30, 2023</span>
-        <h1 id="概要">概要</h1>
-<p>Minisforum の hx77g を買った。</p>
-<p>買った直後から、スリープ復帰後にブルースクリーン→再起動が発生する問題が発生したのでなんとかする。
-スリープしない限り発生しないが、スリープするとほぼ必ず発生する。</p>
+        概要 Minisforum の hx77g を買った。 買った直後から、スリープ復帰後にブルースクリーン→再起動が発生する問題が発生したのでなんとかする。 スリープしない限り発生
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20220114-python-logger.html">他モジュールの logger 設定</a></h1>
         <span class="post-date">Jan 14, 2022</span>
-        <p>依存している他モジュールが logger を使用しているとき、その設定をしてデバッグログを stderr などに出力させたい。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> logging
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sf_logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(<span style="color:#e6db74">&#34;snowflake&#34;</span>)
-</span></span><span style="display:flex;"><span>sf_logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>DEBUG)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sf_handler <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>StreamHandler()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sf_formatter <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>Formatter(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(name)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sf_handler<span style="color:#f92672">.</span>setFormatter(sf_formatter)
-</span></span><span style="display:flex;"><span>sf_logger<span style="color:#f92672">.</span>addHandler(sf_handler)
-</span></span></code></pre></div>
+        依存している他モジュールが logger を使用しているとき、その設定をしてデバッグログを stderr などに出力させたい。 import logging sf_logger = logging.getLogger(&#34;snowflake&#34;) sf_logger.setLevel(logging.DEBUG) sf_handler = logging.StreamHandler() sf_formatter = logging.Formatter(&#39;%(asctime)s - %(name)s - %(levelname)s - %(message)s&#39;) sf_handler.setFormatter(sf_formatter) sf_logger.addHandler(sf_handler)
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20210830-ad-hoc-pod.html">Kubernetes クラスタで一時的になにかの Pod を起動する</a></h1>
         <span class="post-date">Aug 30, 2021</span>
-        <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ kubectl run -it --rm --image<span style="color:#f92672">=</span>mysql:5.7 --restart<span style="color:#f92672">=</span>Never mysql-client -- bash -i
-</span></span><span style="display:flex;"><span>root@mysql-client:/# mysql -uroot -h mysql-host -p
-</span></span><span style="display:flex;"><span>mysql&gt; show databases;
-</span></span></code></pre></div><p>実行後もし pod が残っていたら削除する。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ kubectl get po
-</span></span><span style="display:flex;"><span>$ kubectl delete po mysql-client
-</span></span></code></pre></div><ul>
-<li><a href="https://medium.com/@judomu/how-to-connect-with-an-interactive-kubernetes-mysql-client-utilizing-secrets-ecf39557d7bb">https://medium.com/@judomu/how-to-connect-with-an-interactive-kubernetes-mysql-client-utilizing-secrets-ecf39557d7bb</a></li>
-</ul>
+        $ kubectl run -it --rm --image=mysql:5.7 --restart=Never mysql-client -- bash -i root@mysql-client:/# mysql -uroot -h mysql-host -p mysql&gt; show databases; 実行後もし pod が残っていたら削除する。 $ kubectl get po $ kubectl delete po mysql-client https://medium.com/@judomu/how-to-connect-with-an-interactive-kubernetes-mysql-client-utilizing-secrets-ecf39557d7bb
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20210801-elecom-wifi.html">elecom-wifi</a></h1>
         <span class="post-date">Aug 1, 2021</span>
-        <p>ELECOM WDC-867SU3S を指して自動でインストールされるドライバを使用すると wifi 接続ができない</p>
-<p>なので以下の手順で MediaTek のドライバをインストールする</p>
-<ol>
-<li>デバイスのプロパティから、今インストールされているドライバを削除する</li>
-<li>WDC-867SU3S を PC から抜く</li>
-<li><a href="https://www.mediatek.com/products/connectivity-and-networking/broadband-wifi">https://www.mediatek.com/products/connectivity-and-networking/broadband-wifi</a> にアクセスする</li>
-<li>MT7612U を探し、そのドライバをダウンロードする
-<ul>
-<li>ダウンロードされたのは <code>IS_Setup_ICS_011916_1.5.39.173.zip</code> という名前だった</li>
-</ul>
-</li>
-<li>インストーラを起動しインストールする</li>
-<li>WDC-867SU3S を PC に挿し、接続できることを確認する</li>
-</ol>
-<hr>
-<p>アダプタのプロパティから、 Country Region (5GHz) を #1 (36 - 140) に変更</p>
+        ELECOM WDC-867SU3S を指して自動でインストールされるドライバを使用すると wifi 接続ができない なので以下の手順で MediaTek のドライバをインストールする デバイスのプロパティ
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20210708-mac-smc-reset.html">Mac SMC Reset</a></h1>
         <span class="post-date">Jul 8, 2021</span>
-        <h2 id="問題">問題</h2>
-<p>Mac を電源に繋がないと、残量 90% 程度でも突然死する</p>
-<h2 id="やってみたこと">やってみたこと</h2>
-<p>これ： <a href="https://support.apple.com/ja-jp/HT201295">https://support.apple.com/ja-jp/HT201295</a></p>
-<p>T2 チップは入っていなかった。</p>
-<pre><code>Mac をシステム終了します。
-内蔵キーボードで、以下のキーをすべて長押しします。
-    キーボードの左側の「shift 」キー
-    キーボードの左側の「control 」キー
-    キーボードの左側の「option (Alt) 」キー
-上記 3 つのすべてのキーを押し続けている間に、電源ボタンも長押しします。
-4 つのキーを全部押した状態のノートブックキーボード
-4 つすべてのキーを 10 秒押し続けます。
-すべてのキーから指を放し、電源ボタンを押して Mac の電源を入れます。
-</code></pre>
-<p>とりあえずこれで様子見する。</p>
+        問題 Mac を電源に繋がないと、残量 90% 程度でも突然死する やってみたこと これ： https://support.apple.com/ja-jp/HT201295 T2 チップは入っていなかった。 Mac をシステム終了します。 内蔵キーボードで
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20210331-socat.html">socat</a></h1>
         <span class="post-date">Mar 31, 2021</span>
-        <p>入力と出力をファイルやソケットなどに接続できる</p>
-<p><a href="http://x68000.q-e-d.net/~68user/unix/pickup?socat">http://x68000.q-e-d.net/~68user/unix/pickup?socat</a></p>
+        入力と出力をファイルやソケットなどに接続できる http://x68000.q-e-d.net/~68user/unix/pickup?socat
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20210302-squashfs.html">SquashFS</a></h1>
         <span class="post-date">Mar 2, 2021</span>
-        <p>使ったことないけど便利そう</p>
-<p><a href="https://wiki.archlinux.org/index.php/Full_system_backup_with_SquashFS">https://wiki.archlinux.org/index.php/Full_system_backup_with_SquashFS</a></p>
+        使ったことないけど便利そう https://wiki.archlinux.org/index.php/Full_system_backup_with_SquashFS
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201224-emacs-fill-column.html">Emacs の fill-column のあたり</a></h1>
         <span class="post-date">Dec 24, 2020</span>
-        <h1 id="fill-column"><code>fill-column</code></h1>
-<p>バッファの各行の文字数の最大幅のようなものを設定する変数（？）。これを設定しただけでは何も起きないような気がする。</p>
-<p>いろいろな関数やモードがこの変数をデフォルト値的なものとして参照してる。</p>
+        fill-column バッファの各行の文字数の最大幅のようなものを設定する変数（？）。これを設定しただけでは何も起きないような気がする。 いろいろな関数やモードが
     </div>
   
     <div class="post">
         <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201123-checkout-pr.html">Github の PR をローカルに Chekcout する</a></h1>
         <span class="post-date">Nov 23, 2020</span>
-        <p><a href="https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally">https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally</a></p>
-<pre><code>git fetch origin pull/ID/head:BRANCHNAME
-</code></pre>
-<p>スクリプト版： <a href="https://github.com/10sr/bin/blob/master/bin/git-checkout-pr">https://github.com/10sr/bin/blob/master/bin/git-checkout-pr</a></p>
-    </div>
-  
-    <div class="post">
-        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201119-bluetooth-keyboard.html">bluetooth-keyboard</a></h1>
-        <span class="post-date">Nov 19, 2020</span>
-        <p>なんか時間を置くと入力が通らなくなる</p>
-<ol>
-<li>その他の bluetooth オプションから、デバイスによる pc の検出をオンにした</li>
-<li>デバイスマネージャから bluetooth の省電力設定を無効にする <a href="https://itojisan.xyz/trouble/12215/#5">https://itojisan.xyz/trouble/12215/#5</a></li>
-</ol>
+        https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally git fetch origin pull/ID/head:BRANCHNAME スクリプト版： https://github.com/10sr/bin/blob/master/bin/git-checkout-pr
     </div>
   
 </div>

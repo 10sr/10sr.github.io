@@ -9,7 +9,7 @@
 
   <title>
     
-      制限つき Gmail SMTP サーバを swaks から使う &middot; 10sr.github.io/b
+      Mac の docker がストレージを使うので空ける &middot; 10sr.github.io/b
     
   </title>
 
@@ -70,17 +70,14 @@
 
 
 <div class="post">
-  <h1 class="post-title">制限つき Gmail SMTP サーバを swaks から使う</h1>
-  <span class="post-date">Oct 5, 2020</span>
-  <p><code>swaks</code> を使用すると任意の SMTP サーバを使用してメールを送信できる</p>
-<pre><code>$ swaks --server aspmx.l.google.com --to 8.slashes@gmail.com
-</code></pre>
-<p>実際にはいろいろ制限かかっててメール送れないかも。</p>
-<h2 id="参考">参考</h2>
-<ul>
-<li><a href="https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp">https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp</a></li>
-<li><a href="https://support.google.com/a/answer/176600?hl=ja">https://support.google.com/a/answer/176600?hl=ja</a></li>
-</ul>
+  <h1 class="post-title">Mac の docker がストレージを使うので空ける</h1>
+  <span class="post-date">Feb 2, 2026</span>
+  <p>以下を実行する。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>$ docker rm <span style="color:#66d9ef">$(</span>docker ps -a -q<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>$ docker rmi <span style="color:#66d9ef">$(</span>docker images -q<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>$ docker volume rm <span style="color:#66d9ef">$(</span>docker volume ls |awk <span style="color:#e6db74">&#39;{print $2}&#39;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>$ rm -rf ~/Library/Containers/com.docker.docker/Data/*
+</span></span></code></pre></div><p><a href="https://qiita.com/ktsujichan/items/726e0f896e30b355fee1">Docker for Macを使っているとストレージ容量不足になる問題をなんとかする #Docker - Qiita</a></p>
 
 </div>
 
