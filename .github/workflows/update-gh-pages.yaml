@@ -13,7 +13,7 @@ jobs:
     steps:
       # Download from https://github.com/gohugoio/hugo/releases ?
       - name: Install hugo
-        run: sudo snap install hugo --channel=extended
+        run: sudo apt install hugo
 
       - name: Checkout repository
         uses: actions/checkout@v2
