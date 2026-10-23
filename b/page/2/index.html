@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      10sr.github.io/b &middot; 
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="../../css/poole.css">
+  <link rel="stylesheet" href="../../css/syntax.css">
+  <link rel="stylesheet" href="../../css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../../assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="../../atom.xml">
+
+  
+  <script src='../../js/script.js'></script>
+	<meta name="generator" content="Hugo 0.168.0">
+</head>
+
+
+  <body class="layout-reverse">
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>
+      10sr static blog
+    </p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item  active " href="../../">Home</a>
+    <a class="sidebar-nav-item " href="../../posts.html">Posts</a><a class="sidebar-nav-item" href="https://github.com/10sr/10sr.github.io/tree/master/b_source" title="">Source</a>
+    </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 2026. All rights reserved.</p>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="../../" title="Home">10sr.github.io/b</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+
+
+
+<div class="posts">
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201123-checkout-pr.html">Github の PR をローカルに Chekcout する</a></h1>
+        <span class="post-date">Nov 23, 2020</span>
+        <p><a href="https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally">https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally</a></p>
+<pre><code>git fetch origin pull/ID/head:BRANCHNAME
+</code></pre>
+<p>スクリプト版： <a href="https://github.com/10sr/bin/blob/master/bin/git-checkout-pr">https://github.com/10sr/bin/blob/master/bin/git-checkout-pr</a></p>
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201119-bluetooth-keyboard.html">bluetooth-keyboard</a></h1>
+        <span class="post-date">Nov 19, 2020</span>
+        <p>なんか時間を置くと入力が通らなくなる</p>
+<ol>
+<li>その他の bluetooth オプションから、デバイスによる pc の検出をオンにした</li>
+<li>デバイスマネージャから bluetooth の省電力設定を無効にする <a href="https://itojisan.xyz/trouble/12215/#5">https://itojisan.xyz/trouble/12215/#5</a></li>
+</ol>
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201007-awk-tsv.html">AWK で TSV のあるカラムを値で絞る</a></h1>
+        <span class="post-date">Oct 7, 2020</span>
+        <pre><code>cat input.txt | awk -F\\t '$3 ~ /REGEXP/'
+</code></pre>
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201005-jenkins-plugins.html">Jenkins にインストールされたプラグインの一覧を取得する</a></h1>
+        <span class="post-date">Oct 5, 2020</span>
+        <p>スクリプトコンソールなどで以下を実行する</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> plugins <span style="color:#f92672">=</span> jenkins<span style="color:#f92672">.</span><span style="color:#a6e22e">model</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Jenkins</span><span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getPluginManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getPlugins</span><span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>plugins<span style="color:#f92672">.</span><span style="color:#a6e22e">each</span> <span style="color:#f92672">{</span>println <span style="color:#e6db74">&#34;${it.getShortName()}: ${it.getVersion()}&#34;</span><span style="color:#f92672">}</span>
+</span></span></code></pre></div>
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20201005-swaks-smtp.html">制限つき Gmail SMTP サーバを swaks から使う</a></h1>
+        <span class="post-date">Oct 5, 2020</span>
+        <p><code>swaks</code> を使用すると任意の SMTP サーバを使用してメールを送信できる</p>
+<pre><code>$ swaks --server aspmx.l.google.com --to 8.slashes@gmail.com
+</code></pre>
+<p>実際にはいろいろ制限かかっててメール送れないかも。</p>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp">https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp</a></li>
+<li><a href="https://support.google.com/a/answer/176600?hl=ja">https://support.google.com/a/answer/176600?hl=ja</a></li>
+</ul>
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200611-date-loop.html">Shellscript で日付ごとにコマンドを実行する</a></h1>
+        <span class="post-date">Jun 11, 2020</span>
+        <p><code>date</code> は GNU Coreutils の奴が必要。
+以下では日付のフォーマットは YYYYMMDD になっている。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span>set -euxo pipefail
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2019/12/1 &lt;= date &lt; 2020/2/1</span>
+</span></span><span style="display:flex;"><span>start_from<span style="color:#f92672">=</span><span style="color:#ae81ff">20191201</span>
+</span></span><span style="display:flex;"><span>stop_at<span style="color:#f92672">=</span><span style="color:#ae81ff">20200201</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>date<span style="color:#f92672">=</span>$start_from
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> true
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$date<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span>$stop_at<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>        break
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    echo date: $date
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Next</span>
+</span></span><span style="display:flex;"><span>    date<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>date -d <span style="color:#e6db74">&#34;</span>$date<span style="color:#e6db74"> 1day&#34;</span> <span style="color:#e6db74">&#34;+%Y%m%d&#34;</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo Done
+</span></span></code></pre></div><ul>
+<li><a href="https://qiita.com/YumaInaura/items/ffb8f10abf33474d1b1e">Linux—シェルスクリプトで日付でループする (Mac対応あり) - Qiita</a></li>
+<li><a href="https://techblog.recochoku.jp/1213">シェルスクリプトである期間日付でループする | レコチョクのエンジニアブログ</a></li>
+<li><a href="https://www.ppoohh.info/post-791/">シェルスクリプトで1日毎の日付でループする処理 | ppoohh &rsquo;s blog</a></li>
+</ul>
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200605-ubuntu-mysql-root.html">Ubuntu の MySQL (MariaDB) Root ログイン</a></h1>
+        <span class="post-date">Jun 5, 2020</span>
+        <h2 id="問題">問題</h2>
+<p>MariaDB の root のパスワードを設定しようとして、 <code>mysql_secure_installation</code>
+を実行したり以下のようにしたりしてもログインできるようにならない場合がある。</p>
+<pre><code>set password for 'root'@'localhost'=password('pw');
+# or
+update mysql.user set password=password('pw') where user = 'root';
+</code></pre>
+<h2 id="原因">原因</h2>
+<p>Ubuntu の MariaDB のインストールではデフォルトで <code>unix_socket</code> プラグインが設定されている。
+そのため以下のようになる。</p>
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200601-nextcloud-plugin.html">Nextcloud Plugin Update Error</a></h1>
+        <span class="post-date">Jun 1, 2020</span>
+        <p>Plugin のアップデート後、ログイン画面の代わりに以下の文面が表示されログインできなくなった。</p>
+<pre><code>The files of the app Plain text editor (files_texteditor) were not replaced correctly. Make sure it is a version compatible with the server.
+</code></pre>
+<p>Nextcloud のディレクトリ以下の <code>custom_apps</code> から、 <code>files_texteditor</code> ディレクトリを削除したら正常にログインできるようになった。
+<code>apps</code> 以下にも同名のディレクトリがあるが、そっちは触らなくて良さそうだった。</p>
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200326-dtach.html">dtach</a></h1>
+        <span class="post-date">Mar 26, 2020</span>
+        <p>GNU screen からデタッチ機能だけを切り出したようなやつ</p>
+<ul>
+<li><a href="https://wiki.archlinux.org/index.php/Dtach">dtach</a></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># s.dtach というソケットで開始 C-^ でデタッチ</span>
+</span></span><span style="display:flex;"><span>dtach -c s.dtach -e <span style="color:#e6db74">&#39;^^&#39;</span> bash -i
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># s.dtach というソケットにアタッチ</span>
+</span></span><span style="display:flex;"><span>dtach -a s.dtach
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># s.dtach というソケットにアタッチ なければ作る</span>
+</span></span><span style="display:flex;"><span>dtach -A s.dtach -e <span style="color:#e6db74">&#39;^^&#39;</span> bash -i
+</span></span></code></pre></div>
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://10sr.github.io/b/posts/20200205-explore-filesystem-of-stopped-docker-container.html">Explore filesystem of stopped docker container</a></h1>
+        <span class="post-date">Feb 5, 2020</span>
+        <p>停止したコンテナにあったファイルをみたい。</p>
+<p>以下のようにするとできる。</p>
+<pre tabindex="0"><code class="language-shellscript" data-lang="shellscript"># コンテナの ID を探す（先頭のハッシュ）
+docker ps -a | grep NAME
+
+# 新しくイメージを作成する
+docker commit CONTAINER_ID t
+
+# 実行
+docker run -it t bash -i
+</code></pre><p>参考</p>
+    </div>
+  
+</div>
+
+<div class="pagination">
+  
+  <a class="pagination-item newer" href="../../index.html">Newer</a>
+  
+
+  
+  <a class="pagination-item older" href="../../page/3/index.html">Older</a>
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+  </body>
+</html>
+

@@ -104,7 +104,7 @@ update mysql.user set password=password('pw') where user = 'root';
 flush privileges;
 </code></pre><h2 id="ansible">Ansible</h2>
 <p><code>unix_socket</code> プラグインを有効にした状態で mysql の task を実行するには、以下のように <code>login_unix_socket</code> を設定すればよい。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Add users</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Add users</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">mysql_user</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;{{ item.name }}&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">password</span>: <span style="color:#e6db74">&#34;{{ item.password }}&#34;</span>

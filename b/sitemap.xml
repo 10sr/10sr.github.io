@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://10sr.github.io/b/</loc>
-    <lastmod>2026-02-02T15:39:01+09:00</lastmod>
+    <loc>http://10sr.github.io/b/index.html</loc>
+    <lastmod>2026-02-28T23:34:57+09:00</lastmod>
+  </url><url>
+    <loc>http://10sr.github.io/b/posts/index.html</loc>
+    <lastmod>2026-02-28T23:34:57+09:00</lastmod>
+  </url><url>
+    <loc>http://10sr.github.io/b/posts/20260228-ps5-controller-battery.html</loc>
+    <lastmod>2026-02-28T23:34:57+09:00</lastmod>
   </url><url>
     <loc>http://10sr.github.io/b/posts/20260202-mac-docker-rm.html</loc>
-    <lastmod>2026-02-02T15:39:01+09:00</lastmod>
-  </url><url>
-    <loc>http://10sr.github.io/b/posts.html</loc>
     <lastmod>2026-02-02T15:39:01+09:00</lastmod>
   </url><url>
     <loc>http://10sr.github.io/b/posts/20231130-hx77g.html</loc>
@@ -92,8 +95,8 @@
     <loc>http://10sr.github.io/b/posts/20190614-hexyl.html</loc>
     <lastmod>2019-06-14T11:43:43+09:00</lastmod>
   </url><url>
-    <loc>http://10sr.github.io/b/categories.html</loc>
+    <loc>http://10sr.github.io/b/categories/index.html</loc>
   </url><url>
-    <loc>http://10sr.github.io/b/tags.html</loc>
+    <loc>http://10sr.github.io/b/tags/index.html</loc>
   </url>
 </urlset>
